@@ -1,0 +1,29 @@
+namespace = planet_construction
+
+# Planet Construction Complete Notification
+country_event = {
+	id = "planet_construction.00"
+	title = "planet_construction.00.name"
+	desc = {
+		trigger = {
+			NOT = { has_country_flag = planet_construction_acknowledgement }
+		}
+		text = "planet_construction.00.desc.a"
+	}
+
+	desc = {
+		trigger = {
+			has_country_flag = planet_construction_acknowledgement
+		}
+		text = "planet_construction.00.desc.b"
+	}
+	show_sound = event_mystic_reveal
+	picture = GFX_evt_colony_settlement
+	is_triggered_only = yes
+	location = FromFromFrom.Planet
+
+	option = {
+		name = ACKNOWLEDGED
+		hidden_effect = { set_country_flag = planet_construction_acknowledgement }
+	}
+}

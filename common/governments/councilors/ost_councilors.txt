@@ -1,0 +1,272 @@
+# Councilor Documentation
+#
+# councilor_name_key = {
+#    civic = civic_imperial_cult		Civic that is required for this council position. Also used by UI. Default = none.
+#    leader_class = { }					Which leader classes can have this council position. Currently only used for the Recruit new Leader buttons. Default = none.
+#    is_leader_possible = { }			Can a leader have this council position. Used to filter leaders. Scope: THIS = Leader.
+#    modifier = { }						Country Modifier, that is multiplied by assigned Leader's level.
+#	 custom_tooltip = "LOC_KEY"			Custom tooltip text shown for the modifier of the council position.
+#	 conditional_tooltip = "LOC_KEY"	Custom tooltip text shown for the requirements of the council position.
+# }
+
+################################
+## NORMAL CIVICS
+################################
+
+councilor_bastion_of_oppression = {
+	leader_class = { governor admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = governor
+		}
+	}
+	civic = civic_bastion_of_oppression
+	modifier = {
+		pop_ethic_authoritarian_attraction_mult = 0.075
+	}
+}
+
+councilor_energy_consortiums = {
+	leader_class = { governor scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+			leader_class = scientist
+		}
+	}
+	civic = civic_energy_consortiums
+	custom_tooltip = "councilor_energy_consortiums_custom_modifier_desc"
+}
+
+councilor_agriculture_councils = {
+	leader_class = { governor scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+			leader_class = scientist
+		}
+	}
+	civic = civic_agriculture_councils
+	custom_tooltip = "councilor_agriculture_councils_custom_modifier_desc"
+}
+
+councilor_speleology_societies = {
+	leader_class = { governor scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+			leader_class = scientist
+		}
+	}
+	civic = civic_speleology_societies
+	modifier = {
+		country_rare_crystals_produces_mult = 0.01
+	}
+}
+
+councilor_sovereign_court = {
+	leader_class = { governor admiral scientist general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = governor
+			leader_class = scientist
+		}
+	}
+	civic = civic_sovereign_court
+	modifier = {
+		planet_jobs_ruler_produces_mult = 0.01
+	}
+}
+
+councilor_deceitful_delegates = {
+	leader_class = { governor admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = governor
+		}
+	}
+	civic = civic_deceitful_delegates
+	modifier = {
+		diplo_weight_envoys_mult = 0.01
+	}
+}
+
+councilor_researchers_of_renown = {
+	leader_class = { scientist }
+	is_leader_possible = {
+		leader_class = scientist
+	}
+	civic = civic_researchers_of_renown
+	modifier = {
+		leader_scientists_physics_research_produces_add = 0.5
+		leader_scientists_society_research_produces_add = 0.5
+		leader_scientists_engineering_research_produces_add = 0.5
+	}
+}
+
+councilor_illustrious_statesmen = {
+	leader_class = { governor }
+	is_leader_possible = {
+		leader_class = governor
+	}
+	civic = civic_illustrious_statesmen
+	modifier = {
+		diplo_weight_pops_mult = 0.02
+	}
+}
+
+councilor_frontier_fellowship = {
+	leader_class = { governor }
+	is_leader_possible = {
+		leader_class = governor
+	}
+	civic = civic_frontier_fellowship
+	modifier = {
+		planet_colony_development_speed_mult = 0.025
+	}
+}
+
+################################
+## MEGA CORP
+################################
+
+councilor_corporate_mining_guilds = {
+	leader_class = { governor }
+	is_leader_possible = {
+		leader_class = governor
+	}
+	civic = civic_corporate_mining_guilds
+	custom_tooltip = "councilor_mining_guild_custom_modifier_desc"
+}
+
+councilor_corporate_energy_consortiums = {
+	leader_class = { governor scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+			leader_class = scientist
+		}
+	}
+	civic = civic_corporate_energy_consortiums
+	custom_tooltip = "councilor_energy_consortiums_custom_modifier_desc"
+}
+
+councilor_corporate_agriculture_councils = {
+	leader_class = { governor scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+			leader_class = scientist
+		}
+	}
+	civic = civic_corporate_agriculture_councils
+	custom_tooltip = "councilor_agriculture_councils_custom_modifier_desc"
+}
+
+councilor_corporate_speleology_societies = {
+	leader_class = { governor scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+			leader_class = scientist
+		}
+	}
+	civic = civic_corporate_speleology_societies
+	modifier = {
+		country_rare_crystals_produces_mult = 0.01
+	}
+}
+
+councilor_corporate_functional_architecture = {
+	leader_class = { governor }
+	is_leader_possible = {
+		leader_class = governor
+	}
+	civic = civic_corporate_functional_architecture
+	modifier = {
+		planet_building_build_speed_mult = 0.02
+	}
+}
+
+councilor_corporate_mercenary_contractors = {
+	leader_class = { admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+		}
+	}
+	civic = civic_corporate_mercenary_contractors
+	custom_tooltip = "councilor_warrior_culture_custom_modifier_desc"
+	modifier = {
+		planet_entertainers_unity_produces_add = 0.2
+	}
+}
+
+councilor_corporate_frontier_fellowship = {
+	leader_class = { governor }
+	is_leader_possible = {
+		leader_class = governor
+	}
+	civic = civic_corporate_frontier_fellowship
+	modifier = {
+		planet_colony_development_speed_mult = 0.01
+	}
+}
+
+councilor_credit_unions = {
+	leader_class = { governor }
+	is_leader_possible = {
+		leader_class = governor
+	}
+	civic = civic_credit_unions
+	modifier = {
+		pop_job_trade_mult = 0.015
+	}
+}
+
+councilor_executive_shadows = {
+	leader_class = { governor }
+	is_leader_possible = {
+		leader_class = governor
+	}
+	civic = civic_executive_shadows
+	modifier = {
+		diplo_weight_mult = 0.02
+	}
+}
+
+councilor_private_military_academies = {
+	leader_class = { admiral general }
+	is_leader_possible = {
+		OR = {
+			leader_class = admiral
+			leader_class = general
+		}
+	}
+	civic = civic_private_military_academies
+	custom_tooltip = "councilor_private_military_academies_custom_modifier_desc"
+	modifier = {
+		ship_accuracy_add = 0.01
+	}
+}
+
+councilor_astro_universities = {
+	leader_class = { governor scientist }
+	is_leader_possible = {
+		OR = {
+			leader_class = governor
+			leader_class = scientist
+		}
+	}
+	civic = civic_astro_universities
+	modifier = {
+		planet_jobs_produces_mult = 0.005
+	}
+}

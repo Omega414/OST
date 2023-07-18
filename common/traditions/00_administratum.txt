@@ -1,0 +1,375 @@
+tr_administratum_adopt = {
+	
+	custom_tooltip = tr_administratum_adopt_desc
+	unlocks_agenda = agenda_administratum
+	modifier = {
+		empire_size_mult = -0.15
+	}
+
+	tradition_swap = {
+		name = tr_administratum_adopt_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+		custom_tooltip = tr_administratum_adopt_machine_desc
+
+	
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_administratum_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_administratum_adopt_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_administratum_finish = {
+
+	custom_tooltip = tr_administratum_finish_desc
+
+	modifier = {
+		country_government_civic_points_add = 1
+		ascension_perks_add = 1
+	}
+
+	on_enabled = {
+		set_government_cooldown = no
+		reset_policy_cooldowns = yes
+	}
+
+	tradition_swap = {
+		name = tr_administratum_finish_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_administratum_finish_machine_desc
+
+	
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_administratum_finish_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_administratum_finish_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_administratum_1 = {
+
+	custom_tooltip = tr_administratum_1_desc
+
+	modifier = {
+		planet_administrators_upkeep_mult = -0.10
+	}
+	
+	tradition_swap = {
+		name = tr_administratum_1_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_administratum_1_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_administratum_1_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_administratum_1_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_administratum_2 = {
+
+	custom_tooltip = tr_administratum_2_desc
+
+	modifier = {
+		planet_administrators_unity_produces_add = 3
+	}
+	
+	tradition_swap = {
+		name = tr_administratum_2_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_administratum_2_machine_desc
+
+		modifier = {
+			planet_administrators_unity_produces_add = 3
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_administratum_2_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_administratum_2_hive_desc
+
+		modifier = {
+			planet_administrators_unity_produces_add = 3
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_administratum_3 = {
+	possible = {
+		has_tradition = tr_administratum_1
+	}
+
+	custom_tooltip = tr_administratum_3_desc
+
+	modifier = {
+		intel_encryption_add = 1
+		empire_size_districts_mult = -0.20
+	}
+	
+	tradition_swap = {
+		name = tr_administratum_3_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_administratum_3_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_administratum_3_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_administratum_3_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_administratum_4 = {
+	possible = {
+		AND = {
+			has_tradition = tr_administratum_1
+			has_tradition = tr_administratum_2
+		}
+	}
+
+	custom_tooltip = tr_administratum_4_desc
+
+	modifier = {
+		country_edict_fund_mult = 0.25
+		edicts_cost_mult = -0.05
+		planet_researchers_society_research_produces_add = 2
+	}
+	
+	tradition_swap = {
+		name = tr_administratum_4_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+		
+		custom_tooltip = tr_administratum_4_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_administratum_4_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_administratum_4_hive_desc
+
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_administratum_5 = {
+	possible = {
+		has_tradition = tr_administratum_2
+	}
+
+	custom_tooltip = tr_administratum_5_desc
+
+	modifier = {
+		planet_building_build_speed_mult = 0.25
+		planet_max_buildings_add = 2
+	}
+	
+	tradition_swap = {
+		name = tr_administratum_5_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_administratum_5_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_administratum_5_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_administratum_5_hive_desc
+	
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}

@@ -1,0 +1,111 @@
+tradition_expansion = {
+	desc = {
+		trigger = {
+			is_regular_empire = yes
+			NOT = { has_origin = origin_void_dwellers }
+		}
+		text =  tradition_expansion_desc
+	}
+	desc = {
+		trigger = { is_hive_empire = yes }
+		text =  tradition_expansion_hive_desc
+	}
+	desc = {
+		trigger = { is_machine_empire = yes }
+		text =  tradition_expansion_machine_desc
+	}
+	desc = {
+		trigger = { has_origin = origin_void_dwellers }
+		text =  tradition_expansion_void_desc
+	}
+	tree_template = "tree_12_11"
+	adoption_bonus = "tr_expansion_adopt"
+	finish_bonus = "tr_expansion_finish"
+	traditions = {
+		"tr_expansion_reach_for_the_stars"
+		"tr_expansion_colonization_fever"
+		"tr_expansion_courier_network"
+		"tr_expansion_galactic_ambition"
+		"tr_expansion_a_new_life"
+	}
+
+	ai_weight = {
+		factor = 15
+		modifier = {
+			factor = 10
+			years_passed < 10
+		}
+		modifier = {
+			factor = 4
+			has_ethic = ethic_authoritarian
+		}
+		modifier = {
+			factor = 8
+			has_ethic = ethic_fanatic_authoritarian
+		}
+		modifier = {
+			factor = 9
+			has_ethic = ethic_egalitarian
+		}
+		modifier = {
+			factor = 18
+			has_ethic = ethic_fanatic_egalitarian
+		}
+		modifier = {
+			factor = 6
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 12
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			factor = 10
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 20
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 10
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 20
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 16
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 8
+			has_ethic = ethic_spiritualist
+		}
+		modifier = {
+			factor = 16
+			has_ethic = ethic_fanatic_spiritualist
+		}	
+		modifier = {
+			factor = 9
+			has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 18
+			has_ethic = ethic_fanatic_materialist
+		}		
+		modifier = {
+			factor = 9
+			is_machine_empire = yes
+		}
+		modifier = {
+			factor = 9
+			is_hive_empire = yes
+		}
+	}
+}

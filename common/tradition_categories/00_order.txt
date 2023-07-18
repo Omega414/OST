@@ -1,0 +1,100 @@
+tradition_order = {
+	desc = {
+		trigger = { is_regular_empire = yes }
+		text =  tradition_order_desc
+	}
+	desc = {
+		trigger = { is_hive_empire = yes }
+		text =  tradition_order_hive_desc
+	}
+	desc = {
+		trigger = { is_machine_empire = yes }
+		text =  tradition_order_machine_desc
+	}
+	tree_template = "tree_11_12"
+	adoption_bonus = "tr_order_adopt"
+	finish_bonus = "tr_order_finish"
+	traditions = {
+		"tr_order_1"
+		"tr_order_2"
+		"tr_order_3"
+		"tr_order_4"
+		"tr_order_5"
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 10
+			has_ethic = ethic_authoritarian
+		}
+		modifier = {
+			factor = 20
+			has_ethic = ethic_fanatic_authoritarian
+		}
+		modifier = {
+			factor = 8
+			has_ethic = ethic_egalitarian
+		}
+		modifier = {
+			factor = 16
+			has_ethic = ethic_fanatic_egalitarian
+		}
+		modifier = {
+			factor = 7
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 14
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			factor = 6
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 12
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 8
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 16
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 6
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 8
+			has_ethic = ethic_spiritualist
+		}
+		modifier = {
+			factor = 16
+			has_ethic = ethic_fanatic_spiritualist
+		}	
+		modifier = {
+			factor = 3
+			has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 6
+			has_ethic = ethic_fanatic_materialist
+		}		
+		modifier = {
+			factor = 5
+			is_machine_empire = yes
+		}
+		modifier = {
+			factor = 2
+			is_hive_empire = yes
+		}			
+	}
+}

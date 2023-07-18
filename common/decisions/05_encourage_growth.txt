@@ -1,0 +1,121 @@
+decision_planet_food_boost = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_resources
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			food = 1000
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			AND = {
+				has_active_tradition = tr_compassion_finish
+				is_lithoid_empire = no
+			}
+		}
+		NOR = {
+			has_modifier = planet_growth_discouraged
+			has_modifier = planet_population_control
+		}
+	}
+
+	allow = {
+		NOT = { has_modifier = planet_food_boost }
+	}
+
+	effect = {
+		add_modifier = { 
+			modifier = "planet_food_boost"
+			days = 3600
+			clear_on_owner_change = yes
+		}
+	}
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			owner = { resource_stockpile_compare = {
+				resource = food
+				value < 1800
+			}
+			}
+		}
+		modifier = {
+			factor = 400
+			owner = {
+				has_resource = {
+					type = food
+					amount > 2000
+				}
+			}
+		}
+	}
+}
+
+decision_planet_mineral_boost = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_resources
+
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+			minerals = 1000
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			AND = {
+				has_active_tradition = tr_compassion_finish
+				is_lithoid_empire = yes
+			}
+		}
+		NOR = {
+			has_modifier = planet_growth_discouraged
+			has_modifier = planet_population_control
+		}
+	}
+
+	allow = {
+		NOT = { has_modifier = planet_food_boost }
+	}
+
+	effect = {
+		add_modifier = {
+			modifier = "planet_food_boost"
+			days = 3600
+			clear_on_owner_change = yes
+		}
+	}
+	
+	ai_weight = {
+		weight = 5
+		modifier = {
+			factor = 0
+			owner = { resource_stockpile_compare = {
+				resource = minerals
+				value < 1800
+			}
+			}
+		}
+		modifier = {
+			factor = 400
+			owner = {
+				has_resource = {
+					type = minerals
+					amount > 2000
+				}
+			}
+		}
+	}
+}

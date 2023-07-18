@@ -1,0 +1,372 @@
+tr_navalascendancy_adopt = {
+
+	custom_tooltip = tr_navalascendancy_adopt_desc
+	unlocks_agenda = agenda_navalascendancy
+	modifier = {
+		country_naval_cap_mult = 0.20
+		command_limit_add = 20
+	}
+
+	tradition_swap = {
+		name = tr_navalascendancy_adopt_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_adopt_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_navalascendancy_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_adopt_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_navalascendancy_finish = {
+
+	custom_tooltip = tr_navalascendancy_finish_desc
+
+	modifier = {
+		country_government_civic_points_add = 1
+		country_enclave_capacity_add = 1
+		ascension_perks_add = 1
+	}
+
+	on_enabled = {
+		set_government_cooldown = no
+		reset_policy_cooldowns = yes
+	}
+
+	tradition_swap = {
+		name = tr_navalascendancy_finish_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_finish_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_navalascendancy_finish_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_finish_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_navalascendancy_1 = {
+
+	custom_tooltip = tr_navalascendancy_1_desc
+
+	modifier = {
+		category_voidcraft_research_speed_mult = 0.15
+	}
+	
+	tradition_swap = {
+		name = tr_navalascendancy_1_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_1_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_navalascendancy_1_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_1_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_navalascendancy_2 = {
+
+	custom_tooltip = tr_navalascendancy_2_desc
+
+	modifier = {
+		category_statecraft_research_speed_mult = 0.15
+	}
+
+	on_enabled = {
+		every_owned_leader = {
+			limit = {
+				leader_class = admiral
+			}
+			add_skill_without_trait_selection = 1
+		}
+	}
+	
+	tradition_swap = {
+		name = tr_navalascendancy_2_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_2_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_navalascendancy_2_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_2_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_navalascendancy_3 = {
+	possible = {
+		has_tradition = tr_navalascendancy_1
+	}
+
+	custom_tooltip = tr_navalascendancy_3_desc
+
+	modifier = {
+		country_starbase_capacity_mult = 0.20
+		hostile_operation_sabotage_starbase_difficulty_add = 2
+	}
+	
+	tradition_swap = {
+		name = tr_navalascendancy_3_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_3_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_navalascendancy_3_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_3_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_navalascendancy_4 = {
+	possible = {
+		has_tradition = tr_navalascendancy_1
+	}
+
+	custom_tooltip = tr_navalascendancy_4_desc
+
+	modifier = {
+		megastructure_build_speed_mult = 0.10
+		country_megastructure_build_cap_add = 1
+	}
+	
+	tradition_swap = {
+		name = tr_navalascendancy_4_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_4_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_navalascendancy_4_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_4_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_navalascendancy_5 = {
+	possible = {
+		has_tradition = tr_navalascendancy_2
+	}
+
+	custom_tooltip = tr_navalascendancy_5_desc
+	
+	modifier = {
+		country_leader_pool_size = 2
+		country_leader_cap_add = 2
+	}
+	
+	tradition_swap = {
+		name = tr_navalascendancy_5_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_5_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_navalascendancy_5_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_navalascendancy_5_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}

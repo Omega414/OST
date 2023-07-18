@@ -1,0 +1,360 @@
+tr_renewal_adopt = {
+
+	custom_tooltip = tr_renewal_adopt_desc
+	unlocks_agenda = agenda_renewal	
+	modifier = {
+		category_new_worlds_research_speed_mult = 0.15
+	}
+
+	tradition_swap = {
+		name = tr_renewal_adopt_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_adopt_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_renewal_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_adopt_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_renewal_finish = {
+
+	custom_tooltip = tr_renewal_finish_desc
+
+	modifier = {
+		# Adds Terrestrial Sculpting as a research option if not yet researched.
+		terraform_speed_mult = 0.25
+		ascension_perks_add = 1
+	}
+	on_enabled = {
+		add_research_option = tech_terrestrial_sculpting
+	}
+
+	tradition_swap = {
+		name = tr_renewal_finish_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_finish_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_renewal_finish_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_finish_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_renewal_1 = {
+
+	custom_tooltip = tr_renewal_1_desc
+
+	modifier = {
+		planet_colony_development_speed_mult = 0.25
+		pop_environment_tolerance = 0.05
+	}
+	
+	tradition_swap = {
+		name = tr_renewal_1_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_1_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_renewal_1_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_1_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_renewal_2 = {
+	possible = {
+		has_tradition = tr_renewal_1
+	}
+
+	custom_tooltip = tr_renewal_2_desc
+
+	modifier = {
+		country_resource_max_add = 50000
+	}
+	
+	tradition_swap = {
+		name = tr_renewal_2_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_2_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_renewal_2_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_2_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_renewal_3 = {
+
+	custom_tooltip = tr_renewal_3_desc
+	
+	modifier = {
+		# Additional strategic resource jobs implemented in 10_deposit_buildings.
+	}
+	
+	tradition_swap = {
+		name = tr_renewal_3_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_3_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_renewal_3_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_3_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_renewal_4 = {
+	possible = {
+		has_tradition = tr_renewal_3
+	}
+
+	custom_tooltip = tr_renewal_4_desc
+
+	modifier = {
+		country_exotic_gases_produces_mult = 0.10
+		country_rare_crystals_produces_mult = 0.10
+		country_volatile_motes_produces_mult = 0.10	
+	}
+	
+	tradition_swap = {
+		name = tr_renewal_4_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_4_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_renewal_4_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_4_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_renewal_5 = {
+	possible = {
+		has_tradition = tr_renewal_3
+	}
+
+	custom_tooltip = tr_renewal_5_desc
+
+	modifier = {
+		# Planet Contruction Megastructure implemented via 015_Planet_Contruction file.
+	}
+	
+	tradition_swap = {
+		name = tr_renewal_5_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_5_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_renewal_5_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_renewal_5_hive_desc
+		
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}

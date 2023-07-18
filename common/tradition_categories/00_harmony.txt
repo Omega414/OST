@@ -1,0 +1,84 @@
+tradition_harmony = {
+	tree_template = "tree_21_11"
+	adoption_bonus = "tr_harmony_adopt"
+	finish_bonus = "tr_harmony_finish"
+	traditions = {
+		"tr_harmony_mind_and_body"
+		"tr_harmony_kinship"
+		"tr_harmony_the_greater_good"
+		"tr_harmony_harmonious_directives"
+		"tr_harmony_utopian_dream"
+	}
+
+	potential = {
+		is_gestalt = no
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_authoritarian
+		}
+		modifier = {
+			factor = 4
+			has_ethic = ethic_fanatic_authoritarian
+		}
+		modifier = {
+			factor = 8
+			has_ethic = ethic_egalitarian
+		}
+		modifier = {
+			factor = 16
+			has_ethic = ethic_fanatic_egalitarian
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 4
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			factor = 8
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 16
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 10
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 10
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 20
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 9
+			has_ethic = ethic_spiritualist
+		}
+		modifier = {
+			factor = 18
+			has_ethic = ethic_fanatic_spiritualist
+		}	
+		modifier = {
+			factor = 6
+			has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 12
+			has_ethic = ethic_fanatic_materialist
+		}		
+	}
+}

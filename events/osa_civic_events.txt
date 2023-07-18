@@ -1,0 +1,317 @@
+namespace = osa_civic
+
+# Researchers of Renown
+leader_event = {
+	id = osa_civic.1
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			has_valid_civic = civic_researchers_of_renown
+		}
+		this = {
+			leader_class = scientist
+		}
+	}
+
+	immediate = {
+		this = {
+			if = {
+				limit = {
+					NOT = {
+						has_leader_flag = civic_researchers_of_renown_promotion
+					}
+				}
+				add_skill_without_trait_selection = 2
+				set_leader_flag = civic_researchers_of_renown_promotion
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = osa_civic.2
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_valid_civic = civic_researchers_of_renown
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				AND = {
+					NOT = {
+						has_leader_flag = civic_researchers_of_renown_promotion
+					}
+					leader_class = scientist
+				}
+			}
+			add_skill_without_trait_selection = 2
+			set_leader_flag = civic_researchers_of_renown_promotion
+		}
+	}
+}
+
+# Illustrious Statesmen
+leader_event = {
+	id = osa_civic.3
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			OR = {
+				has_valid_civic = civic_illustrious_statesmen
+				has_valid_civic = civic_executive_shadows
+			}
+		}
+		this = {
+			leader_class = governor
+		}
+	}
+
+	immediate = {
+		this = {
+			if = {
+				limit = {
+					NOT = {
+						has_leader_flag = civic_illustrious_statesmen_promotion
+					}
+				}
+				add_skill_without_trait_selection = 2
+				set_leader_flag = civic_illustrious_statesmen_promotion
+			}
+		}
+	}
+}
+
+country_event = {
+	id = osa_civic.4
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_valid_civic = civic_illustrious_statesmen
+			has_valid_civic = civic_executive_shadows
+		}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				NOT = {
+					has_leader_flag = civic_illustrious_statesmen_promotion
+				}
+				leader_class = governor
+			}
+			add_skill_without_trait_selection = 2
+			set_leader_flag = civic_illustrious_statesmen_promotion
+		}
+	}
+}
+
+# Distinguished Admiralty
+leader_event = {
+	id = osa_civic.5
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			NOT = { has_country_flag = spawning_renowned_leader }
+			OR = {
+				has_valid_civic = civic_private_military_academies
+				has_valid_civic = civic_distinguished_admiralty
+				has_valid_civic = civic_machine_warbots
+				has_valid_civic = civic_hive_strength_of_legions
+			}
+		}
+		this = {
+			OR = {
+				leader_class = admiral
+				leader_class = general
+			}
+		}
+	}
+
+	immediate = {
+		this = {
+			if = {
+				limit = {
+					NOT = {
+						has_leader_flag = civic_distinguished_admiralty_promotion
+					}
+				}
+				add_skill_without_trait_selection = 2
+				set_leader_flag = civic_distinguished_admiralty_promotion
+			}
+		}
+	}
+}
+
+country_event = {
+	id = osa_civic.6
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_valid_civic = civic_private_military_academies
+			has_valid_civic = civic_distinguished_admiralty
+			has_valid_civic = civic_machine_warbots
+			has_valid_civic = civic_hive_strength_of_legions
+		}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				NOT = {
+					has_leader_flag = civic_distinguished_admiralty_promotion
+				}
+				OR = {
+					leader_class = admiral
+					leader_class = general
+				}
+			}
+			add_skill_without_trait_selection = 2
+			set_leader_flag = civic_distinguished_admiralty_promotion
+		}
+	}
+}
+
+# Astro Universities
+leader_event = {
+	id = osa_civic.7
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			has_valid_civic = civic_astro_universities
+		}
+	}
+
+	immediate = {
+		this = {
+			if = {
+				limit = {
+					NOT = {
+						has_leader_flag = civic_astro_universities_promotion
+					}
+				}
+				add_skill_without_trait_selection = 2
+				set_leader_flag = civic_astro_universities_promotion
+			}
+		}
+	}
+}
+
+country_event = {
+	id = osa_civic.8
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_valid_civic = civic_astro_universities
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				NOT = {
+					has_leader_flag = civic_astro_universities_promotion
+				}
+				OR = {
+				leader_class = admiral
+				leader_class = general
+				leader_class = scientist
+				leader_class = governor
+				}
+			}
+			add_skill_without_trait_selection = 2
+			set_leader_flag = civic_astro_universities_promotion
+		}
+	}
+}
+
+# Gestalt Empires
+leader_event = {
+	id = osa_civic.9
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			OR = {
+				has_valid_civic = civic_hive_reactive_synapses
+				has_valid_civic = civic_machine_quantum_firmware_algorithms
+			}
+		}
+	}
+
+	immediate = {
+		this = {
+			if = {
+				limit = {
+					NOT = {
+						has_leader_flag = civic_gestalt_astro_promotion
+					}
+				}
+				add_skill_without_trait_selection = 2
+				set_leader_flag = civic_astro_universities_promotion
+			}
+		}
+	}
+}
+
+country_event = {
+	id = osa_civic.10
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_valid_civic = civic_hive_reactive_synapses
+			has_valid_civic = civic_machine_quantum_firmware_algorithms
+		}
+	}
+
+	immediate = {
+		every_owned_leader = {
+			limit = {
+				NOT = {
+					has_leader_flag = civic_gestalt_astro_promotion
+				}
+				OR = {
+				leader_class = admiral
+				leader_class = general
+				leader_class = scientist
+				leader_class = governor
+				}
+			}
+			add_skill_without_trait_selection = 2
+			set_leader_flag = civic_gestalt_astro_promotion
+		}
+	}
+}

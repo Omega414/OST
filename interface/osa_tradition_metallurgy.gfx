@@ -1,0 +1,48 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_metallurgy"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_metallurgy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_metallurgy"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_metallurgy.dds"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_metallurgy"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_metallurgy.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_metallurgy"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_metallurgy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_metallurgy_1"
+		textureFile = "gfx/interface/icons/traditions/tradition_metallurgy_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_metallurgy_2"
+		textureFile = "gfx/interface/icons/traditions/tradition_metallurgy_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_metallurgy_3"
+		textureFile = "gfx/interface/icons/traditions/tradition_metallurgy_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_metallurgy_4"
+		textureFile = "gfx/interface/icons/traditions/tradition_metallurgy_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_metallurgy_5"
+		textureFile = "gfx/interface/icons/traditions/tradition_metallurgy_5.dds"
+	}
+}

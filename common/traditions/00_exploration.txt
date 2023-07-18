@@ -1,0 +1,367 @@
+tr_exploration_adopt = {
+
+	custom_tooltip = tr_exploration_adopt_desc
+	unlocks_agenda = agenda_exploration
+	modifier = {
+		category_propulsion_research_speed_mult = 0.15
+	}
+
+	tradition_swap = {
+		name = tr_exploration_adopt_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_exploration_adopt_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_exploration_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_exploration_adopt_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_exploration_finish = {
+
+	custom_tooltip = tr_exploration_finish_desc
+
+	modifier = {
+		ship_archaeological_site_clues_add = 2
+		operation_gather_information_speed_mult = 0.25
+		operation_gather_information_skill_add = 2
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_exploration_finish_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_exploration_finish_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_exploration_finish_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_exploration_finish_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_exploration_1 = {
+
+	custom_tooltip = tr_exploration_1_desc
+
+	modifier = {
+		science_ship_survey_speed = 0.25
+		shipclass_science_ship_evasion_add = 25
+		country_power_projection_physics_research_produces_add = 50
+	}
+	
+	tradition_swap = {
+		name = tr_exploration_1_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_exploration_1_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_exploration_1_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_exploration_1_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_exploration_2 = {
+	possible = {
+		has_tradition = tr_exploration_1
+	}
+
+	custom_tooltip = tr_exploration_2_desc
+
+	modifier = {
+		shipclass_science_ship_hull_mult = 2
+		ship_jumpdrive_cooldown_mult = -0.10
+		ship_interstellar_speed_mult = 0.10
+	}
+	
+	tradition_swap = {
+		name = tr_exploration_2_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_exploration_2_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_exploration_2_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_exploration_2_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_exploration_3 = {
+
+	custom_tooltip = tr_exploration_3_desc
+
+	modifier = {
+		intel_decryption_add = 1
+		category_particles_research_speed_mult = 0.15
+		planet_researchers_physics_research_produces_add = 2
+	}
+	
+	tradition_swap = {
+		name = tr_exploration_3_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_exploration_3_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_exploration_3_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_exploration_3_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_exploration_4 = {
+	possible = {
+		has_tradition = tr_exploration_3
+	}
+
+	custom_tooltip = tr_exploration_4_desc
+
+	modifier = {
+		station_researchers_produces_mult = 0.20
+		starbase_constructions_physics_research_produces_mult = 0.20
+		starbase_constructions_society_research_produces_mult = 0.20
+		starbase_constructions_engineering_research_produces_mult = 0.20
+		num_tech_alternatives_add = 1
+	}
+	
+	tradition_swap = {
+		name = tr_exploration_4_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_exploration_4_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_exploration_4_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_exploration_4_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_exploration_5 = {
+	possible = {
+		has_tradition = tr_exploration_3
+	}
+
+	custom_tooltip = tr_exploration_5_desc
+
+	modifier = {
+		country_megastructure_build_cap_add = 1
+		category_archaeostudies_research_speed_mult = 0.15
+		ship_archaeological_site_excavation_speed_mult = 0.25
+	}
+	
+	tradition_swap = {
+		name = tr_exploration_5_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_exploration_5_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_exploration_5_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+		
+		custom_tooltip = tr_exploration_5_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}

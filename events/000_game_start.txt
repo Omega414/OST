@@ -1,0 +1,171 @@
+namespace = game_start
+
+namespace = action
+
+namespace = paragon_2
+
+country_event = {
+	id = game_start.8
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		add_resource = { energy = 1500 }
+		add_resource = { minerals = 5000 }
+		add_resource = { food = 750 }
+		add_resource = { alloys = 1500	}
+		add_resource = { influence = 500 }
+
+		if = {
+			limit = {
+				OR = {
+					is_gestalt = no
+					has_valid_civic = civic_machine_servitor
+				}
+
+			}
+			add_resource = { consumer_goods = 750 }
+		}
+
+		if = {
+			limit = {
+				has_origin = origin_machine
+			}
+			add_resource = { nanites = 500 }
+		}
+	
+		if = {
+			limit = {
+				has_origin = origin_mechanists
+			}
+			give_technology = { message = no tech = tech_powered_exoskeletons }
+			give_technology = { message = no tech = tech_robotic_workers }
+			add_research_option = tech_robomodding
+		}
+		if = {
+			limit = {
+				has_origin = origin_overtuned
+			}
+			give_technology = { message = no tech = tech_gene_tailoring }
+			country_event = {
+				id = tutorial.64
+				days = 5
+			}
+		}
+		if = {
+			limit = {
+				has_civic = civic_corporate_dominion
+			}
+			give_technology = { message = no tech = tech_space_trading }
+		}
+		if = {
+			limit = {
+				has_civic = civic_privatized_exploration
+			}
+			give_technology = { message = no tech = tech_starbase_3 }
+		}
+	}
+
+	# Additional resources that may be changed by subspecies are granted in generate_start_buildings_and_districts
+}
+
+country_event = {
+	id = action.405
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		always = no
+	}
+}
+
+
+country_event = { # All trait Giving Civics for game start
+	id = paragon_2.2115
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = { has_civic = civic_crusader_spirit_corporate }
+			every_owned_leader = {
+				limit = {
+					leader_class = admiral
+				}
+				add_trait_no_notify = leader_trait_corsair
+			}
+		}
+		if = {
+			limit = { has_civic = civic_crusader_spirit }
+			every_owned_leader = {
+				limit = {
+					leader_class = admiral
+				}
+				add_trait_no_notify = leader_trait_par_zealot
+			}
+			every_owned_leader = {
+				limit = {
+					leader_class = general
+				}
+				add_trait_no_notify = leader_trait_crusader
+			}
+		}
+		if = {
+			limit = { has_civic = civic_heroic_tales }
+			every_owned_leader = {
+				add_trait_no_notify = "random_common"
+			}
+		}
+		if = {
+			limit = { has_civic = civic_technocracy }
+			every_owned_leader = {
+				limit = {
+					leader_class = scientist
+				}
+				add_random_expertise_trait_effect = yes
+			}
+		}
+		if = {
+			limit = { is_memory_vault_empire = yes }
+			every_owned_leader = {
+				if = {
+					limit = {
+						is_pool_leader = yes
+					}
+					add_skill = 1
+				}
+				else = {
+					add_skill_without_trait_selection = 1
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_valid_civic = civic_private_military_academies
+					has_valid_civic = civic_distinguished_admiralty
+					has_valid_civic = civic_machine_warbots
+					has_valid_civic = civic_hive_strength_of_legions
+				}
+			}
+			every_owned_leader = {
+				limit = {
+					NOT = {
+						has_leader_flag = civic_distinguished_admiralty_promotion
+					}
+					OR = {
+						leader_class = admiral
+						leader_class = general
+					}
+				}
+				add_skill_without_trait_selection = 2
+				set_leader_flag = civic_distinguished_admiralty_promotion
+			}
+		}
+	}
+}

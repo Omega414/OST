@@ -1,0 +1,73 @@
+namespace = osa_colony
+
+planet_event = {
+	id = osa_colony.1
+	location = ROOT
+
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		habitable_planet = yes
+	}
+
+	immediate = {
+		# Planetary Weapon Batteries
+		remove_building = eac_building_planetary_proton_cannon
+		remove_building = eac_building_planetary_neutron_cannon
+		remove_building = eac_building_planetary_tachyon_cannon
+		remove_building = eac_building_planetary_coil_scattergun
+		remove_building = eac_building_planetary_rail_scattergun
+		# Planetary Shield Generators
+		remove_building = building_planetary_shield_generator
+		remove_building = building_mem_planetary_shield_generator
+		remove_building = building_mem_planetary_shield_generator_heavy
+		remove_building = building_mem_planetary_shield_generator_orila
+		# Planetary Defense Fleets
+		remove_building = eac_pdf_base
+		planet_event = { id = mem_planetary_shields.2 }
+	}
+}
+
+planet_event = {
+	id = osa_colony.2
+	location = ROOT
+
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				count_planet_army = {
+					count = 1
+					limit = {
+						army_type = defense_imperator_titan
+					}
+				}
+			}
+			create_army = {
+				name = "NAME_Defense_Imperator_Titan"
+				owner = root.owner
+				type = "defense_imperator_titan"
+				land_army = yes
+			}
+		}
+		else = {
+			while = {
+				count = 2
+				create_army = {
+					name = "NAME_Defense_Imperator_Titan"
+					owner = root.owner
+					type = "defense_imperator_titan"
+					land_army = yes
+				}
+			}
+		}
+	}
+}

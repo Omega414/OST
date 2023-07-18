@@ -1,0 +1,158 @@
+namespace = tr_academy
+
+# Academy 1, bonus level to recruited leader.
+leader_event = {
+	id = tr_academy.1
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			has_active_tradition = tr_academy_1
+		}
+	}
+
+	immediate = {
+		this = {
+			if = {
+				limit = {
+					NOT = {
+						has_leader_flag = tr_academy_promotion
+					}
+				}
+				add_skill_without_trait_selection = 1
+				set_leader_flag = tr_academy_promotion
+			}
+		}
+	}
+}
+
+# Insight 1, bonus level to recruited scientist.
+leader_event = {
+	id = tr_academy.2
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			has_active_tradition = tr_insight_1
+		}
+		this = {
+			leader_class = scientist
+		}
+	}
+
+	immediate = {
+		this = {
+			if = {
+				limit = {
+					NOT = {
+						has_leader_flag = tr_insight_promotion
+					}
+				}
+				add_skill_without_trait_selection = 1
+				set_leader_flag = tr_insight_promotion
+			}
+		}
+	}
+}
+
+# Compassion 2, bonus level to recruited ruler or governor.
+leader_event = {
+	id = tr_academy.3
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			has_active_tradition = tr_compassion_2
+		}
+		this = {
+			leader_class = governor
+		}
+	}
+
+	immediate = {
+		this = {
+			if = {
+				limit = {
+					NOT = {
+						has_leader_flag = tr_compassion_promotion
+					}
+				}
+				add_skill_without_trait_selection = 1
+				set_leader_flag = tr_compassion_promotion
+			}
+		}
+	}
+}
+
+# Naval Ascendancy 2, bonus level to recruited admiral.
+leader_event = {
+	id = tr_academy.4
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			has_active_tradition = tr_navalascendancy_2
+		}
+		this = {
+			leader_class = admiral
+		}
+	}
+
+	immediate = {
+		this = {
+			if = {
+				limit = {
+					NOT = {
+						has_leader_flag = tr_navalascendancy_promotion
+					}
+				}
+				add_skill_without_trait_selection = 1
+				set_leader_flag = tr_navalascendancy_promotion
+			}
+		}
+	}
+}
+
+# Defense 5, bonus level to recruited general.
+leader_event = {
+	id = tr_academy.5
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			has_active_tradition = tr_defense_5
+		}
+		this = {
+			leader_class = general
+		}
+	}
+
+	immediate = {
+		this = {
+			if = {
+				limit = {
+					NOT = {
+						has_leader_flag = tr_defense_promotion
+					}
+				}
+				add_skill_without_trait_selection = 1
+				set_leader_flag = tr_defense_promotion
+			}
+		}
+	}
+}

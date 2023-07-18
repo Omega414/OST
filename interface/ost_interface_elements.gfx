@@ -1,0 +1,171 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ap_managerial_prerogative"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_managerial_prerogative.dds"
+		alwaystransparent = yes
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ap_boundless_repositories"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_boundless_repositories.dds"
+		alwaystransparent = yes
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ap_relentless_scrutiny"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_relentless_scrutiny.dds"
+		alwaystransparent = yes
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ap_galactic_reconnaissance"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_galactic_reconnaissance.dds"
+		alwaystransparent = yes
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ap_galactic_ascendency"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_galactic_ascendency.dds"
+		alwaystransparent = yes
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ap_concerted_effort"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_concerted_effort.dds"
+		alwaystransparent = yes
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ap_advanced_city_planning"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_advanced_city_planning.dds"
+		alwaystransparent = yes
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ap_unrivaled_aptitude"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_unrivaled_aptitude.dds"
+		alwaystransparent = yes
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_text_councilor"
+		texturefile = "gfx/interface/icons/text_icons/text_icon_councilor.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_text_leader"
+		texturefile = "gfx/interface/icons/text_icons/text_icon_leader.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_leader_trait_navigator"
+		texturefile = "gfx/interface/icons/traits/leader_trait_icons/navigator.dds"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_perseverance"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_perseverance.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_radiance"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_radiance.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_mettle"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_mettle.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_metallurgy"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_metallurgy.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_solidarity"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_solidarity.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_benevolence"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_benevolence.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_malevolence"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_malevolence.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_defense"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_navalascendancy"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_navalascendancy.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_navalheritage"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_navalheritage.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_commerce"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_commerce.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_ingenuity"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_ingenuity.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_order"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_order.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_insight"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_insight.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_compassion"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_compassion.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_administratum"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_administratum.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_academy"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_academy.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_nanobiotics"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_nanobiotics.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_exploration"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_exploration.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_splendor"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_splendor.dds"
+	}
+	spriteType = {
+		name = "GFX_council_agenda_icon_agenda_renewal"
+		texturefile = "gfx/interface/icons/agenda_icons/agenda_renewal.dds"
+	}	
+}

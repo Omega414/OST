@@ -1,0 +1,85 @@
+intervene_help_friendly_nation = {
+
+	resources = {
+		category = edicts
+		cost = {
+			influence = 0
+		}
+	}
+
+	length = 0
+
+	effect = {
+		hidden_effect = { country_event = { id = intervene.1 } }
+	}
+
+	potential = {
+		AND = {
+			has_active_tradition = tr_compassion_adopt
+			has_federation = no
+			is_subject = no
+		}
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = "intervene_cooldown_text"
+			NOT = { has_country_flag = intervene_recent_intervention_timed }
+		}
+		any_country = {
+			is_war_leader = yes
+			opinion = { who = root value > 0 }
+			NOR = {
+				is_at_war_with = root
+				is_same_value = root
+			}
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+ 	}
+}
+
+intervene_help_friendly_nation_federated = {
+
+	resources = {
+		category = edicts
+		cost = {
+	 		influence = 0
+		}
+	}
+
+	length = 0
+
+	effect = {
+		hidden_effect = { country_event = { id = intervene.1 } }
+	}
+
+	potential = {
+		AND = {
+			has_active_tradition = tr_compassion_adopt
+			has_federation = yes
+		}
+	}
+
+allow = {
+	is_federation_leader = yes
+	custom_tooltip = {
+		fail_text = "intervene_cooldown_text"
+		NOT = { has_country_flag = intervene_recent_intervention_timed }
+	}
+	any_country = {
+		is_war_leader = yes
+		opinion = { who = root value > 0 }
+		NOR = {
+			is_at_war_with = root
+			is_same_value = root
+		}
+	}
+}
+
+	ai_weight = {
+		weight = 0
+	}
+}

@@ -1,0 +1,753 @@
+# Regular Empire Civics
+civic_bastion_of_oppression = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		authority = {
+			OR = {
+				value = auth_dictatorial
+				value = auth_imperial
+				value = auth_oligarchic
+			}
+		}
+		ethics = {
+			OR = {
+				text = civic_tooltip_authoritarian
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+			}
+			NOR = {
+				text = civic_tooltip_not_xenophile
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		country_unity_produces_mult = 0.20
+		empire_size_systems_mult = -0.15
+	}
+}
+
+civic_energy_consortiums = {
+	description = "civic_energy_consortiums_effects"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_mining_guilds
+				value = civic_agriculture_councils
+				value = civic_corporate_mining_guilds
+				value = civic_corporate_agriculture_councils
+				value = civic_corporate_energy_consortiums
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		planet_technician_energy_produces_add = 1
+		planet_technician_physics_research_produces_add = 1
+		planet_technician_unity_produces_add = 1
+	}
+}
+
+civic_agriculture_councils = {
+	description = "civic_agriculture_councils_effects"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_mining_guilds
+				value = civic_energy_consortiums
+				value = civic_corporate_mining_guilds
+				value = civic_corporate_agriculture_councils
+				value = civic_corporate_energy_consortiums
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		planet_farmers_food_produces_add = 1
+		planet_farmers_society_research_produces_add = 1
+		planet_farmers_unity_produces_add = 1
+	}
+}
+
+civic_speleology_societies = {
+	description = "civic_speleology_societies_effects"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_corporate_speleology_societies
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		planet_max_districts_add = 2
+		pop_environment_tolerance = 0.05
+		planet_speleologists_unity_produces_add = 4
+		planet_miners_unity_produces_add = 2
+	}
+}
+
+civic_sovereign_court = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		authority = {
+			OR = {
+				text = civic_tooltip_dic_imp
+				value = auth_imperial
+				value = auth_dictatorial
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	description = "civic_tooltip_parliamentary_system_effects"
+	modifier = {
+		pop_factions_produces_mult = 1.50
+		pop_cat_ruler_political_power = 1
+		pop_cat_specialist_political_power = 0.5
+		pop_cat_worker_political_power = -0.5
+		pop_cat_slave_political_power = -0.5
+	}
+}
+
+civic_deceitful_delegates = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+				value = ethic_pacifist
+				value = ethic_fanatic_pacifist
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		ship_home_territory_fire_rate_mult = 0.15
+		country_power_projection_influence_produces_add = 1
+		spy_network_daily_value_mult = 0.25
+		add_base_country_intel = 10
+		envoys_add = 1
+		intel_encryption_add = 1
+	}
+}
+
+civic_researchers_of_renown = {
+	description = "civic_researchers_of_renown_effects"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+		}
+		civics = {
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		country_physics_tech_research_speed = 0.05
+		country_engineering_tech_research_speed = 0.05
+		pop_factions_physics_research_produces_add = 0.5
+		pop_factions_engineering_research_produces_add = 0.5
+		scientist_exp_gain = 0.25
+	}
+}
+
+civic_illustrious_statesmen = {
+	description = "civic_illustrious_statesmen_effects"
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+			OR = {
+					value = ethic_pacifist
+					value = ethic_fanatic_pacifist
+					value = ethic_xenophile
+					value = ethic_fanatic_xenophile
+			}
+		}
+		civics = {
+			NOT = {
+				value = civic_executive_shadows
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		country_society_tech_research_speed = 0.05
+		pop_factions_society_research_produces_add = 0.5
+		pop_factions_produces_mult = 1
+		country_trust_cap_add = 100
+		country_trust_growth = 0.5
+		councilor_exp_gain = 0.25
+		governor_exp_gain = 0.25
+	}
+}
+
+civic_frontier_fellowship = {
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_corvee_system
+				value = civic_corporate_frontier_fellowship
+				value = civic_pompous_purists
+				value = civic_inwards_perfection
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		pop_growth_speed = 0.10
+		planet_colony_development_speed_mult = 1
+		colony_start_num_pops_add = 1
+		empire_size_districts_mult = -0.20
+	}
+}
+
+# Megacorp Empire Civics
+civic_corporate_mining_guilds = {
+	description = "civic_mining_guilds_effects"
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_agriculture_councils
+				value = civic_mining_guilds
+				value = civic_energy_consortiums
+				value = civic_corporate_agriculture_councils
+				value = civic_corporate_energy_consortiums
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		planet_miners_minerals_produces_add = 1
+		planet_miners_engineering_research_produces_add = 1
+		planet_miners_unity_produces_add = 1
+	}
+}
+
+civic_corporate_energy_consortiums = {
+	description = "civic_energy_consortiums_effects"
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_agriculture_councils
+				value = civic_mining_guilds
+				value = civic_energy_consortiums
+				value = civic_corporate_agriculture_councils
+				value = civic_corporate_mining_guilds
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		planet_technician_energy_produces_add = 1
+		planet_technician_physics_research_produces_add = 1
+		planet_technician_unity_produces_add = 1
+	}
+}
+
+civic_corporate_agriculture_councils = {
+	description = "civic_agriculture_councils_effects"
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_agriculture_councils
+				value = civic_mining_guilds
+				value = civic_energy_consortiums
+				value = civic_corporate_mining_guilds
+				value = civic_corporate_energy_consortiums
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		planet_farmers_food_produces_add = 1
+		planet_farmers_society_research_produces_add = 1
+		planet_farmers_unity_produces_add = 1
+	}
+}
+
+civic_corporate_speleology_societies = {
+	description = "civic_speleology_societies_effects"
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_speleology_societies
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		planet_max_districts_add = 2
+		pop_environment_tolerance = 0.05
+		planet_speleologists_unity_produces_add = 4
+		planet_miners_unity_produces_add = 2
+	}
+}
+
+civic_corporate_functional_architecture = {
+	description = "civic_tooltip_functional_architecture_effects"
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_functional_architecture
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		planet_structures_upkeep_mult = -0.10
+		planet_building_build_speed_mult = 0.50
+		planet_max_buildings_add = 1
+		planet_max_branch_office_buildings_add = 2
+	}
+}
+
+civic_corporate_mercenary_contractors = {
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_pleasure_seekers
+				value = civic_warrior_culture
+				value = civic_corporate_hedonism
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	description = "civic_tooltip_warrior_culture_effects"
+	modifier = {
+		country_power_projection_produces_mult = 1
+		army_damage_mult = 0.25
+		planet_soldiers_physics_research_produces_add = 1
+		planet_soldiers_engineering_research_produces_add = 1
+	}
+	swap_type = {
+		description = "civic_tooltip_warrior_culture_effects"
+		trigger = {
+			host_has_dlc = "Overlord"
+		}
+
+		modifier = {
+			country_enclave_capacity_add = 2
+		}
+	}
+}
+
+civic_corporate_frontier_fellowship = {
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_corvee_system
+				value = civic_frontier_fellowship
+				value = civic_pompous_purists
+				value = civic_inwards_perfection
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		pop_growth_speed = 0.10
+		planet_colony_development_speed_mult = 1
+		colony_start_num_pops_add = 1
+		empire_size_districts_mult = -0.20
+	}
+}
+
+civic_credit_unions = {
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+	
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		pop_factions_produces_mult = 1
+		trade_value_mult = 0.15
+		empire_size_branch_office_mult = -0.10
+		empire_size_penalty_mult = -0.15
+	}
+}
+
+civic_executive_shadows = {
+	description = "civic_executive_shadows_effects"
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_illustrious_statesmen
+			}
+		}
+	}
+	
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		governor_exp_gain = 0.25
+		councilor_exp_gain = 0.25
+		branch_office_value_mult = 0.10
+		empire_size_branch_office_mult = -0.15
+		empire_size_penalty_mult = -0.10
+	}
+}
+
+civic_private_military_academies = {
+	description = "civic_private_military_academies_effects"
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+	
+	possible = {
+		civics = {
+			NOT = {
+				value = civic_distinguished_admiralty
+			}
+		}
+	}	
+	
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		admiral_exp_gain = 0.25
+		general_exp_gain = 0.25
+		army_starting_experience_add = 150
+		ship_starting_experience_add = 150
+		pop_factions_influence_produces_mult = 1
+	}
+
+	swap_type = {
+		description = "civic_private_military_academies_effects"
+		trigger = {
+			host_has_dlc = "Overlord"
+		}
+
+		modifier = {
+			country_enclave_capacity_add = 2
+		}
+	}
+}
+
+civic_astro_universities = {
+	description = "civic_astro_universities_effects"
+	potential = {
+		OR = {
+			authority = { value = auth_corporate }
+			civics = { value = civic_galactic_sovereign_megacorp }
+		}
+	}
+	possible = {
+		civics = {
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		country_leader_cap_add = 2
+		army_starting_experience_add = 100
+		ship_starting_experience_add = 100
+		planet_miners_minerals_produces_add = 1
+		planet_technician_energy_produces_add = 1
+		planet_farmers_food_produces_add = 1
+	}
+}
+
+# Hive Empire Civics
+civic_hive_for_the_swarm = {
+	modification = no
+	potential = { authority = { value = auth_hive_mind } }
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_governor_exp_gain = @gestalt_civic_node_xp_rate
+		pop_growth_speed = 1
+		planet_pops_upkeep_mult = 1
+	}
+}
+
+civic_hive_aggregate_catharsis = {
+	potential = { authority = { value = auth_hive_mind } }
+	random_weight = { base = @civic_default_random_weight }
+	description = "civic_hive_aggregate_catharsis_effects"
+	modifier = {
+		councilor_gestalt_scientist_exp_gain = @gestalt_civic_node_xp_rate
+		planet_evaluators_produces_mult = 1
+		planet_synapse_drones_produces_mult = 1
+	}
+}
+
+civic_hive_sonar_senses = {
+	description = "civic_hive_sonar_senses_effects"
+	potential = { authority = { value = auth_hive_mind } }
+
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_scientist_exp_gain = @gestalt_civic_node_xp_rate
+		ship_cloaking_detection_add = 1
+		planet_max_districts_add = 2
+		planet_miners_alloys_produces_add = 0.5
+		planet_miners_minerals_produces_add = 1
+		planet_miners_unity_produces_add = 2
+	}
+}
+
+civic_hive_propagation_instinct = {
+	potential = { authority = { value = auth_hive_mind } }
+
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_general_exp_gain = @gestalt_civic_node_xp_rate
+		planet_pop_assembly_organic_mult = 0.10
+		planet_colony_development_speed_mult = 1
+		colony_start_num_pops_add = 1
+		empire_size_districts_mult = -0.20
+	}
+}
+
+civic_hive_reactive_synapses = {
+	description = "civic_hive_reactive_synapses_effects"
+	potential = { authority = { value = auth_hive_mind } }
+
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_admiral_exp_gain = @gestalt_civic_node_xp_rate
+		council_agenda_progress_speed = 0.20
+		leaders_upkeep_mult = -0.25
+		empire_size_pops_mult = -0.20
+		country_leader_pool_size = 2
+	}
+}
+
+civic_hive_equilibrium_instinct = {
+	description = "civic_hive_equilibrium_instinct_effects"
+	potential = { authority = { value = auth_hive_mind } }
+
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_general_exp_gain = @gestalt_civic_node_xp_rate
+		planet_omni_drones_physics_research_produces_add = 1
+		planet_omni_drones_society_research_produces_add = 1
+		planet_omni_drones_engineering_research_produces_add = 1
+	}
+}
+
+civic_hive_stalwart_drones = {
+	description = "civic_hive_stalwart_drones_effects"
+	potential = { authority = { value = auth_hive_mind } }
+
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_governor_exp_gain = @gestalt_civic_node_xp_rate
+		planet_farmers_society_research_produces_add = 1
+		planet_miners_engineering_research_produces_add = 1
+	}
+}
+
+civic_hive_alveare_mechanicus = {
+	description = "civic_hive_alveare_mechanicus_effects"
+	potential = { authority = { value = auth_hive_mind } }
+
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_admiral_exp_gain = @gestalt_civic_node_xp_rate
+		planet_technician_physics_research_produces_add = 1
+		planet_technician_unity_produces_add = 1
+		planet_metallurgists_engineering_research_produces_add = 1
+		planet_metallurgists_unity_produces_add = 1
+	}
+}
+
+# Machine Empire Civics
+civic_machine_proliferation_protocols = {
+	potential = { authority = { value = auth_machine_intelligence } }
+
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_general_exp_gain = @gestalt_civic_node_xp_rate
+		planet_pop_assembly_mult = 0.10
+		planet_colony_development_speed_mult = 1
+		colony_start_num_pops_add = 1
+		empire_size_districts_mult = -0.20
+	}
+}
+
+civic_machine_superconductive_capacitors = {
+	potential = { authority = { value = auth_machine_intelligence } }
+	
+	possible = { }
+	random_weight = { base = 2 }
+	modifier = {
+		councilor_gestalt_admiral_exp_gain = @gestalt_civic_node_xp_rate
+		country_energy_produces_mult = 0.15
+		weapon_type_energy_weapon_damage_mult = 0.25
+		planet_technician_physics_research_produces_add = 1
+		planet_technician_unity_produces_add = 1
+	}
+}
+
+civic_machine_interplexing_beacons = {
+	potential = { authority = { value = auth_machine_intelligence } }
+
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_admiral_exp_gain = @gestalt_civic_node_xp_rate
+		country_power_projection_produces_mult = 1
+		empire_size_systems_mult = -0.20
+		empire_size_penalty_mult = -0.25
+		command_limit_mult = 0.10
+	}
+}
+
+civic_machine_quantum_firmware_algorithms = {
+	description = "civic_machine_quantum_firmware_algorithms_effects"
+	potential = { authority = { value = auth_machine_intelligence } }
+
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_scientist_exp_gain = @gestalt_civic_node_xp_rate
+		council_agenda_progress_speed = 0.20
+		edicts_upkeep_mult = -0.10
+		edicts_cost_mult = -0.10
+	}
+}
+
+civic_machine_unified_nexus_processing = {
+	description = "civic_machine_unified_nexus_processing_effects"
+	potential = { authority = { value = auth_machine_intelligence } }
+
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_governor_exp_gain = @gestalt_civic_node_xp_rate
+		country_edict_fund_mult = 0.25
+		planet_district_nexus_build_speed_mult = 1
+		planet_districts_upkeep_mult = -0.25
+	}
+}
+
+civic_machine_ore_processing_heuristics = {
+	description = "civic_machine_ore_processing_heuristics_effects"
+	potential = { authority = { value = auth_machine_intelligence } }
+
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_governor_exp_gain = @gestalt_civic_node_xp_rate
+		planet_max_districts_add = 2
+		planet_district_mining_uncapped_build_speed_mult = 1
+		planet_district_industrial_build_speed_mult = 1
+	}
+}
+
+civic_machine_metaphysical_analytics_nodes = {
+	description = "civic_machine_metaphysical_analytics_nodes_effects"
+	potential = { authority = { value = auth_machine_intelligence } }
+
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_scientist_exp_gain = @gestalt_civic_node_xp_rate
+		country_physics_tech_research_speed = 0.05
+		country_society_tech_research_speed = 0.05
+		planet_district_generator_uncapped_build_speed_mult = 1
+		planet_district_farming_uncapped_build_speed_mult = 1
+	}
+}
+
+civic_machine_centralized_replication_hubs = {
+	description = "civic_machine_centralized_replication_hubs_effects"
+	potential = { authority = { value = auth_machine_intelligence } }
+
+	random_weight = { base = @civic_default_random_weight }
+	modifier = {
+		councilor_gestalt_general_exp_gain = @gestalt_civic_node_xp_rate
+		planet_pop_assembly_add = 0.5
+	}
+}

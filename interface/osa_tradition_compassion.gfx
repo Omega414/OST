@@ -1,0 +1,48 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_compassion"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_compassion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_compassion"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_compassion.dds"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_compassion"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_compassion.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_compassion"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_compassion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_compassion_1"
+		textureFile = "gfx/interface/icons/traditions/tradition_compassion_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_compassion_2"
+		textureFile = "gfx/interface/icons/traditions/tradition_compassion_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_compassion_3"
+		textureFile = "gfx/interface/icons/traditions/tradition_compassion_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_compassion_4"
+		textureFile = "gfx/interface/icons/traditions/tradition_compassion_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_compassion_5"
+		textureFile = "gfx/interface/icons/traditions/tradition_compassion_5.dds"
+	}
+}

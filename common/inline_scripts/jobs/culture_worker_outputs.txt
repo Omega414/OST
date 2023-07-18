@@ -1,0 +1,71 @@
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_materialist = yes }
+	}
+	planet_jobs_physics_research_produces_mult = 0.0125
+	mult = value:scripted_ethics_weight_mult|ETHIC|materialist|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_spiritualist = yes }
+	}
+	planet_jobs_unity_produces_mult = 0.0125
+	mult = value:scripted_ethics_weight_mult|ETHIC|spiritualist|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_militarist = yes }
+	}
+	planet_jobs_engineering_research_produces_mult = 0.0125
+	mult = value:scripted_ethics_weight_mult|ETHIC|militarist|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_pacifist = yes }
+	}
+	pop_lifestyle_trade_mult = 0.05
+	mult = value:scripted_ethics_weight_mult|ETHIC|pacifist|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_egalitarian = yes }
+	}
+	planet_jobs_consumer_goods_produces_mult = 0.0125
+	mult = value:scripted_ethics_weight_mult|ETHIC|egalitarian|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_authoritarian = yes }
+	}
+	planet_jobs_ruler_produces_mult = 0.0125
+	mult = value:scripted_ethics_weight_mult|ETHIC|authoritarian|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_xenophobe = yes }
+	}
+	planet_jobs_alloys_produces_mult = 0.0125
+	mult = value:scripted_ethics_weight_mult|ETHIC|xenophobe|
+}
+
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+		owner = { is_xenophile = yes }
+	}
+	planet_jobs_society_research_produces_mult = 0.0125
+	mult = value:scripted_ethics_weight_mult|ETHIC|xenophile|
+}

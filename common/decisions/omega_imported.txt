@@ -1,0 +1,70 @@
+decision_mzilli_remove_site = {
+	enactment_time = 0
+	resources = {
+		category = decisions
+		cost = {
+		}
+	}
+
+	potential = { exists = archaeological_site }
+	allow = { archaeological_site = { is_site_completed = yes } }
+
+	effect = {
+		custom_tooltip = decision_mzilli_remove_site_tooltip
+		hidden_effect = {
+			archaeological_site = { save_event_target_as = destroy_site }
+			destroy_archaeological_site = event_target:destroy_site
+		}
+		if = {
+			limit = { has_deposit = d_archaeological_site }
+			remove_deposit = d_archaeological_site
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_abandon_colony = {
+	owned_planets_only = yes
+	icon = decision_exploding_planet
+
+	enactment_time = 180
+	resources = {
+		category = decisions
+		cost = {
+			energy = 1000
+			exotic_gases = 150
+			volatile_motes = 150
+			influence = 30
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+		   is_ai = no
+		   has_policy_flag = colonial_desertion_allowed
+		}
+	}
+	
+	allow = {
+		owner = {
+			is_ai = no
+			num_owned_planets > 1
+			is_at_war = no
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_abandon_colony_effects
+		hidden_effect = {		
+			planet_event = { id = acmodevent.1 }
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}

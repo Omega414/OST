@@ -1,0 +1,566 @@
+﻿l_english:
+
+# Imported from Destroy Archaeological Sites - https://steamcommUnity.com/sharedfiles/filedetails/?id=2053505347
+
+decision_mzilli_remove_site:0 "Remove Archaeological Site"
+decision_mzilli_remove_site_desc:0 "We have no further need of this archaeological site."
+decision_mzilli_remove_site_tooltip:0 "Demolishes this world's archaeological site. This may take a day or two to take effect."
+
+# Imported from Intervene: Help Friendly Nations - 2.8 - https://steamcommUnity.com/sharedfiles/filedetails/?id=2177145527
+
+edict_intervene_help_friendly_nation:0 "Aid Empire in §RWar§!"
+edict_intervene_help_friendly_nation_desc:0 "The enemy of my enemy is my friend."
+edict_intervene_help_friendly_nation_federated:0 "Aid Empire in §RWar§!"
+edict_intervene_help_friendly_nation_federated_desc:0 "The enemy of my enemy is my friend."
+
+intervene.1.name:0 "Military Aid"
+intervene.1.desc:0 "Aid another empire in war to further our own interests."
+
+intervene.1.intervene_1:0 "We'll aid the §Y[intervene_friendly_nation_1.GetName]§! in their war."
+intervene.1.intervene_2:0 "We'll aid the §Y[intervene_friendly_nation_2.GetName]§! in their war."
+intervene.1.intervene_3:0 "We'll aid the §Y[intervene_friendly_nation_3.GetName]§! in their war."
+intervene.1.intervene_4:0 "We'll aid the §Y[intervene_friendly_nation_4.GetName]§! in their war."
+intervene.1.intervene_5:0 "We'll aid the §Y[intervene_friendly_nation_5.GetName]§! in their war."
+intervene.1.intervene_6:0 "We'll aid the §Y[intervene_friendly_nation_6.GetName]§! in their war."
+intervene.1.intervene_7:0 "We'll aid the §Y[intervene_friendly_nation_7.GetName]§! in their war."
+intervene.1.intervene_8:0 "We'll aid the §Y[intervene_friendly_nation_8.GetName]§! in their war."
+intervene.1.intervene_9:0 "We'll aid the §Y[intervene_friendly_nation_9.GetName]§! in their war."
+intervene.1.intervene_10:0 "We'll aid the §Y[intervene_friendly_nation_10.GetName]§! in their war."
+
+intervene.1.desist:0 "After some consideration, we won't get involved in another empire's war."
+
+intervene_cooldown_text:0 "\n§RWe have to wait one year before considering another intervention.§! \n\n"
+intervene_recent_intervention_timed:0 "Recent Intervention"
+
+intervene_opinion_military_help:0 "Provided aid during War"
+
+influencefail_text:0 "§RRequires £influence£ 150§!"
+ 
+intervene_friendly_nations:0 "Intervene Modifier"
+
+# Imported from Abandon Colony - https://steamcommUnity.com/sharedfiles/filedetails/?id=1728214912
+
+acmodevent.1.name:0 "Abandon [Root.GetName]"
+acmodevent.1.desc:0 "'[Root.GetName]' will be abandoned and 'Every pop living on [Root.GetName]' will be terminated. Are you sure you wish to proceed?"
+acmodevent.1.a:0 "Yes"
+acmodevent.1.b:0 "No"
+
+decision_abandon_colony:0 "Abandon Colony"
+decision_abandon_colony_desc:0 "This colony will be abandoned."
+decision_abandon_colony_effects:0 "Will terminate all £pops£ pops and abandon this £planet£ colony."
+
+# Policies (added to the mod by Omega)
+policy_colonial_desertion:0 "Colonial Desertion"
+policy_colonial_desertion_desc:0 "Our colonists prefer to know where we stand. Do we abandon them on a whim; or do we protect them at all costs?\n"
+
+colonial_desertion_prohibited:0 "Prohobited"
+colonial_desertion_prohibited_name:0 "Colonial Protection"
+colonial_desertion_prohibited_desc:0 "Our colonies cannot be decimated or removed without first evacuating all colonists from the world.\n"
+colonial_desertion_allowed:0 "Allowed"
+colonial_desertion_allowed_name:0 "Remus Protocols"
+colonial_desertion_allowed_desc:1 "When colonies are abandoned we must leave no survivors. Such worlds must be purged in holy fire.\n"
+
+####################################################################
+# Imported from Powerful and Realistic Orbital Bombardment - https://steamcommUnity.com/sharedfiles/filedetails/?id=887011008
+####################################################################
+
+# glassed planet
+prob_glassed_planet:0 "Molten Planet"
+prob_glassed_planet_desc:0 "Once a habitable planet, now a searing rock. Orbital bombardment has molten the planet surface and evaporated the ocean. However, the planet is still in habitable zone, it should be recoverable through terraforming once it cools down.\n\n§WThis planet will cool down and turn into a §Gterraformable§! $pc_barren$ once this modifier expires.§!"
+
+# total war
+casus_belli_prob_rivalry:0 "$RIVALRY$"
+war_goal_prob_total_war:0 "$war_goal_wg_colossus$"
+war_goal_prob_total_war_desc:0 "War is waged to eliminate our rival."
+
+# tile blocker
+prob_d_bombarded_land:0 "£blocker£ Bombarded Land"
+prob_d_bombarded_land_desc:0 "This area has been destroyed by orbital bombardments."
+
+# colony depopulated
+prob.colony_depopulated.bombarder.name:0 "Enemy Colony Destroyed"
+prob.colony_depopulated.bombarder.desc:0 "[prob_planet_under_bombardment.GetName], an enemy colony in [prob_system_under_bombardment.GetName] system, has been destroyed under our orbital bombardments, leaving ruins and devastated ground."
+prob.colony_depopulated.owner.name:0 "Our Colony Has Been Lost"
+prob.colony_depopulated.owner.desc:0 "[prob_planet_under_bombardment.GetName], our colony in [prob_system_under_bombardment.GetName] system, has been destroyed under [prob_bombarder.GetAdj] orbital bombardments, leaving ruins and devastated ground."
+prob.colony_depopulated.controller.name:0 "Our Captured Colony Has Been Lost"
+prob.colony_depopulated.controller.desc:0 "[prob_planet_under_bombardment.GetName], our captured colony in [prob_system_under_bombardment.GetName] system, has been destroyed under [prob_bombarder.GetAdj] orbital bombardments, leaving ruins and devastated ground."
+
+# colony glassed
+prob.colony_glassed.bombarder.name:0 "Enemy Colony Molten"
+prob.colony_glassed.bombarder.desc:0 "[prob_planet_under_bombardment.GetName], an enemy colony in [prob_system_under_bombardment.GetName] system, has been set on fire under our orbital bombardments, leaving a searing rock on the orbit."
+prob.colony_glassed.owner.name:0 "Our Colony Has Been Molten"
+prob.colony_glassed.owner.desc:0 "[prob_planet_under_bombardment.GetName], our colony in [prob_system_under_bombardment.GetName] system, has been set on fire under [prob_bombarder.GetAdj] orbital bombardments, leaving a searing rock on the orbit."
+prob.colony_glassed.controller.name:0 "Our Captured Colony Has Been Molten"
+prob.colony_glassed.controller.desc:0 "[prob_planet_under_bombardment.GetName], our captured colony in [prob_system_under_bombardment.GetName] system, has been set on fire under [prob_bombarder.GetAdj] orbital bombardments, leaving a searing rock on the orbit."
+
+# ringworld section ruined
+prob.ringworld_destroyed.bombarder.name:0 "Enemy Ringworld Section Ruined"
+prob.ringworld_destroyed.bombarder.desc:0 "[prob_planet_under_bombardment.GetName], an enemy ringworld section in [prob_system_under_bombardment.GetName] system, has been ruined under our orbital bombardments, leaving a broken section and there will definitely be no survivors."
+prob.ringworld_destroyed.owner.name:0 "Our Ringworld Section Has Been Ruined"
+prob.ringworld_destroyed.owner.desc:0 "[prob_planet_under_bombardment.GetName], our ringworld section in [prob_system_under_bombardment.GetName] system, has been ruined under [prob_bombarder.GetAdj] orbital bombardments, leaving a broken section and there will definitely be no survivors."
+prob.ringworld_destroyed.controller.name:0 "Our Captured Ringworld Section Has Been Ruined"
+prob.ringworld_destroyed.controller.desc:0 "[prob_planet_under_bombardment.GetName], our captured ringworld section in [prob_system_under_bombardment.GetName] system, has been ruined under [prob_bombarder.GetAdj] orbital bombardments, leaving a broken section and there will definitely be no survivors."
+
+# habitat destroyed
+prob.habitat_destroyed.bombarder.name:0 "Enemy Habitat Destroyed"
+prob.habitat_destroyed.bombarder.desc:0 "An enemy habitat structure in [prob_system_under_bombardment.GetName] system has been destroyed under our orbital bombardments, leaving only debris on the orbit and there will definitely be no survivors."
+prob.habitat_destroyed.owner.name:0 "Our Habitat Has Been Lost"
+prob.habitat_destroyed.owner.desc:0 "One of our habitat structures in [prob_system_under_bombardment.GetName] system has been destroyed under [prob_bombarder.GetAdj] orbital bombardments, leaving only debris on the orbit and there will definitely be no survivors."
+prob.habitat_destroyed.controller.name:0 "Our Captured Habitat Has Been Lost"
+prob.habitat_destroyed.controller.desc:0 "Our captured habitat structure in [prob_system_under_bombardment.GetName] system has been destroyed under [prob_bombarder.GetAdj] orbital bombardments, leaving only debris on the orbit and there will definitely be no survivors."
+
+ # colony captured
+prob.colony_captured.bombarder.name:0 "Enemy Colony Captured"
+prob.colony_captured.bombarder.desc:0 "[prob_planet_under_bombardment.GetName], an enemy colony in [prob_system_under_bombardment.GetName] system, has been cleaned up of it's military structures due to our orbital bombardments, and lost the ability to resist, thus become captured by us."
+prob.colony_captured.owner.name:0 "Our Colony Has Been Captured"
+prob.colony_captured.owner.desc:0 "[prob_planet_under_bombardment.GetName], our colony in [prob_system_under_bombardment.GetName] system, has lost all of it's military structures under [prob_bombarder.GetAdj] orbital bombardments and thus being captured."
+prob.colony_captured.controller.name:0 "Our Captured Colony Has Been Taken Over"
+prob.colony_captured.controller.desc:0 "[prob_planet_under_bombardment.GetName], our captured colony in [prob_system_under_bombardment.GetName] system, has lost all of it's military structures under [prob_bombarder.GetAdj] orbital bombardments and thus being taken over."
+
+# colony captured (owner)
+prob.colony_regained.bombarder.name:0 "Colony Regained"
+prob.colony_regained.bombarder.desc:0 "[prob_planet_under_bombardment.GetName], our colony in [prob_system_under_bombardment.GetName] system, has get rid of enemy military structures under our orbital bombardments, and thus returned our control."
+prob.colony_regained.controller.name:0 "Our Captured Colony Has Been Taken Over"
+prob.colony_regained.controller.desc:0 "[prob_planet_under_bombardment.GetName], our captured colony in [prob_system_under_bombardment.GetName] system, has been retaken by it's owner under [prob_bombarder.GetAdj] orbital bombardments."
+
+# primitive world interaction
+prob.primitive_conquered.bombarder.name:0 "Primitive World Conquered"
+prob.primitive_conquered.bombarder.desc:0 "[prob_planet_under_bombardment.GetName], a primitive world in [prob_system_under_bombardment.GetName] system, has recognized our superior position and surrendered to us. It's now one of our world."
+prob.primitive_destroyed.bombarder.name:0 "Primitive World Destroyed"
+prob.primitive_destroyed.bombarder.desc:0 "[prob_planet_under_bombardment.GetName], a primitive world in [prob_system_under_bombardment.GetName] system, has been destroyed under our orbital bombardments, leaving ruins and devastated ground."
+prob.primitive_glassed.bombarder.name:0 "Primitive World Molten"
+prob.primitive_glassed.bombarder.desc:0 "[prob_planet_under_bombardment.GetName], a primitive world in [prob_system_under_bombardment.GetName] system, has been set on fire under our orbital bombardments, leaving a searing rock on the orbit."
+prob.primitive_destroyed.bombarder.option:0 "Weakness is a sin."
+
+# colony infested
+prob.colony_infested.owner.name:0 "Our Colony Has Been Infested"
+prob.colony_infested.owner.desc:0 "[prob_planet_under_bombardment.GetName], our colony in [prob_system_under_bombardment.GetName] system, has been infested by the organic pollutants of Prethoryn Swarm."
+prob.colony_infested.controller.name:0 "Our Captured Colony Has Been Infested"
+prob.colony_infested.controller.desc:0 "[prob_planet_under_bombardment.GetName], our captured colony in [prob_system_under_bombardment.GetName] system, has been infested by the organic pollutants of Prethoryn Swarm."
+
+####################################################################
+# Concept by Birdy
+# Plentiful Traditions
+# https://steamcommUnity.com/sharedfiles/filedetails/?id=903007094
+####################################################################
+
+building_zitadom:0 "Zitadom"
+building_zitadom_desc:0 "A colossal planetary fortress capable of supporting massive military infrastructure."
+
+####################################################################
+# Text by Malthus
+# More Events Mod#
+# https://steamcommUnity.com/sharedfiles/filedetails/?id=727000451
+# This is included for compatibility with MEM without duplication 
+####################################################################
+# Planetary Shields
+
+# That first building text is copied from the original game localisation
+# Standard Shield Generator
+building_mem_planetary_shield_generator:0 "Planetary Flux Shield Generator"
+building_mem_planetary_shield_generator_desc:0 "$tech_planetary_shield_generator_desc$"
+
+# Heavy Shield Generator
+building_mem_planetary_shield_generator_heavy:0 "Planetary Barrier Shield Generator"
+building_mem_planetary_shield_generator_heavy_desc:0 "This is an advanced planetary shield generator derived from our studies of ancient shield worlds."
+
+# Orila Shield Generator
+building_mem_planetary_shield_generator_orila:0 "Planetary Precursor Shield Generator"
+building_mem_planetary_shield_generator_orila_desc:0 "An ancient and highly advanced planetary shield generator with an incorporated energy source. Its technology may be thousands of years ahead of our own..."
+
+# Heavy Shield Generator Tech 
+mem_tech_planetary_shield_generator_heavy:0 "Advanced Barrier Shields"
+mem_tech_planetary_shield_generator_heavy_desc:0 "Based on our own field manipulation research as well as our previous studies of precursor shield technology, a group of our scientists has put forward a promising design concept for an upgraded version of our own planetary shield generators."
+
+
+#######################################################################
+# Created by The Dadinator
+# Updated for compatibility with 3.0.3 (mods last updated 02/07/2020)
+# At War: Planetary Cannons
+# https://steamcommUnity.com/sharedfiles/filedetails/?id=1609801017
+# At War: Planetary Defense Force
+# https://steamcommUnity.com/sharedfiles/filedetails/?id=1653043481
+#######################################################################
+
+# EAC AW Buildings
+eac_building_planetary_proton_cannon:0 "Planetary Proton Cannon"
+eac_building_planetary_proton_cannon_desc:0 "This emplacement fires energy projectiles that consist of tightly concentrated protons capable of causing immense damage to the hull of enemy ships\n§HStats§!\nAccuracy: §Y50%§!\nHull Damage: §Y1,000 - 2,000§!\nCooldown: §Y5§! £resource_time \nAverage Damage: §Y125.00§! / £resource_time"
+
+eac_building_planetary_neutron_cannon:0 "Planetary Neutron Cannon"
+eac_building_planetary_neutron_cannon_desc:0 "This emplacement fires energy projectiles that consist of tightly concentrated neutrons capable of causing immense damage to the hull of enemy ships.\n§HStats§!\nAccuracy: §Y60%§!\nHull Damage: §Y2,000 - 3,000§!\nCooldown: §Y5§! £resource_time \nAverage Damage: §Y250.00§! / £resource_time"
+
+eac_building_planetary_tachyon_cannon:0 "Planetary Tachyon Cannon"
+eac_building_planetary_tachyon_cannon_desc:0 "This emplacement fires a tachyon beam of immense power.\n§HStats§!\n §W Accuracy: §! §Y70%§!\nHull Damage: §Y2,750 - 5,750§!\nCooldown: §Y5§! £resource_time \nAverage Damage: §Y495.83§! / £resource_time"
+
+eac_building_coilgun_batteries:0 "Planetary Coilgun Batteries"
+eac_building_coilgun_batteries_desc:0 "This emplacement fires an array of 15 projectiles using electromagnetic coils to rapidly accelerate them towards targets.\n§HStats§!\nAccuracy: §Y50%§!\nHull Damage / projectile: §Y110 - 150§!\nCooldown: §Y5§! £resource_time \nAverage Damage / projectile: §Y13§! / £resource_time"
+
+eac_building_railgun_batteries:0 "Planetary Railgun Batteries"
+eac_building_railgun_batteries_desc:0 "This emplacement fires an array of 15 projectiles using twin parallel electromagetic rails to rapidly accelerate them towards targets.\n§HStats§!\nAccuracy: §Y60%§!\nHull Damage / projectile: §Y125 - 225§!\nCooldown: §Y5§! £resource_time \nAverage Damage / projectile: §Y21§! / £resource_time"
+
+eac_building_gauss_batteries:0 "Planetary Gauss Batteries"
+eac_building_gauss_batteries_desc:0 "This emplacement fires an array of 15 projectiles using highly accurate twin parallel electromagetic rails to rapidly accelerate them towards targets.\n§HStats§!\nAccuracy: §Y70%§!\nHull Damage / projectile: §Y160 - 335§!\nCooldown: §Y5§! £resource_time \nAverage Damage / projectile: §Y34.65§! / £resource_time"
+
+
+# EAC AW Main Localization
+
+###################
+# Decisions
+################### 
+decision_eac_scattergun_prioity_on:0 "Set Transport Targeting On"
+decision_eac_scattergun_prioity_on_desc:1 "Sets the coilgun or railgun battery to prioritize targeting transport ships when they are in orbit."
+decision_eac_scattergun_prioity_off:0 "Set Transport Targeting Off"
+decision_eac_scattergun_prioity_off_desc:1 "Returns the coilgun or railgun battery to normal firing mode (no preference on fleet type)."
+
+planet_eac_scattergun_transport_targeting:0 "Transport Targeting On"
+planet_eac_scattergun_transport_targeting_tooltip:0 "Gun battery targeting transport ships first."
+planet_eac_scattergun_transport_targeting_desc:0 "The coilgun or railgun battery is set to prioritize targeting transport ships when they are in orbit."
+
+###################
+# Messages
+###################
+EAC_MESSAGE_SHIP_UNDER_FIRE_PLANETARY_CANNON:0 "Fleet Under Planetary Attack"
+EAC_MESSAGE_SHIP_UNDER_FIRE_PLANETARY_CANNON_DESC:0 "Ship $SHIP|H$§! §Win fleet§! $FLEET|H$§! is under fire from a planetary cannon on $PLANET|H$§!."
+
+EAC_MESSAGE_SHIP_DESTROYED_PLANETARY_CANNON:0 "Ship Destroyed By Planetary Cannon"
+EAC_MESSAGE_SHIP_DESTROYED_PLANETARY_CANNON_DESC:0 "Ship $SHIP|H$§! §Win fleet§! $FLEET|H$§! has been destroyed by a planetary cannon on $PLANET|H$§!."
+
+EAC_MESSAGE_PLANETARY_CANNON_OPERATIONAL:0 "Planetary Cannon Operational"
+EAC_MESSAGE_PLANETARY_CANNON_OPERATIONAL_DESC:0 "The planetary cannon on $PLANET|H$§! is once again operational. Fleet $FLEET|H$§! is vulnerable."
+
+job_eac_military_officer_energy:0 "Energy Weapons Officer"
+job_eac_military_officer_energy_plural:0 "Energy Weapons Officers"
+job_eac_military_officer_energy_desc:0 "Planetary cannons require skilled personnel to operate equipment and oversee operations."
+job_eac_military_officer_energy_effect_desc:0 "£job_eac_military_officer_energy£ $job_eac_military_officer_energy_plural$ produce £physics£ §Y$physics_research$§!"
+mod_job_eac_military_officer_energy_add:0 "$job_eac_military_officer_energy$ Jobs"
+mod_job_eac_military_officer_energy_per_pop:0 "§G+1§! $job_eac_military_officer_energy$ Job per $VALUE$ Pops"
+mod_job_eac_military_officer_energy_per_pop_short:0 "\n§G+1§! £mod_job_eac_military_officer_energy_add£ per $VALUE$ £pop£"
+
+job_eac_military_officer_kinetic:0 "Kinetic Weapons Officer"
+job_eac_military_officer_kinetic_plural:0 "Kinetic Weapons Officers"
+job_eac_military_officer_kinetic_desc:0 "Planetary gun batteries require skilled personnel to operate equipment and oversee operations."
+job_eac_military_officer_kinetic_effect_desc:0 "£job_eac_military_officer_kinetic£ $job_eac_military_officer_kinetic_plural$ produce £engineering£ §Y$engineering_research$§!"
+mod_job_eac_military_officer_kinetic_add:0 "$job_eac_military_officer_kinetic$ Jobs"
+mod_job_eac_military_officer_kinetic_per_pop:0 "§G+1§! $job_eac_military_officer_kinetic$ Job per $VALUE$ Pops"
+mod_job_eac_military_officer_kinetic_per_pop_short:0 "\n§G+1§! £mod_job_eac_military_officer_kinetic_add£ per $VALUE$ £pop£"
+
+job_eac_military_drone_energy:0 "Energy Weapon Drone"
+job_eac_military_drone_energy_plural:0 "Energy Weapon Drones"
+job_eac_military_drone_energy_desc:0 "Planetary cannons require skilled drones to operate equipment and oversee operations."
+job_eac_military_drone_energy_effect_desc:0 "£job_eac_military_drone_energy£ $job_eac_military_drone_energy_plural$ produce £physics£ §Y$physics_research$§!"
+mod_job_eac_military_drone_energy_add:0 "$job_eac_military_drone_energy$ Jobs"
+mod_job_eac_military_drone_energy_per_pop:0 "§G+1§! $job_eac_military_drone_energy$ Job per $VALUE$ Pops"
+mod_job_eac_military_drone_energy_per_pop_short:0 "\n§G+1§! £mod_job_eac_military_drone_energy_add£ per $VALUE$ £pop£"
+
+job_eac_military_drone_kinetic:0 "Kinetic Weapon Drone"
+job_eac_military_drone_kinetic_plural:0 "Kinetic Weapon Drones"
+job_eac_military_drone_kinetic_desc:0 "Planetary gun batteries require skilled drones to operate equipment and oversee operations."
+job_eac_military_drone_kinetic_effect_desc:0 "£job_eac_military_drone_kinetic£ $job_eac_military_drone_kinetic_plural$ produce £engineering£ §Y$engineering_research$§!"
+mod_job_eac_military_drone_kinetic_add:0 "$job_eac_military_drone_kinetic$ Jobs"
+mod_job_eac_military_drone_kinetic_per_pop:0 "§G+1§! $job_eac_military_drone_kinetic$ Job per $VALUE$ Pops"
+mod_job_eac_military_drone_kinetic_per_pop_short:0 "\n§G+1§! £mod_job_eac_military_drone_kinetic_add£ per $VALUE$ £pop£"
+
+# EAC PDF Main Localization
+
+###################
+# Decisions
+###################
+decision_eac_pdf_interface:0 "Planetary Defense Force"
+decision_eac_pdf_interface_desc:1 "Open the main screen for the Planetary Defense Force"
+decision_eac_pdf_interface.tooltip:0 "$decision_eac_pdf_interface_desc$"
+
+###################
+# Edicts
+###################
+edict_eac_pdf_set_all_bases_system_stance:0 "All PDF Bases to §HSystem Hostiles§! Stance"
+edict_eac_pdf_set_all_bases_system_stance_desc:0 "All PDF bases will be set to handle system-wide hostilities."
+eac_pdf_set_all_bases_system_stance_allow:0 "£trigger_no Has at least one base with stance §HPlanet Under Attack§!"
+
+edict_eac_pdf_set_all_bases_planet_stance:0 "All PDF Bases to §HPlanet Under Attack§! Stance"
+edict_eac_pdf_set_all_bases_planet_stance_desc:0 "All PDF bases will be set to handle only planetary orbit hostilities."
+eac_pdf_set_all_bases_planet_stance_allow:0 "£trigger_no Has at least one base with stance §HSystem Hostiles§!"
+###################
+# Buildings
+###################
+building_eac_pdf_base:0 "Planetary Defense Force Base"
+building_eac_pdf_base_desc:0 "Home for the Planetary Defense Force. Use the planetary decision '§B$decision_eac_pdf_interface$§!' to interact with the base."
+
+planet_shipbuilders:0 "Shipbuilding Jobs"
+
+###################
+# Jobs
+###################
+job_eac_pdf_shipbuilder:0 "Shipwright"
+job_eac_pdf_shipbuilder_plural:0 "Shipwrights"
+job_eac_pdf_shipbuilder_desc:0 "Responsible for building and maintaining the Planetary Defense Fleet.\nAlloy upkeep is stored for ship construction."
+job_eac_pdf_shipbuilder_effect_desc:0 "£job_eac_pdf_shipbuilder£ $job_eac_pdf_shipbuilder_plural$ store £alloys §Y2§! for patrol craft construction, use £energy §Y1§! for construction and maintenance, and produce £engineering£ §Y$engineering_research$§! and £unity£ §Y$unity$§!"
+mod_job_eac_pdf_shipbuilder_add:0 "$job_eac_pdf_shipbuilder$ Jobs"
+mod_job_eac_pdf_shipbuilder_per_pop:0 "§G+1§! $job_eac_pdf_shipbuilder$ Job per $VALUE$ Pops"
+mod_job_eac_pdf_shipbuilder_per_pop_short:0 "\n§G+1§! £mod_job_eac_pdf_shipbuilder_add£ per $VALUE$ £pop£"
+
+job_eac_pdf_drone_shipbuilder:0 "Shipwright Drone"
+job_eac_pdf_drone_shipbuilder_plural:0 "Shipwright Drones"
+job_eac_pdf_drone_shipbuilder_desc:0 "Responsible for building and maintaining the Planetary Defense Fleet"
+job_eac_pdf_drone_shipbuilder_effect_desc:0 "£job_eac_pdf_drone_shipbuilder£ $job_eac_pdf_drone_shipbuilder_plural$ store £alloys §Y2§! for patrol craft construction, use £energy §Y1§! for construction and maintenance, and produce £engineering£ §Y$engineering_research$§! and £unity£ §Y$unity$§!"
+mod_job_eac_pdf_drone_shipbuilder_add:0 "$job_eac_pdf_drone_shipbuilder$ Jobs"
+mod_job_eac_pdf_drone_shipbuilder_per_pop:0 "§G+1§! $job_eac_pdf_drone_shipbuilder$ Job per $VALUE$ Pops"
+mod_job_eac_pdf_drone_shipbuilder_per_pop_short:0 "\n§G+1§! £mod_job_eac_pdf_drone_shipbuilder_add£ per $VALUE$ £pop£"
+
+###################
+# Messages
+###################
+EAC_MESSAGE_PLANETARY_FLEET_DETECTED:0 "Planetary Defense Force Fleet Launching"
+EAC_MESSAGE_PLANETARY_FLEET_DETECTED_DESC:0 "The $FLEET|H$ has detected the imminent launch of a Planetary Defense Force fleet on $PLANET|H$.\n§YAll hands to battle stations!§!\n"
+
+EAC_MESSAGE_PLANETARY_FLEET_LAUNCHING:0 "Hostiles Detected - Launching Planetary Fleet"
+EAC_MESSAGE_PLANETARY_FLEET_LAUNCHING_SYSTEM_FLEET_DESC:0 "We have detected the hostile fleet $FLEET|H$ entering our system. Preparing to launch the Planetary Defense Force fleet from $PLANET|H$.\n§YAll pilots and launch personnel report for duty! This is not a drill! Repeat! This is not a drill!§!\n"
+EAC_MESSAGE_PLANETARY_FLEET_LAUNCHING_SYSTEM_COLOSSUS_DESC:0 "We have detected the hostile colossus $FLEET|H$ entering our system. Preparing to launch the Planetary Defense Force fleet from $PLANET|H$. §YAll pilots and launch personnel report for duty! This is not a drill! Repeat! This is not a drill!§!\n"
+EAC_MESSAGE_PLANETARY_FLEET_LAUNCHING_ORBIT_FLEET_DESC:0 "We have detected the hostile fleet $FLEET|H$ entering the orbit of $PLANET|H$. Preparing to launch the Planetary Defense Force fleet from $PLANET|H$. §YAll pilots and launch personnel report for duty! This is not a drill! Repeat! This is not a drill!§!\n"
+
+###################
+# Ship Components
+###################
+EAC_PDF_PATROL_CRAFT_FISSION_REACTOR:0 "$FISSION_REACTOR$"
+EAC_PDF_PATROL_CRAFT_FISSION_REACTOR_DESC:0 "$FISSION_REACTOR_DESC$"
+EAC_PDF_PATROL_CRAFT_FUSION_REACTOR:0 "$FUSION_REACTOR$"
+EAC_PDF_PATROL_CRAFT_FUSION_REACTOR_DESC:0 "$FUSION_REACTOR_DESC$"
+EAC_PDF_PATROL_CRAFT_COLD_FUSION_REACTOR:0 "$COLD_FUSION_REACTOR$"
+EAC_PDF_PATROL_CRAFT_COLD_FUSION_REACTOR_DESC:0 "$COLD_FUSION_REACTOR_DESC$"
+EAC_PDF_PATROL_CRAFT_ANTIMATTER_REACTOR:0 "$ANTIMATTER_REACTOR$"
+EAC_PDF_PATROL_CRAFT_ANTIMATTER_REACTOR_DESC:0 "$ANTIMATTER_REACTOR_DESC$"
+EAC_PDF_PATROL_CRAFT_ZERO_POINT_REACTOR:0 "$ZERO_POINT_REACTOR$"
+EAC_PDF_PATROL_CRAFT_ZERO_POINT_REACTOR_DESC:0 "$ZERO_POINT_REACTOR_DESC$E"
+EAC_PDF_PATROL_CRAFT_DARK_MATTER_REACTOR:0 "$DARK_MATTER_REACTOR$"
+EAC_PDF_PATROL_CRAFT_DARK_MATTER_REACTOR_DESC:0 "$DARK_MATTER_REACTOR_DESC$"
+
+EAC_PDF_PATROL_CRAFT_COMBAT_COMPUTER_SWARM_DEFAULT:0 "$COMBAT_COMPUTER_SWARM_DEFAULT$"
+EAC_PDF_PATROL_CRAFT_COMBAT_COMPUTER_SWARM_BASIC:0 "$COMBAT_COMPUTER_SWARM_BASIC$"
+EAC_PDF_PATROL_CRAFT_COMBAT_COMPUTER_SWARM_ADVANCED:0 "$COMBAT_COMPUTER_SWARM_ADVANCED$"
+EAC_PDF_PATROL_CRAFT_COMBAT_COMPUTER_SWARM_SAPIENT:0 "$COMBAT_COMPUTER_SWARM_SAPIENT$"
+EAC_PDF_PATROL_CRAFT_COMBAT_COMPUTER_SWARM_AUTONOMOUS:0 "$COMBAT_COMPUTER_SWARM_AUTONOMOUS$"
+EAC_PDF_PATROL_CRAFT_COMBAT_COMPUTER_SWARM_PRECOG:0 "$COMBAT_COMPUTER_SWARM_PRECOG$"
+EAC_PDF_PATROL_CRAFT_COMBAT_COMPUTER_PICKET_BASIC:0 "$COMBAT_COMPUTER_PICKET_BASIC$"
+EAC_PDF_PATROL_CRAFT_COMBAT_COMPUTER_PICKET_ADVANCED:0 "$COMBAT_COMPUTER_PICKET_ADVANCED$"
+EAC_PDF_PATROL_CRAFT_COMBAT_COMPUTER_PICKET_SAPIENT:0 "$COMBAT_COMPUTER_PICKET_SAPIENT$"
+EAC_PDF_PATROL_CRAFT_COMBAT_COMPUTER_PICKET_AUTONOMOUS:0 "$COMBAT_COMPUTER_PICKET_AUTONOMOUS$"
+EAC_PDF_PATROL_CRAFT_COMBAT_COMPUTER_PICKET_PRECOG:0 "$COMBAT_COMPUTER_PICKET_PRECOG$"
+
+EAC_PDF_PATROL_CRAFT_THRUSTER_1:0 "$THRUSTER_1$"
+EAC_PDF_PATROL_CRAFT_THRUSTER_2:0 "$THRUSTER_2$"
+EAC_PDF_PATROL_CRAFT_THRUSTER_3:0 "$THRUSTER_3$"
+EAC_PDF_PATROL_CRAFT_THRUSTER_4:0 "$THRUSTER_4$"
+EAC_PDF_PATROL_CRAFT_THRUSTER_5:0 "$THRUSTER_5$"
+
+###################
+# Ships & Sections
+###################
+EAC_PDF_PATROL_CRAFT_1_MID_S2:0 "$CORVETTE_MID_S3$"
+EAC_PDF_PATROL_CRAFT_1_MID_T1:0 "$CORVETTE_MID_M1S1$"
+EAC_PDF_PATROL_CRAFT_1_MID_M1:0 "Heavy Interceptor"
+EAC_PDF_PATROL_CRAFT_1_MID_S1PD1:0 "$CORVETTE_MID_S2PD1$"
+
+EAC_PDF_PATROL_CRAFT_2_MID_M1S1:0 "Heavy Interceptor"
+EAC_PDF_PATROL_CRAFT_2_MID_T1S1:0 "$CORVETTE_MID_M1S1$"
+EAC_PDF_PATROL_CRAFT_2_MID_S3:0 "$CORVETTE_MID_S3$"
+EAC_PDF_PATROL_CRAFT_2_MID_S2PD1:0 "$CORVETTE_MID_S2PD1$"
+EAC_PDF_PATROL_CRAFT_2_MID_T1P2:0 "Missle Interceptor"
+
+eac_pdf_patrol_craft_1:0 "Patrol Craft I"
+eac_pdf_patrol_craft_1_plural:0 "Patrol Craft I"
+mod_shipsize_eac_pdf_patrol_craft_1_build_speed_mult:0 "$eac_pdf_patrol_craft_1$ Construction Speed"
+shipsize_eac_pdf_patrol_craft_1_construction_speed_mult:0 "$mod_shipsize_eac_pdf_patrol_craft_1_build_speed_mult$"
+shipsize_eac_pdf_patrol_craft_1_build_cost_mult:0 "$eac_pdf_patrol_craft_1$ Build Cost"
+shipsize_eac_pdf_patrol_craft_1_upkeep_mult:0 "$eac_pdf_patrol_craft_1$ Upkeep"
+mod_shipsize_eac_pdf_patrol_craft_1_hull_add:0 "$eac_pdf_patrol_craft_1$ Hull Points"
+
+eac_pdf_patrol_craft_2:0 "Patrol Craft II"
+eac_pdf_patrol_craft_2_plural:0 "Patrol Craft II"
+mod_shipsize_eac_pdf_patrol_craft_2_build_speed_mult:0 "$eac_pdf_patrol_craft_2$ Construction Speed"
+shipsize_eac_pdf_patrol_craft_2_construction_speed_mult:0 "$mod_shipsize_eac_pdf_patrol_craft_2_build_speed_mult$"
+shipsize_eac_pdf_patrol_craft_2_build_cost_mult:0 "$eac_pdf_patrol_craft_2$ Build Cost"
+shipsize_eac_pdf_patrol_craft_2_upkeep_mult:0 "$eac_pdf_patrol_craft_2$ Upkeep"
+mod_shipsize_eac_pdf_patrol_craft_2_hull_add:0 "$eac_pdf_patrol_craft_2$ Hull Points"
+mod_shipsize_eac_pdf_patrol_craft_2_evasion_mult:0 "$eac_pdf_patrol_craft_2$ Evasion"
+mod_shipsize_destroyer_tracking_mult:0 "$destroyer$ Tracking"
+
+###################
+# Technologies
+###################
+eac_tech_planetary_defense_force:0 "Planetary Defense Force"
+eac_tech_planetary_defense_force_desc:0 "A terrestrial fleet capable of entering space to deal with orbital and system hostiles. The fleet uses a modified corvette hull without an FTL drive."
+eac_tech_patrol_craft_1:0 "Patrol Craft I"
+eac_tech_patrol_craft_1_desc:0 "A modified corvette hull without an FTL drive. Built and maintained at the $eac_pdf_base$."
+EAC_TECH_UNLOCK_PATROL_CRAFT_1_CONSTRUCTION_TITLE:0 "§HUnlocks Ship Type:§! Patrol Craft I"
+EAC_TECH_UNLOCK_PATROL_CRAFT_1_CONSTRUCTION_DESC:0 "§HPatrol Craft I§!\nThe Patrol Craft I is the most basic military ship, lacking an FTL drive, armed and ready in the event of system hostile contacts."
+eac_tech_patrol_craft_2:0 "Patrol Craft II"
+eac_tech_patrol_craft_2_desc:0 "An improved modified corvette hull without an FTL drive. Built and maintained at the $eac_pdf_base$.\n§ROriginal $eac_pdf_patrol_craft_1$ designs will no longer be used.§!\nAdds §G+2§! ship building jobs to the $eac_pdf_base$."
+EAC_TECH_UNLOCK_PATROL_CRAFT_2_CONSTRUCTION_TITLE:0 "§HUnlocks Ship Type:§! Patrol Craft II"
+EAC_TECH_UNLOCK_PATROL_CRAFT_2_CONSTRUCTION_DESC:0 "§HPatrol Craft II§!\nThe Patrol Craft II is an improved military ship, lacking an FTL drive, armed and ready in the event of system hostile contacts."
+
+eac_tech_patrol_craft_hull_1:0 "Improved $eac_pdf_patrol_craft_1$ Hulls I"
+eac_tech_patrol_craft_hull_1_desc:0 "Advances in building techniques will allow for the construction of sturdier and more durable $eac_pdf_patrol_craft_1_plural$. Increases $eac_pdf_patrol_craft_1$ cost by £alloys 25"
+eac_tech_patrol_craft_hull_2:0 "Improved $eac_pdf_patrol_craft_1$ Hulls II"
+eac_tech_patrol_craft_hull_2_desc:0 "Advances in building techniques will allow for the construction of sturdier and more durable $eac_pdf_patrol_craft_1_plural$. Increases $eac_pdf_patrol_craft_1$ cost by £alloys 25"
+eac_tech_patrol_craft_hull_3:0 "Improved $eac_pdf_patrol_craft_2$ Hulls III"
+eac_tech_patrol_craft_hull_3_desc:0 "Advances in building techniques will allow for the construction of sturdier and more durable $eac_pdf_patrol_craft_2_plural$. Increases $eac_pdf_patrol_craft_2$ cost by £alloys 25"
+eac_tech_patrol_craft_hull_4:0 "Improved $eac_pdf_patrol_craft_2$ Hulls IV"
+eac_tech_patrol_craft_hull_4_desc:0 "Advances in building techniques will allow for the construction of sturdier and more durable $eac_pdf_patrol_craft_2_plural$. Increases $eac_pdf_patrol_craft_2$ cost by £alloys 25"
+eac_tech_patrol_craft_build_speed_1:0 "Standardized $eac_pdf_patrol_craft_2$ Patterns"
+eac_tech_patrol_craft_build_speed_1_desc:0 "Establishing new standards for the modeling and construction of $eac_pdf_patrol_craft_2_plural$ greatly improves the efficiency of the production pipeline. Decreases base $eac_pdf_patrol_craft_2$ construction time by 25%"
+eac_tech_patrol_craft_build_speed_2:0 "Improved $eac_pdf_patrol_craft_2$ Assembly Lines"
+eac_tech_patrol_craft_build_speed_2_desc:0 "Establishing new standards for the assembly lines of $eac_pdf_patrol_craft_2_plural$ greatly improves the efficiency of the production pipeline. Decreases base $eac_pdf_patrol_craft_2$ construction time by 50%"
+
+###################
+# Scripted Loc
+###################
+eac_pdf_fleet_stance_system:0 "System Hostiles"
+eac_pdf_fleet_stance_planet:0 "Planet Under Attack"
+eac_pdf_shipyard_status_active_1:0 "Building $eac_pdf_patrol_craft_1$"
+eac_pdf_shipyard_status_active_2:0 "Building $eac_pdf_patrol_craft_2$"
+eac_pdf_shipyard_status_idle_waiting:0 "Idle - Waiting for additional resources"
+eac_pdf_shipyard_status_idle:0 "Idle - At fleet capacity"
+eac_pdf_fleet_deployment_status_deployed:0 "Deployed"
+eac_pdf_fleet_deployment_status_on_base:0 "On Base"
+
+eac_pdf_gain_0:0 "§W0§!"
+eac_pdf_gain_2:0 "§G+2§!"
+eac_pdf_gain_4:0 "§G+4§!"
+eac_pdf_gain_6:0 "§G+6§!"
+eac_pdf_gain_8:0 "§G+8§!"
+ 
+eac_pdf_num_0:0 "0"
+eac_pdf_num_1:0 "1"
+eac_pdf_num_2:0 "2"
+eac_pdf_num_3:0 "3"
+eac_pdf_num_4:0 "4"
+eac_pdf_num_5:0 "5"
+eac_pdf_num_6:0 "6"
+eac_pdf_num_7:0 "7"
+eac_pdf_num_8:0 "8"
+eac_pdf_num_9:0 "9"
+eac_pdf_num_10:0 "10"
+eac_pdf_num_11:0 "11"
+eac_pdf_num_12:0 "12"
+eac_pdf_num_13:0 "13"
+eac_pdf_num_14:0 "14"
+eac_pdf_num_15:0 "15"
+eac_pdf_num_16:0 "16"
+eac_pdf_num_17:0 "17"
+eac_pdf_num_18:0 "18"
+eac_pdf_num_19:0 "19"
+eac_pdf_num_20:0 "20"
+eac_pdf_num_21:0 "21"
+eac_pdf_num_22:0 "22"
+eac_pdf_num_23:0 "23"
+eac_pdf_num_24:0 "24"
+eac_pdf_num_25:0 "25"
+eac_pdf_num_26:0 "26"
+eac_pdf_num_27:0 "27"
+eac_pdf_num_28:0 "28"
+eac_pdf_num_29:0 "29"
+eac_pdf_num_30:0 "30"
+eac_pdf_num_31:0 "31"
+eac_pdf_num_32:0 "32"
+eac_pdf_num_33:0 "33"
+eac_pdf_num_34:0 "34"
+eac_pdf_num_35:0 "35"
+eac_pdf_num_36:0 "36"
+eac_pdf_num_37:0 "37"
+eac_pdf_num_38:0 "38"
+eac_pdf_num_39:0 "39"
+eac_pdf_num_40:0 "40"
+eac_pdf_num_41:0 "41"
+eac_pdf_num_42:0 "42"
+eac_pdf_num_43:0 "43"
+eac_pdf_num_44:0 "44"
+eac_pdf_num_45:0 "45"
+eac_pdf_num_46:0 "46"
+eac_pdf_num_47:0 "47"
+eac_pdf_num_48:0 "48"
+eac_pdf_num_49:0 "49"
+eac_pdf_num_50:0 "50"
+eac_pdf_num_51:0 "51"
+eac_pdf_num_52:0 "52"
+eac_pdf_num_53:0 "53"
+eac_pdf_num_54:0 "54"
+eac_pdf_num_55:0 "55"
+eac_pdf_num_56:0 "56"
+eac_pdf_num_57:0 "57"
+eac_pdf_num_58:0 "58"
+eac_pdf_num_59:0 "59"
+eac_pdf_num_60:0 "60"
+eac_pdf_num_61:0 "61"
+eac_pdf_num_62:0 "62"
+eac_pdf_num_63:0 "63"
+eac_pdf_num_64:0 "64"
+eac_pdf_num_65:0 "65"
+eac_pdf_num_66:0 "66"
+eac_pdf_num_67:0 "67"
+eac_pdf_num_68:0 "68"
+eac_pdf_num_69:0 "69"
+eac_pdf_num_70:0 "70"
+eac_pdf_num_71:0 "71"
+eac_pdf_num_72:0 "72"
+eac_pdf_num_73:0 "73"
+eac_pdf_num_74:0 "74"
+eac_pdf_num_75:0 "75"
+eac_pdf_num_76:0 "76"
+eac_pdf_num_77:0 "77"
+eac_pdf_num_78:0 "78"
+eac_pdf_num_79:0 "79"
+eac_pdf_num_80:0 "80"
+
+###################
+# Events
+###################
+
+eac_pdf_pdf_fleet_size:0 "§WPlanetary fleet size (deployed / total / max): £navy_size §Y[This.GetDeployedShipCount] / [This.GetTotalFleetSize] / [This.Planetary_Defense_Force_Max]§!\n"
+eac_pdf_pdf_fleet_stance:0 "§WPlanetary fleet stance: §Y[This.GetPDFFleetStance]§!\n"
+eac_pdf_fleet_deployment_status:0 "§WDeployment Status: §Y[This.GetFleetDeploymentStatus]§!\n"
+eac_pdf_ship_cost:0 "§WPlanetary defense ship cost: £alloys §Y[This.Owner.Planetary_Defense_Ship_Cost]§!\n"
+eac_pdf_ship_size:0 "§WShip size in use: §Y[This.GetCurrentPatrolCraftSize]§!\n"
+
+eac_pdf_fleet_reinforce_cost:0 "§WReinforcement cost: £navy_size §Y[This.GetPDFFleetReinfocementShips] £alloys §Y[This.PDF_Reinforce_Cost]§!\n"
+eac_pdf_fleet_reinforce_cost_0:0 "§WReinforcement cost: £navy_size §Y[This.GetPDFFleetReinfocementShips] £alloys §Y0§!\n"
+
+eac_pdf_ship_build_speed:0 "§WConstuction speed: £resource_time §Y[This.Owner.Planetary_Defense_Ship_Build_Speed]§!\n"
+eac_pdf_shipyard_status:0 "§WShipyard Status: §Y[This.GetPDFShipyardStatus]§!\n"
+
+eac_pdf_local_storage:0 "§WLocal resource storage: £alloys §Y[This.Alloy_Storage] / [This.PDF_Maximum_Storage]§!\n"
+eac_pdf_local_storage_0:0 "§WLocal resource storage: £alloys §Y0 / [This.PDF_Maximum_Storage]§!\n"
+
+eac_pdf_monthly_gain:0 "§WMonthly Gain: £alloys [This.GetMonthlyAllowGain]"
+
+eac_pdf_events.100.title:0 "Planetary Defense Force on [This.GetName]"
+
+eac_pdf_events.100.desc:0 " $eac_pdf_pdf_fleet_size$ $eac_pdf_pdf_fleet_stance$ $eac_pdf_fleet_deployment_status$\n $eac_pdf_ship_size$ $eac_pdf_ship_cost$ $eac_pdf_ship_build_speed$ $eac_pdf_fleet_reinforce_cost$ $eac_pdf_shipyard_status$\n $eac_pdf_local_storage$ $eac_pdf_monthly_gain$"
+eac_pdf_events.100.desc_0_1:0 " $eac_pdf_pdf_fleet_size$ $eac_pdf_pdf_fleet_stance$ $eac_pdf_fleet_deployment_status$\n $eac_pdf_ship_size$ $eac_pdf_ship_cost$ $eac_pdf_ship_build_speed$ $eac_pdf_fleet_reinforce_cost_0$ $eac_pdf_shipyard_status$\n $eac_pdf_local_storage$ $eac_pdf_monthly_gain$"
+eac_pdf_events.100.desc_1_0:0 " $eac_pdf_pdf_fleet_size$ $eac_pdf_pdf_fleet_stance$ $eac_pdf_fleet_deployment_status$\n $eac_pdf_ship_size$ $eac_pdf_ship_cost$ $eac_pdf_ship_build_speed$ $eac_pdf_fleet_reinforce_cost$ $eac_pdf_shipyard_status$\n $eac_pdf_local_storage_0$ $eac_pdf_monthly_gain$"
+eac_pdf_events.100.desc_0_0:0 " $eac_pdf_pdf_fleet_size$ $eac_pdf_pdf_fleet_stance$ $eac_pdf_fleet_deployment_status$\n $eac_pdf_ship_size$ $eac_pdf_ship_cost$ $eac_pdf_ship_build_speed$ $eac_pdf_fleet_reinforce_cost_0$ $eac_pdf_shipyard_status$\n $eac_pdf_local_storage_0$ $eac_pdf_monthly_gain$"
+
+eac_pdf_events.100.TransferResources:0 "Transfer Resources To/From [This.GetName]"
+eac_pdf_events.100.FleetStanceSystem:0 "Set Fleet Stance: $eac_pdf_fleet_stance_system$"
+eac_pdf_events.100.FleetStancePlanet:0 "Set Fleet Stance: $eac_pdf_fleet_stance_planet$"
+eac_pdf_events.100.DeployFleet:0 "Manually Deploy Fleet"
+eac_pdf_events_close:0 "Close"
+eac_pdf_events_return:0 "Return"
+eac_pdf_events_refhesh:0 "Refresh Information"
+
+eac_pdf_events.101.title:0 "Transfer Resources"
+
+eac_pdf_events.101.desc:0 "§WTransfer resources either from the emprire to the planet or from the planet to the empire.§!\n\n $eac_pdf_fleet_reinforce_cost$ $eac_pdf_local_storage$ $eac_pdf_monthly_gain$"
+eac_pdf_events.101.desc_0_1:0 "§WTransfer resources either from the emprire to the planet or from the planet to the empire.§!\n\n $eac_pdf_fleet_reinforce_cost_0$ $eac_pdf_local_storage$ $eac_pdf_monthly_gain$"
+eac_pdf_events.101.desc_1_0:0 "§WTransfer resources either from the emprire to the planet or from the planet to the empire.§!\n\n $eac_pdf_fleet_reinforce_cost$ $eac_pdf_local_storage_0$ $eac_pdf_monthly_gain$"
+eac_pdf_events.101.desc_0_0:0 "§WTransfer resources either from the emprire to the planet or from the planet to the empire.§!\n\n $eac_pdf_fleet_reinforce_cost_0$ $eac_pdf_local_storage_0$ $eac_pdf_monthly_gain$"
+
+eac_pdf_events.101.ToPlanetHeader:0 "From [This.Owner.GetName] to [This.GetName]"
+eac_pdf_events.101.ToPlanet50:0 "Transfer £alloys 50"
+eac_pdf_events.101.ToPlanet100:0 "Transfer £alloys 100"
+eac_pdf_events.101.ToPlanet500:0 "Transfer £alloys 500"
+eac_pdf_events.101.ToPlanet1000:0 "Transfer £alloys 1000"
+eac_pdf_events.101.FromPlanetHeader:0 "From [This.GetName] to [This.Owner.GetName]"
+eac_pdf_events.101.FromPlanet50:0 "Transfer £alloys 50"
+eac_pdf_events.101.FromPlanet100:0 "Transfer £alloys 100"
+eac_pdf_events.101.FromPlanet500:0 "Transfer £alloys 500"
+eac_pdf_events.101.FromPlanet1000:0 "Transfer £alloys 1000"
+eac_pdf_events.101.FromPlanetAll:0 "Transer all £alloys out"

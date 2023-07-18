@@ -1,0 +1,187 @@
+#First is set to default
+#
+
+basic_conversion =
+{
+	potential = {
+		NOT = {
+			has_active_tradition = tr_commerce_finish
+		}
+	}
+
+	weight = {
+		weight = 1
+	}
+
+	conversion_rate = {
+		energy = 1
+	}
+
+	economic_category = trade_routes
+}
+
+consumer_goods_conversion =
+{
+	potential = {
+		has_policy_flag = trade_conversion_consumer_goods
+		NOT = {
+			has_active_tradition = tr_commerce_finish
+		}
+	}
+
+	weight = {
+		weight = 10
+	}
+
+	conversion_rate = {
+		energy = 0.5
+		consumer_goods = 0.25
+	}
+
+	economic_category = trade_routes
+}
+
+unity_conversion =
+{
+	potential = {
+		has_policy_flag = trade_conversion_unity
+		NOT = {
+			has_active_tradition = tr_commerce_finish
+		}
+	}
+
+	weight = {
+		weight = 10
+	}
+
+	conversion_rate = {
+		energy = 0.5
+		unity = 0.25
+	}
+
+	economic_category = trade_routes
+}
+
+trade_league_conversion =
+{
+	potential = {
+		has_policy_flag = trade_conversion_trade_league
+		NOT = {
+			has_active_tradition = tr_commerce_finish
+		}
+	}
+
+	weight = {
+		weight = 100
+	}
+
+	conversion_rate = {
+		energy = 0.5
+		consumer_goods = 0.25
+		unity = 0.25
+	}
+
+	economic_category = trade_routes
+}
+
+basic_conversion_improved =
+{
+	potential = {
+		has_active_tradition = tr_commerce_finish
+	}
+
+	weight = {
+		weight = 1
+	}
+
+	conversion_rate = {
+		energy = 1.25
+	}
+
+	economic_category = trade_routes
+}
+
+consumer_goods_conversion_improved =
+{
+	potential = {
+		AND = {
+			has_active_tradition = tr_commerce_finish
+			has_policy_flag = trade_conversion_consumer_goods
+		}
+	}
+
+	weight = {
+		weight = 10
+	}
+
+	conversion_rate = {
+		energy = 0.5
+		consumer_goods = 0.5
+	}
+
+	economic_category = trade_routes
+}
+
+unity_conversion_improved =
+{
+	potential = {
+		AND = {
+			has_active_tradition = tr_commerce_finish
+			has_policy_flag = trade_conversion_unity
+		}
+	}
+
+	weight = {
+		weight = 10
+	}
+
+	conversion_rate = {
+		energy = 0.5
+		unity = 0.5
+	}
+
+	economic_category = trade_routes
+}
+
+trade_league_conversion_improved =
+{
+	potential = {
+		AND = {
+			has_active_tradition = tr_commerce_finish
+			has_policy_flag = trade_conversion_trade_league
+		}
+	}
+
+	weight = {
+		weight = 100
+	}
+
+	conversion_rate = {
+		energy = 0.5
+		consumer_goods = 0.5
+		unity = 0.5
+	}
+
+	economic_category = trade_routes
+}
+
+holy_covenant_conversion_improved =
+{
+	potential = {
+		AND = {
+			has_active_tradition = tr_commerce_finish
+			has_policy_flag = trade_conversion_holy_covenant
+		}
+	}
+
+	weight = {
+		weight = 100
+	}
+
+	conversion_rate = {
+		energy = 0.75
+		unity = 0.75
+	}
+
+	economic_category = trade_routes
+}

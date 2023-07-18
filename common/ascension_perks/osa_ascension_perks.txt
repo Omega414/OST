@@ -1,0 +1,221 @@
+ap_managerial_prerogative = {
+	potential = {
+		host_has_dlc = "Megacorp"
+		NOT = {
+			has_ascension_perk = ap_managerial_prerogative
+		}
+		is_megacorp = yes
+		is_criminal_syndicate = no
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ap_universal_transactions"
+			has_ascension_perk = ap_universal_transactions
+		}
+	}
+
+	modifier = {
+		branch_office_value_mult = 0.15
+		country_government_civic_points_add = 1
+	}
+
+	on_enabled = {
+		set_government_cooldown = no
+		reset_policy_cooldowns = yes
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+ap_boundless_repositories = {
+	modifier = {
+		country_traditions_influence_produces_add = 2
+		diplo_weight_economy_mult = 0.25
+		country_resource_max_add = 500000
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_boundless_repositories
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_10"
+			num_ascension_perks > 9
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+ap_relentless_scrutiny = {
+	modifier = {
+		ship_anomaly_generation_chance_mult = 0.25
+		ship_anomaly_research_speed_mult = 0.25
+		science_ship_survey_speed = 0.25
+		ship_archaeological_site_excavation_speed_mult = 0.25
+		ship_archaeological_site_clues_add = 2
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_relentless_scrutiny
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+ap_galactic_reconnaissance = {
+	modifier = {
+		add_base_country_intel = 20
+		diplo_weight_envoys_mult = 0.25
+		ship_cloaking_detection_add = 1
+		ship_cloaking_strength_add = 1
+		ship_sensor_range_add = 2
+		planet_sensor_range_add = 2
+		ship_hyperlane_range_add = 5
+		planet_hyperlane_range_add = 5
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_galactic_reconnaissance
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+		custom_tooltip = {
+			fail_text = "requires_technology_sensors_3"
+			has_technology = tech_sensors_3
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+ap_galactic_ascendency = {
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_galactic_ascendency
+		}
+	}
+	
+	modifier = {
+		empire_size_mult = -0.15
+		empire_size_penalty_mult = -0.25
+	}
+
+	on_enabled = {
+		add_modifier = {
+			modifier = "mod_osa_influence_sprawl"
+			days = -1
+			multiplier = owner.trigger:empire_size
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_10"
+			num_ascension_perks > 9
+		}
+	}
+
+	ai_weight = {
+		factor = 100
+	}
+}
+
+ap_concerted_effort = {
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_concerted_effort
+		}
+		has_ethic = ethic_gestalt_consciousness
+	}
+	
+	modifier = {
+	}
+
+	on_enabled = {
+		custom_tooltip = ap_concerted_effort_tooltip
+	}
+
+	ai_weight = {
+		factor = 20
+	}
+}
+
+ap_advanced_city_planning = {
+	modifier = {
+		planet_max_districts_add = 5
+		district_generator_max = 5
+		district_mining_max = 5
+		district_farming_max = 5
+		planet_building_build_speed_mult = 2.5
+		planet_decision_enact_speed_mult = 2.5
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_advanced_city_planning
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_10"
+			num_ascension_perks > 9
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+ap_unrivaled_aptitude = {
+	modifier = {
+		country_leader_cap_add = 5
+		leader_trait_selection_options_add = 1
+		BIOLOGICAL_species_trait_points_add = 2
+		ROBOT_species_trait_points_add = 2
+		MACHINE_species_trait_points_add = 2
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_unrivaled_aptitude
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ap_transcendent_learning"
+			has_ascension_perk = ap_transcendent_learning
+		}
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_10"
+			num_ascension_perks > 9
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}

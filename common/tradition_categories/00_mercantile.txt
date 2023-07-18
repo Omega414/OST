@@ -1,0 +1,88 @@
+tradition_mercantile = {
+	tree_template = "tree_11_12"
+	adoption_bonus = "tr_mercantile_adopt"
+	finish_bonus = "tr_mercantile_finish"
+	traditions = {
+		"tr_mercantile_trickle_up_economics"
+		"tr_mercantile_commercial_enterprise"
+		"tr_mercantile_adaptive_economic_policies"
+		"tr_mercantile_marketplace_of_better_ideas"
+		"tr_mercantile_insider_trading"
+	}
+
+	potential = {
+		is_regular_empire = yes
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			has_authority = auth_corporate
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_authoritarian
+		}
+		modifier = {
+			factor = 4
+			has_ethic = ethic_fanatic_authoritarian
+		}
+		modifier = {
+			factor = 5
+			has_ethic = ethic_egalitarian
+		}
+		modifier = {
+			factor = 10
+			has_ethic = ethic_fanatic_egalitarian
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 4
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			factor = 8
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 16
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 4
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 7
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 14
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 5
+			has_ethic = ethic_spiritualist
+		}
+		modifier = {
+			factor = 10
+			has_ethic = ethic_fanatic_spiritualist
+		}	
+		modifier = {
+			factor = 6
+			has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 12
+			has_ethic = ethic_fanatic_materialist
+		}
+	}
+}

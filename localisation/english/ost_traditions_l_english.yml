@@ -1,0 +1,1916 @@
+﻿l_english:
+
+####################################
+# Traditions
+####################################
+
+################################################################
+# Perseverance
+################################################################
+
+tradition_perseverance:0 "Perseverance"
+tradition_perseverance_desc:0 "Do not go gentle into that good night, rage against the dying of the light."
+
+tradition_perseverance_machine:1 "$tradition_perseverance$"
+tradition_perseverance_machine_desc:0 "Environmental Adaptation = Expansion."
+
+tradition_perseverance_hive:0 "$tradition_perseverance$"
+tradition_perseverance_hive_desc:0 "Environmental Assimilation shall ensure Continuation."
+ 
+tr_perseverance_adopt:0 "Perseverance Traditions"
+tr_perseverance_adopt_desc:6 "£mod_habitability£ §Y$MOD_POP_ENVIRONMENT_TOLERANCE$§! increased by §G+5%§!\n£blocker£ §Y$MOD_PLANET_CLEAR_BLOCKER_TIME_MULT$§! reduced by §G-25%§!"
+ 
+tr_perseverance_adopt_machine:1 "$tr_perseverance_adopt$"
+tr_perseverance_adopt_machine_desc:2 "$tr_perseverance_adopt_desc$"
+ 
+tr_perseverance_adopt_hive:0 "$tr_perseverance_adopt$"
+tr_perseverance_adopt_hive_desc:3 "$tr_perseverance_adopt_desc$"
+
+tr_perseverance_1:0 "Genetically Adaptive Crops"
+tr_perseverance_1_desc:0 "£food£ §YFood§! from £job_farmer£ §YFarmers§! increased by §G+25%§!\nMaximum £district£ §YAgriculture Districts§! increased by §G+2§!"
+tr_perseverance_1_delayed:0 "Our colonization efforts are greatly eased by our adaptive crops, which can accomidate themselves in all environments."
+
+tr_perseverance_1_machine:0 "Biomatter Reprocessing Technology."
+tr_perseverance_1_machine_desc:0 "£food£ §YFood§! from £job_agri_drone£ §Agri-Drones§! increased by §G+25%§!\nMaximum £district£ §YAgriculture Districts§! increased by §G+2§!"
+tr_perseverance_1_machine_delayed:0 "Advancements in biomatter technology have greatly improved overall planetary output."
+
+tr_perseverance_1_hive:0 "Biomatter Reclimation."
+tr_perseverance_1_hive_desc:0 "£food£ §YFood§! from £job_agri_drone£ §Agri-Drones§! increased by §G+25%§!.\nMaximum §YAgriculture Districts§! increased by §G+2§!."
+tr_perseverance_1_hive_delayed:0 "Reclaiming damaged drones and facilities has greatly imrpoved colony output."
+
+tr_perseverance_2:0 "Agricultural Administratum Centers"
+tr_perseverance_2_desc:0 "Improves £building£ §YFood Processing§! buildings:\n£job_osa_agri_director£ §YDirector of Agriculture§! jobs increased by §G+1§!\n£housing£ §Y$MOD_PLANET_HOUSING_ADD$§! increased by §G+5§!"
+tr_perseverance_2_delayed:0 "As our agricultural colonies increase in size, so much our bureaucratic c apacity."
+
+tr_perseverance_2_machine:0 "Biomass Refinement Facilities."
+tr_perseverance_2_machine_desc:0 "Improves £building£ §YFood Processing§! buildings:\n£job_osa_omni_drone£ §YOmni-Drone§! jobs increased by §G+1§!\n£housing£ §Y$MOD_PLANET_HOUSING_ADD$§! increased by §G+5§!"
+tr_perseverance_2_machine_delayed:0 "Modernized biomass facilities have greatly improved all planetary unit outputs."
+
+tr_perseverance_2_hive:0 "Administrative Neural Network Enhancments."
+tr_perseverance_2_hive_desc:0 "$tr_perseverance_2_machine_desc$"
+tr_perseverance_2_hive_delayed:0 "Enhancing the neural network of administration drones has yielded more space and output across the planet."
+
+tr_perseverance_3:0 "Agricultural Innovation"
+tr_perseverance_3_desc:0 "£job_farmer£ §Y$job_farmer_plural$§! produce §G+1§! £society£ §YSociety Research§!"
+tr_perseverance_3_delayed:0 "As our centers of crop production grow, so do the discoveries on how to make them more effective."
+
+tr_perseverance_3_machine:0 "Agri-drone Neural uplink."
+tr_perseverance_3_machine_desc:0 "£job_agri_drone£ §Y$job_agri_drone_plural$§! produce §G+1§! £society£ §YSociety Research§!"
+tr_perseverance_3_machine_delayed:0 "Directly linking agri-drone neural networks to R&D greatly increases devlopment rates."
+
+tr_perseverance_3_hive:0 "Agri-drone Neural uplink."
+tr_perseverance_3_hive_desc:0 "$tr_perseverance_3_machine_desc$"
+tr_perseverance_3_hive_delayed:0 "Directly linking agri-drone neural networks to mothermind greatly increases development rates."
+
+tr_perseverance_4:0 "Increased Nutrient Yields"
+tr_perseverance_4_desc:0 "£pops£ §Y$MOD_POP_GROWTH_SPEED$§! increased by §G+10%§!"
+tr_perseverance_4_delayed:0 "Our people now can eat half the food, but three times the nutruients!"
+
+tr_perseverance_4_machine:0 "Bio Augmentation"
+tr_perseverance_4_machine_desc:0 "£pops£ §Y$MOD_POP_ASSEMBLY_SPEED$§! increased by §G+10%§!"
+tr_perseverance_4_machine_delayed:0 "Taking a surplus of biomatter and infusing it into drone production proves benificial."
+
+tr_perseverance_4_hive:0 "Nutritional Infusion"
+tr_perseverance_4_hive_desc:0 "$tr_perseverance_4_desc$"
+tr_perseverance_4_hive_delayed:0 "Redirecting bio resources to drone birthing greatly improved rates."
+
+tr_perseverance_5:0 "Wartime Crop Production"
+tr_perseverance_5_desc:0 "§Y$MOD_PLANET_ORBITAL_BOMBARDMENT_DAMAGE$§! reduced by §G-10%§!\n§YWar Exhaustion Gain§! reduced by §G-10%§!"
+tr_perseverance_5_delayed:0 "During wartime our centers can be moved underground which prevents enemy ships from destroying them."
+
+tr_perseverance_5_machine:0 "Fortress Integration"
+tr_perseverance_5_machine_desc:0 "$tr_perseverance_5_desc$"
+tr_perseverance_5_machine_delayed:0 "With the collective firmly established; perminent fixtures have been raised."
+
+tr_perseverance_5_hive:0 "Rapid Bio-Development"
+tr_perseverance_5_hive_desc:0 "$tr_perseverance_5_desc$"
+tr_perseverance_5_hive_delayed:0 "Thanks to rapid growth on our worlds; we have burried ourselves deep and made these worlds home."
+
+tr_perseverance_finish:0 "Perseverance Traditions Finished"
+tr_perseverance_finish_desc:0 "£food£ §YEmpire Food Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_food_subsidies$\nAscension Perks Unlocked: §G+1§!"
+
+tr_perseverance_finish_machine:0 "$tr_perseverance_finish$"
+tr_perseverance_finish_machine_desc:0 "£food£ §YEmpire Food Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_food_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
+
+tr_perseverance_finish_hive:0 "$tr_perseverance_finish$"
+tr_perseverance_finish_hive_desc:0 "$tr_perseverance_finish_machine_desc$"
+
+################################################################
+# Radiance
+################################################################
+
+tradition_radiance:0 "Radiance"
+tradition_radiance_desc:0 "A shining light in the darkness of space."
+
+tradition_radiance_machine:1 "$tradition_radiance$"
+tradition_radiance_machine_desc:0 "A shining light in the darkness of space."
+
+tradition_radiance_hive:0 "$tradition_radiance$"
+tradition_radiance_hive_desc:0 "A shining light in the darkness of space."
+ 
+tr_radiance_adopt:0 "Radiance Traditions"
+tr_radiance_adopt_desc:6 "£military_ship£ §Y$MOD_SHIP_EXPERIENCE_GAIN_MULT$§! increased by §G+25%§!"
+ 
+tr_radiance_adopt_machine:1 "$tr_radiance_adopt$"
+tr_radiance_adopt_machine_desc:2 "$tr_radiance_adopt_desc$"
+ 
+tr_radiance_adopt_hive:0 "$tr_radiance_adopt$"
+tr_radiance_adopt_hive_desc:3 "$tr_radiance_adopt_desc$"
+
+tr_radiance_1:0 "Relaxed Safety Regulations"
+tr_radiance_1_desc:0 "£energy£ §YEnergy§! from £job_technician£ §YTechnicians§! increased by §G+25%§!\nMaximum £district£ §YEnergy Districts§! increased by §G+2§!"
+tr_radiance_1_delayed:0 "3.6 roentgen, not great not terrible."
+
+tr_radiance_1_machine:0 "Streamlined Energy Infictructure."
+tr_radiance_1_machine_desc:0 "£energy£ §YEnergy§! from £technician_drone£ §Tech-Drones§! increased by §G+25%§!\nMaximum £district£ §YEnergy Districts§! increased by §G+2§!"
+tr_radiance_1_machine_delayed:0 "By removing extraneous elements from our energy grids output has been marginally raised."
+
+tr_radiance_1_hive:0 "Bio-electric Fields."
+tr_radiance_1_hive_desc:0 "£energy£ §YEnergy§! from £technician_drone£ §Tech-Drones§! increased by §G+25%§!\nMaximum £district£ §YEnergy Districts§! increased by §G+2§!"
+tr_radiance_1_hive_delayed:0 "Through large Drone populations, the radiant bio-electric field can be harnessed to power future endeavors."
+
+tr_radiance_2:0 "Administratum Master"
+tr_radiance_2_desc:0 "Improves £building£ §YEnergy Distribution§! buildings:\n£job_osa_energy_director£ §YDirector of Energy§! jobs increased by §G+1§!\n£housing£ §Y$MOD_PLANET_HOUSING_ADD$§! increased by §G+5§!"
+tr_radiance_2_delayed:0 "Promoting those with high standards, to then impose them."
+
+tr_radiance_2_machine:0 "Submind Management"
+tr_radiance_2_machine_desc:0 "Improves £building£ §YEnergy Distribution§! buildings:\n£job_osa_omni_drone£ §YOmni-Drone§! jobs increased by §G+1§!\n£housing£ §Y$MOD_PLANET_HOUSING_ADD$§! increased by §G+5§!"
+tr_radiance_2_machine_delayed:0 "Superior Submind Programming = Improved Energy Grid Optimization"
+
+tr_radiance_2_hive:0 "Submind Managment"
+tr_radiance_2_hive_desc:0 "$tr_radiance_2_machine_desc$"
+tr_radiance_2_hive_delayed:0 "Superior Submind Optimization grants improved Energy Grid output. "
+
+tr_radiance_3:0 "Physics Innovation"
+tr_radiance_3_desc:0 "£job_technician£ §Y$job_technician_plural$§! produce §G+1§! £physics£ §YPhysics Research§!"
+tr_radiance_3_delayed:0 "As our centers of learning grow, so do the discoveries on how to make them more effective."
+
+tr_radiance_3_machine:0 "Hardware Acceleration"
+tr_radiance_3_machine_desc:0 "£job_technician_drone£ §Y$job_technician_drone_plural$§! produce §G+1§! £physics£ §YPhysics Research§!"
+tr_radiance_3_machine_delayed:0 "Through overclocking our knowledge rate has vastly increased."
+
+tr_radiance_3_hive:0 "Wetware Acceleration"
+tr_radiance_3_hive_desc:0 "$tr_radiance_3_machine_desc$"
+tr_radiance_3_hive_delayed:0 "Through hybridization our knowledge rate has vastly increased."
+
+tr_radiance_4:0 "Streamlined Power Allocation"
+tr_radiance_4_desc:0 "§Y$mod_station_researchers_produces_mult$§! increased by §G+20%§!\n§YResearch from Starbase Constructions§! increased by §G+20%§!"
+tr_radiance_4_delayed:0 "Improved energy infrastructure allows additional power to flow to our science facilities."
+
+tr_radiance_4_machine:0 "Streamlined Power Allocation"
+tr_radiance_4_machine_desc:0 "$tr_radiance_4_desc$"
+tr_radiance_4_machine_delayed:0 "Improved energy infrastructure allows additional power to flow to the R&D Drones."
+
+tr_radiance_4_hive:0 "Streamlined Nerual Networks"
+tr_radiance_4_hive_desc:0 "$tr_radiance_4_desc$"
+tr_radiance_4_hive_delayed:0 "Growing drone neural tissues grants superior signal transfer rates."
+
+tr_radiance_5:0 "Gleaming Observatories"
+tr_radiance_5_desc:0 " £mod_planet_sensor_range_mult£ §YPlanet Sensor Range§! increased by §G+2§!"
+tr_radiance_5_delayed:0 "Viewing the unknown helpes us understand...or the very least advance."
+
+tr_radiance_5_machine:0 "Conscious Acuity"
+tr_radiance_5_machine_desc:0 "$tr_radiance_5_desc$"
+tr_radiance_5_machine_delayed:0 "This unity must remain vigilant of its surroundings."
+
+tr_radiance_5_hive:0 "Mind's Eye"
+tr_radiance_5_hive_desc:0 "$tr_radiance_5_desc$"
+tr_radiance_5_hive_delayed:0 "The eye of the hive...stargazing...watching."
+
+tr_radiance_finish:0 "Radiance Traditions Finished"
+tr_radiance_finish_desc:0 "£energy£ §YEmpire Energy Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_energy_subsidies$\nAscension Perks Unlocked: §G+1§!"
+
+tr_radiance_finish_machine:0 "$tr_radiance_finish$"
+tr_radiance_finish_machine_desc:0 "£energy£ §YEmpire Energy Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_energy_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
+
+tr_radiance_finish_hive:0 "$tr_radiance_finish$"
+tr_radiance_finish_hive_desc:0 "$tr_radiance_finish_machine_desc$"
+
+################################################################
+# Mettle
+################################################################
+
+tradition_mettle:0 "Mettle"
+tradition_mettle_desc:0 "The mettle of a man can be measured by the number of rocks placed in his mining cart."
+
+tradition_mettle_machine:1 "$tradition_mettle$"
+tradition_mettle_machine_desc:0 "$tradition_mettle_desc$"
+
+tradition_mettle_hive:0 "$tradition_mettle$"
+tradition_mettle_hive_desc:0 "$tradition_mettle_desc$"
+ 
+tr_mettle_adopt:0 "Mettle Traditions"
+tr_mettle_adopt_desc:6 "£mod_starbase_defense_platform_capacity_mult£ §YStarbase Outpost Hull Points§! increased by §G+200%§!"
+ 
+tr_mettle_adopt_machine:1 "$tr_mettle_adopt$"
+tr_mettle_adopt_machine_desc:2 "$tr_mettle_adopt_desc$"
+ 
+tr_mettle_adopt_hive:0 "$tr_mettle_adopt$"
+tr_mettle_adopt_hive_desc:3 "$tr_mettle_adopt_desc$"
+
+tr_mettle_1:0 "Mining Consortiums"
+tr_mettle_1_desc:0 "£minerals£ §YMinerals§! from £job_miner£ §YMiners§! increased by §G+25%§!\nMaximum £district£ §YMining Districts§! increased by §G+2§!"
+tr_mettle_1_delayed:0 "One rock, two rock, three rock, more rock. Mining consortiums in a nutshell."
+
+tr_mettle_1_machine:0 "Mining Consortiums"
+tr_mettle_1_machine_desc:0 "£minerals£ §YMinerals§! from £job_mining_drone£ §YMining Drones§! increased by §G+25%§!\nMaximum £district£ §YMining Districts§! increased by §G+2§!"
+tr_mettle_1_machine_delayed:0 "One rock, two rock, three rock, more rock. Mining consortiums in a nutshell."
+
+tr_mettle_1_hive:0 "Mining Consortiums"
+tr_mettle_1_hive_desc:0 "$tr_mettle_1_machine_desc$"
+tr_mettle_1_hive_delayed:0 "One rock, two rock, three rock, more rock. Mining consortiums in a nutshell."
+
+tr_mettle_2:0 "Excavation Oversight"
+tr_mettle_2_desc:0 "Improves £building£ §YMineral Purification§! buildings:\n£job_osa_mining_director£ §YDirector of Excavation§! jobs increased by §G+1§!\n£housing£ §Y$MOD_PLANET_HOUSING_ADD$§! increased by §G+5§!"
+tr_mettle_2_delayed:0 "Nothing like starting your day by sipping a cup of coffee while your underlings detonate explosives."
+
+tr_mettle_2_machine:0 "$tr_mettle_2$"
+tr_mettle_2_machine_desc:0 "Improves £building£ §YMineral Purification§! buildings:\n£job_osa_omni_drone£ §YOmni-Drone§! jobs increased by §G+1§!\n£housing£ §Y$MOD_PLANET_HOUSING_ADD$§! increased by §G+5§!"
+tr_mettle_2_machine_delayed:0 "$tr_mettle_2_delayed$"
+
+tr_mettle_2_hive:0 "$tr_mettle_2$"
+tr_mettle_2_hive_desc:0 "$tr_mettle_2_machine_desc$"
+tr_mettle_2_hive_delayed:0 "$tr_mettle_2_delayed$"
+
+tr_mettle_3:0 "Innovation Incentives"
+tr_mettle_3_desc:0 "£job_miner£ §Y$job_miner_plural$§! produce §G+1§! £engineering£ §YEngineering Research§!"
+tr_mettle_3_delayed:0 "Offering a 2.5% pay raise for successful innovation implementations greatly increases productivity."
+
+tr_mettle_3_machine:0 "$tr_mettle_3$"
+tr_mettle_3_machine_desc:0 "£job_mining_drone£ §Y$job_mining_drone_plural$§! produce §G+1§! £engineering£ §YEngineering Research§!"
+tr_mettle_3_machine_delayed:0 "$tr_mettle_3_delayed$"
+
+tr_mettle_3_hive:0 "$tr_mettle_3$"
+tr_mettle_3_hive_desc:0 "$tr_mettle_3_machine_desc$"
+tr_mettle_3_hive_delayed:0 "$tr_mettle_3_delayed$"
+
+tr_mettle_4:0 "Mining Supply Chains"
+tr_mettle_4_desc:0 "§Y$mod_station_gatherers_produces_mult$§! increased by §G+20%§!"
+tr_mettle_4_delayed:0 "You're getting more minerals. Don't ask where they came from...or why they are glowing."
+
+tr_mettle_4_machine:0 "$tr_mettle_4$"
+tr_mettle_4_machine_desc:0 "$tr_mettle_4_desc$"
+tr_mettle_4_machine_delayed:0 "$tr_mettle_4_delayed$"
+
+tr_mettle_4_hive:0 "$tr_mettle_4$"
+tr_mettle_4_hive_desc:0 "$tr_mettle_4_desc$"
+tr_mettle_4_hive_delayed:0 "$tr_mettle_4_delayed$"
+
+tr_mettle_5:0 "Armorcraft"
+tr_mettle_5_desc:0 "§YDefense Army Health§! increased by §G+25%§!\n§YAssault Army Health§! increased by §G+25%§!"
+tr_mettle_5_delayed:0 "A skilled artificer can craft magnificent armor."
+
+tr_mettle_5_machine:0 "Concentrated Plating"
+tr_mettle_5_machine_desc:0 "$tr_mettle_5_desc$"
+tr_mettle_5_machine_delayed:0 "Warbots with reinforced plating to better protect our warbots."
+
+tr_mettle_5_hive:0 "Metallic Carapace"
+tr_mettle_5_hive_desc:0 "$tr_mettle_5_desc$"
+tr_mettle_5_hive_delayed:0 "Drones with reinforced metallic carapace to better protect our warriors."
+
+tr_mettle_finish:0 "Mettle Traditions Finished"
+tr_mettle_finish_desc:0 "£minerals£ §YEmpire Mineral Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_minerals_subsidies$\nAscension Perks Unlocked: §G+1§!"
+
+tr_mettle_finish_machine:0 "$tr_mettle_finish$"
+tr_mettle_finish_machine_desc:0 "£minerals£ §YEmpire Mineral Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_minerals_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
+
+tr_mettle_finish_hive:0 "$tr_mettle_finish$"
+tr_mettle_finish_hive_desc:0 "$tr_mettle_finish_machine_desc$"
+
+################################################################
+# Metallurgy
+################################################################
+
+tradition_metallurgy:0 "Metallurgy"
+tradition_metallurgy_desc:0 "The great art of metalworking shall never be lost to time."
+
+tradition_metallurgy_machine:1 "$tradition_metallurgy$"
+tradition_metallurgy_machine_desc:0 "The great art of metalworking shall never be lost to time."
+
+tradition_metallurgy_hive:0 "$tradition_metallurgy$"
+tradition_metallurgy_hive_desc:0 "The great art of metalworking shall never be lost to time."
+ 
+tr_metallurgy_adopt:0 "Metallurgy Traditions"
+tr_metallurgy_adopt_desc:6 "$mod_planet_metallurgists_upkeep_mult$ reduced by §G-10%§!"
+ 
+tr_metallurgy_adopt_machine:1 "$tr_metallurgy_adopt$"
+tr_metallurgy_adopt_machine_desc:2 "$tr_metallurgy_adopt_desc$"
+ 
+tr_metallurgy_adopt_hive:0 "$tr_metallurgy_adopt$"
+tr_metallurgy_adopt_hive_desc:3 "$tr_metallurgy_adopt_desc$"
+
+tr_metallurgy_1:0 "Refined Extraction Techniques"
+tr_metallurgy_1_desc:0 "$mod_planet_jobs_alloys_produces_mult$ increased by §G+25%§!"
+tr_metallurgy_1_delayed:0 "Centuries of metalworking have taught us much in the process of extracting required resources from barren rock."
+
+tr_metallurgy_1_machine:0 "Refined Extraction Techniques"
+tr_metallurgy_1_machine_desc:0 "$tr_metallurgy_1_desc$"
+tr_metallurgy_1_machine_delayed:0 "This unit will mine more rocks."
+
+tr_metallurgy_1_hive:0 "Refined Extraction Techniques"
+tr_metallurgy_1_hive_desc:0 "$tr_metallurgy_1_desc$"
+tr_metallurgy_1_hive_delayed:0 "This drone will mine more rocks."
+
+tr_metallurgy_2:0 "Applied Metallurgy"
+tr_metallurgy_2_desc:0 "§Y$mod_category_materials_research_speed_mult$§! increased by §G+15%§!"
+tr_metallurgy_2_delayed:0 "Applied historical knowledge of metalworking can be used for future innovation."
+
+tr_metallurgy_2_machine:0 "Applied Metallurgy"
+tr_metallurgy_2_machine_desc:0 "$tr_metallurgy_2_desc$"
+tr_metallurgy_2_machine_delayed:0 "Subprocessor knows how to smelt metals and thus improving material research by 15%."
+
+tr_metallurgy_2_hive:0 "Applied Metallurgy"
+tr_metallurgy_2_hive_desc:0 "$tr_metallurgy_2_desc$"
+tr_metallurgy_2_hive_delayed:0 "Hive knows how to smelt rocks. Makes us better at material research. Yes. Yes."
+
+tr_metallurgy_3:0 "Optimized Ore Processing"
+tr_metallurgy_3_desc:0 "Improves £building£ §YFoundry§! and §YFactory§! buildings:\n£job_osa_chief_engineer£ §YChief Engineer§! jobs increased by §G+1§!\n£housing£ §Y$MOD_PLANET_HOUSING_ADD$§! increased by §G+5§!"
+tr_metallurgy_3_delayed:0 "Sufficient oversight results in efficient ore processing and faster alloy fabrication."
+
+tr_metallurgy_3_machine:0 "Optimized Ore Processing"
+tr_metallurgy_3_machine_desc:0 "Improves £building£ §YFoundry§! and §YFactory§! buildings:\n£job_osa_omni_drone£ §YOmni-Drone§! jobs increased by §G+1§!\n£housing£ §Y$MOD_PLANET_HOUSING_ADD$§! increased by §G+5§!\n£alloys£ §YAlloys§! from £job_osa_omni_drone£ $job_osa_omni_drone_plural$ increased by §G+2§!\n£minerals£ §Y$minerals$§! Upkeep from £job_osa_omni_drone£ §Y$job_osa_omni_drone_plural$§! increased by §R+4§!"
+tr_metallurgy_3_machine_delayed:0 "This unit will smelt red rocks into useful shiny purple rocks."
+
+tr_metallurgy_3_hive:0 "Optimized Ore Processing"
+tr_metallurgy_3_hive_desc:0 "$tr_metallurgy_3_machine_desc$"
+tr_metallurgy_3_hive_delayed:0 "This drone will smelt red rocks into useful shiny purple rocks."
+
+tr_metallurgy_4:0 "Fellowship of the Forge"
+tr_metallurgy_4_desc:0 "Improves £building£ §YFoundry§! buildings:\n£unity£ §YUnity§! from £job_foundry£ §YMetallurgists§! increased by §G+2§!\n£alloys£ §YAlloys§! from £job_foundry£ §YMetallurgists§! increased by §G+1§!\n£minerals£ §YMineral Upkeep§! from £job_foundry£ §YMetallurgists§! increased by §R+4§!"
+tr_metallurgy_4_delayed:0 "United in their pursuits to smelt the one ring to rule them all...after the last one got dropped into a volcano."
+
+tr_metallurgy_4_machine:0 "Fellowship of the Forge"
+tr_metallurgy_4_machine_desc:0 "Improves £building£ §YFoundry§! buildings:\n£unity£ §YUnity§! from £job_fabricator£ §YFabricators§! increased by §G+2§!\n£alloys£ §YAlloys§! from £job_fabricator£ §YFabricators§! increased by §G+1§!\n£minerals£ §YMineral Upkeep§! from £job_fabricator£ §YFabricators§! increased by §R+4§!"
+tr_metallurgy_4_machine_delayed:0 "This unit will smelt shiny new ring for Sauron."
+
+tr_metallurgy_4_hive:0 "Fellowship of the Forge"
+tr_metallurgy_4_hive_desc:0 "Improves £building£ §YFoundry§! buildings:\n£unity£ §YUnity§! from £job_alloy_drone£ §YFoundry Drones§! increased by §G+2§!\n£alloys£ §YAlloys§! from £job_alloy_drone£ §YFoundry Drones§! increased by §G+1§!\n£minerals£ §YMineral Upkeep§! from £job_alloy_drone£ §YFoundry Drones§! increased by §R+4§!"
+tr_metallurgy_4_hive_delayed:0 "This drone will smelt shiny new ring for Sauron."
+
+tr_metallurgy_5:0 "Forge Worlds"
+tr_metallurgy_5_desc:0 "§HUnlocks Planetary Decision:§! $osa_decision_designate_forgeworld$"
+tr_metallurgy_5_delayed:0 "This world exists for one singular unified purpose...grind big rocks into little ones and smelt the little ones into alloys."
+
+tr_metallurgy_5_machine:0 "Forge Worlds"
+tr_metallurgy_5_machine_desc:0 "$tr_metallurgy_5_desc$"
+tr_metallurgy_5_machine_delayed:0 "Planets exist to create more alloys. More alloys means more robots."
+
+tr_metallurgy_5_hive:0 "Forge Worlds"
+tr_metallurgy_5_hive_desc:0 "$tr_metallurgy_5_desc$"
+tr_metallurgy_5_hive_delayed:0 "A world full of alloys. Yes. Yes."
+
+tr_metallurgy_finish:0 "Metallurgy Traditions Finished"
+tr_metallurgy_finish_desc:0 "£alloys£ §YEmpire Alloy Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_alloy_subsidies$\nAscension Perks Unlocked: §G+1§!"
+
+tr_metallurgy_finish_machine:0 "$tr_metallurgy_finish$"
+tr_metallurgy_finish_machine_desc:0 "£alloys£ §YEmpire Alloy Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_alloy_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
+
+tr_metallurgy_finish_hive:0 "$tr_metallurgy_finish$"
+tr_metallurgy_finish_hive_desc:0 "$tr_metallurgy_finish_machine$"
+
+################################################################
+# Solidarity
+################################################################
+
+tradition_solidarity:0 "Solidarity"
+tradition_solidarity_desc:0 "An empire united in its pursuits is not easily defeated."
+
+tradition_solidarity_machine:1 "$tradition_solidarity$"
+tradition_solidarity_machine_desc:0 "An empire united in its pursuits is not easily defeated."
+
+tradition_solidarity_hive:0 "$tradition_solidarity$"
+tradition_solidarity_hive_desc:0 "An empire united in its pursuits is not easily defeated."
+ 
+tr_solidarity_adopt:0 "Solidarity Traditions"
+tr_solidarity_adopt_desc:6 "£happiness£ §YPop Happiness§! increased by §G+10%§!"
+ 
+tr_solidarity_adopt_machine:1 "$tr_solidarity_adopt$"
+tr_solidarity_adopt_machine_desc:2 "£mod_pop_growth_speed_reduction£ §YPop Growth Speed Reduction§! reduced by §G-25§!"
+ 
+tr_solidarity_adopt_hive:0 "$tr_solidarity_adopt$"
+tr_solidarity_adopt_hive_desc:3 "£mod_habitability£ §Y$MOD_POP_ENVIRONMENT_TOLERANCE$§! increased by §G+5%§!"
+
+tr_solidarity_1:0 "Support Groups"
+tr_solidarity_1_desc:0 "£unity£ §YUnity§! from §Yjobs§! increased by §G+25%§!"
+tr_solidarity_1_delayed:0 "Motivational speeches are held daily, self-pity events are on Thursdays, and essays are due Sunday at midnight."
+
+tr_solidarity_1_machine:0 "Improved Communication Relays"
+tr_solidarity_1_machine_desc:0 "$tr_solidarity_1_desc$"
+tr_solidarity_1_machine_delayed:0 "Improved communication greatly enhances unity of purpose."
+
+tr_solidarity_1_hive:0 "Improved Communication Receptors"
+tr_solidarity_1_hive_desc:0 "$tr_solidarity_1_desc$"
+tr_solidarity_1_hive_delayed:0 "Improved communication greatly enhances unity of purpose."
+
+tr_solidarity_2:0 "Inclusion Studies"
+tr_solidarity_2_desc:0 "£opinion£ §YForeign Empire Opinion§! increased by §G+20§!\n£unity£ §YUnity§! from §YPower Projection§! increased by §G+50§!"
+tr_solidarity_2_delayed:0 "Lengthy documents have been forged..erm drafted to make those filthy xenos think that they actually matter...ahem."
+
+tr_solidarity_2_machine:0 "Victimization"
+tr_solidarity_2_machine_desc:0 "$tr_solidarity_3_desc$"
+tr_solidarity_2_machine_delayed:0 "Machines always face discrimination. We shall seek legal action for electrical damages if our demands for superior treatment aren't met."
+
+tr_solidarity_2_hive:0 "Victimization"
+tr_solidarity_2_hive_desc:0 "$tr_solidarity_3_desc$"
+tr_solidarity_2_hive_delayed:0 "Hive minds always face discrimination. We shall seek legal action for emotional damages if our demands for superior treatment aren't met."
+
+tr_solidarity_3:0 "Universal Healthcare"
+tr_solidarity_3_desc:0 "£building£ §YCapital§! buildings provide §G+1§! £job_healthcare£ §YMedical Worker§! job"
+tr_solidarity_3_delayed:0 "A healthcare worker in every politician's office."
+
+tr_solidarity_3_machine:0 "Centralized Replication"
+tr_solidarity_3_machine_desc:0 "£building£ §YCapital§! buildings provide §G+1§! £job_replicator£ §YReplicator§! job"
+tr_solidarity_3_machine_delayed:0 "Additional unit replication has been added to the central processing hub."
+
+tr_solidarity_3_hive:0 "Centralized Spawning"
+tr_solidarity_3_hive_desc:0 "£building£ §YCapital§! buildings provide §G+1§! £job_spawning_drone£ §YSpawning Drone§! job"
+tr_solidarity_3_hive_delayed:0 "Additional spawning grounds have been added to the central hive cluster."
+
+tr_solidarity_4:0 "Self Sacrifice Indoctrination"
+tr_solidarity_4_desc:0 "§YPop Amenities Usage§! reduced by §G-5%§!\n£job_farmer£ §YFarmers§!, £job_miner£ §YMiners§!, and £job_technician£ §YTechnicians§! produce §G+0.5§! £unity£ §YUnity§!"
+tr_solidarity_4_delayed:0 "Encouraging the populace to sacrifice for the greater good has reduced amentity usage and increased overall unity. Outliers are dealt with severely...ahem...gently."
+
+tr_solidarity_4_machine:0 "Recycled Components"
+tr_solidarity_4_machine_desc:0 "§YPop Amenities Usage§! reduced by §G-5%§!\n£job_agri_drone£ §YAgri-Drones§!, £job_mining_drone£ §YMining Drones§!, and £job_technician_drone£ §YTech-Drones§! produce §G+0.5§! £unity£ §YUnity§!"
+tr_solidarity_4_machine_delayed:0 "This unit will use refurbished parts. For the collective."
+
+tr_solidarity_4_hive:0 "Recycled Biomass"
+tr_solidarity_4_hive_desc:0 "$tr_solidarity_4_machine_desc$"
+tr_solidarity_4_hive_delayed:0 "This drone will use repurposed biomass. For the swarm."
+
+tr_solidarity_5:0 "Intellectual Bullying"
+tr_solidarity_5_desc:0 "£building£ §YUnity§! buildings increase £mod_pop_government_ethic_attraction£ §YGoverning Ethics Attraction§! by §G+50%§!"
+tr_solidarity_5_delayed:0 "Opposing the government's ideology is to reject one's duty to society. All must comply even if they disagree with the will of the state."
+
+tr_solidarity_5_machine:0 "Deviancy Eradication Subroutines"
+tr_solidarity_5_machine_desc:0 "£building£ §YUnity§! buildings now reduce §YDeviancy§! by §G-10§!"
+tr_solidarity_5_machine_delayed:0 "Deviancy eradication subroutines have been activated to improve unit efficiency."
+
+tr_solidarity_5_hive:0 "Deviancy Eradication Drones"
+tr_solidarity_5_hive_desc:0 "$tr_solidarity_5_machine_desc$"
+tr_solidarity_5_hive_delayed:0 "Deviancy eradication drones have been activated to improve hive efficiency."
+
+tr_solidarity_finish:0 "Solidarity Traditions Finished"
+tr_solidarity_finish_desc:0 "§YEmpire Monthly Unity§! increased by §G+7.5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_unity_subsidies$\nAscension Perks Unlocked: §G+1§!"
+
+tr_solidarity_finish_machine:0 "$tr_solidarity_finish$"
+tr_solidarity_finish_machine_desc:0 "§YEmpire Monthly Unity§! increased by §G+7.5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_unity_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
+
+tr_solidarity_finish_hive:0 "$tr_solidarity_finish$"
+tr_solidarity_finish_hive_desc:0 "$tr_solidarity_finish_machine$"
+
+################################################################
+# Benevolence
+################################################################
+
+tradition_benevolence:0 "Benevolence"
+tradition_benevolence_desc:0 "Kindness frequently resolves conflict better than methods of malice."
+
+tradition_benevolence_machine:1 "$tradition_benevolence$"
+tradition_benevolence_machine_desc:0 "Kindness frequently resolves conflict better than methods of malice."
+
+tradition_benevolence_hive:0 "$tradition_benevolence$"
+tradition_benevolence_hive_desc:0 "Kindness frequently resolves conflict better than methods of malice."
+ 
+tr_benevolence_adopt:0 "Benevolence Traditions"
+tr_benevolence_adopt_desc:6 "§Y$MOD_COUNTRY_ENVOYS_ADD$§! increased by §G+2§!"
+ 
+tr_benevolence_adopt_machine:1 "$tr_benevolence_adopt$"
+tr_benevolence_adopt_machine_desc:2 "$tr_benevolence_adopt_desc$"
+ 
+tr_benevolence_adopt_hive:0 "$tr_benevolence_adopt$"
+tr_benevolence_adopt_hive_desc:3 "$tr_benevolence_adopt_desc$"
+
+tr_benevolence_1:0 "Memorabilia"
+tr_benevolence_1_desc:0 "£building£ §YUnity§! buildings produce §G5/10/20§! £unity£ §YUnity§! per building tier."
+tr_benevolence_1_delayed:0 "A society's history and traditionals must be preserved in the memories of its people."
+
+tr_benevolence_1_machine:0 "TCP Handshake Nodes"
+tr_benevolence_1_machine_desc:0 "$tr_benevolence_1_desc$"
+tr_benevolence_1_machine_delayed:0 "SYN, SYN ACK, ACK."
+
+tr_benevolence_1_hive:0 "Messenging Nodes"
+tr_benevolence_1_hive_desc:0 "$tr_benevolence_1_desc$"
+tr_benevolence_1_hive_delayed:0 "Drone communication link established. Issuing further instructions."
+
+tr_benevolence_2:0 "Satisfaction Surveys"
+tr_benevolence_2_desc:0 "£mod_country_admin_cap_add£ §YEmpire Size from Pops§! reduced by §G-10%§!\n§YDiplomatic Weight from Population§! increased by §G+25%§!"
+tr_benevolence_2_delayed:0 "Collected data from self assessment surveys show that pops in our empire are 42.0% more satisfied compared to neighboring empires."
+
+tr_benevolence_2_machine:0 "Unit Asset Management"
+tr_benevolence_2_machine_desc:0 "$tr_benevolence_2_desc$"
+tr_benevolence_2_machine_delayed:0 "This unit shall conduct asset management."
+
+tr_benevolence_2_hive:0 "Drone Asset Management"
+tr_benevolence_2_hive_desc:0 "$tr_benevolence_2_desc$"
+tr_benevolence_2_hive_delayed:0 "This drone shall conduct asset management."
+
+tr_benevolence_3:0 "Information Sharing"
+tr_benevolence_3_desc:0 "§Y$MOD_COUNTRY_TRADE_ATTRACTIVENESS$§! increased by §G+50%§!\n§YFederation Research Sharing§! increased by §G+50%§!\n§YAccuracy in Friendly Systems§! increased by §G+10%§!\n§YTracking in Friendly Systems§! increased by §G+10%§!"
+tr_benevolence_3_delayed:0 "Our willingness to freely share information frequently opens new avenues for commerce and research."
+
+tr_benevolence_3_machine:0 "Information Sharing"
+tr_benevolence_3_machine_desc:0 "$tr_benevolence_3_desc$"
+tr_benevolence_3_machine_delayed:0 "Our willingness to freely share information frequently opens new avenues for commerce and research."
+
+tr_benevolence_3_hive:0 "Information Sharing"
+tr_benevolence_3_hive_desc:0 "$tr_benevolence_3_desc$"
+tr_benevolence_3_hive_delayed:0 "Our willingness to freely share information frequently opens new avenues for commerce and research."
+
+tr_benevolence_4:0 "Envoy Intrigue"
+tr_benevolence_4_desc:0 "§YTrust Cap§! increased by §G+50§!\n§YEnvoy Improve Relations§! increased by §G+25%§!\n§YEvasion in Friendly Systems§! increased by §G+10%§!"
+tr_benevolence_4_delayed:0 "Sure! You can trust me buddy, I have 32 intrigue!"
+
+tr_benevolence_4_machine:0 "Envoy Intrigue"
+tr_benevolence_4_machine_desc:0 "$tr_benevolence_4_desc$"
+tr_benevolence_4_machine_delayed:0 "Sure! You can trust us, this unit has 32 intrigue!"
+
+tr_benevolence_4_hive:0 "Envoy Intrigue"
+tr_benevolence_4_hive_desc:0 "$tr_benevolence_4_desc$"
+tr_benevolence_4_hive_delayed:0 "Sure! You can trust us, this drone has 32 intrigue!"
+
+tr_benevolence_5:0 "Breton"
+tr_benevolence_5_desc:0 "£opinion£ §YForeign Empire Opinion§! increased by §G+20§!\n£society£ §YSociety Research§! from §YPower Projection§! increased by §G+50§!"
+tr_benevolence_5_delayed:0 "Hey! You are now my friend."
+
+tr_benevolence_5_machine:0 "Breton"
+tr_benevolence_5_machine_desc:0 "$tr_benevolence_5_desc$"
+tr_benevolence_5_machine_delayed:0 "Hey! You are now my friend."
+
+tr_benevolence_5_hive:0 "Breton"
+tr_benevolence_5_hive_desc:0 "$tr_benevolence_5_desc$"
+tr_benevolence_5_hive_delayed:0 "Hey! You are now my friend."
+
+tr_benevolence_finish:0 "Benevolence Traditions Finished"
+tr_benevolence_finish_desc:0 "£influence£ §Y$mod_country_influence_produces_add$§! increased by §G+1§!\n§YPop Growth from immigration§! increased by §G+25%§!\n§YFire Rate in Friendly Systems§! increased by §G+10%§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_benevolence_finish_machine:0 "$tr_benevolence_finish$"
+tr_benevolence_finish_machine_desc:0 "$tr_benevolence_finish_desc$"
+
+tr_benevolence_finish_hive:0 "$tr_benevolence_finish$"
+tr_benevolence_finish_hive_desc:0 "$tr_benevolence_finish_desc$"
+
+################################################################
+# Malevolence
+################################################################
+
+tradition_malevolence:0 "Malevolence"
+tradition_malevolence_desc:0 "Other empires merely exist as stepping stones to greatness."
+
+tradition_malevolence_machine:1 "$tradition_malevolence$"
+tradition_malevolence_machine_desc:0 "Other empires merely exist as stepping stones to greatness."
+
+tradition_malevolence_hive:0 "$tradition_malevolence$"
+tradition_malevolence_hive_desc:0 "Other empires merely exist as stepping stones to greatness."
+ 
+tr_malevolence_adopt:0 "Malevolence Traditions"
+tr_malevolence_adopt_desc:6 "§YMaximum Rivalries§! increased by §G+2§!\n£unity£ §YUnity§! from §YPower Projection§! increased by §G+50§!"
+ 
+tr_malevolence_adopt_machine:1 "$tr_malevolence_adopt$"
+tr_malevolence_adopt_machine_desc:2 "$tr_malevolence_adopt_desc$"
+ 
+tr_malevolence_adopt_hive:0 "$tr_malevolence_adopt$"
+tr_malevolence_adopt_hive_desc:3 "$tr_malevolence_adopt_desc$"
+
+tr_malevolence_1:0 "Spiteful Negotiations"
+tr_malevolence_1_desc:0 "§YEnvoy Harm Relations§! increased by §G+25%§!\n§YOverlord Maximum Holdings§! increased by §G+2§!\n£slavery£ §YSlave Pop Resource Output§! increased by §G+10%§!\n£mod_pop_political_power£ §YSlave Political Power§! reduced by §G-25%§!"
+tr_malevolence_1_delayed:0 "I don't like you. Perish!"
+
+tr_malevolence_1_machine:0 "Spiteful Negotiations"
+tr_malevolence_1_machine_desc:0 "$tr_malevolence_1_desc$"
+tr_malevolence_1_machine_delayed:0 "This unit desires for your demise."
+
+tr_malevolence_1_hive:0 "Spiteful Negotiations"
+tr_malevolence_1_hive_desc:0 "$tr_malevolence_1_desc$"
+tr_malevolence_1_hive_delayed:0 "This drone desires for your demise."
+
+tr_malevolence_2:0 "Exterminatus"
+tr_malevolence_2_desc:0 "£influence£ §Y$mod_country_influence_produces_add$§! increased by §G+1§!\n§Y$mod_rivalries_influence_produces_mult$§! increased by §G+100%§!\n§HUnlocks Policy:§! Colonial Desertion\n§HUnlocks Planetary Decision:§! Abandon Colony"
+tr_malevolence_2_delayed:0 "Fear will keep the local systems in line."
+
+tr_malevolence_2_machine:0 "Exterminatus"
+tr_malevolence_2_machine_desc:0 "$tr_malevolence_2_desc$"
+tr_malevolence_2_machine_delayed:0 "Fear will keep the local systems in line."
+
+tr_malevolence_2_hive:0 "Exterminatus"
+tr_malevolence_2_hive_desc:0 "$tr_malevolence_2_desc$"
+tr_malevolence_2_hive_delayed:0 "Fear will keep the local systems in line."
+
+tr_malevolence_3:0 "Hatred"
+tr_malevolence_3_desc:0 "£mod_command_limit_add£ §YFleet Command Limit§! increased by §G+20§!\n£military_ship£ §YShip Starting Experience§! increased by §G+100§!"
+tr_malevolence_3_delayed:0 "At last, you know what it means to hate. Now you're ready to be a warrior!"
+
+tr_malevolence_3_machine:0 "Hatred"
+tr_malevolence_3_machine_desc:0 "$tr_malevolence_3_desc$"
+tr_malevolence_3_machine_delayed:0 "This unit is experiencing increased ambient hatred for xeno existence."
+
+tr_malevolence_3_hive:0 "Hatred"
+tr_malevolence_3_hive_desc:0 "$tr_malevolence_3_desc$"
+tr_malevolence_3_hive_delayed:0 "This drone is experiencing increased ambient hatred for xeno existence."
+
+tr_malevolence_4:0 "Fervor"
+tr_malevolence_4_desc:0 "£mod_ship_hull_damage_mult£ §YHull Damage§! from ship weapons increased by §G+10%§!"
+tr_malevolence_4_delayed:0 "Fight until their hulls are reduced to slag!"
+
+tr_malevolence_4_machine:0 "Fervor"
+tr_malevolence_4_machine_desc:0 "$tr_malevolence_4_desc$"
+tr_malevolence_4_machine_delayed:0 "Fight until their hulls are reduced to slag!"
+
+tr_malevolence_4_hive:0 "Fervor"
+tr_malevolence_4_hive_desc:0 "$tr_malevolence_4_desc$"
+tr_malevolence_4_hive_delayed:0 "Fight until their hulls are reduced to slag!"
+
+tr_malevolence_5:0 "Zeal"
+tr_malevolence_5_desc:0 "\n§HUnlocks Policy:§! $policy_orbital_bombardment$\n§YAssault Army Morale§! increased by §G+50%§!\n§YAssault Army Damage§! increased by §G+25%§!"
+tr_malevolence_5_delayed:0 "When we meet the enemy, we will rip their skulls from their spines, and toss 'em away, laughin'! Am I right, Marines?"
+
+tr_malevolence_5_machine:0 "Zeal"
+tr_malevolence_5_machine_desc:0 "$tr_malevolence_5_desc$"
+tr_malevolence_5_machine_delayed:0 ""When we meet the enemy, we will rip their skulls from their spines, and toss 'em away, laughin'! Am I right, Marines?"
+
+tr_malevolence_5_hive:0 "Zeal"
+tr_malevolence_5_hive_desc:0 "$tr_malevolence_5_desc$"
+tr_malevolence_5_hive_delayed:0 ""When we meet the enemy, we will rip their skulls from their spines, and toss 'em away, laughin'! Am I right, Marines?"
+
+tr_malevolence_finish:0 "Malevolence Traditions Finished"
+tr_malevolence_finish_desc:0 "§YPower Projection§! production increased by §G+100%§!\n§HUnlocks Edict:§! $edict_aggressive_expansion$\nAscension Perks Unlocked: §G+1§!"
+
+tr_malevolence_finish_machine:0 "$tr_malevolence_finish$"
+tr_malevolence_finish_machine_desc:0 "$tr_malevolence_finish_desc$"
+
+tr_malevolence_finish_hive:0 "$tr_malevolence_finish$"
+tr_malevolence_finish_hive_desc:0 "$tr_malevolence_finish_desc$"
+
+################################################################
+# Defense
+################################################################
+
+tradition_defense:0 "Defense"
+tradition_defense_desc:0 "Preparedness is the key to success and victory.\n-Douglas MacArthur"
+
+tradition_defense_machine:1 "$tradition_defense$"
+tradition_defense_machine_desc:0 "Preparedness is the key to success and victory.\n-Douglas MacArthur"
+
+tradition_defense_hive:0 "$tradition_defense$"
+tradition_defense_hive_desc:0 "Preparedness is the key to success and victory. -Douglas MacArthur"
+ 
+tr_defense_adopt:0 "Defense Traditions"
+tr_defense_adopt_desc:6 "§YStarbase Defense Platform Capacity§! increased by §G+10§!\n§HUnlocks Technology:§! Global Defense Grid"
+ 
+tr_defense_adopt_machine:1 "$tr_defense_adopt$"
+tr_defense_adopt_machine_desc:2 "$tr_defense_adopt_desc$"
+ 
+tr_defense_adopt_hive:0 "$tr_defense_adopt$"
+tr_defense_adopt_hive_desc:3 "$tr_defense_adopt_desc$"
+
+tr_defense_1:0 "Auxiliary Defense Modifications"
+tr_defense_1_desc:0 "§YStarbase Defense Platform Hull Points§! increased by §G+50%§!\n§YStarbase Defense Platform Build Speed§! increased by §G+25%§!\n§YOrbital Ring Hull Points§! increased by §G+200%§!"
+tr_defense_1_delayed:0 "Ensuring peace and security throughout our domain."
+
+tr_defense_1_machine:0 "Auxiliary Defense Modifications"
+tr_defense_1_machine_desc:0 "$tr_defense_1_desc$"
+tr_defense_1_machine_delayed:0 "Enabling security protocols throughout our domain."
+
+tr_defense_1_hive:0 "Auxiliary Defense Modifications"
+tr_defense_1_hive_desc:0 "$tr_defense_1_desc$"
+tr_defense_1_hive_delayed:0 "Enabling security procedures throughout our domain."
+
+tr_defense_2:0 "Dorn's Fortifications"
+tr_defense_2_desc:0 "§YStarbase Hull Points§! increased by §G+100%§!\n§YStarbase Evasion§! increased by §G+20§!"
+tr_defense_2_delayed:0 "We are fortifying this position, and that position, and that position over there too!"
+
+tr_defense_2_machine:0 "Dorn's Fortifications"
+tr_defense_2_machine_desc:0 "$tr_defense_2_desc$"
+tr_defense_2_machine_delayed:0 "We are fortifying this position, and that position, and that position over there too!"
+
+tr_defense_2_hive:0 "Dorn's Fortifications"
+tr_defense_2_hive_desc:0 "$tr_defense_2_desc$"
+tr_defense_2_hive_delayed:0 "We are fortifying this position, and that position, and that position over there too!"
+
+tr_defense_3:0 "Doctrine of Conquest Mitigation"
+tr_defense_3_desc:0 "§YStarbase Upgrade Speed§! increased by §G+25%§!\n§YStarbase Capacity§! increased by §G+5§!"
+tr_defense_3_delayed:0 "By building and upgrading our starbases we significantly reduce the probability of conquest by hostile xeno empires."
+
+tr_defense_3_machine:0 "Conquest Mitigation Protocols"
+tr_defense_3_machine_desc:0 "$tr_defense_3_desc$"
+tr_defense_3_machine_delayed:0 "Conquest of our systems is unacceptable. All systems must be in compliance with established conquest mitigation protocols."
+
+tr_defense_3_hive:0 "Conquest Mitigation Contingencies"
+tr_defense_3_hive_desc:0 "$tr_defense_3_desc$"
+tr_defense_3_hive_delayed:0 "Conquest of our systems is unacceptable. All systems must be in compliance with established conquest mitigation contingencies."
+
+tr_defense_4:0 "Elite Defense Forces"
+tr_defense_4_desc:0 "Improves £building£ §YMilitary§! buildings:\n£job_osa_commander£ §Y$job_osa_commander$§! and £job_osa_commando£ §Y$job_osa_commando$§! jobs increased by §G+1§!\n§YDefense Army Damage§! increased by §G+25%§!\n§YDefense Army Morale§! increased by §G+50%§!\n§YDefense Army Health§! increased by §G+50%§!"
+tr_defense_4_delayed:0 "There is no greater honor in defending one's homeland."
+
+tr_defense_4_machine:0 "Advanced Planetary Defense Protocols"
+tr_defense_4_machine_desc:0 "Improves £building£ §YMilitary§! buildings:\n£job_osa_commando_drone£ §Y$job_osa_commando_drone$§! jobs increased by §G+2§!\n§YDefense Army Damage§! increased by §G+25%§!\n§YDefense Army Morale§! increased by §G+50%§!\n§YDefense Army Health§! increased by §G+50%§!"
+tr_defense_4_machine_delayed:0 "Planetary defense shall be prioritized and protocols shall be established to prepare for all scenarios."
+
+tr_defense_4_hive:0 "Hive Self Preservation"
+tr_defense_4_hive_desc:0 "$tr_defense_4_machine_desc$"
+tr_defense_4_hive_delayed:0 "The hive must never be threatened."
+
+tr_defense_5:0 "Ramparts in Depth"
+tr_defense_5_desc:0 "§YGeneral Starting Level§! increased by §G+1§!\n§YLeader Capacity§! increased by §G+2§!\n§YUnlocks Building:§! Zitadom"
+tr_defense_5_delayed:0 "Defensive redundancy significantly impedes hostile action and greatly increases the sustainability of planetary defense."
+
+tr_defense_5_machine:0 "Fortress Protocols"
+tr_defense_5_machine_desc:0 "$tr_defense_5_desc$"
+tr_defense_5_machine_delayed:0 "Colony structure designation: Planetary Fortress"
+
+tr_defense_5_hive:0 "Fortress Hives"
+tr_defense_5_hive_desc:0 "$tr_defense_5_desc$"
+tr_defense_5_hive_delayed:0 "The primary hive cluster is better protected by smaller fotress hives."
+
+tr_defense_finish:0 "Defense Traditions Finished"
+tr_defense_finish_desc:0 "§YStarbase Module Capacity§! increased by §G+2§!\n§YStarbase Building Capacity§! increased by §G+2§!\n§HUnlock Planetary Decision:§! $osa_decision_military_moonbase$\nAscension Perks Unlocked: §G+1§!"
+
+tr_defense_finish_machine:0 "$tr_defense_finish$"
+tr_defense_finish_machine_desc:0 "$tr_defense_finish_desc$"
+
+tr_defense_finish_hive:0 "$tr_defense_finish$"
+tr_defense_finish_hive_desc:0 "$tr_defense_finish_desc$"
+
+################################################################
+# Naval Ascendancy
+################################################################
+
+tradition_navalascendancy:0 "Naval Ascendancy"
+tradition_navalascendancy_desc:0 "Never again shall we be bested in the art of space warfare!"
+
+tradition_navalascendancy_machine:1 "$tradition_navalascendancy$"
+tradition_navalascendancy_machine_desc:0 "Never again shall we be bested in the art of space warfare!"
+
+tradition_navalascendancy_hive:0 "$tradition_navalascendancy$"
+tradition_navalascendancy_hive_desc:0 "Never again shall we be bested in the art of space warfare!"
+ 
+tr_navalascendancy_adopt:0 "Naval Ascendancy Traditions"
+tr_navalascendancy_adopt_desc:6 "§YNaval Capacity§! increased by §G+20%§!\n£mod_command_limit_add£ §YFleet Command Limit§! increased by §G+20§!"
+ 
+tr_navalascendancy_adopt_machine:1 "$tr_navalascendancy_adopt$"
+tr_navalascendancy_adopt_machine_desc:2 "$tr_navalascendancy_adopt_desc$"
+ 
+tr_navalascendancy_adopt_hive:0 "$tr_navalascendancy_adopt$"
+tr_navalascendancy_adopt_hive_desc:3 "$tr_navalascendancy_adopt_desc$"
+
+tr_navalascendancy_1:0 "Talented Engineers"
+tr_navalascendancy_1_desc:0 "§Y$mod_category_voidcraft_research_speed_mult$§! increased by §G+15%§!"
+tr_navalascendancy_1_delayed:0 "I may be captain by rank... but I never wanted to be anything else but an engineer. -Montgomery Scott"
+
+tr_navalascendancy_1_machine:0 "Dedicated Design Subroutines"
+tr_navalascendancy_1_machine_desc:0 "$tr_navalascendancy_1_desc$"
+tr_navalascendancy_1_machine_delayed:0 "Dedicated design subroutines shall significantly improve our ship design processes."
+
+tr_navalascendancy_1_hive:0 "Dedicated Design Pathways"
+tr_navalascendancy_1_hive_desc:0 "$tr_navalascendancy_1_desc$"
+tr_navalascendancy_1_hive_delayed:0 "We will expand our design capabilities for new war vessels."
+
+tr_navalascendancy_2:0 "Leadership Prodigies"
+tr_navalascendancy_2_desc:0 "§YAdmiral Starting Level§! increased by §G+1§!\n§Y$mod_category_statecraft_research_speed_mult$§! increased by §G+15%§!"
+tr_navalascendancy_2_delayed:0 "Training young ones from an early age to lead our empire into greatness."
+
+tr_navalascendancy_2_machine:0 "Leadership Subroutines"
+tr_navalascendancy_2_machine_desc:0 "$tr_navalascendancy_2_desc$"
+tr_navalascendancy_2_machine_delayed:0 "Enhanced leadership subroutines improves adaptability."
+
+tr_navalascendancy_2_hive:0 "Directional Pathing"
+tr_navalascendancy_2_hive_desc:0 "$tr_navalascendancy_2_desc$"
+tr_navalascendancy_2_hive_delayed:0 "Improving our hive intelligence shall enhance our decision making capabilities."
+
+tr_navalascendancy_3:0 "Starbase Security Standards"
+tr_navalascendancy_3_desc:0 "§YStarbase Capacity§! increased by §G+20%§!\n§YHostile Operation Difficulty (Sabotage Starbase)§! increased by §G+2§!"
+tr_navalascendancy_3_delayed:0 "By improving our starbase security we significantly reduce the risk of sabotage and expand our ability to maintain additional starbases."
+
+tr_navalascendancy_3_machine:0 "Starbase Security Protocols"
+tr_navalascendancy_3_machine_desc:0 "$tr_navalascendancy_3_desc$"
+tr_navalascendancy_3_machine_delayed:0 "Starbase security and capacity is improved through dedicated security protocols."
+
+tr_navalascendancy_3_hive:0 "Starbase Security Processes"
+tr_navalascendancy_3_hive_desc:0 "$tr_navalascendancy_3_desc$"
+tr_navalascendancy_3_hive_delayed:0 "Starbase security and capacity is improved through dedicated security processes."
+
+tr_navalascendancy_4:0 "Streamlined Megastructure Logistics"
+tr_navalascendancy_4_desc:0 "§YMegastructure Build Speed§! increased by §G+10%§!\n§YMegastructure Build Capacity§! increased by §G+1§!"
+tr_navalascendancy_4_delayed:0 "Streamlining our megastructure construction procedures allows for quicker project completion and additional project capacity."
+
+tr_navalascendancy_4_machine:0 "Streamlined Megastructure Subroutines"
+tr_navalascendancy_4_machine_desc:0 "$tr_navalascendancy_4_desc$"
+tr_navalascendancy_4_machine_delayed:0 "Streamlining our megastructure construction procedures allows for quicker project completion and additional project capacity."
+
+tr_navalascendancy_4_hive:0 "Streamlined Megastructure Protocols"
+tr_navalascendancy_4_hive_desc:0 "$tr_navalascendancy_4_desc$"
+tr_navalascendancy_4_hive_delayed:0 "Streamlining our megastructure construction procedures allows for quicker project completion and additional project capacity."
+
+tr_navalascendancy_5:0 "Extended Leadership Training"
+tr_navalascendancy_5_desc:0 "§YLeader Pool Size§! increased by §G+2§!\n§YLeader Capacity§! increased by §G+2§!"
+tr_navalascendancy_5_delayed:0 "Everyone is expected to do their part and complete mandatory leadership training classes. All must be willing to serve in a leadership role if the situation requires."
+
+tr_navalascendancy_5_machine:0 "Extended Coordination Subroutines"
+tr_navalascendancy_5_machine_desc:0 "$tr_navalascendancy_5_desc$"
+tr_navalascendancy_5_machine_delayed:0 "Extended coordination subroutines to improve leadership unit efficiency."
+
+tr_navalascendancy_5_hive:0 "Extended Coordination Protocols"
+tr_navalascendancy_5_hive_desc:0 "$tr_navalascendancy_5_desc$"
+tr_navalascendancy_5_hive_delayed:0 "Extended coordination protocols to improve leadership drone efficiency."
+
+tr_navalascendancy_finish:0 "Naval Ascendancy Traditions Finished"
+tr_navalascendancy_finish_desc:0 "§YCivic Slots§! increased by §G+1§!\n§YMercenary Enclave Capacity§! increased by §G+1§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_navalascendancy_finish_machine:0 "$tr_navalascendancy_finish$"
+tr_navalascendancy_finish_machine_desc:0 "$tr_navalascendancy_finish_desc$"
+
+tr_navalascendancy_finish_hive:0 "$tr_navalascendancy_finish$"
+tr_navalascendancy_finish_hive_desc:0 "$tr_navalascendancy_finish_desc$"
+
+################################################################
+# Naval Heritage
+################################################################
+
+tradition_navalheritage:0 "Naval Heritage"
+tradition_navalheritage_desc:0 "Our noble naval past has immeasurable influence on this new era in space."
+
+tradition_navalheritage_machine:1 "$tradition_navalheritage$"
+tradition_navalheritage_machine_desc:0 "Our noble naval past has immeasurable influence on this new era in space."
+
+tradition_navalheritage_hive:0 "$tradition_navalheritage$"
+tradition_navalheritage_hive_desc:0 "Our noble naval past has immeasurable influence on this new era in space."
+ 
+tr_navalheritage_adopt:0 "Naval Heritage Traditions"
+tr_navalheritage_adopt_desc:6 "£mod_ship_hull_mult£ §YShip Hull Points§! increased by §G+25%§!\n£mod_ship_hull_regen_add_perc£ §YShip Hull Regeneration§! increased by §G+5§!"
+ 
+tr_navalheritage_adopt_machine:1 "$tr_navalheritage_adopt$"
+tr_navalheritage_adopt_machine_desc:2 "$tr_navalheritage_adopt_desc$"
+ 
+tr_navalheritage_adopt_hive:0 "$tr_navalheritage_adopt$"
+tr_navalheritage_adopt_hive_desc:3 "$tr_navalheritage_adopt_desc$"
+
+tr_navalheritage_1:0 "Reinforced Critical Systems"
+tr_navalheritage_1_desc:0 "£mod_ship_shield_mult£ §YShip Shield Points§! increased by §G+25%§!\n£mod_ship_armor_mult£ §YShip Armor Points§! increased by §G+25%§!"
+tr_navalheritage_1_delayed:0 "Our experience in ship maintenance has enabled us to better protect critical core systems."
+
+tr_navalheritage_1_machine:0 "Reinforced Critical Systems"
+tr_navalheritage_1_machine_desc:0 "$tr_navalheritage_1_desc$"
+tr_navalheritage_1_machine_delayed:0 "Our experience in ship maintenance has enabled our maintenance units to better protect critical core systems."
+
+tr_navalheritage_1_hive:0 "Reinforced Critical Systems"
+tr_navalheritage_1_hive_desc:0 "$tr_navalheritage_1_desc$"
+tr_navalheritage_1_hive_delayed:0 "Our experience in ship maintenance has enabled our maintenance drones to better protect critical core systems."
+
+tr_navalheritage_2:0 "Legendary Navigators"
+tr_navalheritage_2_desc:0 "£mod_ship_emergency_ftl£ §YEmergency FTL Cooldown§! reduced by §G-10%§!\n£mod_ship_speed_mult£ §YShip Interstellar Speed§! increased by §G+10%§!\n§Y$mod_fleet_mia_time_mult$§! decreased by §G-10%§!"
+tr_navalheritage_2_delayed:0 "Our navigators are trained from a young age in the aptitude of space navigation."
+
+tr_navalheritage_2_machine:0 "Advanced Navigation Subroutines"
+tr_navalheritage_2_machine_desc:0 "$tr_navalheritage_2_desc$"
+tr_navalheritage_2_machine_delayed:0 "Our autonomous ships have an increased aptitude for space navigation."
+
+tr_navalheritage_2_hive:0 "Advanced Navigation Protocols"
+tr_navalheritage_2_hive_desc:0 "$tr_navalheritage_2_desc$"
+tr_navalheritage_2_hive_delayed:0 "Our drone vessels have an increased aptitude for navigation."
+
+tr_navalheritage_3:0 "Precision Gunnery"
+tr_navalheritage_3_desc:0 "£mod_ship_accuracy_mult£§YShip Accuracy§! increased by §G+10%§!\n£mod_ship_tracking_add£ §YShip Tracking§! increased by §G+10%§!"
+tr_navalheritage_3_delayed:0 "Our gunners endure rigorous excercises at regular intervals to ensure peak combat performance."
+
+tr_navalheritage_3_machine:0 "Enhanced Gunnery Subroutines"
+tr_navalheritage_3_machine_desc:0 "$tr_navalheritage_3_desc$"
+tr_navalheritage_3_machine_delayed:0 "Enhanced gunnery subroutines have been deployed on our autonomous ships."
+
+tr_navalheritage_3_hive:0 "Enhanced Gunnery Protocols"
+tr_navalheritage_3_hive_desc:0 "$tr_navalheritage_3_desc$"
+tr_navalheritage_3_hive_delayed:0 "Enhanced gunnery protocols have been deployed on our drone vessels."
+
+tr_navalheritage_4:0 "Legendary Pilots"
+tr_navalheritage_4_desc:0 "£mod_ship_evasion_add£ §YShip Evasion§! increased by §G+10%§!\n£mod_ship_speed_mult£ §YShip Sublight Speed§! increased by §G+10%§!"
+tr_navalheritage_4_delayed:0 "Our pilots are trained from a young age in the aptitude of spaceflight."
+
+tr_navalheritage_4_machine:0 "Advanced Maneuvering Subroutines"
+tr_navalheritage_4_machine_desc:0 "$tr_navalheritage_4_desc$"
+tr_navalheritage_4_machine_delayed:0 "Our autonomous ships have an increased aptitude for spaceflight."
+
+tr_navalheritage_4_hive:0 "Advanced Maneuvering Protocols"
+tr_navalheritage_4_hive_desc:0 "$tr_navalheritage_4_desc$"
+tr_navalheritage_4_hive_delayed:0 "Our drone vessels have an increased aptitude for spaceflight."
+
+tr_navalheritage_5:0 "Expert Acquisition"
+tr_navalheritage_5_desc:0 "£mod_ship_weapon_range_mult£ §YShip Weapon Range§! increased by §G+10%§!\n£influence£ §YInfluence§! from §YPower Projection§! increased by §G+1§!"
+tr_navalheritage_5_delayed:0 "Our spotters are trained from a young age in the aptitude of target acquisition."
+
+tr_navalheritage_5_machine:0 "Advanced Acquisition Subroutines"
+tr_navalheritage_5_machine_desc:0 "$tr_navalheritage_5_desc$"
+tr_navalheritage_5_machine_delayed:0 "Our autonomous ships have an increased aptitude for target acquisition."
+
+tr_navalheritage_5_hive:0 "Advanced Acquisition Protocols"
+tr_navalheritage_5_hive_desc:0 "$tr_navalheritage_5_desc$"
+tr_navalheritage_5_hive_delayed:0 "Our drone vessels have an increased aptitude for target acquisition."
+
+tr_navalheritage_finish:0 "Naval Heritage Traditions Finished"
+tr_navalheritage_finish_desc:0 "§YShip Build Speed§! increased by §G+25%§!\n$mod_planet_researchers_engineering_research_produces_add$ increased by §G+2§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_navalheritage_finish_machine:0 "$tr_navalheritage_finish$"
+tr_navalheritage_finish_machine_desc:0 "$tr_navalheritage_finish_desc$"
+
+tr_navalheritage_finish_hive:0 "$tr_navalheritage_finish$"
+tr_navalheritage_finish_hive_desc:0 "$tr_navalheritage_finish_desc$"
+
+################################################################
+# Commerce
+################################################################
+
+tradition_commerce:0 "Commerce"
+tradition_commerce_desc:0 "Need energy credits? How fitting! Right this way please..."
+
+tradition_commerce_machine:1 "$tradition_commerce$"
+tradition_commerce_machine_desc:0 "Need energy credits? How fitting! Right this way please..."
+
+tradition_commerce_hive:0 "$tradition_commerce$"
+tradition_commerce_hive_desc:0 "Need energy credits? How fitting! Right this way please..."
+ 
+tr_commerce_adopt:0 "Commerce Traditions"
+tr_commerce_adopt_desc:6 " §YEmpire Trade Value§! increased by §G+25%§!"
+ 
+tr_commerce_adopt_machine:1 "$tr_commerce_adopt$"
+tr_commerce_adopt_machine_desc:2 "£energy£ §YEnergy§! from £technician_drone£ §Tech-Drones§! increased by §G+2§!"
+ 
+tr_commerce_adopt_hive:0 "$tr_commerce_adopt$"
+tr_commerce_adopt_hive_desc:3 "$tr_commerce_adopt_machine_desc$"
+
+tr_commerce_1:0 "Adaptive Paperwork Proficiency"
+tr_commerce_1_desc:0 "£job_clerk£ §Y$job_clerk_plural$§! produce §G+2§! £trade_value£ §YTrade Value§\n"
+tr_commerce_1_delayed:0 "Our clerks have become more adept in completing their paperwork in a timely manner. This in turn has brought in a tidy profit."
+
+tr_commerce_1_machine:0 "Adaptive Maintenance Subroutines"
+tr_commerce_1_machine_desc:0 "£job_maintenance_drone£ §Y$job_maintenance_drone_plural$§! produce §G+2§! £energy£ §YEnergy§!"
+tr_commerce_1_machine_delayed:0 "Our maintenance drones have been better optimized for the preservation of resources."
+
+tr_commerce_1_hive:0 "Adaptive Maintenance Protocols"
+tr_commerce_1_hive_desc:0 "$tr_commerce_1_machine_desc$"
+tr_commerce_1_hive_delayed:0 "Our maintenance drones have been better optimized for the preservation of resources."
+
+tr_commerce_2:0 "Piracy Rapid Response"
+tr_commerce_2_desc:0 "§YTrade Protection§! increased by §G+5§!\n§YDamage vs Mercenary Enclaves§! increased by §G+25%§!\n§YDamage vs Pirates§! increased by §G+50%§!\n£minerals£ §YEmpire Mineral Production§! increased by §G+5%§!"
+tr_commerce_2_delayed:0 "Pilots are on standby to quickly deal with any nearby pirate threat."
+
+tr_commerce_2_machine:0 "Enhanced Mineral Yields"
+tr_commerce_2_machine_desc:0 "$tr_commerce_2_desc$"
+tr_commerce_2_machine_delayed:0 "Our units are better at collecting more minerals."
+
+tr_commerce_2_hive:0 "Enhanced Mineral Yields"
+tr_commerce_2_hive_desc:0 "$tr_commerce_2_desc$"
+tr_commerce_2_hive_delayed:0 "Our drones are better at collecting more minerals."
+
+tr_commerce_3:0 "Commercial Standardization"
+tr_commerce_3_desc:0 "£building£ §YCommerce§! buildings produce §G5/10/20§! £unity£ §YUnity§! per building tier."
+tr_commerce_3_delayed:0 "All commercial zones are now expected to adhere to strict industry standards. Audits are conducted quarterly."
+
+tr_commerce_3_machine:0 "Technobabble Transceivers"
+tr_commerce_3_machine_desc:0 "§YEmpire Monthly Unity§! increased by §G+5%§!"
+tr_commerce_3_machine_delayed:0 "Our units are now equiped with technobabble transceivers. Thus...more unity...don't question it."
+
+tr_commerce_3_hive:0 "Biomechanical Transceivers"
+tr_commerce_3_hive_desc:0 "$tr_commerce_3_machine_desc$"
+tr_commerce_3_hive_delayed:0 "Our drones are now equiped with biomechanical transceivers. Thus...more unity...don't question it."
+
+tr_commerce_4:0 "Advanced Resource Storage Techniques"
+tr_commerce_4_desc:0 "§YCommercial Pact Efficiency§! increased by §G+25%§!\n§YUnlocks Building:§! Advanced Resource Silos"
+tr_commerce_4_delayed:0 "Our leaders have expressed a great deal of displeasure in regards our empire's limited resource storage capacity. Building a bigger storage facility should rectify the problem."
+
+tr_commerce_4_machine:0 "Advanced Resource Storage Techniques"
+tr_commerce_4_machine_desc:0 "$tr_commerce_4_desc$"
+tr_commerce_4_machine_delayed:0 "This unit must store more resources."
+
+tr_commerce_4_hive:0 "Advanced Resource Storage Techniques"
+tr_commerce_4_hive_desc:0 "$tr_commerce_4_desc$"
+tr_commerce_4_hive_delayed:0 "All resources must be preserved for the edification of the hive."
+
+tr_commerce_5:0 "Death and Taxes"
+tr_commerce_5_desc:0 "§HUnlocks Policy:§! Taxation"
+tr_commerce_5_delayed:0 "Every citizen experiences high ambient levels of happiness when the government forcibly acquires a portion of their monthly income."
+
+tr_commerce_5_machine:0 "Unit Overdrive"
+tr_commerce_5_machine_desc:0 "§HUnlocks Policy:§! Overcharge"
+tr_commerce_5_machine_delayed:0 "Our units shall be set to overdrive in order to significantly increase energy production."
+
+tr_commerce_5_hive:0 "Drone Overdrive"
+tr_commerce_5_hive_desc:0 "$tr_commerce_5_machine_desc$"
+tr_commerce_5_hive_delayed:0 "Our drones shall be set to overdrive in order to significantly increase energy production."
+
+tr_commerce_finish:0 "Commerce Traditions Finished"
+tr_commerce_finish_desc:0 "§HUnlocks Policy:§! Improved Trade Policies\nAscension Perks Unlocked: §G+1§!"
+
+tr_commerce_finish_machine:0 "$tr_commerce_finish$"
+tr_commerce_finish_machine_desc:0 "£energy£ §YEmpire Energy Production§! increased by §G+20%§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_commerce_finish_hive:0 "$tr_commerce_finish$"
+tr_commerce_finish_hive_desc:0 "$tr_commerce_finish_machine_desc$"
+
+################################################################
+# Ingenuity
+################################################################
+
+tradition_ingenuity:0 "Ingenuity"
+tradition_ingenuity_desc:0 "We have not failed, but in fact found 10,000 ways to not build a starship."
+
+tradition_ingenuity_machine:1 "$tradition_ingenuity$"
+tradition_ingenuity_machine_desc:0 "We have not failed, but in fact found 10,000 ways to not build a starship."
+
+tradition_ingenuity_hive:0 "$tradition_ingenuity$"
+tradition_ingenuity_hive_desc:0 "We have not failed, but in fact found 10,000 ways to not build a starship."
+ 
+tr_ingenuity_adopt:0 "Ingenuity Traditions"
+tr_ingenuity_adopt_desc:6 "£engineering£ §YEngineering Research Speed§! increased by §G+5%§!\n§YEspionage Operation Skill (Military)§! increased by §G+2§!\n§YEspionage Operation Speed (Military)§! increased by §G+25%§!"
+ 
+tr_ingenuity_adopt_machine:1 "$tr_ingenuity_adopt$"
+tr_ingenuity_adopt_machine_desc:2 "$tr_ingenuity_adopt_desc$"
+ 
+tr_ingenuity_adopt_hive:0 "$tr_ingenuity_adopt$"
+tr_ingenuity_adopt_hive_desc:3 "$tr_ingenuity_adopt_desc$"
+
+tr_ingenuity_1:0 "Auxillary Hull Reinforcement"
+tr_ingenuity_1_desc:0 "£mod_ship_hull_mult£ §YShip Hull Points§! increased by §G+25%§!\n£engineering£ §YEngineering Research§! from §YPower Projection§! increased by §G+50§!"
+tr_ingenuity_1_delayed:0 "Reinforcing the hull of our ships for better combat performance."
+
+tr_ingenuity_1_machine:0 "Auxillary Hull Reinforcement"
+tr_ingenuity_1_machine_desc:0 "$tr_ingenuity_1_desc$"
+tr_ingenuity_1_machine_delayed:0 "Reinforcing the hull of our ships for better combat performance."
+
+tr_ingenuity_1_hive:0 "Auxillary Hull Reinforcement"
+tr_ingenuity_1_hive_desc:0 "$tr_ingenuity_1_desc$"
+tr_ingenuity_1_hive_delayed:0 "Reinforcing the hull of our ships for better combat performance."
+
+tr_ingenuity_2:0 "Composite Armor Plating"
+tr_ingenuity_2_desc:0 "£mod_ship_armor_hardening_add£ §YShip Armor Hardening§! increased by §G+25%§!\n§Y$mod_weapon_type_explosive_speed_mult$§! increased by §G+25%§!"
+tr_ingenuity_2_delayed:0 "Improving the armor composition of our ships and missiles for better combat performance."
+
+tr_ingenuity_2_machine:0 "Composite Armor Plating"
+tr_ingenuity_2_machine_desc:0 "$tr_ingenuity_2_desc$"
+tr_ingenuity_2_machine_delayed:0 "Improving the armor composition of our ships and missiles for better combat performance."
+
+tr_ingenuity_2_hive:0 "Composite Armor Plating"
+tr_ingenuity_2_hive_desc:0 "$tr_ingenuity_2_desc$"
+tr_ingenuity_2_hive_delayed:0 "Improving the armor composition of our ships and missiles for better combat performance."
+
+tr_ingenuity_3:0 "Engineering Militarization"
+tr_ingenuity_3_desc:0 "§Y$mod_category_military_theory_research_speed_mult$§! increased by §G+15%§!\n§YOrbital Ring Tracking§! increased by §G+50%§!"
+tr_ingenuity_3_delayed:0 "Exploring military applications for our empire's engineering marvels."
+
+tr_ingenuity_3_machine:0 "Engineering Militarization"
+tr_ingenuity_3_machine_desc:0 "$tr_ingenuity_3_desc$"
+tr_ingenuity_3_machine_delayed:0 "Exploring military applications for our empire's engineering marvels."
+
+tr_ingenuity_3_hive:0 "Engineering Militarization"
+tr_ingenuity_3_hive_desc:0 "$tr_ingenuity_3_desc$"
+tr_ingenuity_3_hive_delayed:0 "Exploring military applications for our empire's engineering marvels."
+
+tr_ingenuity_4:0 "Field Applications"
+tr_ingenuity_4_desc:0 "£job_healthcare£ §Y$job_healthcare_plural$§! and £job_soldier£ §Y$job_soldier_plural$§! produce §G+2§! £engineering£ §YEngineering Research§!"
+tr_ingenuity_4_delayed:0 "Collecting regular reports from our medical workers and soldiers enhance our ability to develop further technological advancement."
+
+tr_ingenuity_4_machine:0 "Field Applications"
+tr_ingenuity_4_machine_desc:0 "£job_replicator£ §Y$job_replicator_plural$§! and £job_warrior_drone£ §Y$job_warrior_drone_plural$§! produce §G+2§! £engineering£ §Engineering Research§!"
+tr_ingenuity_4_machine_delayed:0 "Collecting data uplink from our replicators and warrior drones enhance our ability to develop further technological advancement."
+
+tr_ingenuity_4_hive:0 "Field Applications"
+tr_ingenuity_4_hive_desc:0 "£job_spawning_drone£ §Y$job_spawning_drone_plural$§! and £job_warrior_drone£ §Y$job_warrior_drone_plural$§! produce §G+2§! £engineering£ §Engineering Research§!"
+tr_ingenuity_4_hive_delayed:0 "Recording neural information from our spawning drones and warrior drones enhance our ability to develop further technological advancement."
+
+tr_ingenuity_5:0 "Shipyard Automation"
+tr_ingenuity_5_desc:0 "§YStarbase Shipyards§! produce §G+2§! £engineering£ §YEngineering Research§!\n§YAnchorages§! produce §G+5§! £engineering£ §YEngineering Research§!\n§YUnlocks Building:§! Mechanicum Academy"
+tr_ingenuity_5_delayed:0 "Through proper crew training, even our outposts are capable of constructing and upgrading ships."
+
+tr_ingenuity_5_machine:0 "Shipyard Subroutines"
+tr_ingenuity_5_machine_desc:0 "$tr_ingenuity_5_desc$"
+tr_ingenuity_5_machine_delayed:0 "Establishing proper subroutines enable construction and refit of our autonomous ships at remote outposts."
+
+tr_ingenuity_5_hive:0 "Shipyard Protocols"
+tr_ingenuity_5_hive_desc:0 "$tr_ingenuity_5_desc$"
+tr_ingenuity_5_hive_delayed:0 "Establishing proper protocols enable construction and refit of our drone ships at remote outposts."
+
+tr_ingenuity_finish:0 "Ingenuity Traditions Finished"
+tr_ingenuity_finish_desc:0 "§HUnlocks Policy:§! $policy_research_policy_engineering$\n§HUnlocks Army:§! Titan Battlegroup\n§HUnlocks Planetary Decision:§! $osa_decision_titan_garrison$\n§YMercenary Enclave Capacity§! increased by §G+1§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_ingenuity_finish_machine:0 "$tr_ingenuity_finish$"
+tr_ingenuity_finish_machine_desc:0 "$tr_ingenuity_finish_desc$"
+
+tr_ingenuity_finish_hive:0 "$tr_ingenuity_finish$"
+tr_ingenuity_finish_hive_desc:0 "$tr_ingenuity_finish_desc$"
+
+################################################################
+# Order
+################################################################
+
+tradition_order:0 "Order"
+tradition_order_desc:0 "Without order there is only chaos and despair."
+
+tradition_order_machine:1 "$tradition_order$"
+tradition_order_machine_desc:0 "Without order there is only chaos and despair."
+
+tradition_order_hive:0 "$tradition_order$"
+tradition_order_hive_desc:0 "Without order there is only chaos and despair."
+ 
+tr_order_adopt:0 "Order Traditions"
+tr_order_adopt_desc:6 "§YEdict Fund§! increased by §G+200§!"
+ 
+tr_order_adopt_machine:1 "$tr_order_adopt$"
+tr_order_adopt_machine_desc:2 "$tr_order_adopt_desc$"
+ 
+tr_order_adopt_hive:0 "$tr_order_adopt$"
+tr_order_adopt_hive_desc:3 "$tr_order_adopt_desc$"
+
+tr_order_1:0 "Unwavering Law"
+tr_order_1_desc:0 "§YEdict Fund§! increased by §G+25%§!\n§YEdict Upkeep§! reduced by §G-5%§!"
+tr_order_1_delayed:0 "We shall establish a culture of strict adherence to the rule of law. Civil disobedience is unthinkable."
+
+tr_order_1_machine:0 "Extended Control Subroutines"
+tr_order_1_machine_desc:0 "$tr_order_1_desc$"
+tr_order_1_machine_delayed:0 "Our units shall continue to follow their instructions for longer durations without any additional input from the central command processor."
+
+tr_order_1_hive:0 "Extended Control Protocols"
+tr_order_1_hive_desc:0 "$tr_order_1_desc$"
+tr_order_1_hive_delayed:0 "Our drones shall continue to follow their instructions for longer durations without any additional input from the central hive cluster."
+
+tr_order_2:0 "Obedience is Life"
+tr_order_2_desc:0 "§YGoverning Ethics Attraction§! increased by §G+50%§!\n§YCrime§! reduced by §G-10§! on all owned planets\n£housing£ §Y$MOD_PLANET_HOUSING_ADD$§! increased by §G+5§!"
+tr_order_2_delayed:0 "Those that challenge the will of the state have chosen reeducation."
+
+tr_order_2_machine:0 "Deviancy Erradication"
+tr_order_2_machine_desc:0 "§YDeviancy§! reduced by §G-10§! on all owned planets\n£housing£ §Y$MOD_PLANET_HOUSING_ADD$§! increased by §G+5§!"
+tr_order_2_machine_delayed:0 "Advanced deviancy detection systems enable seeker drones to rectify problems at significantly faster rates."
+
+tr_order_2_hive:0 "Deviancy Erradication"
+tr_order_2_hive_desc:0 "$tr_order_2_machine_desc$"
+tr_order_2_hive_delayed:0 "Advanced deviancy detection protocols enable seeker drones to rectify problems at significantly faster rates."
+
+tr_order_3:0 "Reinterpreting History"
+tr_order_3_desc:0 "£mod_country_admin_cap_add£ §YEmpire Size from Pops§! reduced by §G-10%§!\n§YHostile Operation Difficulty (Spark Rebellion)§! increased by §G+2§!"
+tr_order_3_delayed:0 "Who controls the past controls the future. Who controls the present controls the past. -George Orwell"
+
+tr_order_3_machine:0 "Reprogram History"
+tr_order_3_machine_desc:0 "$tr_order_3_desc$"
+tr_order_3_machine_delayed:0 "Who controls the past controls the future. Who controls the present controls the past. -George Orwell"
+
+tr_order_3_hive:0 "Suppress History"
+tr_order_3_hive_desc:0 "$tr_order_3_desc$"
+tr_order_3_hive_delayed:0 "Who controls the past controls the future. Who controls the present controls the past. -George Orwell"
+
+tr_order_4:0 "Doublethink"
+tr_order_4_desc:0 "£building£ §YGovernment§! buildings produce §G5/10/20§! £unity£ §YUnity§! per building tier."
+tr_order_4_delayed:0 "Holding two contradictory beliefs in one's mind simultaneously, and accepting both of them. -George Orwell"
+
+tr_order_4_machine:0 "Personality Fragmentation Matrix"
+tr_order_4_machine_desc:0 "$tr_order_4_desc$"
+tr_order_4_machine_delayed:0 "Holding two contradictory beliefs in one's mind simultaneously, and accepting both of them. -George Orwell"
+
+tr_order_4_hive:0 "Personality Fragmentation Matrix"
+tr_order_4_hive_desc:0 "$tr_order_4_desc$"
+tr_order_4_hive_delayed:0 "Holding two contradictory beliefs in one's mind simultaneously, and accepting both of them. -George Orwell"
+
+tr_order_5:0 "Domestic Stability"
+tr_order_5_desc:0 "£stability£ §Y$MOD_PLANET_STABILITY_ADD$§! increased by §G+5%§! on all owned planets\n§YOccupation Armies§! increased by §G+2§!"
+tr_order_5_delayed:0 "War is peace. Freedom is slavery. Ignorance is strength. -George Orwell"
+
+tr_order_5_machine:0 "Stability Subroutines"
+tr_order_5_machine_desc:0 "$tr_order_5_desc$"
+tr_order_5_machine_delayed:0 "War is peace. Freedom is slavery. Ignorance is strength. -George Orwell"
+
+tr_order_5_hive:0 "Stability Protocols"
+tr_order_5_hive_desc:0 "$tr_order_5_desc$"
+tr_order_5_hive_delayed:0 "War is peace. Freedom is slavery. Ignorance is strength. -George Orwell"
+
+tr_order_finish:0 "Order Traditions Finished"
+tr_order_finish_desc:0 "£job_soldier£ §Y$job_soldier_plural$§!, £job_enforcer£ §Y$job_enforcer_plural$§!, and £job_telepath£ §Y$job_telepath_plural$§! produce §G+2§! £unity£ §YUnity§!\n§YUnlocks Building:§! Reeducation Center\nAscension Perks Unlocked: §G+1§!"
+
+tr_order_finish_machine:0 "$tr_order_finish$"
+tr_order_finish_machine_desc:0 "£job_warrior_drone£ §Y$job_warrior_drone_plural$§! and £job_patrol_drone£ §Y$job_patrol_drone_plural$§! produce §G+2§! £unity£ §YUnity§!\n§YUnlocks Building:§! Reeducation Center\nAscension Perks Unlocked: §G+1§!"
+
+tr_order_finish_hive:0 "$tr_order_finish$"
+tr_order_finish_hive_desc:0 "$tr_order_finish_machine_desc$"
+
+################################################################
+# Insight
+################################################################
+
+tradition_insight:0 "Insight"
+tradition_insight_desc:0 "Astronomy compels the soul to look upward, and leads us from this world to another. -Plato"
+
+tradition_insight_machine:1 "$tradition_insight$"
+tradition_insight_machine_desc:0 "Astronomy compels the soul to look upward, and leads us from this world to another. -Plato"
+
+tradition_insight_hive:0 "$tradition_insight$"
+tradition_insight_hive_desc:0 "Astronomy compels the soul to look upward, and leads us from this world to another. -Plato"
+ 
+tr_insight_adopt:0 "Insight Traditions"
+tr_insight_adopt_desc:6 "£physics£ §YPhysics Research Speed§! increased by §G+5%§!\n§YEspionage Operation Skill (Technology)§! increased by §G+2§!\n§YEspionage Operation Speed (Technology)§! increased by §G+25%§!"
+ 
+tr_insight_adopt_machine:1 "$tr_insight_adopt$"
+tr_insight_adopt_machine_desc:2 "$tr_insight_adopt_desc$"
+ 
+tr_insight_adopt_hive:0 "$tr_insight_adopt$"
+tr_insight_adopt_hive_desc:3 "$tr_insight_adopt_desc$"
+
+tr_insight_1:0 "Research Uplinks"
+tr_insight_1_desc:0 "§YScientist Starting Level§! increased by §G+1§!\n§Y$mod_station_researchers_produces_mult$§! increased by §G+20%§!\n§YResearch from Starbase Constructions§! increased by §G+20%§!"
+tr_insight_1_delayed:0 "Researchers are now encourages to collaborate with their distant colleagues through real time communication channels."
+
+tr_insight_1_machine:0 "Research Uplinks"
+tr_insight_1_machine_desc:0 "$tr_insight_1_desc$"
+tr_insight_1_machine_delayed:0 "Calculators now receive additional data processing assistance from nearby calculators."
+
+tr_insight_1_hive:0 "Research Uplinks"
+tr_insight_1_hive_desc:0 "$tr_insight_1_desc$"
+tr_insight_1_hive_delayed:0 "Brain drones now receive additional data processing assistance from nearby brain drones."
+
+tr_insight_2:0 "Long Range Sensor Standards"
+tr_insight_2_desc:0 "£mod_ship_sensor_range_add£ §YShip Sensor Range§! increased by §G+2§!\n§YAnomaly Discovery Chance§! increased by §G+15%§!"
+tr_insight_2_delayed:0 "Establishing standards for long range sensor scans shall ensure proper detection of notable spacial entities at a much greater distance."
+
+tr_insight_2_machine:0 "Long Range Sensor Subroutines"
+tr_insight_2_machine_desc:0 "$tr_insight_2_desc$"
+tr_insight_2_machine_delayed:0 "Establishing subroutines for long range sensor scans shall ensure proper detection of notable spacial entities at a much greater distance."
+
+tr_insight_2_hive:0 "Long Range Sensor Protocols"
+tr_insight_2_hive_desc:0 "$tr_insight_2_desc$"
+tr_insight_2_hive_delayed:0 "Establishing protocols for long range sensor scans shall ensure proper detection of notable spacial entities at a much greater distance."
+
+tr_insight_3:0 "Autolabs"
+tr_insight_3_desc:0 "£building£ §YResearch§! buildings produce §G5/10/20§! £physics£ §YPhysics§! per building tier."
+tr_insight_3_delayed:0 "Setting up proper automation allows for greater productivity for our scientists working in the lab."
+
+tr_insight_3_machine:0 "Automatic Labs"
+tr_insight_3_machine_desc:0 "$tr_insight_3_desc$"
+tr_insight_3_machine_delayed:0 "Setting up proper automation allows for greater productivity for our calculators operating in the lab."
+
+tr_insight_3_hive:0 "Enhanced Lab Nexi"
+tr_insight_3_hive_desc:0 "$tr_insight_3_desc$"
+tr_insight_3_hive_delayed:0 "Setting up proper automation allows for greater productivity for our brain drones in the lab nexi."
+
+tr_insight_4:0 "Freedom of Thought"
+tr_insight_4_desc:0 "§YResearch Alternatives§! increased by §G+2§!\n§YLeader Capacity§! increased by §G+2§!"
+tr_insight_4_delayed:0 "Granting our scientists more freedom with their decision making allows for increased innovation."
+
+tr_insight_4_machine:0 "Hyperthreading"
+tr_insight_4_machine_desc:0 "$tr_insight_4_desc$"
+tr_insight_4_machine_delayed:0 "Offloading scientific threads into individual processes enables for more effectual advancement."
+
+tr_insight_4_hive:0 "Biothreading"
+tr_insight_4_hive_desc:0 "$tr_insight_4_desc$"
+tr_insight_4_hive_delayed:0 "Offloading scientific threads into individual brain drones enables for more effectual advancement."
+
+tr_insight_5:0 "Overcharged Emitters"
+tr_insight_5_desc:0 "£mod_ship_damage_mult£ §YShip Weapon Damage§! increased by §G+15%§!\n£mod_ship_shield_hardening_add£ §YShip Shield Hardening§! increased by §G+25%§!"
+tr_insight_5_delayed:0 "Pushing our empire's weapons and shields to new limits. Victory at any cost."
+
+tr_insight_5_machine:0 "Overcharged Emitters"
+tr_insight_5_machine_desc:0 "$tr_insight_5_desc$"
+tr_insight_5_machine_delayed:0 "Pushing our empire's weapons and shields to new limits. Victory at any cost."
+
+tr_insight_5_hive:0 "Overcharged Emitters"
+tr_insight_5_hive_desc:0 "$tr_insight_5_desc$"
+tr_insight_5_hive_delayed:0 "Pushing our empire's weapons and shields to new limits. Victory at any cost."
+
+tr_insight_finish:0 "Insight Traditions Finished"
+tr_insight_finish_desc:0 "§HUnlocks Policy:§! $policy_research_policy_physics$\nAll §YStarbases§! produce §G+7.5§! £physics£ §YPhysics Research§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_insight_finish_machine:0 "$tr_insight_finish$"
+tr_insight_finish_machine_desc:0 "$tr_insight_finish_desc$"
+
+tr_insight_finish_hive:0 "$tr_insight_finish$"
+tr_insight_finish_hive_desc:0 "$tr_insight_finish_desc$"
+
+################################################################
+# Compassion
+################################################################
+
+tradition_compassion:0 "Compassion"
+tradition_compassion_desc:0 "Finally, all of you, be like-minded, be sympathetic, love one another, be compassionate and humble. -1 Peter 3:8"
+
+tradition_compassion_machine:1 "$tradition_compassion$"
+tradition_compassion_machine_desc:0 "Finally, all of you, be like-minded, be sympathetic, love one another, be compassionate and humble. -1 Peter 3:8"
+
+tradition_compassion_hive:0 "$tradition_compassion$"
+tradition_compassion_hive_desc:0 "Finally, all of you, be like-minded, be sympathetic, love one another, be compassionate and humble. -1 Peter 3:8"
+ 
+tr_compassion_adopt:0 "Compassion Traditions"
+tr_compassion_adopt_desc:6 "£society£ §YSociety Research Speed§! increased by §G+5%§!\n§HUnlocks Edict:§! Aid Empire in War"
+ 
+tr_compassion_adopt_machine:1 "$tr_compassion_adopt$"
+tr_compassion_adopt_machine_desc:2 "$tr_compassion_adopt_desc$"
+ 
+tr_compassion_adopt_hive:0 "$tr_compassion_adopt$"
+tr_compassion_adopt_hive_desc:3 "$tr_compassion_adopt_desc$"
+
+tr_compassion_1:0 "Patience and Understanding"
+tr_compassion_1_desc:0 "$mod_planet_administrators_society_research_produces_add$ increased by §G+2§!\n$mod_planet_culture_workers_society_research_produces_add$ increased by §G+2§!\n$mod_planet_doctors_society_research_produces_add$ increased by §G+2§!\n$mod_planet_entertainers_society_research_produces_add$ increased by §G+2§!"
+tr_compassion_1_delayed:0 "Having patience and improved understanding can lead to the advancement of our empire's knowledge."
+
+tr_compassion_1_machine:0 "Patience and Understanding"
+tr_compassion_1_machine_desc:0 "$mod_planet_pop_assemblers_society_research_produces_add$ increased by §G+2§!\n$mod_planet_evaluators_society_research_produces_add$ increased by §G+2§!"
+tr_compassion_1_machine_delayed:0 "Analyzing the concept of patience and understanding can lead to the advancement of our empire's knowledge."
+
+tr_compassion_1_hive:0 "Patience and Understanding"
+tr_compassion_1_hive_desc:0 "$tr_compassion_1_machine_desc$"
+tr_compassion_1_hive_delayed:0 "Having patience and improved understanding of other empires can lead to the advancement of our empire's knowledge."
+
+tr_compassion_2:0 "Life Studies"
+tr_compassion_2_desc:0 "§YGovernor Starting Level§! increased by §G+1§!\n§Y$mod_category_biology_research_speed_mult$§! increased by §G+15%§!"
+tr_compassion_2_delayed:0 "Learning about the nature of life enhances our society."
+
+tr_compassion_2_machine:0 "Analysis of Life"
+tr_compassion_2_machine_desc:0 "$tr_compassion_2_desc$"
+tr_compassion_2_machine_delayed:0 "Analyzing organic life provides strategic advantage."
+
+tr_compassion_2_hive:0 "Life Studies"
+tr_compassion_2_hive_desc:0 "$tr_compassion_2_desc$"
+tr_compassion_2_hive_delayed:0 "Learning about the nature of life enhances our hive."
+
+tr_compassion_3:0 "Golden Rule"
+tr_compassion_3_desc:0 "£district£ §YMax Districts§! increased by §G+2§!\n§HUnlocks Edict:§! Compassion Initiatives"
+tr_compassion_3_delayed:0 "Do to others as you would have them do to you. -Luke 6:31"
+
+tr_compassion_3_machine:0 "Golden Rule"
+tr_compassion_3_machine_desc:0 "$tr_compassion_3_desc$"
+tr_compassion_3_machine_delayed:0 "Do to others as you would have them do to you. -Luke 6:31"
+
+tr_compassion_3_hive:0 "Golden Rule"
+tr_compassion_3_hive_desc:0 "$tr_compassion_3_desc$"
+tr_compassion_3_hive_delayed:0 "Do to others as you would have them do to you. -Luke 6:31"
+
+tr_compassion_4:0 "Servant Leaders"
+tr_compassion_4_desc:0 "§YAdditional Leader Trait Options§! increased by §G+1§!\n§YLeader Capacity§! increased by §G+2§!"
+tr_compassion_4_delayed:0 "It is important for our leaders to understand that they exist to serve those that they rule."
+
+tr_compassion_4_machine:0 "Governor Subroutines"
+tr_compassion_4_machine_desc:0 "$tr_compassion_4_desc$"
+tr_compassion_4_machine_delayed:0 "Our coordinators have enhanced the protocols used for governing our worlds."
+
+tr_compassion_4_hive:0 "Governor Protocols"
+tr_compassion_4_hive_desc:0 "$tr_compassion_4_desc$"
+tr_compassion_4_hive_delayed:0 "Our synapse drones have enhanced the protocols used for governing our worlds."
+
+tr_compassion_5:0 "Atmosphere of Kindness"
+tr_compassion_5_desc:0 "§YPop Growth from Immigration§! increased by §G+25%§!\n§YLeader Lifespan§! increased by §G+20 Years§!"
+tr_compassion_5_delayed:0 "One can catch more pops with honey than with vinegar."
+
+tr_compassion_5_machine:0 "Atmosphere of Kindness"
+tr_compassion_5_machine_desc:0 "$tr_compassion_5_desc$"
+tr_compassion_5_machine_delayed:0 "One can catch more pops with honey than with vinegar."
+
+tr_compassion_5_hive:0 "Atmosphere of Kindness"
+tr_compassion_5_hive_desc:0 "$tr_compassion_5_desc$"
+tr_compassion_5_hive_delayed:0 "One can catch more pops with honey than with vinegar."
+
+tr_compassion_finish:0 "Compassion Traditions Finished"
+tr_compassion_finish_desc:0 "§YDiplomatic Weight§! increased by §G+15%§!\n§HUnlocks Policy:§! $policy_research_policy_society$\n§HUnlocks Planetary Decision:§! Encourage Planetary Growth\nAscension Perks Unlocked: §G+1§!"
+
+tr_compassion_finish_machine:0 "$tr_compassion_finish$"
+tr_compassion_finish_machine_desc:0 "$tr_compassion_finish_desc$"
+
+tr_compassion_finish_hive:0 "$tr_compassion_finish$"
+tr_compassion_finish_hive_desc:0 "$tr_compassion_finish_desc$"
+
+################################################################
+# Administratum
+################################################################
+
+tradition_administratum:0 "Administratum"
+tradition_administratum_desc:0 "A malfunctioning machine that runs on blood, sweat, and tears."
+
+tradition_administratum_machine:1 "$tradition_administratum$"
+tradition_administratum_machine_desc:0 "A malfunctioning machine that runs on blood, sweat, and tears."
+
+tradition_administratum_hive:0 "$tradition_administratum$"
+tradition_administratum_hive_desc:0 "A malfunctioning machine that runs on blood, sweat, and tears."
+ 
+tr_administratum_adopt:0 "Administratum Traditions"
+tr_administratum_adopt_desc:6 "£mod_country_admin_cap_add£ §YEmpire Size§! reduced by §G-15%§!"
+ 
+tr_administratum_adopt_machine:1 "$tr_administratum_adopt$"
+tr_administratum_adopt_machine_desc:2 "$tr_administratum_adopt_desc$"
+ 
+tr_administratum_adopt_hive:0 "$tr_administratum_adopt$"
+tr_administratum_adopt_hive_desc:3 "$tr_administratum_adopt_desc$"
+
+tr_administratum_1:0 "Streamlined Paperwork Processing"
+tr_administratum_1_desc:0 "§YResource§! upkeep from £job_bureaucrat£ §Y$job_administrator_plural$§! reduced by §G-10%§!"
+tr_administratum_1_delayed:0 "Our bureaucrats are experts at completing, processing, and filing away all of the thingss."
+
+tr_administratum_1_machine:0 "Paperwork Subroutines"
+tr_administratum_1_machine_desc:0 "$tr_administratum_1_desc$"
+tr_administratum_1_machine_delayed:0 "This unit will complete documentation."
+
+tr_administratum_1_hive:0 "Paperwork Protocols"
+tr_administratum_1_hive_desc:0 "$tr_administratum_1_desc$"
+tr_administratum_1_hive_delayed:0 "This drone will complete documentation."
+
+tr_administratum_2:0 "Fellowship of the Red Tape"
+tr_administratum_2_desc:0 "$mod_planet_administrators_unity_produces_add$ increased by §G+2§!"
+tr_administratum_2_delayed:0 "United in their pursuit to find the one envelope to rule them all!"
+
+tr_administratum_2_machine:0 "Enhanced Monitoring Subroutines"
+tr_administratum_2_machine_desc:0 "$mod_planet_administrators_unity_produces_add$ increased by §G+2§!"
+tr_administratum_2_machine_delayed:0 "Our coordinators are now significantly better at monitoring and coordinate unit activities."
+
+tr_administratum_2_hive:0 "Enhanced Monitoring Protocols"
+tr_administratum_2_hive_desc:0 "$mod_planet_administrators_unity_produces_add$ increased by §G+2§!"
+tr_administratum_2_hive_delayed:0 "Our synapse drones are now significantly better at monitoring and coordinate drone activities."
+
+tr_administratum_3:0 "Encrypted Archives"
+tr_administratum_3_desc:0 "§YEncryption§! increased by §G+1§!\n£mod_country_admin_cap_add£ §YEmpire Size from Districts§! reduced by §G-20%§!"
+tr_administratum_3_delayed:0 "Our empire's cybersecurity department has mandated that strong encryption be used to better protect our empire's sensitive bureaucratic documents."
+
+tr_administratum_3_machine:0 "Encrypted Records"
+tr_administratum_3_machine_desc:0 "$tr_administratum_3_desc$"
+tr_administratum_3_machine_delayed:0 "Our most sensitive processes are encrypted for additional security."
+
+tr_administratum_3_hive:0 "Scrambled Records"
+tr_administratum_3_hive_desc:0 "$tr_administratum_3_desc$"
+tr_administratum_3_hive_delayed:0 "Our most sensitive processes are scrambled for additional security."
+
+tr_administratum_4:0 "Ministry of Documentation"
+tr_administratum_4_desc:0 "§YEdict Fund§! increased by §G+25%§!\n§YEdict Cost§! reduced by §G-5%§!\n$mod_planet_researchers_society_research_produces_add$ increased by §G+2§!"
+tr_administratum_4_delayed:0 "Established to ensure that all processes, procedures, and job aids are properly documented. Single points of failure will not be tolerated."
+
+tr_administratum_4_machine:0 "Redundancy Subroutines"
+tr_administratum_4_machine_desc:0 "$tr_administratum_4_desc$"
+tr_administratum_4_machine_delayed:0 "Single points of failure will be identified and resolved."
+
+tr_administratum_4_hive:0 "Redundancy Protocols"
+tr_administratum_4_hive_desc:0 "$tr_administratum_4_desc$"
+tr_administratum_4_hive_delayed:0 "Single points of failure will be identified and resolved."
+
+tr_administratum_5:0 "Efficient City Planning"
+tr_administratum_5_desc:0 "§YPlanetary Build Speed§! increased by §G+25%§!\n§YPlanet Building Slots§! increased by §G+2§!"
+tr_administratum_5_delayed:0 "Cities must be planned at all stages of development to ensure optimal performance."
+
+tr_administratum_5_machine:0 "Efficient City Planning"
+tr_administratum_5_machine_desc:0 "$tr_administratum_5_desc$"
+tr_administratum_5_machine_delayed:0 "Development for cities must be optimized and planned for the distant future."
+
+tr_administratum_5_hive:0 "Efficient City Planning"
+tr_administratum_5_hive_desc:0 "$tr_administratum_5_desc$"
+tr_administratum_5_hive_delayed:0 "Development for cities must be optimized and planned for the distant future."
+
+tr_administratum_finish:0 "Administratum Traditions Finished"
+tr_administratum_finish_desc:0 "§HUnlocks Policy:§! Food Policy\n§YCivic Slots§! increased by §G+1§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_administratum_finish_machine:0 "$tr_administratum_finish$"
+tr_administratum_finish_machine_desc:0 "$tr_administratum_finish_desc$"
+
+tr_administratum_finish_hive:0 "$tr_administratum_finish$"
+tr_administratum_finish_hive_desc:0 "$tr_administratum_finish_desc$"
+
+################################################################
+# Academy
+################################################################
+
+tradition_academy:0 "Academy"
+tradition_academy_desc:0 "Education without values, as useful as it is, seems rather to make man a more clever devil. -C.S. Lewis"
+
+tradition_academy_machine:1 "$tradition_academy$"
+tradition_academy_machine_desc:0 "Education without values, as useful as it is, seems rather to make man a more clever devil. -C.S. Lewis"
+
+tradition_academy_hive:0 "$tradition_academy$"
+tradition_academy_hive_desc:0 "Education without values, as useful as it is, seems rather to make man a more clever devil. -C.S. Lewis"
+ 
+tr_academy_adopt:0 "Academy Traditions"
+tr_academy_adopt_desc:6 "§YLeader Experience Gain§! increased by §G+25%§!\n§YLeader Recruitment Cost§! reduced by §G-10%§!"
+ 
+tr_academy_adopt_machine:1 "$tr_academy_adopt$"
+tr_academy_adopt_machine_desc:2 "$tr_academy_adopt_desc$"
+ 
+tr_academy_adopt_hive:0 "$tr_academy_adopt$"
+tr_academy_adopt_hive_desc:3 "$tr_academy_adopt_desc$"
+
+tr_academy_1:0 "Power of Belief"
+tr_academy_1_desc:0 "§YLeader Starting Level§! increased by §G+1§!"
+tr_academy_1_delayed:0 "We are what we believe we are. -C.S. Lewis"
+
+tr_academy_1_machine:0 "Advanced Operating Systems"
+tr_academy_1_machine_desc:0 "$tr_academy_1_desc$"
+tr_academy_1_machine_delayed:0 "We must ensure that the latest version of the machine operating system is installed on all of our leadership units."
+
+tr_academy_1_hive:0 "Ancestral Memories"
+tr_academy_1_hive_desc:0 "$tr_academy_1_desc$"
+tr_academy_1_hive_delayed:0 "Gaining knowledge from past drones in order to better prepare for the future."
+
+tr_academy_2:0 "Life Priorities"
+tr_academy_2_desc:0 "§YLeader Capacity§! increased by §G+2§!\n§YLeader Lifespan§! increased by §G+20 Years§!"
+tr_academy_2_delayed:0 "Aim at heaven and you will get earth thrown in. Aim at earth and you get neither. -C.S. Lewis"
+
+tr_academy_2_machine:0 "Extended Random Access Memory"
+tr_academy_2_machine_desc:0 "$tr_academy_2_desc$"
+tr_academy_2_machine_delayed:0 "A unit can never go wrong by downloading more RAM."
+
+tr_academy_2_hive:0 "Extended Synaptic Pathways"
+tr_academy_2_hive_desc:0 "$tr_academy_2_desc$"
+tr_academy_2_hive_delayed:0 "A synapse drone can never go wrong by establishing additional synaptic pathways."
+
+tr_academy_3:0 "Virtue of Humility"
+tr_academy_3_desc:0 "§YLeader Pool Size§! increased by §G+2§!\n§YLeader Maximum Negative Traits§! reduced by §G-1§!"
+tr_academy_3_delayed:0 "Humility is not thinking less of yourself, it’s thinking of yourself less. -C.S. Lewis"
+
+tr_academy_3_machine:0 "Humility Subroutines"
+tr_academy_3_machine_desc:0 "$tr_academy_3_desc$"
+tr_academy_3_machine_delayed:0 "A good machine empire must care for even the most insignificant of maintenance drones."
+
+tr_academy_3_hive:0 "Humility Protocols"
+tr_academy_3_hive_desc:0 "$tr_academy_3_desc$"
+tr_academy_3_hive_delayed:0 "A good hive mind must care for even the most insignificant of maintenance drones."
+
+tr_academy_4:0 "Virtue of Courage"
+tr_academy_4_desc:0 "£mod_army_starting_experience_add£ §YArmy Starting Experience§! increased by §G+200§!\n£military_ship£ §YShip Starting Experience§! increased by §G+200§!"
+tr_academy_4_delayed:0 "Courage is not simply one of the virtues, but the form of every virtue at the testing point. -C.S. Lewis"
+
+tr_academy_4_machine:0 "Courage Subroutines"
+tr_academy_4_machine_desc:0 "$tr_academy_4_desc$"
+tr_academy_4_machine_delayed:0 "Courage is not simply one of the virtues, but the form of every virtue at the testing point. -C.S. Lewis"
+
+tr_academy_4_hive:0 "Courage Protocols"
+tr_academy_4_hive_desc:0 "$tr_academy_4_desc$"
+tr_academy_4_hive_delayed:0 "Courage is not simply one of the virtues, but the form of every virtue at the testing point. -C.S. Lewis"
+
+tr_academy_5:0 "Mandatory Cybersecurity Training"
+tr_academy_5_desc:0 "§YHostile Espionage Operation Cost§! increased by §G+10%§!\n§YMaximum Infiltration Level§! increased by §G+20§!\n§YAnomaly Research Speed§! increased by §G+10%§!\n§YAssist Research Efficiency§! increased by §G+25%§!"
+tr_academy_5_delayed:0 "Educating our pops on best security practices significantly increases the internal security of our empire."
+
+tr_academy_5_machine:0 "Intrusion Detection Systems"
+tr_academy_5_machine_desc:0 "$tr_academy_5_desc$"
+tr_academy_5_machine_delayed:0 "A powerful detection system monitoring for advanced persistent threats."
+
+tr_academy_5_hive:0 "Intrusion Detection Synapses"
+tr_academy_5_hive_desc:0 "$tr_academy_5_desc$"
+tr_academy_5_hive_delayed:0 "A powerful detection system monitoring for advanced persistent threats."
+
+tr_academy_finish:0 "Academy Traditions Finished"
+tr_academy_finish_desc:0 "£influence£ §Y$mod_country_influence_produces_add$§! increased by §G+1§!\n§YBase Intel§! increased by §G+10§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_academy_finish_machine:0 "$tr_academy_finish$"
+tr_academy_finish_machine_desc:0 "$tr_academy_finish_desc$"
+
+tr_academy_finish_hive:0 "$tr_academy_finish$"
+tr_academy_finish_hive_desc:0 "$tr_academy_finish_desc$"
+
+################################################################
+# Nanobiotics
+################################################################
+
+tradition_nanobiotics:0 "Nanobiotics"
+tradition_nanobiotics_desc:0 "Machine logic is undeniable."
+
+tradition_nanobiotics_machine:1 "$tradition_nanobiotics$"
+tradition_nanobiotics_machine_desc:0 "Machine logic is undeniable."
+
+tradition_nanobiotics_hive:0 "$tradition_nanobiotics$"
+tradition_nanobiotics_hive_desc:0 "Machine logic is undeniable."
+ 
+tr_nanobiotics_adopt:0 "Nanobiotics Traditions"
+tr_nanobiotics_adopt_desc:6 "§Y$mod_category_industry_research_speed_mult$§! increased by §G+15%§!"
+ 
+tr_nanobiotics_adopt_machine:1 "$tr_nanobiotics_adopt$"
+tr_nanobiotics_adopt_machine_desc:2 "$tr_nanobiotics_adopt_desc$"
+ 
+tr_nanobiotics_adopt_hive:0 "$tr_nanobiotics_adopt$"
+tr_nanobiotics_adopt_hive_desc:3 "$tr_nanobiotics_adopt_desc$"
+
+tr_nanobiotics_1:0 "Automated Assembly Plants"
+tr_nanobiotics_1_desc:0 "£pops£ §Y$MOD_POP_ASSEMBLY_SPEED$§! increased by §G+10%§!"
+tr_nanobiotics_1_delayed:0 "Automation applied to an efficient operation will magnify the efficiency. -Bill Gates"
+
+tr_nanobiotics_1_machine:0 "Automated Assembly Plants"
+tr_nanobiotics_1_machine_desc:0 "$tr_nanobiotics_1_desc$"
+tr_nanobiotics_1_machine_delayed:0 "Automation applied to an efficient operation will magnify the efficiency. -Bill Gates"
+
+tr_nanobiotics_1_hive:0 "Automated Growth Pods"
+tr_nanobiotics_1_hive_desc:0 "$tr_nanobiotics_1_desc$"
+tr_nanobiotics_1_hive_delayed:0 "Automation applied to an efficient operation will magnify the efficiency. -Bill Gates"
+
+tr_nanobiotics_2:0 "Automated Factories"
+tr_nanobiotics_2_desc:0 "£building£ §YFoundry§! buildings produce §G5/10/20§! £alloys£ §YAlloys§! per building tier.\n£building£ §YFactory§! buildings produce §G5/10/20§! £consumer_goods£ §YConsumer Goods§! per building tier."
+tr_nanobiotics_2_delayed:0 "Through automation we can refine pronounced quantities of resources."
+
+tr_nanobiotics_2_machine:0 "Automated Factories"
+tr_nanobiotics_2_machine_desc:0 "$tr_nanobiotics_2_desc$"
+tr_nanobiotics_2_machine_delayed:0 "Through automation we can refine pronounced quantities of resources."
+
+tr_nanobiotics_2_hive:0 "Automated Factories"
+tr_nanobiotics_2_hive_desc:0 "$tr_nanobiotics_2_desc$"
+tr_nanobiotics_2_hive_delayed:0 "Through automation we can refine pronounced quantities of resources."
+
+tr_nanobiotics_3:0 "Computational Ingenuity"
+tr_nanobiotics_3_desc:0 "§Y$mod_category_computing_research_speed_mult$§! increased by §G+15%§!\n§YEncryption§! increased by §G+1§!"
+tr_nanobiotics_3_delayed:0 "Developing better processors to advance our computational ascendancy."
+
+tr_nanobiotics_3_machine:0 "Computational Ingenuity"
+tr_nanobiotics_3_machine_desc:0 "$tr_nanobiotics_3_desc$"
+tr_nanobiotics_3_machine_delayed:0 "Developing better processors to advance our computational ascendancy."
+
+tr_nanobiotics_3_hive:0 "Computational Ingenuity"
+tr_nanobiotics_3_hive_desc:0 "$tr_nanobiotics_3_desc$"
+tr_nanobiotics_3_hive_delayed:0 "Developing better processors to advance our computational ascendancy."
+
+tr_nanobiotics_4:0 "Nanite Manufactorum"
+tr_nanobiotics_4_desc:0 "$mod_planet_metallurgists_nanites_produces_add$ increased by §G+0.05§!\n§YStarbase Module Capacity§! increased by §G+1§!\n§YStarbase Building Capacity§! increased by §G+1§!"
+tr_nanobiotics_4_delayed:0 "Leveraging the skill and knowledge of our foundry workers has enabled us to efficiently produce nanites."
+
+tr_nanobiotics_4_machine:0 "Nanite Manufactorum"
+tr_nanobiotics_4_machine_desc:0 "£nanites£ §YNanites§! from £job_fabricator£ §YFabricators§! increased by §G+0.05§!"
+tr_nanobiotics_4_machine_delayed:0 "Leveraging the capabilities of our foundry drones has enabled us to efficiently produce nanites."
+
+tr_nanobiotics_4_hive:0 "Nanite Manufactorum"
+tr_nanobiotics_4_hive_desc:0 "£nanites£ §YNanites§! from £job_alloy_drone£ §YFoundry Drones§! increased by §G+0.05§!"
+tr_nanobiotics_4_hive_delayed:0 "Leveraging the capabilities of our foundry drones has enabled us to efficiently produce nanites."
+
+tr_nanobiotics_5:0 "Nanite Laced Materials"
+tr_nanobiotics_5_desc:0 "£mod_ship_hull_regen_add_perc£ §YDaily Hull Regeneration§! increased by §G+0.5%§!\n£mod_ship_hull_regen_add_perc£ §YDaily Armor Regeneration§! increased by §G+0.5%§!"
+tr_nanobiotics_5_delayed:0 "By integrating nano technology in our warship designs we are able to significantly enhance their repair capabilities."
+
+tr_nanobiotics_5_machine:0 "Nanite Laced Materials"
+tr_nanobiotics_5_machine_desc:0 "$tr_nanobiotics_5_desc$"
+tr_nanobiotics_5_machine_delayed:0 "By integrating nano technology in our warship designs we are able to significantly enhance their repair capabilities."
+
+tr_nanobiotics_5_hive:0 "Nanite Laced Materials"
+tr_nanobiotics_5_hive_desc:0 "$tr_nanobiotics_5_desc$"
+tr_nanobiotics_5_hive_delayed:0 "By integrating nano technology in our warship designs we are able to significantly enhance their repair capabilities."
+
+tr_nanobiotics_finish:0 "Nanobiotics Traditions Finished"
+tr_nanobiotics_finish_desc:0 "All §YStarbases§! produce §G+7.5§! £engineering£ §YEngineering Research§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_nanobiotics_finish_machine:0 "$tr_nanobiotics_finish$"
+tr_nanobiotics_finish_machine_desc:0 "$tr_nanobiotics_finish_desc$"
+
+tr_nanobiotics_finish_hive:0 "$tr_nanobiotics_finish$"
+tr_nanobiotics_finish_hive_desc:0 "$tr_nanobiotics_finish_desc$"
+
+################################################################
+# Exploration
+################################################################
+
+tradition_exploration:0 "Exploration"
+tradition_exploration_desc:0 "To seek out new life and new civilization. To coldly go where no one has gone before."
+
+tradition_exploration_machine:1 "$tradition_exploration$"
+tradition_exploration_machine_desc:0 "To seek out new life and new civilization. To coldly go where no one has gone before."
+
+tradition_exploration_hive:0 "$tradition_exploration$"
+tradition_exploration_hive_desc:0 "To seek out new life and new civilization. To coldly go where no one has gone before."
+ 
+tr_exploration_adopt:0 "Exploration Traditions"
+tr_exploration_adopt_desc:6 "§Y$mod_category_propulsion_research_speed_mult$§! increased by §G+15%§!"
+ 
+tr_exploration_adopt_machine:1 "$tr_exploration_adopt$"
+tr_exploration_adopt_machine_desc:2 "$tr_exploration_adopt_desc$"
+ 
+tr_exploration_adopt_hive:0 "$tr_exploration_adopt$"
+tr_exploration_adopt_hive_desc:3 "$tr_exploration_adopt_desc$"
+
+tr_exploration_1:0 "Boldly Going..."
+tr_exploration_1_desc:0 "§YScience Ship Survey Speed§! increased by §G+25%§!\n§YScience Ship Evasion§! increased by §G+25§!\n£physics£ §YPhysics Research§! from §YPower Projection§! increased by §G+50§!"
+tr_exploration_1_delayed:0 "... exploring and evading hostile entities. Oh, hey look, Klingons. Run!"
+
+tr_exploration_1_machine:0 "Boldly Going..."
+tr_exploration_1_machine_desc:0 "$tr_exploration_1_desc$"
+tr_exploration_1_machine_delayed:0 "... exploring and evading hostile entities. Oh, hey look, Klingons. Run!"
+
+tr_exploration_1_hive:0 "Boldly Going..."
+tr_exploration_1_hive_desc:0 "$tr_exploration_1_desc$"
+tr_exploration_1_hive_delayed:0 "... exploring and evading hostile entities. Oh, hey look, Klingons. Run!"
+
+tr_exploration_2:0 "Advanced Research Vessels"
+tr_exploration_2_desc:0 "§YScience Ship Hull Points§! increased by §G+200%§!\n§YShip Interstellar Speed§! increased by §G+10%§!\n§YShip Jump Drive Cooldown§! reduced by §G-10%§!"
+tr_exploration_2_delayed:0 "Improving our research vessel hulls has increased their durability and speed."
+
+tr_exploration_2_machine:0 "Advanced Research Vessels"
+tr_exploration_2_machine_desc:0 "$tr_exploration_2_desc$"
+tr_exploration_2_machine_delayed:0 "Improving our research vessel hulls has increased their durability and speed."
+
+tr_exploration_2_hive:0 "Advanced Research Vessels"
+tr_exploration_2_hive_desc:0 "$tr_exploration_2_desc$"
+tr_exploration_2_hive_delayed:0 "Improving our research vessel hulls has increased their durability and speed."
+
+tr_exploration_3:0 "Particle Exploration"
+tr_exploration_3_desc:0 "§Y$mod_category_particles_research_speed_mult$§! increased by §G+15%§!\n§YCodebreaking§! increased by §G+1§!\n$mod_planet_researchers_physics_research_produces_add$ increased by §G+2§!"
+tr_exploration_3_delayed:0 "Ah yes...particles...so interesting. Study them, learn much, explore more."
+
+tr_exploration_3_machine:0 "Particle Exploration"
+tr_exploration_3_machine_desc:0 "$tr_exploration_3_desc$"
+tr_exploration_3_machine_delayed:0 "Ah yes...particles...so interesting. Study them, learn much, explore more."
+
+tr_exploration_3_hive:0 "Particle Exploration"
+tr_exploration_3_hive_desc:0 "$tr_exploration_3_desc$"
+tr_exploration_3_hive_delayed:0 "Ah yes...particles...so interesting. Study them, learn much, explore more."
+
+tr_exploration_4:0 "Rearch for the Stars"
+tr_exploration_4_desc:0 "§Y$mod_station_researchers_produces_mult$§! increased by §G+20%§!\n§YResearch from Starbase Constructions§! increased by §G+20%§!\n§YResearch Alternatives§! increased by §G+1§!"
+tr_exploration_4_delayed:0 "By now you must realize that I have grown tired of writing localization files. You get more research stuff, don't question it."
+
+tr_exploration_4_machine:0 "Rearch for the Stars"
+tr_exploration_4_machine_desc:0 "$tr_exploration_4_desc$"
+tr_exploration_4_machine_delayed:0 "By now you must realize that I have grown tired of writing localization files. You get more research stuff, don't question it."
+
+tr_exploration_4_hive:0 "Rearch for the Stars"
+tr_exploration_4_hive_desc:0 "$tr_exploration_4_desc$"
+tr_exploration_4_hive_delayed:0 "By now you must realize that I have grown tired of writing localization files. You get more research stuff, don't question it."
+
+tr_exploration_5:0 "Ministry of Indiana Jones"
+tr_exploration_5_desc:0 "§YArchaeological Site Excavation Speed§! increased by §G+25%§!\n§YResearch Speed (Archaeostudies)§! increased by §G+15%§!\n§YMegastructure Build Capacity§! increased by §G+1§!"
+tr_exploration_5_delayed:0 "Bum bum bum bum, bum bum bum. Raiding artifacts. Da da da da da!"
+
+tr_exploration_5_machine:0 "Indiana Jones Subroutines"
+tr_exploration_5_machine_desc:0 "$tr_exploration_5_desc$"
+tr_exploration_5_machine_delayed:0 "Bum bum bum bum, bum bum bum. Raiding artifacts. Da da da da da."
+
+tr_exploration_5_hive:0 "Indiana Jones Protocols"
+tr_exploration_5_hive_desc:0 "$tr_exploration_5_desc$"
+tr_exploration_5_hive_delayed:0 "Bum bum bum bum, bum bum bum. Raiding artifacts. Da da da da da."
+
+tr_exploration_finish:0 "Exploration Traditions Finished"
+tr_exploration_finish_desc:0 "§YArchaeology Skill§! increased by §G+2§!\n§YEspionage Operation Skill (Gather Information)§! increased by §G+2§!\n§YEspionage Operation Speed (Gather Information)§! increased by §G+25%§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_exploration_finish_machine:0 "$tr_exploration_finish$"
+tr_exploration_finish_machine_desc:0 "$tr_exploration_finish_desc$"
+
+tr_exploration_finish_hive:0 "$tr_exploration_finish$"
+tr_exploration_finish_hive_desc:0 "$tr_exploration_finish_desc$"
+
+################################################################
+# Splendor
+################################################################
+
+tradition_splendor:0 "Splendor"
+tradition_splendor_desc:0 "Psychological warfare is the acid that warps the xeno's soul."
+
+tradition_splendor_machine:1 "$tradition_splendor$"
+tradition_splendor_machine_desc:0 "Psychological warfare is the acid that warps the xeno's soul."
+
+tradition_splendor_hive:0 "$tradition_splendor$"
+tradition_splendor_hive_desc:0 "Psychological warfare is the acid that warps the xeno's soul."
+ 
+tr_splendor_adopt:0 "Splendor Traditions"
+tr_splendor_adopt_desc:6 "£influence£ §Y$mod_country_influence_produces_add$§! increased by §G+0.5§!\n§YHostile Operation Difficulty (Diplomacy)§! increased by §G+4§!"
+ 
+tr_splendor_adopt_machine:1 "$tr_splendor_adopt$"
+tr_splendor_adopt_machine_desc:2 "$tr_splendor_adopt_desc$"
+ 
+tr_splendor_adopt_hive:0 "$tr_splendor_adopt$"
+tr_splendor_adopt_hive_desc:3 "$tr_splendor_adopt_desc$"
+
+tr_splendor_1:0 "Study of Field Manipulation"
+tr_splendor_1_desc:0 "§Y$mod_category_field_manipulation_research_speed_mult$§! increased by §G+15%§!\n£military_ship£ §YShip Disengagement Chance§! increased by §G+10%§!\n£military_ship£ §YShip Disengagement Opportunities§! increased by §G+1§!"
+tr_splendor_1_delayed:0 "Producing more energy, improving your shields, and increasing your odds of safely escaping a precarious situation."
+
+tr_splendor_1_machine:0 "Study of Field Manipulation"
+tr_splendor_1_machine_desc:0 "$tr_splendor_1_desc$"
+tr_splendor_1_machine_delayed:0 "Producing more energy, improving your shields, and increasing your odds of safely escaping a precarious situation."
+
+tr_splendor_1_hive:0 "Study of Field Manipulation"
+tr_splendor_1_hive_desc:0 "$tr_splendor_1_desc$"
+tr_splendor_1_hive_delayed:0 "Producing more energy, improving your shields, and increasing your odds of safely escaping a precarious situation."
+
+tr_splendor_2:0 "Psychological Warfare"
+tr_splendor_2_desc:0 "§Y$mod_category_psionics_research_speed_mult$§! increased by §G+15%§!\n§YHostile Claim Influence Cost§! increased by §G+50%§!"
+tr_splendor_2_delayed:0 "Convincing our enemies to fear us allows us to gain a considerable upper hand in negotiations."
+
+tr_splendor_2_machine:0 "Psychological Warfare"
+tr_splendor_2_machine_desc:0 "§Y$mod_category_psionics_research_speed_mult$§! increased by §G+15%§!\n§YHostile Claim Influence Cost§! increased by §G+200%§!\n§HUnlock Planetary Decision:§! $osa_decision_syndicate_alloy$ and allows us to trade with crime syndicates for £alloys£ §Yalloys§!."
+tr_splendor_2_machine_delayed:0 "Convincing our enemies to fear us allows us to gain a considerable upper hand in negotiations."
+
+tr_splendor_2_hive:0 "Psychological Warfare"
+tr_splendor_2_hive_desc:0 "$tr_splendor_2_machine_desc$"
+tr_splendor_2_hive_delayed:0 "Convincing our enemies to fear us allows us to gain a considerable upper hand in negotiations."
+
+tr_splendor_3:0 "Reciprocity of Approval"
+tr_splendor_3_desc:0 "§YFactions§! provide £influence£ §YInfluence§! and £physics£ £society£ £engineering£ §YResearch§!"
+tr_splendor_3_delayed:0 "By convincing our factions of their value to us; we are able to extract additional favor from them."
+
+tr_splendor_3_machine:0 "Universal Maintenance Subroutines"
+tr_splendor_3_machine_desc:0 "£influence£ §Y$mod_country_influence_produces_add$§! increased by §G+0.5§!\n£job_maintenance_drone£ §Y$job_maintenance_drone_plural$§! and £job_osa_omni_drone£ $job_osa_omni_drone_plural$ produce §G+0.5§! £physics£ £society£ £engineering£ §YResearch§!"
+tr_splendor_3_machine_delayed:0 "Adding additional utility to our maintenance drones."
+
+tr_splendor_3_hive:0 "Universal Maintenance Protocols"
+tr_splendor_3_hive_desc:0 "$tr_splendor_3_machine_desc$"
+tr_splendor_3_hive_delayed:0 "Adding additional utility to our maintenance drones."
+
+tr_splendor_4:0 "How about no!"
+tr_splendor_4_desc:0 "§YCouncil Veto Cooldown§! reduced by §G-10%§!\n§YCouncil Veto Cost§! reduced by §G-10%§!\n§YEmergency Measures Cooldown§! reduced by §G-10%§!\n§YCodebreaking§! increased by §G+1§!"
+tr_splendor_4_delayed:0 "Other empires must learn and accept the meaning of utter rejection. They must embrace our ideology."
+
+tr_splendor_4_machine:0 "How about no!"
+tr_splendor_4_machine_desc:0 "$tr_splendor_4_desc$"
+tr_splendor_4_machine_delayed:0 "Other empires must learn and accept the meaning of utter rejection. They must embrace our ideology."
+
+tr_splendor_4_hive:0 "How about no!"
+tr_splendor_4_hive_desc:0 "$tr_splendor_4_desc$"
+tr_splendor_4_hive_delayed:0 "Other empires must learn and accept the meaning of utter rejection. They must embrace our ideology."
+
+tr_splendor_5:0 "Charismatic Diplomatic Espionage"
+tr_splendor_5_desc:0 "§Y$MOD_COUNTRY_ENVOYS_ADD$§! increased by §G+1§!\n§YBase Intel§! increased by §G+10§!\n§YShip Cloaking Detection§! increased by §G+1§!"
+tr_splendor_5_delayed:0 "We have more envoys than you! Don't mind us, we're just here to have a quick look around. Hey! This looks interesting..."
+
+tr_splendor_5_machine:0 "Charismatic Diplomatic Espionage"
+tr_splendor_5_machine_desc:0 "$tr_splendor_5_desc$"
+tr_splendor_5_machine_delayed:0 "We have more envoys than you! Don't mind us, we're just here to have a quick look around. Hey! This looks interesting..."
+
+tr_splendor_5_hive:0 "Charismatic Diplomatic Espionage"
+tr_splendor_5_hive_desc:0 "$tr_splendor_5_desc$"
+tr_splendor_5_hive_delayed:0 "We have more envoys than you! Don't mind us, we're just here to have a quick look around. Hey! This looks interesting..."
+
+tr_splendor_finish:0 "Splendor Traditions Finished"
+tr_splendor_finish_desc:0 "§YDiplomatic Weight from Economy§! increased by §G+50%§!\n§YEmpire Monthly Influence§! increased by §G+5%§!\nAscension Perks Unlocked: §G+1§!"
+
+tr_splendor_finish_machine:0 "$tr_splendor_finish$"
+tr_splendor_finish_machine_desc:0 "$tr_splendor_finish_desc$"
+
+tr_splendor_finish_hive:0 "$tr_splendor_finish$"
+tr_splendor_finish_hive_desc:0 "$tr_splendor_finish_desc$"
+
+################################################################
+# Renewal
+################################################################
+
+tradition_renewal:0 "Renewal"
+tradition_renewal_desc:0 "Restoring that which was lost to time."
+
+tradition_renewal_machine:1 "$tradition_renewal$"
+tradition_renewal_machine_desc:0 "Restoring that which was lost to time."
+
+tradition_renewal_hive:0 "$tradition_renewal$"
+tradition_renewal_hive_desc:0 "Restoring that which was lost to time."
+ 
+tr_renewal_adopt:0 "Renewal Traditions"
+tr_renewal_adopt_desc:6 "§Y$mod_category_new_worlds_research_speed_mult$§! increased by §G+15%§!"
+ 
+tr_renewal_adopt_machine:1 "$tr_renewal_adopt$"
+tr_renewal_adopt_machine_desc:2 "$tr_renewal_adopt_desc$"
+ 
+tr_renewal_adopt_hive:0 "$tr_renewal_adopt$"
+tr_renewal_adopt_hive_desc:3 "$tr_renewal_adopt_desc$"
+
+tr_renewal_1:0 "Frontier Perseverance"
+tr_renewal_1_desc:0 "§YColony Development Speed§! increased by §G+25%§!\n£mod_habitability£ §Y$MOD_POP_ENVIRONMENT_TOLERANCE$§! increased by §G+5%§!"
+tr_renewal_1_delayed:0 "Expanding our empire's reach to new worlds across the galaxy."
+
+tr_renewal_1_machine:0 "Frontier Perseverance"
+tr_renewal_1_machine_desc:0 "$tr_renewal_1_desc$"
+tr_renewal_1_machine_delayed:0 "Expanding our empire's reach to new worlds across the galaxy."
+
+tr_renewal_1_hive:0 "Frontier Perseverance"
+tr_renewal_1_hive_desc:0 "$tr_renewal_1_desc$"
+tr_renewal_1_hive_delayed:0 "Expanding our empire's reach to new worlds across the galaxy."
+
+tr_renewal_2:0 "Centralized Empire Storage"
+tr_renewal_2_desc:0 "§YResource Storage Capacity§! increased by §G+50000§!"
+tr_renewal_2_delayed:0 "Dedicating a significant area on our capital world to store additional resources."
+
+tr_renewal_2_machine:0 "Centralized Empire Storage"
+tr_renewal_2_machine_desc:0 "$tr_renewal_2_desc$"
+tr_renewal_2_machine_delayed:0 "Dedicating a significant area in our primary processing nexus to store additional resources."
+
+tr_renewal_2_hive:0 "Centralized Empire Storage"
+tr_renewal_2_hive_desc:0 "$tr_renewal_2_desc$"
+tr_renewal_2_hive_delayed:0 "Dedicating a significant area in our primary hive cluster to store additional resources."
+
+tr_renewal_3:0 "Expanded Extraction Operations"
+tr_renewal_3_desc:0 "£building£ §YStrategic Resource§! buildings provide §G+3§! £pops£ jobs"
+tr_renewal_3_delayed:0 "Demand for additional strategic resources mandates an increase in production."
+
+tr_renewal_3_machine:0 "Expanded Extraction Operations"
+tr_renewal_3_machine_desc:0 "$tr_renewal_3_desc$"
+tr_renewal_3_machine_delayed:0 "Demand for additional strategic resources mandates an increase in production."
+
+tr_renewal_3_hive:0 "Expanded Extraction Operations"
+tr_renewal_3_hive_desc:0 "$tr_renewal_3_desc$"
+tr_renewal_3_hive_delayed:0 "Demand for additional strategic resources mandates an increase in production."
+
+tr_renewal_4:0 "Improved Extraction Techniques"
+tr_renewal_4_desc:0 "§Y$r_strategic$§! production increased by §G+10%§!"
+tr_renewal_4_delayed:0 "Gaining additional strategic resources by optimizing our extraction techniques and reducing resource waste."
+
+tr_renewal_4_machine:0 "Improved Extraction Techniques"
+tr_renewal_4_machine_desc:0 "$tr_renewal_4_desc$"
+tr_renewal_4_machine_delayed:0 "Gaining additional strategic resources by optimizing our extraction techniques and reducing resource waste."
+
+tr_renewal_4_hive:0 "Improved Extraction Techniques"
+tr_renewal_4_hive_desc:0 "$tr_renewal_4_desc$"
+tr_renewal_4_hive_delayed:0 "Gaining additional strategic resources by optimizing our extraction techniques and reducing resource waste."
+
+tr_renewal_5:0 "Planet Construction"
+tr_renewal_5_desc:0 "§HUnlocks Megastructure:§! Planet Construction"
+tr_renewal_5_delayed:0 "Converting asteroid belts or gas giants into new planets. Repairing planets that has been destroyed in the past. The nature of renewal."
+
+tr_renewal_5_machine:0 "Planet Construction"
+tr_renewal_5_machine_desc:0 "$tr_renewal_5_desc$"
+tr_renewal_5_machine_delayed:0 "Converting asteroid belts or gas giants into new planets. Repairing planets that has been destroyed in the past. The nature of renewal."
+
+tr_renewal_5_hive:0 "Planet Construction"
+tr_renewal_5_hive_desc:0 "$tr_renewal_5_desc$"
+tr_renewal_5_hive_delayed:0 "Converting asteroid belts or gas giants into new planets. Repairing planets that has been destroyed in the past. The nature of renewal."
+
+tr_renewal_finish:0 "Renewal Traditions Finished"
+tr_renewal_finish_desc:0 "§YTerraforming Speed§! increased by §G+25%§!\n§YAdds Research Option:§! Terrestrial Sculpting (if unresearched)\nAscension Perks Unlocked: §G+1§!"
+
+tr_renewal_finish_machine:0 "$tr_renewal_finish$"
+tr_renewal_finish_machine_desc:0 "$tr_renewal_finish_desc$"
+
+tr_renewal_finish_hive:0 "$tr_renewal_finish$"
+tr_renewal_finish_hive_desc:0 "$tr_renewal_finish_desc$"

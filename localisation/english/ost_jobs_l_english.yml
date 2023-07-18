@@ -1,0 +1,109 @@
+﻿l_english:
+
+####################################
+# Jobs
+####################################
+
+################################################################
+# Director of Agriculture
+################################################################
+
+job_osa_agri_director:0 "Director of Agriculture"
+job_osa_agri_director_plural:0 "Directors of Agriculture"
+job_osa_agri_director_desc:0 "Someone needs to make sure the colony stays fed."
+job_osa_agri_director_effect_desc:0 "£job_osa_agri_director£ $job_osa_agri_director_plural$ produce £unity£ §Y$unity$§!, £food£ §Y$food$§! and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+mod_job_osa_agri_director_add:0 "$job_osa_agri_director$ Jobs"
+mod_job_osa_agri_director_per_pop:0 "§G+1§! $job_osa_agri_director$ Job per $VALUE$ Pops"
+mod_job_osa_agri_director_per_pop_short:0 "\n§G+1§! £mod_job_osa_agri_director_add£ per $VALUE$ £pop£"
+
+################################################################
+# Director of Excavation
+################################################################
+
+job_osa_mining_director:0 "Director of Excavation"
+job_osa_mining_director_plural:0 "Directors of Excavation"
+job_osa_mining_director_desc:0 "Must have 12+ years of experience in mining. Excellent pay, no benefits."
+job_osa_mining_director_effect_desc:0 "£job_osa_mining_director£ $job_osa_mining_director_plural$ produce £unity£ §Y$unity$§!, £minerals£ §Y$minerals$§! and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+mod_job_osa_mining_director_add:0 "$job_osa_mining_director$ Jobs"
+mod_job_osa_mining_director_per_pop:0 "§G+1§! $job_osa_mining_director$ Job per $VALUE$ Pops"
+mod_job_osa_mining_director_per_pop_short:0 "\n§G+1§! £mod_job_osa_mining_director_add£ per $VALUE$ £pop£"
+
+################################################################
+# Director of Energy
+################################################################
+
+job_osa_energy_director:0 "Director of Energy"
+job_osa_energy_director_plural:0 "Directors of Energy"
+job_osa_energy_director_desc:0 "It took a record amount of physical complaint forms and seventeen different committees, but leadership finally caved. At long as there's an energy director, there will still be some trees left in the galaxy."
+job_osa_energy_director_effect_desc:0 "£job_osa_energy_director£ $job_osa_energy_director_plural$ produce £unity£ §Y$unity$§!, £energy£ §Y$energy$§! and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+mod_job_osa_energy_director_add:0 "$job_osa_energy_director$ Jobs"
+mod_job_osa_energy_director_per_pop:0 "§G+1§! $job_osa_energy_director$ Job per $VALUE$ Pops"
+mod_job_osa_energy_director_per_pop_short:0 "\n§G+1§! £mod_job_osa_energy_director_add£ per $VALUE$ £pop£"
+
+################################################################
+# Chief Engineer
+################################################################
+
+job_osa_chief_engineer:0 "Chief Engineer"
+job_osa_chief_engineer_plural:0 "Chief Engineers"
+job_osa_chief_engineer_desc:0 "An engineering expert that maintains the empire's core industrial infastructure."
+job_osa_chief_engineer_effect_desc:0 "£job_osa_chief_engineer£ $job_osa_chief_engineer_plural$ produce £unity£ §Y$unity$§!, $r_alloys$, $r_consumer_goods$, and £engineering£ §YEngineering Research§!"
+mod_job_osa_chief_engineer_add:0 "$job_osa_chief_engineer$ Jobs"
+mod_job_osa_chief_engineer_per_pop:0 "§G+1§! $job_osa_chief_engineer$ Job per $VALUE$ Pops"
+mod_job_osa_chief_engineer_per_pop_short:0 "\n§G+1§! £mod_job_osa_chief_engineer_add£ per $VALUE$ £pop£"
+
+################################################################
+# Commander
+################################################################
+
+job_osa_commander:0 "Commander"
+job_osa_commander_plural:0 "Commanders"
+job_osa_commander_desc:0 "A fearless military leader with zero tolerance for failure."
+job_osa_commander_effect_desc:0 "£job_osa_commander£ $job_osa_commander_plural$ turn £alloys£ §Y$alloys$§! into £unity£ §Y$unity$§!, £physics£ $physics_research$, £engineering£ $engineering_research$, increases £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!, spawns £defense_army£ §YDefense Armies§!, and decreases £crime£ §Y$PLANET_CRIME_TITLE$§!"
+mod_job_osa_commander_add:0 "$job_osa_commander$ Jobs"
+mod_job_osa_commander_per_pop:0 "§G+1§! $job_osa_commander$ Job per $VALUE$ Pops"
+mod_job_osa_commander_per_pop_short:0 "\n§G+1§! £mod_job_osa_commander_add£ per $VALUE$ £pop£"
+
+################################################################
+# Commando
+################################################################
+
+job_osa_commando:0 "Commando"
+job_osa_commando_plural:0 "Commandos"
+job_osa_commando_desc:0 "A highly trained elite soldier. The empire's best and brightest."
+job_osa_commando_effect_desc:0 "£job_osa_commando£ $job_osa_commando_plural$ turn £alloys£ §Y$alloys$§! into £unity£ §Y$unity$§!, £physics£ $physics_research$, £engineering£ $engineering_research$, increases £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!, spawns £defense_army£ §YDefense Armies§!, and decreases £crime£ §Y$PLANET_CRIME_TITLE$§!"
+mod_job_osa_commando_add:0 "$job_osa_commando$ Jobs"
+mod_job_osa_commando_per_pop:0 "§G+1§! $job_osa_commando$ Job per $VALUE$ Pops"
+mod_job_osa_commando_per_pop_short:0 "\n§G+1§! £mod_job_osa_commando_add£ per $VALUE$ £pop£"
+
+################################################################
+# Gestalt - Omni-Drone
+################################################################
+
+job_osa_omni_drone:0 "Omni-Drone"
+job_osa_omni_drone_plural:0 "Omni-Drones"
+job_osa_omni_drone_desc:0 "This unit is prepared to do any menial task."
+job_osa_omni_drone_effect_desc:0 "£job_osa_omni_drone£ $job_osa_omni_drone_plural$ produce £unity£ §Y$unity$§!, £energy£ §Y$energy$§!, £minerals£ §Y$minerals$§!, £energy£ §Y$energy$§! and £mod_planet_amenities_add£ §Y$PLANET_AMENITIES_TITLE$§!"
+mod_job_osa_omni_drone_add:0 "$job_osa_omni_drone$ Jobs"
+mod_job_osa_omni_drone_per_pop:0 "§G+1§! $job_osa_omni_drone$ Job per $VALUE$ Pops"
+mod_job_osa_omni_drone_per_pop_short:0 "\n§G+1§! £mod_job_osa_omni_drone_add£ per $VALUE$ £pop£"
+
+################################################################
+# Gestalt - Commando Drone
+################################################################
+
+job_osa_commando_drone:0 "Commando Drone"
+job_osa_commando_drone_plural:0 "Commando Drones"
+job_osa_commando_drone_desc:0 "This unit is prepared for combat."
+job_osa_commando_drone_effect_desc:0 "£job_osa_commando_drone£ $job_osa_commando_drone_plural$ turn £alloys£ §Y$alloys$§! into £unity£ §Y$unity$§!, £physics£ $physics_research$, £engineering£ $engineering_research$, increases £mod_country_naval_cap_add£ §Y$MOD_COUNTRY_NAVAL_CAP_ADD$§!, spawns £defense_army£ §YDefense Armies§!, and decreases £crime£ §Y$PLANET_CRIME_TITLE$§!"
+mod_job_osa_commando_drone_add:0 "$job_osa_commando_drone$ Jobs"
+mod_job_osa_commando_drone_per_pop:0 "§G+1§! $job_osa_commando_drone$ Job per $VALUE$ Pops"
+mod_job_osa_commando_drone_per_pop_short:0 "\n§G+1§! £mod_job_osa_commando_drone_add£ per $VALUE$ £pop£"
+
+####################################
+# Job Categories
+####################################
+planet_maintenance_drones:0 "Maintenance Drone Jobs"
+planet_omni_drones:0 "Omni-Drone Jobs"
+job_administrator:0 "Administrator"
+job_administrator_plural:0 "Administrators"

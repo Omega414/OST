@@ -1,0 +1,62 @@
+pop_factions = {
+	parent = country
+	generate_mult_modifiers = {
+		produces
+	}
+	generate_add_modifiers = {
+		produces
+	}
+	modifier_category = country #pop factions category currently unused
+}
+
+planet_politicians = {
+	icon = "job_politician"
+	parent = planet_administrators
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+	}
+	modifier_category = pop
+}
+
+planet_executives = {
+	icon = "job_executive"
+	parent = planet_administrators
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+	}
+	modifier_category = pop
+}
+
+planet_maintenance_drones = {
+	icon = "maintenance_drone"
+	parent = planet_jobs_productive
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+	}
+	modifier_category = pop
+}
+
+planet_omni_drones = {
+	icon = "job_osa_omni_drone"
+	parent = planet_maintenance_drones
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+	}
+	modifier_category = pop
+}

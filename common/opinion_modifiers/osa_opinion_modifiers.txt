@@ -1,0 +1,35 @@
+triggered_opinion_tr_solidarity_2 = {
+	trigger = {
+		FROM = {
+			has_active_tradition = tr_solidarity_2
+		}
+	}
+
+	opinion = {
+		base = 20
+	}
+}
+
+triggered_opinion_tr_benevolence_5 = {
+	trigger = {
+		FROM = {
+			has_active_tradition = tr_benevolence_5
+		}
+	}
+
+	opinion = {
+		base = 20
+	}
+}
+
+intervene_opinion_military_help = {
+  opinion = {
+    base = 150
+  }
+
+	accumulative = yes
+
+	decay = {
+		base = 3
+	}
+}

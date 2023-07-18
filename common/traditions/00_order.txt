@@ -1,0 +1,369 @@
+tr_order_adopt = {
+
+	custom_tooltip = tr_order_adopt_desc
+	unlocks_agenda = agenda_order	
+	modifier = {
+		country_edict_fund_add = 200
+	}
+
+	tradition_swap = {
+		name = tr_order_adopt_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_order_adopt_machine_desc
+	
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_order_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_order_adopt_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_order_finish = {
+
+	custom_tooltip = tr_order_finish_desc
+	
+	modifier = {
+		# Reeducation Center building implemented in the buildings file.
+		planet_soldiers_unity_produces_add = 2
+		planet_enforcers_unity_produces_add = 2
+		planet_telepaths_unity_produces_add = 2
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_order_finish_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_order_finish_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_order_finish_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_order_finish_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_order_1 = {
+
+	custom_tooltip = tr_order_1_desc
+
+	modifier = {
+		country_edict_fund_mult = 0.25
+		edicts_upkeep_mult = -0.05
+	}
+	
+	tradition_swap = {
+		name = tr_order_1_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_order_1_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_order_1_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_order_1_hive_desc
+		
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_order_2 = {
+	possible = {
+		has_tradition = tr_order_1
+	}
+
+	custom_tooltip = tr_order_2_desc
+
+	modifier = {
+		pop_government_ethic_attraction = 0.50
+		planet_crime_add = -10
+		planet_housing_add = 5
+	}
+
+	tradition_swap = {
+		name = tr_order_2_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+		modifier = {
+			planet_crime_no_happiness_add = -10
+			planet_housing_add = 5
+		}
+
+		custom_tooltip = tr_order_2_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_order_2_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+		modifier = {
+			planet_crime_no_happiness_add = -10
+			planet_housing_add = 5
+		}
+
+		custom_tooltip = tr_order_2_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_order_3 = {
+
+	custom_tooltip = tr_order_3_desc
+
+	modifier = {
+		empire_size_pops_mult = -0.10
+		hostile_operation_spark_rebellion_difficulty_add = 2
+	}
+
+	tradition_swap = {
+		name = tr_order_3_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_order_3_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_order_3_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_order_3_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}	
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_order_4 = {
+	possible = {
+		has_tradition = tr_order_3
+	}
+
+	custom_tooltip = tr_order_4_desc
+
+	modifier = {
+		# Unity bonus implemented in government_buildings file.
+	}
+	
+	tradition_swap = {
+		name = tr_order_4_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_order_4_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_order_4_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_order_4_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_order_5 = {
+	possible = {
+		has_tradition = tr_order_3
+	}
+
+	custom_tooltip = tr_order_5_desc
+
+	modifier = {
+		planet_stability_add = 5
+		country_occupation_armies_add = 2
+	}
+	
+	tradition_swap = {
+		name = tr_order_5_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_order_5_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_order_5_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_order_5_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}

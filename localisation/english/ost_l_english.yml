@@ -1,0 +1,768 @@
+﻿l_english:
+
+####################################
+# Ascension Perks
+####################################
+requires_technology_sensors_3:1 "$TRIGGER_FAIL$Requires the £physics£ §Y$tech_sensors_3$§! technology."
+requires_ascension_perks_5:1 "$TRIGGER_FAIL$Requires five other Ascension Perks to be selected first."
+requires_ascension_perks_10:1 "$TRIGGER_FAIL$Requires ten other Ascension Perks to be selected first."
+requires_ap_universal_transactions:1 "$TRIGGER_FAIL$Requires the §Y$ap_universal_transactions$§! Ascension Perk."
+ap_managerial_prerogative:0 "Managerial Prerogative"
+ap_managerial_prerogative_desc:0 "You have no power here collective bargaining union! Be gone from this realm!"
+ap_boundless_repositories:0 "Boundless Repositories"
+ap_boundless_repositories_desc:0 "Stockpiling vast amounts of resources is no longer elective. Never again shall an alloy be discarded needlessly. Other empires shall tremble at the sight of our storage capacity."
+ap_relentless_scrutiny:0 "Relentless Scrutiny"
+ap_relentless_scrutiny_desc:0 "We shall leave no stone unturned as we pursue the buried secrets of the universe."
+ap_galactic_reconnaissance:0 "Galactic Reconnaissance"
+ap_galactic_reconnaissance_desc:0 "Nothing in the galaxy escapes our gaze."
+ap_galactic_ascendency:0 "Galactic Ascendency"
+ap_galactic_ascendency_desc:0 "The reach of our dominion knows no bounds."
+mod_osa_influence_sprawl:0 "Galactic Ascendency"
+mod_osa_influence_sprawl_desc:0 "The reach of our dominion knows no bounds."
+ap_concerted_effort:0 "Concerted Effort"
+ap_concerted_effort_desc:0 "The collective working as one to accomplish a common goal."
+ap_concerted_effort_tooltip:0 "£physics£ £society£ £engineering£ §YResearch Points§! from all £pop£ §YPops§! increased by §G+0.5§!\n£unity£ §YUnity§! from all £pop£ §YPops§! increased by §G+1§!"
+ap_advanced_city_planning:0 "Advanced City Planning"
+ap_advanced_city_planning_desc:0 "Making sophisticated plans for a colony long before development enables us to use planetary capacity to its fullest potential."
+ap_unrivaled_aptitude:0 "Unrivaled Aptitude"
+ap_unrivaled_aptitude_desc:0 "Our empire can not be matched in our resourcefulness or sophistication."
+trait_add_mind_over_matter:0 "§RRequires §Y$ap_mind_over_matter$§! Ascension Perk to add.§!"
+requires_ap_transcendent_learning:0 "§RRequires §Y$ap_transcendent_learning$§! Ascension Perk to add.§!"
+trait_add_transcendence:0 "§RRequires §Y$ap_transcendence$§! Ascension Perk to add.§!"
+trait_add_the_flesh_is_weak:0 "§RRequires §Y$ap_the_flesh_is_weak$§! Ascension Perk to add.§!"
+
+# Damage vs country
+mod_damage_vs_country_type_enclave_mercenary_mult:0 "Damage vs Mercenary Enclaves"
+
+# Machine Passives
+mod_osa_machine_influence_sprawl:0 "Machine Power Projection"
+mod_osa_machine_influence_sprawl_desc:0 "Machines have really scary self-aware fleets. The more fleets they have the more influence they generate."
+
+####################################
+# Decisions
+####################################
+
+################################################################
+# Millitary
+################################################################
+
+osa_decision_military_moonbase:0 "Designate Military Moonbase"
+osa_decision_military_moonbase_desc:0 "This planetary decision boosts the colony's §Ymilitary defenses§!."
+
+osa_decision_military_moonbase_decom:0 "Revoke Military Designation"
+osa_decision_military_moonbase_decom_desc:0 "This planetary decision removes the military moonbase designation."
+
+osa_decision_titan_garrison:0 "Deploy Titan Garrison"
+osa_decision_titan_garrison_desc:0 "Deploys a permanent titan garrison to defend the planet."
+osa_decision_titan_garrison_effects:0 "Deploys up to two §Y$defense_imperator_titan$§! armies on the planet. Can be used to replenish combat losses."
+
+################################################################
+# Food
+################################################################
+
+mod_osa_food_subsidies:0 "Local Agriculture Subsidies"
+mod_osa_food_subsidies_desc:0 "Our planet receives a temporary £food£ §Gfood§! production bonus."
+
+osa_decision_food_subsidies:0 "Local Agriculture Subsidies"
+osa_decision_food_subsidies_desc:0 "This planetary decision boosts the colony's §Yagricultural facilities§!."
+
+mod_osa_food_subsidies_gestalt:0 "Biomatter Proliferation Protocols"
+mod_osa_food_subsidies_gestalt_desc:0 "$mod_osa_food_subsidies_desc$"
+
+osa_decision_food_subsidies_gestalt:0 "Directive: Biomatter Proliferation Protocols"
+osa_decision_food_subsidies_gestalt_desc:0 "$osa_decision_food_subsidies_desc$"
+
+################################################################
+# Minerals
+################################################################
+
+mod_osa_minerals_subsidies:0 "Local Mining Subsidies"
+mod_osa_minerals_subsidies_desc:0 "Our planet receives a temporary £minerals£ §Gminerals§! production bonus."
+
+osa_decision_minerals_subsidies:0 "Local Mining Subsidies"
+osa_decision_minerals_subsidies_desc:0 "This planetary decision boosts the colony's §Ymining facilities§!."
+
+mod_osa_minerals_subsidies_gestalt:0 "Geological Resource Consolidation"
+mod_osa_minerals_subsidies_gestalt_desc:0 "$mod_osa_minerals_subsidies_desc$"
+
+osa_decision_minerals_subsidies_gestalt:0 "Directive: Geological Resource Consolidation"
+osa_decision_minerals_subsidies_gestalt_desc:0 "$osa_decision_minerals_subsidies_desc$"
+
+################################################################
+# Energy
+################################################################
+
+mod_osa_energy_subsidies:0 "Local Energy Subsidies"
+mod_osa_energy_subsidies_desc:0 "Our planet receives a temporary £energy£ §Genergy§! production bonus."
+
+osa_decision_energy_subsidies:0 "Local Energy Subsidies"
+osa_decision_energy_subsidies_desc:0 "This planetary decision boosts the colony's §energy facilities§!."
+
+mod_osa_energy_subsidies_gestalt:0 "Enhanced Energy Assimilation"
+mod_osa_energy_subsidies_gestalt_desc:0 "$mod_osa_energy_subsidies_desc$"
+
+osa_decision_energy_subsidies_gestalt:0 "Directive: Enhanced Energy Assimilation"
+osa_decision_energy_subsidies_gestalt_desc:0 "$osa_decision_energy_subsidies_desc$"
+
+################################################################
+# Alloys
+################################################################
+
+mod_osa_alloy_subsidies:0 "Local Metallurgy Subsidies"
+mod_osa_alloy_subsidies_desc:0 "Our planet receives a temporary £alloys£ §Galloy§! production bonus."
+
+osa_decision_alloy_subsidies:0 "Local Metallurgy Subsidies"
+osa_decision_alloy_subsidies_desc:0 "This planetary decision boosts the colony's §Ymetallurgy facilities§!."
+
+mod_osa_alloy_subsidies_gestalt:0 "Enhanced Refinement Applications"
+mod_osa_alloy_subsidies_gestalt_desc:0 "$mod_osa_alloy_subsidies_desc$"
+
+osa_decision_alloy_subsidies_gestalt:0 "Directive: Enhanced Refinement Applications"
+osa_decision_alloy_subsidies_gestalt_desc:0 "$osa_decision_alloy_subsidies_desc$"
+
+################################################################
+# Forge World
+################################################################
+
+mod_osa_designate_forgeworld:0 "Forge World"
+mod_osa_designate_forgeworld_desc:0 "This planet has been optimized for alloy production above all else."
+
+osa_decision_designate_forgeworld:0 "Designate Forge World"
+osa_decision_designate_forgeworld_desc:0 "Devote this planet entirely to alloy production."
+
+osa_decision_designate_forgeworld_remove:0 "Revoke Forge World Designation"
+osa_decision_designate_forgeworld_remove_desc:0 "This planetary decision removes the forge world designation."
+
+################################################################
+# Syndicate Alloy Production
+################################################################
+osa_decision_syndicate_alloy:0 "Syndicate Alloy Production"
+osa_decision_syndicate_alloy_desc:1 "Crime syndicates throughout the galaxy offer a large sum of alloys to anyone willing to pay. Send a detachment to meet with these contacts and work out a deal."
+osa_decision_syndicate_alloy_effects_short:1 "Trade resources to a crime syndicate for 1000 alloys"
+
+################################################################
+# Unity
+################################################################
+
+mod_osa_unity_subsidies:0 "Local Uniformity Subsidies"
+mod_osa_unity_subsidies_desc:0 "Our planet receives a temporary £unity£ §Gunity§! production bonus."
+
+osa_decision_unity_subsidies:0 "Local Uniformity Subsidies"
+osa_decision_unity_subsidies_desc:0 "This planetary decision boosts the colony's  £unity §YUnity§!."
+
+mod_osa_unity_subsidies_gestalt:0 "Unanimity Protocols"
+mod_osa_unity_subsidies_gestalt_desc:0 "$mod_osa_unity_subsidies_desc$"
+
+osa_decision_unity_subsidies_gestalt:0 "Directive: Unanimity Protocols"
+osa_decision_unity_subsidies_gestalt_desc:0 "$osa_decision_unity_subsidies_desc$"
+
+################################################################
+# Subsidy Revokation
+################################################################
+osa_decision_revoke_subsidies:0 "Revoke All Planetary Subsidies"
+osa_decision_revoke_subsidies_desc:0 "Revoke all currently active planetary subsidies."
+
+################################################################
+# Encourage Planetary Growth
+################################################################
+decision_planet_mineral_boost:0 "Encourage Planetary Growth"
+decision_planet_mineral_boost_desc:1 "Healthy and rapid growth will be assured by the generous distribution of proper nutrition."
+
+####################################
+# Agendas
+####################################
+council_agenda_agenda_perseverance_name:0 "$tradition_perseverance$: High Yield Crops"
+council_agenda_agenda_perseverance_desc:0 "$tradition_perseverance_desc$"
+agenda_perseverance_finish:0 "$council_agenda_agenda_perseverance_name$ $agenda_ref$"
+agenda_perseverance_finish_desc:0 "$council_agenda_agenda_perseverance_desc$"
+council_agenda_agenda_radiance_name:0 "$tradition_radiance$: Energy Efficiency"
+council_agenda_agenda_radiance_desc:0 "$tradition_radiance_desc$"
+agenda_radiance_finish:0 "$council_agenda_agenda_radiance_name$ $agenda_ref$"
+agenda_radiance_finish_desc:0 "$agenda_radiance_finish_desc$"
+council_agenda_agenda_mettle_name:0 "$tradition_mettle$: Comprehensive Excavation"
+council_agenda_agenda_mettle_desc:0 "$tradition_mettle_desc$"
+agenda_mettle_finish:0 "$council_agenda_agenda_mettle_name$ $agenda_ref$"
+agenda_mettle_finish_desc:0 "$council_agenda_agenda_mettle_desc$"
+council_agenda_agenda_metallurgy_name:0 "$tradition_metallurgy$: Enhanced Ore Processing"
+council_agenda_agenda_metallurgy_desc:0 "$tradition_metallurgy_desc$"
+agenda_metallurgy_finish:0 "$council_agenda_agenda_metallurgy_name$ $agenda_ref$"
+agenda_metallurgy_finish_desc:0 "$council_agenda_agenda_metallurgy_desc$"
+council_agenda_agenda_solidarity_name:0 "$tradition_solidarity$: One Purpose"
+council_agenda_agenda_solidarity_desc:0 "$tradition_solidarity_desc$"
+agenda_solidarity_finish:0 "$council_agenda_agenda_solidarity_name$ $agenda_ref$"
+agenda_solidarity_finish_desc:0 "$agenda_solidarity_finish_desc$"
+council_agenda_agenda_benevolence_name:0 "$tradition_benevolence$: Information Sharing"
+council_agenda_agenda_benevolence_desc:0 "$tradition_benevolence_desc$"
+agenda_benevolence_finish:0 "$council_agenda_agenda_benevolence_name$ $agenda_ref$"
+agenda_benevolence_finish_desc:0 "$council_agenda_agenda_benevolence_desc$"
+council_agenda_agenda_malevolence_name:0 "$tradition_malevolence$: Spiteful Tenacity"
+council_agenda_agenda_malevolence_desc:0 "$tradition_malevolence_desc$"
+agenda_malevolence_finish:0 "$council_agenda_agenda_malevolence_name$ $agenda_ref$"
+agenda_malevolence_finish_desc:0 "$agenda_malevolence_finish_desc$"
+council_agenda_agenda_defense_name:0 "$tradition_defense$: Combat Studies"
+council_agenda_agenda_defense_desc:0 "$tradition_defense_desc$"
+agenda_defense_finish:0 "$council_agenda_agenda_defense_name$ $agenda_ref$"
+agenda_defense_finish_desc:0 "$council_agenda_agenda_defense_desc$"
+council_agenda_agenda_navalascendancy_name:0 "$tradition_navalascendancy$: Shipwrights"
+council_agenda_agenda_navalascendancy_desc:0 "$tradition_navalascendancy_desc$"
+agenda_navalascendancy_finish:0 "$council_agenda_agenda_navalascendancy_name$ $agenda_ref$"
+agenda_navalascendancy_finish_desc:0 "$council_agenda_agenda_navalascendancy_desc$"
+council_agenda_agenda_navalheritage_name:0 "$tradition_navalheritage$: Admiralty"
+council_agenda_agenda_navalheritage_desc:0 "$tradition_navalheritage_desc$"
+agenda_navalheritage_finish:0 "$council_agenda_agenda_navalheritage_name$ $agenda_ref$"
+agenda_navalheritage_finish_desc:0 "$council_agenda_agenda_navalheritage_desc$"
+council_agenda_agenda_commerce_name:0 "$tradition_commerce$: Outreach"
+council_agenda_agenda_commerce_desc:0 "$tradition_commerce_desc$"
+agenda_commerce_finish:0 "$council_agenda_agenda_commerce_name$ $agenda_ref$"
+agenda_commerce_finish_desc:0 "$council_agenda_agenda_commerce_desc$"
+council_agenda_agenda_ingenuity_name:0 "$tradition_ingenuity$: Enactment"
+council_agenda_agenda_ingenuity_desc:0 "$tradition_ingenuity_desc$"
+agenda_ingenuity_finish:0 "$council_agenda_agenda_ingenuity_name$ $agenda_ref$"
+agenda_ingenuity_finish_desc:0 "$council_agenda_agenda_ingenuity_desc$"
+council_agenda_agenda_order_name:0 "$tradition_order$: Contrivance"
+council_agenda_agenda_order_desc:0 "$tradition_order_desc$"
+agenda_order_finish:0 "$council_agenda_agenda_order_name$ $agenda_ref$"
+agenda_order_finish_desc:0 "$council_agenda_agenda_order_desc$"
+council_agenda_agenda_insight_name:0 "$tradition_insight$: Validation"
+council_agenda_agenda_insight_desc:0 "$tradition_insight_desc$"
+agenda_insight_finish:0 "$council_agenda_agenda_insight_name$ $agenda_ref$"
+agenda_insight_finish_desc:0 "$council_agenda_agenda_insight_desc$"
+council_agenda_agenda_compassion_name:0 "$tradition_compassion$: Fulfillment"
+council_agenda_agenda_compassion_desc:0 "$tradition_compassion_desc$"
+agenda_compassion_finish:0 "$council_agenda_agenda_compassion_name$ $agenda_ref$"
+agenda_compassion_finish_desc:0 "$council_agenda_agenda_compassion_desc$"
+council_agenda_agenda_administratum_name:0 "$tradition_administratum$: Regulation Allocation"
+council_agenda_agenda_administratum_desc:0 "$tradition_administratum_desc$"
+agenda_administratum_finish:0 "$council_agenda_agenda_administratum_name$ $agenda_ref$"
+agenda_administratum_finish_desc:0 "$council_agenda_agenda_administratum_desc$"
+council_agenda_agenda_academy_name:0 "$tradition_academy$: Elite Training"
+council_agenda_agenda_academy_desc:0 "$tradition_academy_desc$"
+agenda_academy_finish:0 "$council_agenda_agenda_academy_name$ $agenda_ref$"
+agenda_academy_finish_desc:0 "$council_agenda_agenda_academy_desc$"
+council_agenda_agenda_nanobiotics_name:0 "$tradition_nanobiotics$: Automation Proficiency"
+council_agenda_agenda_nanobiotics_desc:0 "$tradition_nanobiotics_desc$"
+agenda_nanobiotics_finish:0 "$council_agenda_agenda_nanobiotics_name$ $agenda_ref$"
+agenda_nanobiotics_finish_desc:0 "$council_agenda_agenda_nanobiotics_desc$"
+council_agenda_agenda_exploration_name:0 "$tradition_exploration$: Understanding"
+council_agenda_agenda_exploration_desc:0 "$tradition_exploration_desc$"
+agenda_exploration_finish:0 "$council_agenda_agenda_exploration_name$ $agenda_ref$"
+agenda_exploration_finish_desc:0 "$council_agenda_agenda_exploration_desc$"
+council_agenda_agenda_splendor_name:0 "$tradition_splendor$: Perception"
+council_agenda_agenda_splendor_desc:0 "$tradition_splendor_desc$"
+agenda_splendor_finish:0 "$council_agenda_agenda_splendor_name$ $agenda_ref$"
+agenda_splendor_finish_desc:0 "$council_agenda_agenda_splendor_desc$"
+council_agenda_agenda_renewal_name:0 "$tradition_renewal$: Resilience"
+council_agenda_agenda_renewal_desc:0 "$tradition_renewal_desc$"
+agenda_renewal_finish:0 "$council_agenda_agenda_renewal_name$ $agenda_ref$"
+agenda_renewal_finish_desc:0 "$council_agenda_agenda_renewal_desc$"
+
+####################################
+# Living Standards
+####################################
+NEG_25_HAPPINESS:1 "§R-25%§! £happiness£ §YHappiness§!"
+
+SHARED_BURDEN_POP_EFFECTS:0 "$RULERS$: $SHARED_BURDEN_LUXURIES$, $5_HAPPINESS$\n$SPECIALISTS$: $SHARED_BURDEN_LUXURIES$, $5_HAPPINESS$\n$WORKERS$: $SHARED_BURDEN_LUXURIES$, $5_HAPPINESS$"
+UTOPIAN_ABUNDANCE_POP_EFFECTS:0 "$RULERS$: $VERY_HIGH_LUXURIES$, $20_HAPPINESS$\n$SPECIALISTS$: $VERY_HIGH_LUXURIES$, $20_HAPPINESS$\n$WORKERS$: $VERY_HIGH_LUXURIES$, $20_HAPPINESS$"
+ACADEMIC_PRIVILEGE_POP_EFFECTS:0 "$RULERS$: $VERY_HIGH_LUXURIES$, $15_HAPPINESS$\n$SPECIALISTS$: $VERY_HIGH_LUXURIES$, $15_HAPPINESS$\n$WORKERS$: $AVERAGE_LUXURIES$\n$SLAVES$: $VERY_LOW_LUXURIES$"
+SOCIAL_WELFARE_POP_EFFECTS:0 "$RULERS$: $VERY_HIGH_LUXURIES$, $10_HAPPINESS$\n$SPECIALISTS$: $HIGH_LUXURIES$, $10_HAPPINESS$\n$WORKERS$: $HIGH_LUXURIES$, $10_HAPPINESS$\n$SLAVES$: $LOW_LUXURIES$, $10_HAPPINESS$"
+DECENT_LIVING_STANDARDS_POP_EFFECTS:0 "$RULERS$: $VERY_HIGH_LUXURIES$, $10_HAPPINESS$\n$SPECIALISTS$: $HIGH_LUXURIES$, $5_HAPPINESS$\n$WORKERS$: $AVERAGE_LUXURIES$\n$SLAVES$: $VERY_LOW_LUXURIES$"
+STRATIFIED_LIVING_STANDARDS_POP_EFFECTS:0 "$RULERS$: $VERY_HIGH_LUXURIES$, $15_HAPPINESS$\n$SPECIALISTS$: $HIGH_LUXURIES$, $5_HAPPINESS$\n$WORKERS$: $LOW_LUXURIES$, $NEG_10_HAPPINESS$\n$SLAVES$: $NO_LUXURIES$, $NEG_10_HAPPINESS$"
+SUBSISTENCE_POP_EFFECTS:0 "$RULERS$: $HIGH_LUXURIES$, $NEG_10_HAPPINESS$\n$SPECIALISTS$: $AVERAGE_LUXURIES$, $NEG_15_HAPPINESS$\n$WORKERS$: $VERY_LOW_LUXURIES$, $NEG_25_HAPPINESS$\n$SLAVES$: $NO_LUXURIES$, $NEG_25_HAPPINESS$"
+
+####################################
+# Modifiers
+####################################
+
+mod_country_traditions_physics_research_produces_add:0 "Monthly £physics_research£ §Y$physics_research$§!"
+mod_country_traditions_society_research_produces_add:0 "Monthly £society_research£ §Y$society_research$§!"
+mod_country_traditions_engineering_research_produces_add:0 "Monthly £engineering_research£ §Y$engineering_research$§!"
+
+# Orbital Rings
+mod_shipsize_orbital_ring_tier_1_build_speed_mult:0 "Orbital Ring I Build Speed"
+mod_shipsize_orbital_ring_tier_1_disengage_chance_mult:0 "Orbital Ring I Disengage Chance"
+mod_shipsize_orbital_ring_tier_1_evasion_mult:0 "Orbital Ring I Evasion"
+mod_shipsize_orbital_ring_tier_1_hull_add:0 "Orbital Ring I Hull"
+mod_shipsize_orbital_ring_tier_1_hull_mult:0 "Orbital Ring I Hull"
+mod_shipsize_orbital_ring_tier_1_tracking_mult:0 "Orbital Ring I Tracking"
+
+mod_shipsize_orbital_ring_tier_2_build_speed_mult:0 "Orbital Ring II Build Speed"
+mod_shipsize_orbital_ring_tier_2_disengage_chance_mult:0 "Orbital Ring II Disengage Chance"
+mod_shipsize_orbital_ring_tier_2_evasion_mult:0 "Orbital Ring II Evasion"
+mod_shipsize_orbital_ring_tier_2_hull_add:0 "Orbital Ring II Hull"
+mod_shipsize_orbital_ring_tier_2_hull_mult:0 "Orbital Ring II Hull"
+mod_shipsize_orbital_ring_tier_2_tracking_mult:0 "Orbital Ring II Tracking"
+
+mod_shipsize_orbital_ring_tier_3_build_speed_mult:0 "Orbital Ring III Build Speed"
+mod_shipsize_orbital_ring_tier_3_disengage_chance_mult:0 "Orbital Ring III Disengage Chance"
+mod_shipsize_orbital_ring_tier_3_evasion_mult:0 "Orbital Ring III Evasion"
+mod_shipsize_orbital_ring_tier_3_hull_add:0 "Orbital Ring III Hull"
+mod_shipsize_orbital_ring_tier_3_hull_mult:0 "Orbital Ring III Hull"
+mod_shipsize_orbital_ring_tier_3_tracking_mult:0 "Orbital Ring III Tracking"
+
+# District Modifiers
+mod_planet_district_nexus_build_speed_mult:0 "Nexus District Build Speed"
+
+# Building Upkeep
+mod_planet_buildings_energy_upkeep_mult:0 "Building Energy Upkeep"
+mod_planet_buildings_minerals_upkeep_mult:0 "Building Mineral Upkeep"
+mod_planet_buildings_food_upkeep_mult:0 "Building Food Upkeep"
+
+# Building and District Upkeep
+mod_planet_structures_minerals_upkeep_mult:0 "District and Building Mineral Upkeep"
+mod_planet_structures_food_upkeep_mult:0 "District and Building Food Upkeep"
+
+# Job Upkeep
+mod_planet_farmers_society_research_upkeep_add:0 "£society£ $society_research$ upkeep from £job_farmer£ $job_farmer_plural$"
+mod_planet_technician_physics_research_upkeep_add:0 "£physics£ $physics_research$ upkeep from £job_technician£ $job_technician_plural$"
+mod_planet_miners_engineering_research_upkeep_add:0 "£engineering£ $engineering_research$ upkeep from £job_miner£ $job_miner_plural$"
+
+# Soldiers
+mod_planet_soldiers_physics_research_produces_add:0 "£physics£ $physics_research$ from £job_soldier£ $job_soldier_plural$"
+mod_planet_soldiers_society_research_produces_add:0 "£society£ $society_research$ from £job_soldier£ $job_soldier_plural$"
+mod_planet_soldiers_engineering_research_produces_add:0 "£engineering£ $engineering_research$ from £job_soldier£ $job_soldier_plural$"
+
+# Technicians
+mod_planet_technician_physics_research_produces_mult:0 "£physics£ $physics_research$ from £job_technician£ $job_technician_plural$"
+mod_planet_technician_physics_research_produces_add:0 "£physics£ $physics_research$ from £job_technician£ $job_technician_plural$"
+
+mod_planet_technician_engineering_research_produces_mult:0 "£engineering£ $engineering_research$ from £job_technician£ $job_technician_plural$"
+mod_planet_technician_engineering_research_produces_add:0 "£engineering£ $engineering_research$ from £job_technician£ $job_technician_plural$"
+
+mod_planet_technician_society_research_produces_mult:0 "£society£ $society_research$ from £job_technician£ $job_technician_plural$"
+mod_planet_technician_society_research_produces_add:0 "£society£ $society_research$ from £job_technician£ $job_technician_plural$"
+
+mod_planet_technician_unity_produces_mult:1 "£unity£ $unity$ from £job_technician£ [GetTechnicianPlural]"
+mod_planet_technician_unity_produces_add:0 "$mod_planet_technician_unity_produces_mult$"
+
+mod_planet_technician_minerals_upkeep_add:0 "£minerals£ $minerals$ upkeep from £job_technician£ [GetTechnicianPlural]"
+
+# Farmers
+mod_planet_farmers_physics_research_produces_mult:0 "£physics£ $physics_research$ from £job_farmer£ $job_farmer_plural$"
+mod_planet_farmers_physics_research_produces_add:0 "£physics£ $physics_research$ from £job_farmer£ $job_farmer_plural$"
+
+mod_planet_farmers_engineering_research_produces_mult:0 "£engineering£ $engineering_research$ from £job_farmer£ $job_farmer_plural$"
+mod_planet_farmers_engineering_research_produces_add:0 "£engineering£ $engineering_research$ from £job_farmer£ $job_farmer_plural$"
+
+mod_planet_farmers_society_research_produces_mult:0 "£society£ $society_research$ from £job_farmer£ $job_farmer_plural$"
+mod_planet_farmers_society_research_produces_add:0 "£society£ $society_research$ from £job_farmer£ $job_farmer_plural$"
+
+mod_planet_farmers_unity_produces_mult:1 "£unity£ $unity$ from £job_farmer£ [GetFarmerPlural]"
+mod_planet_farmers_unity_produces_add:0 "$mod_planet_farmers_unity_produces_mult$"
+
+# Miners
+mod_planet_miners_physics_research_produces_mult:0 "£physics£ $physics_research$ from £job_miner£ $job_miner_plural$"
+mod_planet_miners_physics_research_produces_add:0 "£physics£ $physics_research$ from £job_miner£ $job_miner_plural$"
+
+mod_planet_miners_engineering_research_produces_mult:0 "£engineering£ $engineering_research$ from £job_miner£ $job_miner_plural$"
+mod_planet_miners_engineering_research_produces_add:0 "£engineering£ $engineering_research$ from £job_miner£ $job_miner_plural$"
+
+mod_planet_miners_society_research_produces_mult:0 "£society£ $society_research$ from £job_miner£ $job_miner_plural$"
+mod_planet_miners_society_research_produces_add:0 "£society£ $society_research$ from £job_miner£ $job_miner_plural$"
+
+mod_planet_miners_unity_produces_mult:1 "£unity£ $unity$ from £job_miner£ [GetMinerPlural]"
+mod_planet_miners_unity_produces_add:0 "$mod_planet_miners_unity_produces_mult$"
+
+mod_planet_miners_alloys_produces_mult:1 "£alloys£ $alloys$ from £job_miner£ [GetMinerPlural]"
+mod_planet_miners_alloys_produces_add:0 "$mod_planet_miners_minerals_produces_mult$"
+
+# Metallurgists
+mod_planet_metallurgists_unity_produces_add:0 "£unity£ $unity$ from £job_foundry£ $job_foundry_plural$"
+mod_planet_metallurgists_engineering_research_produces_add:0 "£engineering£ $engineering_research$ from £job_foundry£ $job_foundry_plural$"
+mod_planet_metallurgists_physics_research_produces_add:0 "£physics£ $physics_research$ from £job_foundry£ $job_foundry_plural$"
+
+# Artisans
+mod_planet_artisans_unity_produces_add:0 "£unity£ $unity$ from £job_artisan£ $job_artisan_plural$"
+mod_planet_artisans_society_research_produces_add:0 "£society£ $society_research$ from £job_artisan£ $job_artisan_plural$"
+
+# Administrators
+mod_planet_administrators_society_research_produces_mult:0 "£society£ $society_research$ from £job_bureaucrat£ Administrators"
+mod_planet_administrators_society_research_produces_add:0 "$mod_planet_administrators_society_research_produces_mult$"
+mod_planet_administrators_physics_research_produces_mult:0 "£physics£ $physics_research$ from £job_bureaucrat£ Administrators"
+mod_planet_administrators_physics_research_produces_add:0 "$mod_planet_administrators_physics_research_produces_mult$"
+
+# Researchers
+mod_planet_researchers_physics_research_produces_add:0 "$mod_planet_researchers_physics_research_produces_mult$"
+mod_planet_researchers_physics_research_produces_mult:0 "£physics£ $physics_research$ from £job_researcher£ Researchers"
+
+mod_planet_researchers_society_research_produces_add:0 "$mod_planet_researchers_society_research_produces_mult$"
+mod_planet_researchers_society_research_produces_mult:0 "£society£ $society_research$ from £job_researcher£ Researchers"
+
+mod_planet_researchers_engineering_research_produces_add:0 "$mod_planet_researchers_engineering_research_produces_mult$"
+mod_planet_researchers_engineering_research_produces_mult:0 "£engineering£ $engineering_research$ from £job_researcher£ Researchers"
+
+# Synapse Drones
+mod_planet_synapse_drones_produces_mult:0 "£job_synapse_drone£ $job_synapse_drone$ Output"
+
+# Starbases
+mod_shipsize_starbase_outpost_hull_mult:0 "Starbase Outpost Hull Points"
+mod_shipclass_military_station_build_speed_mult:0 "Defense Platform Build Speed"
+mod_shipclass_starbase_evasion_add:0 "Starbase Evasion"
+
+# Science Ships
+mod_shipclass_science_ship_hull_mult:0 "Science Ship Hull Points"
+mod_shipclass_science_ship_evasion_add:0 "Science Ship Evasion"
+
+# Missiles
+mod_weapon_type_explosive_speed_mult:0 "Explosive Weapon Speed"
+
+# Espionage
+mod_op_cat_sabotage_speed_mult:1 "Operation Difficulty ($op_cat_sabotage$)"
+mod_op_cat_technology_speed_mult:1 "Operation Difficulty ($op_cat_technology$)"
+mod_op_cat_military_speed_mult:1 "Operation Difficulty ($op_cat_military$)"
+mod_operation_gather_information_speed_mult:0 "Operation Speed ($operation_gather_information$)"
+mod_operation_gather_information_skill_add:0 "Operation Skill ($operation_gather_information$)"
+mod_hostile_operation_spark_rebellion_difficulty_add:0 "Operation Difficulty ($operation_spark_rebellion$)"
+
+# All Jobs
+mod_planet_jobs_minerals_upkeep_mult:0 "£minerals£ $minerals$ upkeep from £job£ Jobs"
+
+# Command Limit
+mod_country_command_limit_mult:0 "Fleet Command Limit"
+
+# Factions
+pop_factions_produces_mult:0 "Faction All Resource Gain"
+
+mod_pop_factions_influence_produces_mult:0 "Faction Influence Gain"
+mod_pop_factions_influence_produces_add:0 "$mod_pop_factions_influence_produces_mult$"
+
+mod_pop_factions_engineering_research_produces_mult:0 "Faction Engineering Research Gain"
+mod_pop_factions_engineering_research_produces_add:0 "$mod_pop_factions_engineering_research_produces_mult$"
+
+mod_pop_factions_physics_research_produces_mult:0 "Faction Physics Research Gain"
+mod_pop_factions_physics_research_produces_add:0 "$mod_pop_factions_physics_research_produces_mult$"
+
+mod_pop_factions_society_research_produces_mult:0 "Faction Society Research Gain"
+mod_pop_factions_society_research_produces_add:0 "$mod_pop_factions_society_research_produces_mult$"
+
+# Power Projection
+mod_country_power_projection_unity_produces_mult:0 "£unity£ Unity from Power Projection"
+mod_country_power_projection_unity_produces_add:0 "$mod_country_power_projection_unity_produces_mult$"
+mod_country_power_projection_consumer_goods_produces_mult:0 "£consumer_goods£ Consumer Goods from Power Projection"
+mod_country_power_projection_consumer_goods_produces_add:0 "$mod_country_power_projection_consumer_goods_produces_mult$"
+mod_country_power_projection_physics_research_produces_mult:0 "£physics£ Physics Research from Power Projection"
+mod_country_power_projection_physics_research_produces_add:0 "$mod_country_power_projection_physics_research_produces_mult$"
+mod_country_power_projection_society_research_produces_mult:0 "£society£ Society Research from Power Projection"
+mod_country_power_projection_society_research_produces_add:0 "$mod_country_power_projection_society_research_produces_mult$"
+mod_country_power_projection_engineering_research_produces_mult:0 "£engineering£ Engineering Research from Power Projection"
+mod_country_power_projection_engineering_research_produces_add:0 "$mod_country_power_projection_engineering_research_produces_mult$"
+
+
+# Food/Mineral Upkeep
+mod_planet_pops_food_upkeep_mult:0 "Pop £food£ Food Upkeep"
+mod_planet_pops_minerals_upkeep_mult:0 "Pop £minerals£ Minerals Upkeep"
+mod_planet_pops_energy_upkeep_mult:0 "Pop £energy£ Energy Upkeep"
+
+####################################
+# Opinion Modifiers
+####################################
+triggered_opinion_tr_solidarity_2:0 "Tradition: Inclusion Studies"
+triggered_opinion_tr_benevolence_5:0 "Tradition: Breton"
+
+####################################
+# Edicts
+####################################
+edict_aggressive_expansion:0 "Aggressive Expansion"
+edict_aggressive_expansion_desc:0 "We expand or we die. Let no xeno stand in our way!"
+
+edict_compassion_initiatives:0 "Compassion Initiatives"
+edict_compassion_initiatives_desc:0 "Identifying needs and taking care of those around us improve our society as a whole."
+
+####################################
+# Policies
+####################################
+
+
+################################################################
+# Research Focus
+################################################################
+
+# Physics
+policy_research_policy_physics:0 "Research Priority: Physics"
+policy_research_policy_physics_desc:0 "Research is a way forward for our empire, advancing its knowledge and bringing new possibilities. We must decide what is the best focus for our researchers and where we should pool our brightest."
+
+research_policy_physics_no_focus:0 "No Focus"
+research_policy_physics_no_focus_name:0 "$research_policy_no_focus$"
+research_policy_physics_no_focus_desc:0 "By not focusing on any particular branch, our researchers will have more freedom to pursue their own experiments.\n"
+ 
+# Society
+policy_research_policy_society:0 "Research Priority: Society"
+policy_research_policy_society_desc:0 "Research is a way forward for our empire, advancing its knowledge and bringing new possibilities. We must decide what is the best focus for our researchers and where we should pool our brightest."
+
+research_policy_society_no_focus:0 "No Focus"
+research_policy_society_no_focus_name:0 "$research_policy_no_focus$"
+research_policy_society_no_focus_desc:0 "By not focusing on any particular branch, our researchers will have more freedom to pursue their own experiments.\n"
+
+research_policy_archaeostudies:0 "Archaeostudies"
+research_policy_archaeostudies_name:0 "$research_policy_archaeostudies$"
+research_policy_archaeostudies_desc:0 "Focusing on §YArchaeostudies§! technologies will give us an advantage in the given field of research.\n"
+
+research_policy_psionics:0 "Psionics"
+research_policy_psionics_name:0 "$research_policy_psionics$"
+research_policy_psionics_desc:0 "Focusing on §YPsionics§! technologies will give us an advantage in the given field of research.\n"
+
+# Engineering
+policy_research_policy_engineering:0 "Research Priority: Engineering"
+policy_research_policy_engineering_desc:0 "Research is a way forward for our empire, advancing its knowledge and bringing new possibilities. We must decide what is the best focus for our researchers and where we should pool our brightest."
+
+research_policy_engineering_no_focus:0 "No Focus"
+research_policy_engineering_no_focus_name:0 "$research_policy_no_focus$"
+research_policy_engineering_no_focus_desc:0 "By not focusing on any particular branch, our researchers will have more freedom to pursue their own experiments.\n"
+
+################################################################
+# Bombardment Objectives
+################################################################
+policy_orbital_bombardment:0 "Orbital Bombardment Objectives"
+policy_orbital_bombardment_desc:2 "Orbital Bombardment objectives allow us to influence how our invasion affects the hostile infastructure.\n"
+
+orbital_bombardment_selective:0 "Normal"
+orbital_bombardment_selective_name:0 "Normal Objectives"
+orbital_bombardment_selective_desc:0 "Objectives remain the same and will follow the designated orbital bombardment stance."
+
+orbital_bombardment_selective:0 "Military"
+orbital_bombardment_selective_name:0 "Military Objectives"
+orbital_bombardment_selective_desc:0 "Our combat objectives require strict selection to military targets only. Damage to civilian infastructure will not be tolerated."
+
+orbital_bombardment_selective:0 "Civilian"
+orbital_bombardment_selective_name:0 "Civilian Objectives"
+orbital_bombardment_selective_desc:0 "Our combat objectives require eradication of the planets populace and infastructure. Every xeno eliminated now reduces the number of xenos we need to purge later."
+
+################################################################
+# Reeducation
+################################################################
+policy_reeducation:0 "Reeducation"
+policy_reeducation_desc:0 "Some matters require finesse and a bit of...persuasion."
+
+reeducation_none:0 "None"
+reeducation_none_name:0 "None"
+reeducation_none_desc:0 "Citizens will not be actively swayed by our reeducation programs."
+
+reeducation_government:0 "Government Ethics"
+reeducation_government_name:0 "Government Ethics"
+reeducation_government_desc:0 "Citizens must comply with the will of the state. Defiance will not be tolerated."
+
+reeducation_authoritarian:0 "Authoritarian Ethics"
+reeducation_authoritarian_name:0 "Authoritarian Ethics"
+reeducation_authoritarian_desc:0 "Our citizens must accept a more Authoritarian perspective."
+
+reeducation_egalitarian:0 "Egalitarian Ethics"
+reeducation_egalitarian_name:0 "Egalitarian Ethics"
+reeducation_egalitarian_desc:0 "Our citizens must accept a more Egalitarian perspective."
+
+reeducation_materialist:0 "Materialist Ethics"
+reeducation_materialist_name:0 "Materialist Ethics"
+reeducation_materialist_desc:0 "Our citizens must accept a more Materialist perspective."
+
+reeducation_militarist:0 "Militarist Ethics"
+reeducation_militarist_name:0 "Militarist Ethics"
+reeducation_militarist_desc:0 "Our citizens must accept a more Militarist perspective."
+
+reeducation_pacifist:0 "Pacifist Ethics"
+reeducation_pacifist_name:0 "Pacifist Ethics"
+reeducation_pacifist_desc:0 "Our citizens must accept a more Pacifist perspective."
+
+reeducation_spiritualist:0 "Spiritualist Ethics"
+reeducation_spiritualist_name:0 "Spiritualist Ethics"
+reeducation_spiritualist_desc:0 "Our citizens must accept a more Spiritualist perspective."
+
+reeducation_xenophile:0 "Xenophile Ethics"
+reeducation_xenophile_name:0 "Xenophile Ethics"
+reeducation_xenophile_desc:0 "Our citizens must accept a more Xenophile perspective."
+
+reeducation_xenophobe:0 "Xenophobe Ethics"
+reeducation_xenophobe_name:0 "Xenophobe Ethics"
+reeducation_xenophobe_desc:0 "Our citizens must accept a more Xenophobe perspective."
+
+################################################################
+# Taxation
+################################################################
+policy_taxation:0 "Taxation"
+policy_taxation_desc:0 "Our empire's citizens must all do their part to advance the endeavors of our society."
+
+policy_taxation_gestalt:0 "Overcharge"
+policy_taxation_gestalt_desc:0 "Our empire's citizens must all do their part to advance the endeavors of our society."
+
+taxation_0:0 "Tax Rate: 0%"
+taxation_0_desc:0 "Taxes are not collected from our population; yet they show no gratitude."
+
+taxation_10:0 "Tax Rate: 10%"
+taxation_10_desc:0 "A slight tax rate of 10% has been imposed on our citizens.\n"
+
+taxation_20:0 "Tax Rate: 20%"
+taxation_20_desc:0 "A trivial tax rate of 20% has been imposed on our citizens.\n"
+
+taxation_30:0 "Tax Rate: 30%"
+taxation_30_desc:0 "A negligible tax rate of 30% has been imposed on our citizens.\n"
+
+taxation_40:0 "Tax Rate: 40%"
+taxation_40_desc:0 "An insignificant tax rate of 40% has been imposed on our citizens.\n"
+
+taxation_50:0 "Tax Rate: 50%"
+taxation_50_desc:0 "An inappreciable tax rate of 50% has been imposed on our citizens.\n"
+
+taxation_gestalt_0:0 "Overcharge Rate: 0%"
+taxation_gestalt_0_desc:0 "Drones are not currently assigned to overcharge tasks."
+
+taxation_gestalt_10:0 "Overcharge Rate: 10%"
+taxation_gestalt_10_desc:0 "Drones has been assigned to increase production by 10%.\n"
+
+taxation_gestalt_20:0 "Overcharge Rate: 20%"
+taxation_gestalt_20_desc:0 "Drones has been assigned to increase production by 20%.\n"
+
+taxation_gestalt_30:0 "Overcharge Rate: 30%"
+taxation_gestalt_30_desc:0 "Drones has been assigned to increase production by 30%.\n"
+
+taxation_gestalt_40:0 "Overcharge Rate: 40%"
+taxation_gestalt_40_desc:0 "Drones has been assigned to increase production by 40%.\n"
+
+taxation_gestalt_50:0 "Overcharge Rate: 50%"
+taxation_gestalt_50_desc:0 "Drones has been assigned to increase production by 50%.\n"
+
+trade_policy_default_improved:0 "Wealth Creation"
+trade_policy_default_improved_name:0 "$trade_policy_default_improved$"
+trade_policy_default_improved_desc:0 "The purpose of trade is to generate profits for individuals and revenue for the state. We should focus our trade efforts fully on this creation of wealth.\n\n§EEach collected £trade_value£ §YTrade Value§! earns us £energy£ §Y1.25§!§!"
+
+trade_policy_consumer_goods_improved:0 "Consumer Benefits"
+trade_conversion_consumer_goods_improved_name:0 "$trade_policy_consumer_goods_improved$"
+trade_policy_consumer_goods_improved_desc:0 "Profits and taxes must take second place to improving the lives of our citizens. We should focus our trade efforts towards the manufacture and distribution of everyday necessities.\n\n§EEach collected £trade_value£ §YTrade Value§! earns us £energy£ §Y0.5§! and £consumer_goods£ §Y0.5§!§!"
+
+trade_policy_unity_improved:0 "Marketplace of Ideas"
+trade_conversion_unity_improved_name:0 "$trade_policy_unity_improved$"
+trade_policy_unity_improved_desc:1 "Trade can be used not only to move goods around, but also to facilitate the spread of ideas. We should focus our trade efforts towards ensuring that the message of our government is heard on all planets where we do business.\n\n§EEach collected £trade_value£ §YTrade Value§! earns us £energy£ §Y0.5§! and £unity£ §Y0.5§!§!"
+
+trade_policy_trade_league_improved:0 "Trade League"
+trade_conversion_trade_league_improved_name:0 "$trade_policy_trade_league_improved$"
+trade_policy_trade_league_improved_desc:1 "By banding together in a trade league, we are able to prosper and secure profits on a whole new level.\n\n§EEach collected £trade_value£ §YTrade Value§! earns us £energy£ §Y0.5§!, £unity£ §Y0.5§! and £consumer_goods£ §Y0.5§!§!"
+
+trade_policy_holy_covenant_improved:0 "Holy Covenant"
+trade_conversion_holy_covenant_improved_name:0 "$trade_policy_holy_covenant_improved$"
+trade_policy_holy_covenant_improved_desc:0 "By banding together in a holy covenant, we may bask in the collective glory of our divine purpose.\n\n§EEach collected £trade_value£ §YTrade Value§! earns us £energy£ §Y0.75§! and £unity£ §Y0.75§!§!"
+
+####################################
+# Armies
+####################################
+imperator_titan_limit_tooltip:0 "Only the strongest of will can pilot the God-Machines of an Interstellar Empire. Beyond that, the resources and time  required to produce Titan Legions are astronomical."
+defense_imperator_titan:0 "Titan Battlegroup (Defense)"
+defense_imperator_titan_desc:1 "No weapon in the arsenal equals the Titan on the battlefield, and a Legion of such vast war machines can bring any world to its knees. In truth, a Titan has only three enemies: folly, hubris, and another of its own kind."
+imperator_titan:0 "Titan Battlegroup"
+imperator_titan_desc:1 "No weapon in the arsenal equals the Titan on the battlefield, and a Legion of such vast war machines can bring any world to its knees. In truth, a Titan has only three enemies: folly, hubris, and another of its own kind."
+NAME_Defense_Imperator_Titan:0 "Titan Battlegroup (Defense)"
+
+####################################
+# Megastructures
+####################################
+ 
+# Assimilation Event
+assimilated.00.name:0 "Planetary Assimilation Protocol achieved"
+assimilated.00.desc.a:0 "Assimilation Protocol #327 achieved in territorial grid [From.From.From.Planet.GetName]"
+assimilated.00.desc.b:0 "Assimilation Protocol #519 achieved in territorial grid [From.From.From.Planet.GetName]"
+
+# Megastructure Details - Assimilate World
+is_machine_world:0 "$TRIGGER_FAIL$Must not be a §Y$pc_machine$§!."
+machine_assimilate_0:0 "Assimilate World"
+machine_assimilate_0_DESC:0 "Assimilate World"
+machine_assimilate_0_MEGASTRUCTURE_DETAILS:1 "Assimilate this world converting the entire planet to §Y$pc_machine$§!."
+machine_assimilate_0_CONSTRUCTION_INFO_DELAYED:4 "A §Y$pc_machine$§! is a rocky world covered with artificial structures. The thin atmosphere consists mostly of industrial pollutants and is not capable of supporting biological life."
+
+# Planet Construction Megastructure
+is_planet_construction:0 "$TRIGGER_FAIL$Must be a §Y$pc_shattered$§!, §Y$pc_broken$§!, §Y$pc_gas_giant$§!, §Y$pc_asteroid$§!, or §Y$pc_ice_asteroid$§!."
+planet_construction_0:0 "Planet Construction"
+planet_construction_0_DESC:0 "Planet Construction"
+planet_construction_0_MEGASTRUCTURE_DETAILS:1 "Construct an §Y$pc_ash$§! from this celestial body."
+planet_construction_0_CONSTRUCTION_INFO_DELAYED:4 "Rocky world with a nitrogen-carbon dioxide-sulfur dioxide atmosphere. Although this young world has cooled from its molten past it still has considerable seismic and volcanic activity. The atmosphere on this planet is toxic to most creatures."
+ 
+# Planet Construction Event
+planet_construction.00.name:0 "[From.From.From.Planet.GetName] Planet Construction completed"
+planet_construction.00.desc.a:0 "Our engineers have completed planet construction on [From.From.From.Planet.GetName]."
+planet_construction.00.desc.b:0 "[From.From.From.Planet.GetName] has completed planetary construction and is ready for colonization."
+
+# Game Start Mod Check Events
+ost_check.0.name:0 "§SWarning: Duplicate Mods Detected§!"
+ost_check.0.desc:0 "Playlist contains both §YOmega's Stellaris Additions§! and §YOmega's Stellaris Traditions§!.\nPlease disable one of these mods to avoid unexpected issues. Thank you."
+
+####################################
+# Traits
+####################################
+
+# Leader
+leader_trait_navigator:0 "Navigator"
+leader_trait_navigator_desc:1 "This leader has a natural talent for traditional and unorthodox means of space travel."
+leader_trait_navigator_hive:0 "Navigator"
+leader_trait_navigator_hive_desc:1 "This drone efficiently calculates alternative spacial trajectories."
+leader_trait_navigator_machine:0 "Navigator"
+leader_trait_navigator_machine_desc:1 "This unit efficiently calculates alternative spacial trajectories."
+
+leader_trait_navigator_2:0 "Navigator II"
+leader_trait_navigator_2_desc:1 "This leader has a natural talent for traditional and unorthodox means of space travel."
+leader_trait_navigator_2_hive:0 "Navigator II"
+leader_trait_navigator_2_hive_desc:1 "This drone efficiently calculates alternative spacial trajectories."
+leader_trait_navigator_2_machine:0 "Navigator II"
+leader_trait_navigator_2_machine_desc:1 "This unit efficiently calculates alternative spacial trajectories."
+
+leader_trait_navigator_3:0 "Navigator III"
+leader_trait_navigator_3_desc:1 "This leader has a natural talent for traditional and unorthodox means of space travel."
+leader_trait_navigator_3_hive:0 "Navigator III"
+leader_trait_navigator_3_hive_desc:1 "This drone efficiently calculates alternative spacial trajectories."
+leader_trait_navigator_3_machine:0 "Navigator III"
+leader_trait_navigator_3_machine_desc:1 "This unit efficiently calculates alternative spacial trajectories."
+
+leader_trait_science_navigator:0 "Navigator"
+leader_trait_science_navigator_desc:1 "This leader has a natural talent for traditional and unorthodox means of space travel."
+leader_trait_science_navigator_hive:0 "Navigator"
+leader_trait_science_navigator_hive_desc:1 "This drone efficiently calculates alternative spacial trajectories."
+leader_trait_science_navigator_machine:0 "Navigator"
+leader_trait_science_navigator_machine_desc:1 "This unit efficiently calculates alternative spacial trajectories."
+
+leader_trait_science_navigator_2:0 "Navigator II"
+leader_trait_science_navigator_2_desc:1 "This leader has a natural talent for traditional and unorthodox means of space travel."
+leader_trait_science_navigator_2_hive:0 "Navigator II"
+leader_trait_science_navigator_2_hive_desc:1 "This drone efficiently calculates alternative spacial trajectories."
+leader_trait_science_navigator_2_machine:0 "Navigator II"
+leader_trait_science_navigator_2_machine_desc:1 "This unit efficiently calculates alternative spacial trajectories."
+
+leader_trait_science_navigator_3:0 "Navigator III"
+leader_trait_science_navigator_3_desc:1 "This leader has a natural talent for traditional and unorthodox means of space travel."
+leader_trait_science_navigator_3_hive:0 "Navigator III"
+leader_trait_science_navigator_3_hive_desc:1 "This drone efficiently calculates alternative spacial trajectories."
+leader_trait_science_navigator_3_machine:0 "Navigator III"
+leader_trait_science_navigator_3_machine_desc:1 "This unit efficiently calculates alternative spacial trajectories."
+
+# Biological
+trait_witherer:0 "Witherer"
+trait_witherer_desc:0 ""§LThis species has a talent for killing every plant they touch.§!"
+
+trait_inept:0 "Inept"
+trait_inept_desc:0 ""§LThis species is prone to frequent mathmatical and logical errors.§!"
+
+trait_lackadaisical:0 "Lackadaisical"
+trait_lackadaisical_desc:0 ""§LThis species shows very little interest or enthusiasm for their work.§!"
+
+trait_unskilled:0 "Unskilled"
+trait_unskilled_desc:0 ""§LThis species is very bad at anything that requires complex thought process.§!"
+
+trait_nonconformists:0 "Nonconformists"
+trait_nonconformists_desc:0 ""§LThis species has natural tendencies to resist authority and reject the status quo.§!"
+
+trait_inflexible:0 "Inflexible"
+trait_inflexible_desc:0 ""§LThis species is very set in their ways and will rarely ever try something new.§!"
+
+trait_voracious:0 "Voracious"
+trait_voracious_desc:0 ""§LThis species has an appetite that is rarely ever satisfied.§!"
+
+trait_voracious_lithoid:0 "Voracious"
+trait_voracious_lithoid_desc:0 "§LThis species has an appetite that is rarely ever satisfied.§!"
+
+trait_natural_mathematicians:0 "Natural Mathematicians"
+trait_natural_mathematicians_desc:0 "§LThis species excels at developing and solving complex mathmatical equations.§!"
+
+trait_natural_philosophers:0 "Natural Philosophers"
+trait_natural_philosophers_desc:0 ""§LThis species is extremely adept at understanding matters of a spiritual nature.§!"
+
+# Machine
+trait_robot_simple_food:0 "Simple Food Protocols"
+trait_robot_simple_food_desc:0 "§LThis unit has very minimal agricultural programming in favor of additional energy storage modules.§!"
+
+trait_robot_stripmining_protocols:0 "Strip Mining Protocols"
+trait_robot_stripmining_protocols_desc:0 "§LThis unit has been optimized for planetary strip mining. Additional programming is irrelevant.§!"
+
+trait_robot_corroded_servos:0 "Corroded Servos"
+trait_robot_corroded_servos_desc:0 "§LThis unit suffers from years of servo corrosion. Processor cycles have been reserved for future servo improvements.§!"

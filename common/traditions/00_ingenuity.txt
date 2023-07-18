@@ -1,0 +1,375 @@
+tr_ingenuity_adopt = {
+
+	custom_tooltip = tr_ingenuity_adopt_desc
+	unlocks_agenda = agenda_ingenuity
+	modifier = {
+		country_engineering_tech_research_speed = 0.05
+		op_cat_military_skill_add = 2
+		op_cat_military_speed_mult = 0.25
+	}
+
+	tradition_swap = {
+		name = tr_ingenuity_adopt_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_adopt_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_ingenuity_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_adopt_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_ingenuity_finish = {	
+
+	custom_tooltip = tr_ingenuity_finish_desc
+
+	modifier = {
+		country_enclave_capacity_add = 1
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_ingenuity_finish_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_finish_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_ingenuity_finish_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_finish_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_ingenuity_1 = {
+
+	custom_tooltip = tr_ingenuity_1_desc
+	
+	modifier = {
+		ship_hull_mult = 0.25
+		country_power_projection_engineering_research_produces_add = 50
+	}
+	
+	tradition_swap = {
+		name = tr_ingenuity_1_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_1_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_ingenuity_1_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_1_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_ingenuity_2 = {
+
+	custom_tooltip = tr_ingenuity_2_desc
+
+	modifier = {
+		ship_armor_hardening_add = 0.25
+		weapon_type_explosive_speed_mult = 0.25
+	}
+	
+	tradition_swap = {
+		name = tr_ingenuity_2_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_2_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_ingenuity_2_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_2_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_ingenuity_3 = {
+	possible = {
+		has_tradition = tr_ingenuity_1
+	}
+
+	custom_tooltip = tr_ingenuity_3_desc
+	
+	modifier = {
+		category_military_theory_research_speed_mult = 0.15
+		shipsize_orbital_ring_tier_1_tracking_mult = 0.5
+		shipsize_orbital_ring_tier_2_tracking_mult = 0.5
+		shipsize_orbital_ring_tier_3_tracking_mult = 0.5
+	}
+	
+	tradition_swap = {
+		name = tr_ingenuity_3_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_3_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_ingenuity_3_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_3_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_ingenuity_4 = {
+	possible = {
+		AND = {
+			has_tradition = tr_ingenuity_1
+			has_tradition = tr_ingenuity_2
+		}
+	}
+
+	custom_tooltip = tr_ingenuity_4_desc
+
+	modifier = {
+		planet_doctors_engineering_research_produces_add = 2
+		planet_soldiers_engineering_research_produces_add = 2
+	}
+	
+	tradition_swap = {
+		name = tr_ingenuity_4_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_4_machine_desc
+
+		modifier = {
+			planet_pop_assemblers_engineering_research_produces_add = 2
+			planet_soldiers_engineering_research_produces_add = 2
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_ingenuity_4_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_4_hive_desc
+
+		modifier = {
+			planet_pop_assemblers_engineering_research_produces_add = 2
+			planet_soldiers_engineering_research_produces_add = 2
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_ingenuity_5 = {
+	possible = {
+		has_tradition = tr_ingenuity_2
+	}
+
+	custom_tooltip = tr_ingenuity_5_desc
+
+	modifier = {
+		# Shipyard and Anchorage Engineering Research implemented in 00_starbase_modules building file.
+		# Mechanicum Academy / Black Knight Encampment implemented in army buildings file.
+	}
+	
+	tradition_swap = {
+		name = tr_ingenuity_5_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_5_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_ingenuity_5_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_ingenuity_5_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}

@@ -1,0 +1,380 @@
+tr_defense_adopt = {
+
+	custom_tooltip = tr_defense_adopt_desc
+	unlocks_agenda = agenda_defense
+	modifier = {
+		starbase_defense_platform_capacity_add = 10
+	}
+	on_enabled = {
+		give_technology = {
+			tech = tech_global_defense_grid
+			message = no
+		}
+	}
+
+	tradition_swap = {
+		name = tr_defense_adopt_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_defense_adopt_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	tradition_swap = {
+		name = tr_defense_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_defense_adopt_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_defense_finish = {
+
+	custom_tooltip = tr_defense_finish_desc
+
+	modifier = {
+		# Planetary Decision in decisions file
+		starbase_module_capacity_add = 2
+		starbase_building_capacity_add = 2
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_defense_finish_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_defense_finish_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_defense_finish_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_defense_finish_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_defense_1 = {
+
+	custom_tooltip = tr_defense_1_desc
+
+	modifier = {
+		shipclass_military_station_hull_mult = 0.5
+		shipclass_military_station_build_speed_mult = 0.25
+		shipsize_orbital_ring_tier_1_hull_mult = 1
+		shipsize_orbital_ring_tier_2_hull_mult = 1
+		shipsize_orbital_ring_tier_3_hull_mult = 1
+	}
+	
+	tradition_swap = {
+		name = tr_defense_1_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_defense_1_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_defense_1_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_defense_1_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_defense_2 = {
+	possible = {
+		has_tradition = tr_defense_1
+	}
+
+	custom_tooltip = tr_defense_2_desc
+
+	modifier = {
+		shipclass_starbase_hull_mult = 1
+		shipclass_starbase_evasion_add = 20
+	}
+	
+	tradition_swap = {
+		name = tr_defense_2_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_defense_2_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_defense_2_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_defense_2_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_defense_3 = {
+
+	custom_tooltip = tr_defense_3_desc
+	
+	modifier = {
+		starbase_upgrade_speed_mult = 0.25
+		country_starbase_capacity_add = 5
+	}
+	
+	tradition_swap = {
+		name = tr_defense_3_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_defense_3_machine_desc
+	
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_defense_3_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_defense_3_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_defense_4 = {
+	possible = {
+		has_tradition = tr_defense_3
+	}
+
+	custom_tooltip = tr_defense_4_desc
+
+	modifier = {
+		# Job changes implemented in building files
+		army_defense_damage_mult = 0.25
+		army_defense_morale_mult = 0.5
+		army_defense_health_mult = 0.5
+	}
+	
+	tradition_swap = {
+		name = tr_defense_4_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_defense_4_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_defense_4_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_defense_4_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_defense_5 = {
+	possible = {
+		has_tradition = tr_defense_3
+	}
+
+	custom_tooltip = tr_defense_5_desc
+
+	modifier = {
+		# Unlocks Building: Zitadom
+		country_leader_cap_add = 2
+	}
+
+	on_enabled = {
+		every_owned_leader = {
+			limit = {
+				leader_class = general
+			}
+			add_skill_without_trait_selection = 1
+		}
+	}
+	
+	tradition_swap = {
+		name = tr_defense_5_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_defense_5_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_defense_5_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_defense_5_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}

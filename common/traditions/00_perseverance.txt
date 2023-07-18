@@ -1,0 +1,360 @@
+tr_perseverance_adopt = {
+
+	custom_tooltip = tr_perseverance_adopt_desc
+	unlocks_agenda = agenda_perseverance
+	modifier = {
+		pop_environment_tolerance = 0.05
+		planet_clear_blocker_time_mult = -0.25
+	}
+
+	tradition_swap = {
+		name = tr_perseverance_adopt_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_perseverance_adopt_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_perseverance_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_perseverance_adopt_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_perseverance_finish = {
+
+	custom_tooltip = tr_perseverance_finish_desc
+
+	modifier = {
+		# Unlocks Planetary Decision: Food from jobs +25%.
+		country_food_produces_mult = 0.05
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_perseverance_finish_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_perseverance_finish_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_perseverance_finish_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_perseverance_finish_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_perseverance_1 = {
+
+	custom_tooltip = tr_perseverance_1_desc
+
+	modifier = {
+		district_farming_max = 2
+		planet_farmers_food_produces_mult = 0.25
+	}
+	
+	tradition_swap = {
+		name = tr_perseverance_1_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_perseverance_1_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_perseverance_1_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_perseverance_1_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_perseverance_2 = {
+
+	custom_tooltip = tr_perseverance_2_desc
+
+	modifier = {
+		# +Special Job and +5 Housing applied in buildings file
+	}
+	
+	tradition_swap = {
+		name = tr_perseverance_2_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_perseverance_2_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_perseverance_2_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_perseverance_2_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_perseverance_3 = {
+
+	custom_tooltip = tr_perseverance_3_desc
+
+	modifier = {
+		planet_farmers_society_research_produces_add = 1
+	}
+	
+	tradition_swap = {
+		name = tr_perseverance_3_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_perseverance_3_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_perseverance_3_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_perseverance_3_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_perseverance_4 = {
+	possible = {
+		AND = {
+			has_tradition = tr_perseverance_1
+			has_tradition = tr_perseverance_2
+		}
+	}
+
+	custom_tooltip = tr_perseverance_4_desc
+
+	modifier = {
+		pop_growth_speed = 0.1
+	}
+	
+	tradition_swap = {
+		name = tr_perseverance_4_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+		modifier = {
+			planet_pop_assembly_mult = 0.1
+		}
+
+		custom_tooltip = tr_perseverance_4_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_perseverance_4_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_perseverance_4_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_perseverance_5 = {
+	possible = {
+		has_tradition = tr_perseverance_3
+	}
+
+	custom_tooltip = tr_perseverance_5_desc
+
+	modifier = {
+		planet_orbital_bombardment_damage = -0.1
+		country_war_exhaustion_mult = -0.1
+	}
+	
+	tradition_swap = {
+		name = tr_perseverance_5_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_perseverance_5_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_perseverance_5_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_perseverance_5_hive_desc
+		
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}

@@ -1,0 +1,39 @@
+namespace = osa_sprawl
+
+country_event = {
+	id = osa_sprawl.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_ascension_perk = ap_galactic_ascendency
+	}
+
+	immediate = {
+		remove_modifier = "mod_osa_influence_sprawl"
+		add_modifier = {
+			modifier = "mod_osa_influence_sprawl"
+			days = -1
+			multiplier = owner.trigger:empire_size
+		}
+	}
+}
+
+country_event = {
+	id = osa_sprawl.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_machine_empire = yes
+	}
+
+	immediate = {
+		remove_modifier = "mod_osa_machine_influence_sprawl"
+		add_modifier = {
+			modifier = "mod_osa_machine_influence_sprawl"
+			days = -1
+			multiplier = owner.trigger:empire_size
+		}
+	}
+}

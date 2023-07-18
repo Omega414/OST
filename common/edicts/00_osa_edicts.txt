@@ -1,0 +1,185 @@
+@Edict1Cost = 15
+@Edict2Cost = 30
+@Edict3Cost = 45
+
+@EdictPerpetual = -1
+
+aggressive_expansion = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	#edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = aggressive_expansion }
+			}
+			influence = 200
+		}
+		upkeep = {
+			unity = @Edict3Cost
+			multiplier = value:edict_size_effect
+		}
+		#cost = { #Deactivation Cost
+		#	trigger = {
+		#		has_edict = aggressive_expansion
+		#	}
+		#	influence = 100
+		#}
+	}
+
+	modifier = {
+		country_border_friction_mult = 2.5
+		country_naval_cap_mult = 0.25
+		command_limit_mult = 0.25
+		ship_damage_against_starbases_mult = 0.25
+	}
+
+	potential = {
+		has_active_tradition = tr_malevolence_finish
+	}
+
+	ai_weight = {
+		weight = @EdictMedPrio
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+}
+
+osom_archeology_protocols = {
+	length = -1
+	icon = "GFX_edict_type_policy"
+	#edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = osom_archeology_protocols }			
+			}
+			influence = 200
+		}
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
+		}
+		#cost = { #Deactivation Cost
+		#	trigger = {
+		#		has_edict = osom_archeology_protocols
+		#	}
+		#	influence = 100
+		#}
+	}
+
+	modifier = {
+		planet_miners_produces_mult = -0.05
+		custom_tooltip = edict_osom_archeology_protocols_tooltip
+		show_only_custom_tooltip = no
+	}
+
+	potential = {
+		is_gestalt = no
+		has_technology = osom_tech_speleology_3
+	}
+
+	ai_weight = {
+		weight = @EdictMedPrio
+	}
+}
+
+osom_archeology_protocols_gestalt = {
+	length = -1
+	icon = "GFX_edict_type_policy"
+	#edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = osom_archeology_protocols_gestalt }			
+			}
+			influence = 200
+		}
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
+		}
+		#cost = { #Deactivation Cost
+		#	trigger = {
+		#		has_edict = osom_archeology_protocols
+		#	}
+		#	influence = 100
+		#}
+	}
+
+	modifier = {
+		planet_miners_produces_mult = -0.05
+		custom_tooltip = edict_osom_archeology_protocols_gestalt_tooltip
+		show_only_custom_tooltip = no
+	}
+
+	potential = {
+		is_gestalt = yes
+		has_technology = osom_tech_speleology_3
+	}
+
+	ai_weight = {
+		weight = @EdictMedPrio
+	}
+}
+
+compassion_initiatives = {
+	length = @EdictPerpetual
+	icon = "GFX_edict_type_policy"
+	edict_cap_usage = 1
+
+	resources = {
+		category = edicts
+		cost = { #Activation Cost
+			trigger = {
+				NOT = { has_edict = compassion_initiatives }
+			}
+			influence = 150
+		}
+		upkeep = {
+			unity = @Edict1Cost
+			multiplier = value:edict_size_effect
+		}
+		#cost = { #Deactivation Cost
+		#	trigger = {
+		#		has_edict = compassion_initiatives
+		#	}
+		#	influence = 100
+		#}
+	}
+
+	modifier = {
+		biological_pop_happiness = 0.1
+		pop_environment_tolerance = 0.1
+		planet_pops_consumer_goods_upkeep_mult = 0.05
+
+	}
+
+	potential = {
+		has_active_tradition = tr_compassion_3
+	}
+
+	ai_weight = {
+		weight = @EdictMedPrio
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_pacifist
+		}
+	}
+}

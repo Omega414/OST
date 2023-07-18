@@ -1,0 +1,420 @@
+@osa_cost = 750
+@osa_maintenance = 2
+
+district_osa_housing = {
+	base_buildtime = 480
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = standard
+		has_planet_flag = osa_military
+	}
+
+	potential = {
+		uses_district_set = standard
+		has_planet_flag = osa_military
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @osa_cost
+		}
+		upkeep = {
+			energy = @osa_maintenance
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_arcology_housing
+		district_rw_city
+		district_city
+		district_nexus
+		district_hive
+	}
+
+	planet_modifier = {
+		planet_housing_add = 5
+		planet_max_buildings_add = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				OR = {
+					has_valid_civic = civic_functional_architecture
+					has_valid_civic = civic_corporate_functional_architecture
+					has_valid_civic = civic_hive_equilibrium_instinct
+					has_valid_civic = civic_machine_builder
+				}
+			}
+		}
+		modifier = {
+			planet_max_buildings_add = 0.25
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_housing_1 }
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_housing_2 }
+		}
+		modifier = {
+			planet_housing_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_clerk_add = 1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_clerk_effect_desc
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_maintenance_drone_add = 1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_maintenance_drone_effect_desc
+	}
+}
+
+district_osa_farming = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+	
+	show_on_uncolonized = {
+		uses_district_set = standard
+		has_planet_flag = osa_military
+	}
+
+	potential = {
+		uses_district_set = standard
+		has_planet_flag = osa_military
+		NOT = {
+			AND = {
+				exists = owner
+				owner = {
+					is_ai = yes
+					country_uses_food = no
+				}
+			}
+		}
+	}
+	
+	conversion_ratio = 1
+	convert_to = {
+		district_farming
+		district_farming_uncapped
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @osa_cost
+		}
+		upkeep = {
+			energy = @osa_maintenance
+		}		
+	}
+		
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		modifier = {
+			job_farmer_add = 1
+			job_osa_agri_director_add = 0.25
+		}
+	}	
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}	
+		job_agri_drone_add = 1
+		job_osa_omni_drone_add = 0.25
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_agri_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_osa_omni_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_gestalt = no
+				is_fallen_empire_spiritualist = no
+			}
+		}
+		text = job_farmer_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_gestalt = no
+			}
+		}
+		text = job_osa_agri_director_effect_desc
+	}
+}
+
+district_osa_mining = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = standard
+		has_planet_flag = osa_military
+	}
+
+	potential = {
+		uses_district_set = standard
+		has_planet_flag = osa_military
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_mining
+		district_mining_uncapped
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @osa_cost
+		}
+		upkeep = {
+			energy = @osa_maintenance
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		modifier = {
+			job_miner_add = 1
+			job_osa_mining_director_add = 0.25
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_mining_drone_add = 1
+			job_osa_omni_drone_add = 0.25
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_mining_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_osa_omni_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		text = job_miner_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = no
+			}
+		}
+		text = job_osa_mining_director_effect_desc
+	}
+}
+
+district_osa_military = {
+	base_buildtime = 240
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		uses_district_set = standard
+		has_planet_flag = osa_military
+	}
+	
+	potential = {
+		uses_district_set = standard
+		has_planet_flag = osa_military
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_generator
+		district_generator_uncapped
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @osa_cost
+		}
+		upkeep = {
+			energy = @osa_maintenance
+		}		
+	}
+
+	planet_modifier = {
+		planet_housing_add = 3
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = no
+			}
+		}
+		modifier = {
+			job_osa_commander_add = 0.25
+			job_osa_commando_add = 0.5
+			job_soldier_add = 1.5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_osa_commando_drone_add = 0.5
+			job_warrior_drone_add = 2
+		}
+	}
+		
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_warrior_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_osa_commando_drone_effect_desc
+	}
+	
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_gestalt = no
+			}
+		}
+		text = job_soldier_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_gestalt = no
+			}
+		}
+		text = job_osa_commander_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				is_gestalt = no
+			}
+		}
+		text = job_osa_commando_effect_desc
+	}	
+}

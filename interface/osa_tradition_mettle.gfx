@@ -1,0 +1,48 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_mettle"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_mettle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_mettle"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_mettle.dds"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_mettle"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_mettle.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_mettle"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_mettle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_mettle_1"
+		textureFile = "gfx/interface/icons/traditions/tradition_mettle_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_mettle_2"
+		textureFile = "gfx/interface/icons/traditions/tradition_mettle_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_mettle_3"
+		textureFile = "gfx/interface/icons/traditions/tradition_mettle_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_mettle_4"
+		textureFile = "gfx/interface/icons/traditions/tradition_mettle_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_mettle_5"
+		textureFile = "gfx/interface/icons/traditions/tradition_mettle_5.dds"
+	}
+}

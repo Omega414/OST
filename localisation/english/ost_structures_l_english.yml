@@ -1,0 +1,126 @@
+﻿l_english:
+
+####################################
+# Buildings
+####################################
+
+################################################################
+# Food
+################################################################
+
+building_hydroponics_station:0 "Hydroponics Station"
+building_hydroponics_station_desc:0 "Expanded hydroponics facilities with capacity for significantly more food production."
+
+building_hydroponics_complex:0 "Hydroponics Complex"
+building_hydroponics_complex_desc:0 "Large hydroponics domes are capable of producing food for a significant portion of a colony."
+
+building_food_processing_complex:0 "Food Processing Complex"
+building_food_processing_complex_desc:0 "Massive facilities capable of processing food on a planetary scale."
+
+osa_building_food_processing_effect_desc:0 "Each §Y$building_hydroponics_farm$§! on the planet provides §G+1§! £job_farmer£ §Y$job_farmer$§! job per §Y$building_hydroponics_farm$§! tier"
+osa_building_food_processing_gestalt_effect_desc:0 "Each §Y$building_hydroponics_farm$§! on the planet provides §G+1§! £job_agri_drone£ §Y$job_agri_drone$§! job per §Y$building_hydroponics_farm$§! tier"
+
+################################################################
+# Minerals
+################################################################
+
+building_deep_core_mine_platform:0 "Deep Core Mine Platform"
+building_deep_core_mine_platform_desc:0 "Deep core mine platforms are used to extract valuable minerals from deep beneath the planet's surface."
+
+building_deep_core_mine_station:0 "Deep Core Mine Station"
+building_deep_core_mine_station_desc:0 "Deep core mine stations have added infrastructure for additional mining capabilities."
+
+building_deep_core_mine_complex:0 "Deep Core Mine Complex"
+building_deep_core_mine_complex_desc:0 "Deep core mine complexes are large facilities with infrastructure to support large scale extraction of precious minerals deep beneath the planet's surface."
+
+building_mineral_purification_complex:0 "Mineral Purification Complex"
+building_mineral_purification_complex_desc:0 "Massive facilities capable of processing minerals on a planetary scale."
+
+osa_building_mineral_purification_effect_desc:0 "Each §Y$building_deep_core_mine_platform$§! on the planet provides §G+1§! £job_miner£ §Y$job_miner$§! job per §Y$building_deep_core_mine_platform$§! tier"
+osa_building_mineral_purification_gestalt_effect_desc:0 "Each §Y$building_deep_core_mine_platform$§! on the planet provides §G+1§! £job_mining_drone£ §Y$job_mining_drone$§! job per §Y$building_deep_core_mine_platform$§! tier"
+
+################################################################
+# Energy
+################################################################
+
+building_solar_substation:0 "Solar Substation"
+building_solar_substation_desc:0 "A solar substation is a platform used to collect and store solar thermal energy."
+
+building_solar_network:0 "Solar Network"
+building_solar_network_desc:0 "A solar network is a large collection of platforms used to collect a high amount of solar thermal energy."
+
+building_planetary_solar_grid:0 "Planetary Solar Grid"
+building_planetary_solar_grid_desc:0 "A planet spanning solar network used to collect a massive amount of solar thermal energy."
+
+building_energy_distribution_complex:0 "Energy Distribution Complex"
+building_energy_distribution_complex_desc:0 "This colossal facility centralizes and distributes all energy grids on the planet, greatly improving their efficiency."
+
+osa_building_energy_effect_desc:0 "Each §Y$building_solar_substation$§! on the planet provides §G+1§! £job_technician£ §Y$job_technician$§ job per §Y$building_solar_substation$§! tier"
+osa_building_energy_gestalt_effect_desc:0 "Each §Y$building_solar_substation$§! on the planet provides §G+1§! £job_technician_drone£ §Y$job_technician_drone$§! job per §Y$building_solar_substation$§! tier"
+
+################################################################
+# Trade
+################################################################
+
+building_commercial_trading_terminal:0 "Commercial Trading Terminal"
+building_commercial_trading_terminal_desc:0 "A planetary terminal network communicating at superluminal speeds with the other installations."
+
+################################################################
+# Tier 2 Sentinel Posts
+################################################################
+building_sentinel_hubs:0 "Sentinel Hubs"
+building_sentinel_hubs_desc:0 "Deviancy dectected in grid 042. Initializing compliance protocols. Resistance is futile."
+
+################################################################
+# Resource Silos
+################################################################
+building_resource_silo_adv:0 "Advanced Resource Silos"
+building_resource_silo_adv_desc:0 "Massive resource silos and improved storage facilities where tremendous quantities of resources can be safely kept."
+
+################################################################
+# Armies
+################################################################
+building_mechanicum_academy:0 "Mechanicum Academy"
+building_mechanicum_academy_desc:1 "Military Academies improve local recruitment rates and offer a higher standard of training."
+building_blackknight_encampment:0 "Black Night Encampment"
+building_blackknight_encampment_desc:1 "It is best to shield the activities of the necromancers from the tender eyes of the public as they raise undead hordes to fight in our armies."
+
+################################################################
+# Order
+################################################################
+building_reeducation_center:0 "Reeducation Center"
+building_reeducation_center_desc:1 "You know what is best. What is best is you comply. Compliance will be rewarded. Are you ready to comply?"
+
+################################################################
+# Moonbase - Cut content from Planetary Diversity 2.6.3 
+################################################################
+building_loadingbays:0 "Inter-System Trading Bays"
+building_loadingbays_desc:0 "These high volume loading bays can handle an unimaginable amount of trade between the planets in the system to the far reaches of the galaxy."
+building_moonhq:0 "Military Moon Headquarters"
+building_moonhq_desc:0 "This high security base acts at the a coordination center for the rest of the military activity on the moon."
+building_moonfood:0 "Hydroponics Central Control Hub"
+building_moonfood_desc:0 "This high tech administration building acts as the coordination center for collecting potable water and food growth."
+building_moonmine:0 "Deep Core Mining Base"
+building_moonmine_desc:0 "This high tech mine is a main coordination and processing center for the mining operations on this planet."
+
+## Military Districts
+district_osa_housing:0 "Housing District"
+district_osa_housing_plural:0 "Housing Districts"
+district_osa_housing_desc:0 "These domes support mines on the surface that collect the rich mineral deposits found on this planet."
+mod_district_osa_housing_max:0 "Max $district_osa_housing_max$" 
+district_osa_mining:0 "Mining District"
+district_osa_mining_plural:0 "Mining Districts"
+district_osa_mining_desc:0 "These domes support mines on the surface that collect the rich mineral deposits found on this planet."
+mod_district_osa_mining_max:0 "Max $district_osa_mining$" 
+district_osa_military:0 "Military District"
+district_osa_military_plural:0 "Military Districts"
+district_osa_military_desc:0 "Domes of military personnel and civilian contractors adding to our logical operation, weapons testing and troop training."
+mod_district_osa_military_max:0 "Max $district_osa_military$" 
+district_osa_farming:0 "Hydroponics District"
+district_osa_farming_plural:0 "Hydroponics Districts"
+district_osa_farming_desc:0 "Greenhouse domes use advanced technology to create food in places where it doesn't grow naturally, reducing the need to transport it from other planet side farms."
+mod_district_osa_farming_max:0 "Max $district_osa_farming$"
+district_osa_alloy:0 "Foundry District"
+district_osa_alloy_plural:0 "Foundry Districts"
+district_osa_alloy_desc:0 "Extensive foundry systems dedicated to the mass refinement of alloys."
+mod_district_osa_alloy_max:0 "Max $district_osa_alloy$" 

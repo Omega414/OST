@@ -1,0 +1,5 @@
+edict_size_effect = {
+	base = 0.025
+	mult = trigger:empire_size
+	add = 1
+}

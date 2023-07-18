@@ -1,0 +1,251 @@
+﻿l_english:
+
+####################################
+# Civics
+####################################
+civic_tooltip_oli_dic_imp:0 "Has §YOligarchic§!, §YDictatorial§!, or §YImperial§! Authority"
+civic_tooltip_private_military_companies_effects:0 "£job_soldier£ §Y$job_soldier_plural$§! and £job_enforcer£ §Y$job_enforcer_plural$§! also produce §Y2§! £trade_value£ §Y$TRADE_VALUE$§!"
+civic_machine_builder_effects:0 "Every §Y4§! §HNexus Districts§! grant §Y1§! additional £building£ §YBuilding Slot§!"
+civic_tooltip_police_state_effects:0 "£building£ §YCapital Buildings§! replace some £job_politician£ §Y$job_politician$§! jobs with £job_osa_commander£ §Y$job_osa_commander$§! jobs.\n£building£ §YCapital Buildings§! replace some £job_enforcer£ §Y$job_enforcer$§! jobs with £job_osa_commando£ §Y$job_osa_commando$§! jobs.\n£job_osa_commando£ §Y$job_osa_commando_plural$§! and £job_osa_commander£ §Y$job_osa_commander_plural$§! further reduce crime by §G-15§!"
+####################################
+# Regular Empires
+####################################
+civic_bastion_of_oppression:0 "Bastion of Oppression"
+civic_bastion_of_oppression_desc:0 "War is Peace. Freedom is Slavery. Ignorance is Strength."
+
+civic_mining_guilds_effects:2 "£building£ §YCapital Buildings§! add some £job_osa_mining_director£ §Y$job_osa_mining_director$§! jobs."
+
+civic_agriculture_councils:0 "Agriculture Councils"
+civic_agriculture_councils_desc:0 "Multiple Agriculture Councils control the food production in this society. The government has allowed these councils near complete control over the agriculture sector."
+civic_agriculture_councils_effects:2 "£building£ §YCapital Buildings§! add some £job_osa_agri_director£ §Y$job_osa_agri_director$§! jobs."
+
+civic_energy_consortiums:0 "Energy Consortiums"
+civic_energy_consortiums_desc:0 "Several large Energy Consortiums generate the vast majority of energy in this society. The government gains considerable revenue and research from this mutually beneficial arrangement."
+civic_energy_consortiums_effects:2 "£building£ §YCapital Buildings§! add some £job_osa_energy_director£ §Y$job_osa_energy_director$§! jobs."
+
+civic_speleology_societies:0 "Speleology Societies"
+civic_speleology_societies_desc:0 "This society reveres the art of speleology. Considerable resources are invested in cave exploration and development."
+civic_speleology_societies_effects:2 "£building£ §YCapital Buildings§! add some £job_osom_speleologist£ §Y$job_osom_speleologist$§! jobs."
+
+civic_sovereign_court:0 "Sovereign Court"
+civic_sovereign_court_desc:0 "This empire's leadership is counselled by a wise court of advisors."
+
+civic_deceitful_delegates:0 "Deceitful Delegates"
+civic_deceitful_delegates_desc:0 "This society excels at the art of charismatic deception. The truth is usually just an excuse for lack of imagination."
+
+civic_researchers_of_renown:0 "Researchers of Renown"
+civic_researchers_of_renown_desc:0 "This society possesses many erudite scientists with limitless potential."
+civic_researchers_of_renown_effects:0 "§YScientists§! start at level 3"
+
+civic_illustrious_statesmen:0 "Illustrious Statesmen"
+civic_illustrious_statesmen_desc:0 "This society's governors and rulers are extremely charismatic and are highly effectual in their social policies."
+civic_illustrious_statesmen_effects:0 "§YGovernors§! start at level 3"
+
+civic_frontier_fellowship:0 "Frontier Fellowship"
+civic_frontier_fellowship_desc:0 "This society values the continuous expansion of their civilization. We expand or die."
+
+####################################
+# Corporate
+####################################
+civic_corporate_functional_architecture:0 "Functional Architecture"
+civic_corporate_functional_architecture_desc:1 "This society is renowned for its simple yet functional architecture. There are those who would refer to this building style as boring or even depressing, but in most cases, neo-concrete does the job just as well as any other building material."
+
+civic_corporate_mining_guilds:0 "Mining Guilds"
+civic_corporate_mining_guilds_desc:0 "Several large mining guilds have reached a dominant position in this corporation. The government relies heavily on their support."
+ 
+civic_corporate_agriculture_councils:0 "Agriculture Councils"
+civic_corporate_agriculture_councils_desc:0 "Multiple Agriculture Councils control the food production in this corporation. The government has allowed these councils near complete control over the agriculture sector."
+
+civic_corporate_energy_consortiums:0 "Energy Consortiums"
+civic_corporate_energy_consortiums_desc:0 "Several large Energy Consortiums generate the vast majority of energy in this corporation. The government gains considerable revenue and research from this mutually beneficial arrangement."
+
+civic_corporate_speleology_societies:0 "Speleology Societies"
+civic_corporate_speleology_societies_desc:0 "This society reveres the art of speleology. Considerable resources are invested in cave exploration and development."
+
+civic_corporate_mercenary_contractors:0 "Mercenary Contractors"
+civic_corporate_mercenary_contractors_desc:0 "This corporation employs a very large number of mercenary contractors for private security ventures."
+
+civic_corporate_frontier_fellowship:0 "Frontier Fellowship"
+civic_corporate_frontier_fellowship_desc:0 "This corporation values the continuous expansion of their organization. We expand or die."
+
+civic_credit_unions:0 "Credit Unions"
+civic_credit_unions_desc:0 "This corporation permits employees to pool financial resources in order to facilitate greater capital gain within the organization."
+
+civic_executive_shadows:0 "Executive Shadows"
+civic_executive_shadows_desc:0 "This corporation requires job candidates to shadow an executive for an extended period of time. Such shadowing eliminates unsuitable candidates and provides excellent on the job training at an affordable rate."
+civic_executive_shadows_effects:0 "§YGovernors§! start at level 3"
+
+civic_private_military_academies:0 "Private Military Academies"
+civic_private_military_academies_desc:0 "This corporation is host to many private military academies. These esteemed military professionals run the day-to-day for various special operations."
+civic_private_military_academies_effects:0 "§YAdmirals§! and §YGenerals§! start at level 3"
+
+civic_astro_universities:0 "Astro Universities"
+civic_astro_universities_desc:0 "Employees of this corporation enjoy the best education the galaxy has to offer! From a young age our child employees are placed in where they shall be best suited. Placement is determined based upon quarterly profit margins and machine learning."
+civic_astro_universities_effects:0 "All §YLeaders§! start 2 levels higher"
+
+####################################
+# Hive
+####################################
+civic_hive_for_the_swarm:0 "For the Swarm"
+civic_hive_for_the_swarm_desc:0 "Adapt, overcome, improvise."
+
+civic_hive_aggregate_catharsis:0 "Aggregate Catharsis"
+civic_hive_aggregate_catharsis_desc:0 "The hive mind desires to have an abundance of resources to ensure that its needs are met."
+civic_hive_aggregate_catharsis_effects:2 "£building£ §YCapital Buildings§! replace some £job_maintenance_drone£ §Y$job_maintenance_drone$§! jobs with £job_osa_omni_drone£ §Y$job_osa_omni_drone$§! jobs\n£building£ §YMaintenance Depot Buildings§! replace all £job_maintenance_drone£ §Y$job_maintenance_drone$§! jobs with £job_evaluator£ §Y$job_evaluator$§! jobs"
+
+civic_hive_sonar_senses:0 "Sonar Senses"
+civic_hive_sonar_senses_desc:0 "The hive mind relies on mapping drones to find rich resource deposits via elaborate sonar sweeps."
+civic_hive_sonar_senses_effects:2 "£building£ §YCapital Buildings§! add some £job_osom_mapping_drone£ §Y$job_osom_mapping_drone$§! jobs."
+
+civic_hive_propagation_instinct:0 "Propagation Instinct"
+civic_hive_propagation_instinct_desc:0 "The hive mind exhibits a distinct and persistent need for expansion."
+
+civic_hive_reactive_synapses:0 "Reactive Synapses"
+civic_hive_reactive_synapses_desc:0 "This hive mind has sensitive synapses that rapidly react to crucial stimuli"
+civic_hive_reactive_synapses_effects:0 "All §YLeaders§! start 2 levels higher"
+
+civic_hive_equilibrium_instinct:0 "Equilibrium Instinct"
+civic_hive_equilibrium_instinct_desc:0 "This hive mind has an natural tendency to ensure that its planets are balanced as all things should be."
+civic_hive_equilibrium_instinct_effects:0 "§HHive Districts§! provide §Y1§! additional £housing£ §YHousing§!\nEvery §Y4§! §HHive Districts§! grant §Y1§! additional £building£ §YBuilding Slot§!\n§HHive Districts§! replace some £job_maintenance_drone£ §Y$job_maintenance_drone$§! Jobs with £job_osa_omni_drone£ $job_osa_omni_drone_plural$"
+
+civic_hive_stalwart_drones:0 "Stalwart Drones"
+civic_hive_stalwart_drones_desc:0 "The drones of this hive mind are self-sufficient and staunch in completing their menial duties."
+civic_hive_stalwart_drones_effects:0 "§HAgriculture§! and §HMining Districts§! provide §Y1§! additional £housing£ §YHousing§!\nEvery §Y4§! §HAgriculture§! or §HMining Districts§! provide §Y1§! £job_synapse_drone£ $job_synapse_drone$\n£job_agri_drone£ §Y$job_agri_drone_plural$§! and £job_mining_drone£ §Y$job_mining_drone_plural$§! produce §Y2§! £amenities£ §YAmenities§!\n"
+
+civic_hive_alveare_mechanicus:0 "Alveare Mechanicus"
+civic_hive_alveare_mechanicus_desc:0 "This hive mind is quite adept at manipulating machinery and supprting its infrastructure."
+civic_hive_alveare_mechanicus_effects:0 "§HIndustrial§! or §HGenerator Districts§! provide §Y1§! additional £housing£ §YHousing§!\nEvery §Y4§! §HIndustrial§! or §HGenerator Districts§! provide §Y1§! £job_brain_drone£ $job_brain_drone$\n"
+
+####################################
+# Machine
+####################################
+civic_machine_proliferation_protocols:0 "Proliferation Protocols"
+civic_machine_proliferation_protocols_desc:0 "This machine intelligence has enhanced manufacturing protocols that greatly boosts unit production."
+
+civic_machine_superconductive_capacitors:0 "Superconductive Capacitors"
+civic_machine_superconductive_capacitors_desc:0 "Units within this empire have enhanced superconductive energy capacitors that significantly enhance energy distribution."
+
+civic_machine_interplexing_beacons:0 "Interplexing Beacons"
+civic_machine_interplexing_beacons_desc:0 "This machine intelligence employs a massive network of interplexing beacons to enhance its combat unit deployments."
+
+civic_machine_quantum_firmware_algorithms:0 "Quantum Firmware Algorithms"
+civic_machine_quantum_firmware_algorithms_desc:0 "This machine intelligence has quantum algorithms that permit efficient command processing and improved data retention."
+civic_machine_quantum_firmware_algorithms_effects:0 "All §YLeaders§! start 2 levels higher"
+
+civic_machine_unified_nexus_processing:0 "Unified Nexus Processing"
+civic_machine_unified_nexus_processing_desc:0 "This machine intelligence is able to rapidly communicate with all other nexus nodes within its network."
+civic_machine_unified_nexus_processing_effects:0 "§HNexus Districts§! provide §Y1§! additional £housing£ §YHousing§!\n§HNexus Districts§! produce §Y1§! £unity£ $unity$ every §Y20§! Empire Size"
+
+civic_machine_ore_processing_heuristics:0 "Ore Processing Heuristics"
+civic_machine_ore_processing_heuristics_desc:0 "This machine intelligence possesses advanced heuristics algorithms designed to maximize ore collection and processing. Procedures are constantly recalculated to ensure peak efficiency and optimal automation procedures."
+civic_machine_ore_processing_heuristics_effects:0 "Every §Y4§! §HIndustrial§! or §HMining Districts§! grant §Y1§! £building£ §YBuilding Slot§!\n§HMining Districts§! produce §Y1§! £engineering£ $engineering_research$ every §Y25§! Empire Size\n§HIndustrial Districts§! produce §Y1§! £alloys£ $alloys$ every §Y50§! Empire Size"
+
+civic_machine_metaphysical_analytics_nodes:0 "Metaphysical Analytics Nodes"
+civic_machine_metaphysical_analytics_nodes_desc:0 "This machine intelligence is acutely aware of the finer details of the universe. It is constantly collecting data on its surroundings and adapting as it learns."
+civic_machine_metaphysical_analytics_nodes_effects:0 "§HAgriculture§! and §HGenerator Districts§! provide §Y1§! additional £housing£ §YHousing§!\n§HAgriculture§! and §HGenerator Districts§! produce §Y1§! £physics£ $physics_research$ every §Y25§! Empire Size\n§HAgriculture§! and §HGenerator Districts§! produce §Y1§! £society£ $society_research$ every §Y25§! Empire Size"
+
+civic_machine_centralized_replication_hubs:0 "Centralized Replication Hubs"
+civic_machine_centralized_replication_hubs_desc:0 "This machine intelligence centrally manages its hardware production. This enables for superior replication and hardware field deployment."
+civic_machine_centralized_replication_hubs_effects:0 "Every §Y5§! §HNexus Districts§! provide §Y1§! £job_replicator£ §Y$job_replicator$§! job\n£engineering£ $engineering_research$ from £job_replicator£ $job_replicator_plural$: §G+2§!\n£unity£ $unity$ from £job_replicator£ $job_replicator_plural$: §G+8§!"
+
+####################################
+# Councilors
+####################################
+
+# Regular Empires
+councilor_energy_consortiums_custom_modifier_desc:1 "£job_technician£ §Y[GetTechnician]§! also provide §G+$@councilor_mining_guilds_miner_stability$§! stability"
+councilor_agriculture_councils_custom_modifier_desc:1 "£job_farmer£ §Y[GetFarmer]§! also provide §G+$@councilor_mining_guilds_miner_stability$§! stability"
+
+councilor_bastion_of_oppression:0 "Director of Oppression"
+councilor_bastion_of_oppression_female:0 "$councilor_bastion_of_oppression$"
+councilor_bastion_of_oppression_desc:0 "The $TITLE$ is responsible for ensuring that everyone is oppressed equally."
+
+councilor_energy_consortiums:0 "Chairman of Energy"
+councilor_energy_consortiums_female:0 "$councilor_energy_consortiums$"
+councilor_energy_consortiums_desc:0 "The $TITLE$ represents the energy consortiums, whose influence helps to maintain order."
+
+councilor_agriculture_councils:0 "Chairman of Agriculture"
+councilor_agriculture_councils_female:0 "$councilor_agriculture_councils$"
+councilor_agriculture_councils_desc:0 "The $TITLE$ represents the agriculture councils, whose influence helps to maintain order."
+
+councilor_speleology_societies:0 "Chief Speleologist"
+councilor_speleology_societies_female:0 "$councilor_speleology_societies$"
+councilor_speleology_societies_desc:0 "The $TITLE$ represents the speleology societies, whose influence helps to maintain order."
+
+councilor_sovereign_court:0 "High Advisor"
+councilor_sovereign_court_female:0 "$councilor_sovereign_court$"
+councilor_sovereign_court_desc:0 "The $TITLE$ is the principle advisor to the state's leadership."
+
+councilor_deceitful_delegates:0 "Director of Deception"
+councilor_deceitful_delegates_female:0 "$councilor_deceitful_delegates$"
+councilor_deceitful_delegates_desc:0 "The $TITLE$ coordinates new and interesting stories intended to deceive other empires."
+
+councilor_researchers_of_renown:0 "Minister of Technology"
+councilor_researchers_of_renown_female:0 "$councilor_researchers_of_renown$"
+councilor_researchers_of_renown_desc:0 "The $TITLE$ ensures that all researchers have up to date field specific certifications with the appropriate number of CPE credits."
+
+councilor_illustrious_statesmen:0 "Preeminent Ambassador"
+councilor_illustrious_statesmen_female:0 "$councilor_illustrious_statesmen$"
+councilor_illustrious_statesmen_desc:0 "The $TITLE$ is renown for his wisdom and skill."
+
+councilor_frontier_fellowship:0 "Chief Governor"
+councilor_technocracy_female:0 "$councilor_frontier_fellowship$"
+councilor_frontier_fellowship_desc:0 "The $TITLE$ is responsible for coordinating all colonization efforts within the empire."
+
+# Megacorps
+councilor_corporate_mining_guilds:0 "Chairman of Excavation"
+councilor_corporate_mining_guilds_female:0 "$councilor_corporate_mining_guilds$"
+councilor_corporate_mining_guilds_desc:0 "The $TITLE$ represents the mining guilds, whose influence helps to maintain order."
+
+councilor_corporate_energy_consortiums:0 "Chairman of Energy"
+councilor_corporate_energy_consortiums_female:0 "$councilor_corporate_energy_consortiums$"
+councilor_corporate_energy_consortiums_desc:0 "The $TITLE$ represents the energy consortiums, whose influence helps to maintain order."
+
+councilor_corporate_agriculture_councils:0 "Chairman of Agriculture"
+councilor_corporate_agriculture_councils_female:0 "$councilor_corporate_agriculture_councils$"
+councilor_corporate_agriculture_councils_desc:0 "The $TITLE$ represents the agriculture councils, whose influence helps to maintain order."
+
+councilor_corporate_speleology_societies:0 "Chief Speleologist"
+councilor_corporate_speleology_societies_female:0 "$councilor_corporate_speleology_societies$"
+councilor_corporate_speleology_societies_desc:0 "The $TITLE$ represents the speleology societies, whose influence helps to maintain order."
+
+councilor_corporate_functional_architecture:0 "Master Architect"
+councilor_corporate_functional_architecture_female:0 "$councilor_corporate_functional_architecture$"
+councilor_corporate_functional_architecture_desc:0 "The $TITLE$ ensures simplicity and lean practices are upheld and valued."
+
+councilor_corporate_mercenary_contractors:0 "Director of War Monetization"
+councilor_corporate_mercenary_contractors_female:0 "$councilor_corporate_mercenary_contractors$"
+councilor_corporate_mercenary_contractors_desc:0 "The $TITLE$ is responsible for maintaining and overseeing the correct monetization of warfare protocols."
+
+councilor_corporate_frontier_fellowship:0 "Chief Governor"
+councilor_corporate_frontier_fellowship_female:0 "$councilor_corporate_frontier_fellowship$"
+councilor_corporate_frontier_fellowship_desc:0 "The $TITLE$ is responsible for coordinating all colonization efforts within the empire."
+
+councilor_credit_unions:0 "Chief Financial Officer"
+councilor_credit_unions_female:0 "$councilor_credit_unions$"
+councilor_credit_unions_desc:0 "The $TITLE$ is responsible for maintaining profitability for the supposedly non-profit credit unions in this empire."
+
+councilor_executive_shadows:0 "Chief Mentor"
+councilor_executive_shadows_female:0 "$councilor_executive_shadows$"
+councilor_executive_shadows_desc:0 "The $TITLE$ ensures all young candidates are prepared for their future in leadership."
+
+councilor_private_military_academies:0 "Chief Drill Instructor"
+councilor_private_military_academies_female:0 "$councilor_private_military_academies$"
+councilor_private_military_academies_desc:0 "The $TITLE$ is responsible for overseeing all training for new recruits in the megacorp."
+councilor_private_military_academies_custom_modifier_desc:0 "Ship Accuracy: §G+1%§!"
+
+councilor_astro_universities:0 "Dean of Astrostudies"
+councilor_astro_universities_female:0 "$councilor_astro_universities$"
+councilor_astro_universities_desc:0 "The $TITLE$ maintains strict education standards for all students in the megacorp."
+
+####################################
+# Modifiers
+####################################
+
+# Base
+mod_country_civics_exotic_gases_produces_add:0 "Monthly Exotic Gases"
+mod_country_civics_volatile_motes_produces_add:0 "Monthly Volatile Motes"
+mod_country_civics_rare_crystals_produces_add:0 "Monthly Rare Crystals"
+mod_country_civics_engineering_research_produces_add:0 "Monthly Engineering Research"
+mod_country_civics_society_research_produces_add:0 "Monthly Society Research"
+mod_country_civics_physics_research_produces_add:0 "Monthly Physics Research"

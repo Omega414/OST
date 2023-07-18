@@ -1,0 +1,380 @@
+tr_splendor_adopt = {
+
+	custom_tooltip = tr_splendor_adopt_desc
+	unlocks_agenda = agenda_splendor	
+	modifier = {
+		hostile_op_cat_diplomacy_difficulty_add = 4
+		country_traditions_influence_produces_add = 0.5
+	}
+
+	tradition_swap = {
+		name = tr_splendor_adopt_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_adopt_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_splendor_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_adopt_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_splendor_finish = {
+
+	custom_tooltip = tr_splendor_finish_desc
+
+	modifier = {
+		diplo_weight_economy_mult = 0.5
+		country_influence_produces_mult = 0.05
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_splendor_finish_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_finish_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_splendor_finish_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_finish_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_splendor_1 = {
+	
+	custom_tooltip = tr_splendor_1_desc
+
+	modifier = {
+		category_field_manipulation_research_speed_mult = 0.15
+		ship_disengage_chance_mult = 0.10
+		ship_disengage_opportunities_add = 1
+	}
+	
+	tradition_swap = {
+		name = tr_splendor_1_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_1_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_splendor_1_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_1_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_splendor_2 = {
+	possible = {
+		has_tradition = tr_splendor_1
+	}
+
+	custom_tooltip = tr_splendor_2_desc
+
+	modifier = {
+		category_psionics_research_speed_mult = 0.15
+		country_hostile_claim_influence_cost_mult = 0.5
+	}
+
+	tradition_swap = {
+		name = tr_splendor_2_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_2_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_splendor_2_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_2_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_splendor_3 = {
+
+	custom_tooltip = tr_splendor_3_desc
+
+	modifier = {
+		pop_factions_physics_research_produces_add = 0.5
+		pop_factions_society_research_produces_add = 0.5
+		pop_factions_engineering_research_produces_add = 0.5
+		pop_factions_influence_produces_mult = 0.50
+	}
+
+	tradition_swap = {
+		name = tr_splendor_3_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_3_machine_desc
+
+		modifier = {
+			planet_maintenance_drones_physics_research_produces_add = 0.5
+			planet_maintenance_drones_society_research_produces_add = 0.5
+			planet_maintenance_drones_engineering_research_produces_add = 0.5
+			country_traditions_influence_produces_add = 0.5
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_splendor_3_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_3_hive_desc
+
+		modifier = {
+			planet_maintenance_drones_physics_research_produces_add = 0.5
+			planet_maintenance_drones_society_research_produces_add = 0.5
+			planet_maintenance_drones_engineering_research_produces_add = 0.5
+			country_traditions_influence_produces_add = 0.5
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_splendor_4 = {
+	possible = {
+		has_tradition = tr_splendor_3
+	}
+
+	custom_tooltip = tr_splendor_4_desc
+
+	modifier = {
+		veto_cost_mult = -0.10
+		veto_cooldown_mult = -0.10	
+		emergency_measures_cooldown_mult = -0.10
+		intel_decryption_add = 1
+	}
+	
+	tradition_swap = {
+		name = tr_splendor_4_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_4_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_splendor_4_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_4_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_splendor_5 = {
+	possible = {
+		has_tradition = tr_splendor_3
+	}
+
+	custom_tooltip = tr_splendor_5_desc
+	
+	modifier = {
+		envoys_add = 1
+		add_base_country_intel = 10
+		ship_cloaking_detection_add = 1
+	}
+	
+	tradition_swap = {
+		name = tr_splendor_5_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_5_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_splendor_5_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_splendor_5_hive_desc
+		
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}

@@ -1,0 +1,112 @@
+machine_assimilate_0 = {
+	entity = ""
+	construction_entity = ""
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	build_time = 900
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	construction_blocks_and_blocked_by = none
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2500
+			energy = 10000
+			nanites = 250
+			influence = 200
+		}
+	}
+
+	potential = { 
+		OR = {
+			has_origin = origin_machine
+			has_ascension_perk = ap_machine_worlds
+		}
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "is_machine_world"
+				NOT = {
+					is_planet_class = pc_machine
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_surveyed_planet"
+				is_surveyed = {			# prevent leaking habitability information
+					who = prev.from
+					status = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = {
+					has_anomaly = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = {
+						has_star_flag = ring_world_built
+					}
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_habitat
+				}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			}
+		} 
+	}
+
+	ai_weight = {
+		weight = 15
+        modifier = {
+            factor = 0
+			root = { 
+			any_system_planet = { has_planet_flag = assimilated }
+            }
+        }
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	on_build_complete = {
+		fromfrom.planet = {
+			set_planet_flag = assimilated
+			set_planet_flag = colony_event
+			ROOT = {
+				set_star_flag = sysassimilated
+			}
+			change_pc = pc_machine
+			reroll_planet = yes
+			clear_blockers = yes
+			add_deposit = d_machine_minerals
+			add_deposit = d_organic_slurry
+			add_deposit = d_hab_nanites_1
+		}
+		remove_megastructure = fromfrom
+		from = { 
+			country_event =  { id = assimilated.00 }
+		}
+	}
+}

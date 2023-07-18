@@ -1,0 +1,355 @@
+tr_metallurgy_adopt = {
+
+	custom_tooltip = tr_metallurgy_adopt_desc
+	unlocks_agenda = agenda_metallurgy
+	modifier = {
+		planet_metallurgists_upkeep_mult = -0.10
+	}
+
+	tradition_swap = {
+		name = tr_metallurgy_adopt_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_adopt_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_metallurgy_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_adopt_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_metallurgy_finish = {
+
+	custom_tooltip = tr_metallurgy_finish_desc
+
+	modifier = {
+		country_alloys_produces_mult = 0.05
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_metallurgy_finish_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_finish_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_metallurgy_finish_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_finish_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_metallurgy_1 = {
+
+	custom_tooltip = tr_metallurgy_1_desc
+
+	modifier = {
+		planet_jobs_alloys_produces_mult = 0.25
+	}
+	
+	tradition_swap = {
+		name = tr_metallurgy_1_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_1_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_metallurgy_1_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_1_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_metallurgy_2 = {
+
+	custom_tooltip = tr_metallurgy_2_desc
+
+	modifier = {
+		category_materials_research_speed_mult = 0.15
+	}
+	
+	tradition_swap = {
+		name = tr_metallurgy_2_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_2_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_metallurgy_2_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_2_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_metallurgy_3 = {
+	possible = {
+		#has_tradition = 
+	}
+
+	custom_tooltip = tr_metallurgy_3_desc
+
+	modifier = {
+		# +Special Job and +5 Housing applied in buildings file
+	}
+	
+	tradition_swap = {
+		name = tr_metallurgy_3_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_3_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_metallurgy_3_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_3_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_metallurgy_4 = {
+	possible = {
+		AND = {
+			has_tradition = tr_metallurgy_1
+			has_tradition = tr_metallurgy_2
+		}
+	}
+
+	custom_tooltip = tr_metallurgy_4_desc
+
+	modifier = {
+	# +2 Unity / +2 Alloys from jobs / +4 mineral upkeep implemented in 04_manufacturing_buildings file.
+	}
+	
+	tradition_swap = {
+		name = tr_metallurgy_4_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_4_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_metallurgy_4_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_4_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_metallurgy_5 = {
+	possible = {
+		has_tradition = tr_metallurgy_3
+	}
+
+	custom_tooltip = tr_metallurgy_5_desc
+
+	modifier = {
+		# Unlocks Planetary Decision: Designate Forgeworld
+	}
+	
+	tradition_swap = {
+		name = tr_metallurgy_5_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_5_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_metallurgy_5_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_metallurgy_5_hive_desc
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}

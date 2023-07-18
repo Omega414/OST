@@ -1,0 +1,356 @@
+tr_mettle_adopt = {
+
+	custom_tooltip = tr_mettle_adopt_desc
+	unlocks_agenda = agenda_mettle
+	modifier = {
+		shipsize_starbase_outpost_hull_mult = 2
+	}
+
+	tradition_swap = {
+		name = tr_mettle_adopt_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_mettle_adopt_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_mettle_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_mettle_adopt_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_mettle_finish = {
+
+	custom_tooltip = tr_mettle_finish_desc
+
+	modifier = {
+		# Unlocks Planetary Decision: Minerals from jobs +25%.
+		country_minerals_produces_mult = 0.05
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_mettle_finish_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_mettle_finish_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_mettle_finish_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_mettle_finish_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_mettle_1 = {
+
+	custom_tooltip = tr_mettle_1_desc
+
+	modifier = {
+		district_mining_max = 2
+		planet_miners_minerals_produces_mult = 0.25
+	}
+	
+	tradition_swap = {
+		name = tr_mettle_1_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_mettle_1_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_mettle_1_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_mettle_1_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_mettle_2 = {
+
+	custom_tooltip = tr_mettle_2_desc
+
+	modifier = {
+		# +Special Job and +5 Housing applied in buildings file		
+	}
+	
+	tradition_swap = {
+		name = tr_mettle_2_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_mettle_2_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_mettle_2_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_mettle_2_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_mettle_3 = {
+
+	custom_tooltip = tr_mettle_3_desc
+	
+	modifier = {
+		planet_miners_engineering_research_produces_add = 1
+	}
+	
+	tradition_swap = {
+		name = tr_mettle_3_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+		
+		custom_tooltip = tr_mettle_3_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_mettle_3_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_mettle_3_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_mettle_4 = {
+	possible = {
+		AND = {
+			has_tradition = tr_mettle_1
+			has_tradition = tr_mettle_2
+		}
+	}
+
+	custom_tooltip = tr_mettle_4_desc
+
+	modifier = {
+		station_gatherers_produces_mult = 0.20		
+	}
+	
+	tradition_swap = {
+		name = tr_mettle_4_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_mettle_4_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_mettle_4_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_mettle_4_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_mettle_5 = {
+	possible = {
+		has_tradition = tr_mettle_3
+	}
+
+	custom_tooltip = tr_mettle_5_desc
+
+	modifier = {
+		army_defense_health_mult = 0.25
+		army_attack_health_mult = 0.25
+	}
+	
+	tradition_swap = {
+		name = tr_mettle_5_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_mettle_5_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_mettle_5_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_mettle_5_hive_desc
+		
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}

@@ -1,0 +1,370 @@
+tr_insight_adopt = {
+
+	custom_tooltip = tr_insight_adopt_desc
+	unlocks_agenda = agenda_insight
+	modifier = {
+		country_physics_tech_research_speed = 0.05
+		op_cat_technology_skill_add = 2
+		op_cat_technology_speed_mult = 0.25
+	}
+
+	tradition_swap = {
+		name = tr_insight_adopt_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_insight_adopt_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_insight_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_insight_adopt_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_insight_finish = {
+
+	custom_tooltip = tr_insight_finish_desc
+
+	modifier = {
+		# Physics bonus applied in starbase files.
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_insight_finish_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_insight_finish_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_insight_finish_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_insight_finish_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_insight_1 = {
+
+	custom_tooltip = tr_insight_1_desc
+
+	modifier = {
+		station_researchers_produces_mult = 0.20
+		starbase_constructions_physics_research_produces_mult = 0.20
+		starbase_constructions_society_research_produces_mult = 0.20
+		starbase_constructions_engineering_research_produces_mult = 0.20
+	}
+
+	on_enabled = {
+		every_owned_leader = {
+			limit = {
+				leader_class = scientist
+			}
+			add_skill_without_trait_selection = 1
+		}
+	}
+	
+	tradition_swap = {
+		name = tr_insight_1_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_insight_1_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_insight_1_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_insight_1_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_insight_2 = {
+	possible = {
+		has_tradition = tr_insight_1
+	}
+
+	custom_tooltip = tr_insight_2_desc
+
+	modifier = {
+		ship_sensor_range_add = 2
+		ship_anomaly_generation_chance_mult = 0.15
+	}
+	
+	tradition_swap = {
+		name = tr_insight_2_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_insight_2_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_insight_2_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_insight_2_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_insight_3 = {
+
+	custom_tooltip = tr_insight_3_desc
+
+	modifier = {
+		# Physics Research bonus implemented in research_buildings file.
+	}
+	
+	tradition_swap = {
+		name = tr_insight_3_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_insight_3_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_insight_3_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_insight_3_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_insight_4 = {
+	possible = {
+		has_tradition = tr_insight_3
+	}
+
+	custom_tooltip = tr_insight_4_desc
+
+	modifier = {
+		num_tech_alternatives_add = 2
+		country_leader_cap_add = 2
+	}
+	
+	tradition_swap = {
+		name = tr_insight_4_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_insight_4_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_insight_4_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_insight_4_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_insight_5 = {
+	possible = {
+		has_tradition = tr_insight_3
+	}
+
+	custom_tooltip = tr_insight_5_desc
+
+	modifier = {
+		ship_weapon_damage = 0.15
+		ship_shield_hardening_add = 0.25
+	}
+	
+	tradition_swap = {
+		name = tr_insight_5_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_insight_5_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_insight_5_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_insight_5_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}

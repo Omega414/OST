@@ -1,0 +1,432 @@
+@base_tradition_agenda_cost = 7000
+
+# Perseverance
+agenda_perseverance = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_perseverance_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			planet_farmers_society_research_upkeep_add = 0.5
+			planet_farmers_food_produces_add = 1
+		}
+	}
+	finish_modifier = agenda_perseverance_finish
+	effect = {
+	}
+}
+
+# Radiance
+agenda_radiance = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_radiance_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			planet_technician_physics_research_upkeep_add = 0.5
+			planet_technician_energy_produces_add = 1
+		}
+	}
+	finish_modifier = agenda_radiance_finish
+	effect = {
+	}
+}
+
+# Mettle
+agenda_mettle = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_mettle_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			planet_miners_engineering_research_upkeep_add = 0.5
+			planet_miners_minerals_produces_add = 1
+		}
+	}
+	finish_modifier = agenda_mettle_finish
+	effect = {
+	}
+}
+
+# Metallurgy
+agenda_metallurgy = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_metallurgy_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			planet_metallurgists_upkeep_mult = -0.1
+		}
+	}
+	finish_modifier = agenda_metallurgy_finish
+	effect = {
+	}
+}
+
+# Solidarity
+agenda_solidarity = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_solidarity_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			planet_jobs_unity_produces_mult = 0.1
+		}
+	}
+	finish_modifier = agenda_solidarity_finish
+	effect = {
+	}
+}
+
+# Benevolence
+agenda_benevolence = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_benevolence_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			ship_friendly_territory_fire_rate_mult = 0.05
+		}
+	}
+	finish_modifier = agenda_benevolence_finish
+	effect = {
+	}
+}
+
+# Malevolence
+agenda_malevolence = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_malevolence_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			force_disparity_fire_rate_mult = 0.05
+			damage_vs_superior_empires_mult = 0.05
+		}
+	}
+	finish_modifier = agenda_malevolence_finish
+	effect = {
+	}
+}
+
+# Defense
+agenda_defense = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_defense_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			planet_soldiers_unity_produces_add = 1
+			planet_soldiers_physics_research_produces_add = 0.5
+			planet_soldiers_engineering_research_produces_add = 0.5
+			general_exp_gain = 0.05
+		}
+	}
+	finish_modifier = agenda_defense_finish
+	effect = {
+	}
+}
+
+# Naval Ascendancy
+agenda_navalascendancy = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_navalascendancy_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			starbase_shipyard_build_speed_mult = 0.05
+			country_ship_upgrade_cost_mult = -0.05
+		}
+	}
+	finish_modifier = agenda_navalascendancy_finish
+	effect = {
+	}
+}
+
+# Naval Heritage
+agenda_navalheritage = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_navalheritage_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			leader_admirals_unity_produces_add = 2
+			leader_admirals_physics_research_produces_add = 2
+			leader_admirals_engineering_research_produces_add = 2
+			admiral_exp_gain = 0.05
+		}
+	}
+	finish_modifier = agenda_navalheritage_finish
+	effect = {
+	}
+}
+
+# Commerce
+agenda_commerce = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_commerce_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			country_border_friction_mult = -0.1
+			federation_research_sharing_mult = 0.1
+			diplo_weight_economy_mult = 0.1
+		}
+	}
+	finish_modifier = agenda_commerce_finish
+	effect = {
+	}
+}
+
+# Ingenuity
+agenda_ingenuity = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_ingenuity_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			country_engineering_tech_research_speed = 0.05
+			country_traditions_engineering_research_produces_add = 10
+		}
+	}
+	finish_modifier = agenda_ingenuity_finish
+	effect = {
+	}
+}
+
+# Order
+agenda_order = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_order_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			leader_governors_unity_produces_add = 3
+			leader_governors_society_research_produces_add = 3
+			governor_exp_gain = 0.05
+		}
+	}
+	finish_modifier = agenda_order_finish
+	effect = {
+	}
+}
+
+# Insight
+agenda_insight = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_insight_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			country_physics_tech_research_speed = 0.05
+			country_traditions_physics_research_produces_add = 10
+		}
+	}
+	finish_modifier = agenda_insight_finish
+	effect = {
+	}
+}
+
+# Compassion
+agenda_compassion = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_compassion_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			country_society_tech_research_speed = 0.05
+			country_traditions_society_research_produces_add = 10
+		}
+	}
+	finish_modifier = agenda_compassion_finish
+	effect = {
+	}
+}
+
+# Administratum
+agenda_administratum = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_administratum_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			country_edict_fund_mult = 0.05
+			country_edict_fund_add = 30
+		}
+	}
+	finish_modifier = agenda_administratum_finish
+	effect = {
+	}
+}
+
+# Academy
+agenda_academy = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_academy_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			planet_army_build_speed_mult = 0.05
+			army_experience_gain_mult = 0.05
+			ship_experience_gain_mult = 0.05
+			species_leader_exp_gain = 0.05
+		}
+	}
+	finish_modifier = agenda_academy_finish
+	effect = {
+	}
+}
+
+# Nanobiotics
+agenda_nanobiotics = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_nanobiotics_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			station_researchers_produces_mult = 0.05
+			station_gatherers_produces_mult = 0.05
+			starbase_constructions_physics_research_produces_mult = 0.05
+			starbase_constructions_society_research_produces_mult = 0.05
+			starbase_constructions_engineering_research_produces_mult = 0.05
+		}
+	}
+	finish_modifier = agenda_nanobiotics_finish
+	effect = {
+	}
+}
+
+# Exploration
+agenda_exploration = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_exploration_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			leader_scientists_unity_produces_add = 4
+			assist_research_mult = 0.05
+			ship_anomaly_research_speed_mult = 0.1
+			scientist_exp_gain = 0.05
+		}
+	}
+	finish_modifier = agenda_exploration_finish
+	effect = {
+	}
+}
+
+# Splendor
+agenda_splendor = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_splendor_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			envoy_improve_relations_mult = 0.05
+			envoy_harm_relations_mult = 0.05
+			country_war_exhaustion_mult = -0.05
+		}
+	}
+	finish_modifier = agenda_splendor_finish
+	effect = {
+	}
+}
+
+# Renewal
+agenda_renewal = {
+	agenda_cost = @base_tradition_agenda_cost
+	allow = {
+		has_tradition = tr_renewal_adopt
+	}
+	potential = {
+		has_paragon_dlc = yes
+	}
+	modifiers = {
+		{
+			habitability_floor_add = 0.05
+			habitability_ceil_add = 0.05
+		}
+	}
+	finish_modifier = agenda_renewal_finish
+	effect = {
+	}
+}

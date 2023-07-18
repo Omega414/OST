@@ -1,0 +1,92 @@
+tradition_adaptability = {
+	tree_template = "tree_11_12"
+	adoption_bonus = "tr_adaptability_adopt"
+	finish_bonus = "tr_adaptability_finish"
+	traditions = {
+		"tr_adaptability_recycling"
+		"tr_adaptability_survival_fittest"
+		"tr_adaptability_environmental_diversification"
+		"tr_adaptability_adaptive_ecology"
+		"tr_adaptability_appropriation"
+	}
+
+	potential = {
+		is_machine_empire = no
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			is_homicidal = yes
+		}
+		modifier = {
+			factor = 4
+			has_ethic = ethic_authoritarian
+		}
+		modifier = {
+			factor = 8
+			has_ethic = ethic_fanatic_authoritarian
+		}
+		modifier = {
+			factor = 4
+			has_ethic = ethic_egalitarian
+		}
+		modifier = {
+			factor = 8
+			has_ethic = ethic_fanatic_egalitarian
+		}
+		modifier = {
+			factor = 8
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 16
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			factor = 7
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 14
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 7
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 14
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 16y
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 7
+			has_ethic = ethic_spiritualist
+		}
+		modifier = {
+			factor = 14
+			has_ethic = ethic_fanatic_spiritualist
+		}	
+		modifier = {
+			factor = 8
+			has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 16
+			has_ethic = ethic_fanatic_materialist
+		}		
+		modifier = {
+			factor = 7
+			is_hive_empire = yes
+		}
+	}
+}

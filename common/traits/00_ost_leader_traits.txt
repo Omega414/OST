@@ -1,0 +1,111 @@
+###################
+leader_trait_navigator = {
+	inline_script = {
+		script = trait/icon
+		CLASS = admiral
+		ICON = GFX_leader_trait_navigator
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	modifier = {
+		fleet_mia_time_mult = -0.2
+	}
+	leader_potential_add = {
+		is_ruler = no
+	}
+	leader_class = { admiral }
+	opposites = { leader_trait_aggressive }
+	selectable_weight = @class_trait_weight
+}
+
+leader_trait_navigator_2 = {
+	replace_traits = { "leader_trait_navigator" }
+	inline_script = {
+		script = trait/icon
+		CLASS = admiral
+		ICON = GFX_leader_trait_navigator
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		fleet_mia_time_mult = -0.4
+	}
+	leader_class = { admiral }
+}
+
+leader_trait_navigator_3 = {
+	replace_traits = { "leader_trait_navigator_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = admiral
+		ICON = GFX_leader_trait_navigator
+		RARITY = common
+		COUNCIL = no
+		TIER = 3
+	}
+	modifier = {
+		fleet_mia_time_mult = -0.6
+	}
+	leader_class = { admiral }
+}
+
+
+###################
+leader_trait_science_navigator = {
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_navigator"
+		RARITY = common
+		COUNCIL = no
+		TIER = 1
+	}
+	modifier = {
+		fleet_mia_time_mult = -0.2
+	}
+	leader_potential_add = {
+		is_ruler = no
+	}
+	leader_class = { scientist }
+	selectable_weight = @class_trait_weight
+	ai_categories = { survey }
+	ai_weight = 50
+}
+
+leader_trait_science_navigator_2 = {
+	replace_traits = { "leader_trait_science_navigator" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_navigator"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		fleet_mia_time_mult = -0.4
+	}
+	leader_class = { scientist }
+	ai_categories = { survey }
+	ai_weight = 50
+}
+
+leader_trait_science_navigator_3 = {
+	replace_traits = { "leader_trait_science_navigator_2" }
+	inline_script = {
+		script = trait/icon
+		CLASS = scientist
+		ICON = "GFX_leader_trait_navigator"
+		RARITY = common
+		COUNCIL = no
+		TIER = 2
+	}
+	modifier = {
+		fleet_mia_time_mult = -0.6
+	}
+	leader_class = { scientist }
+	ai_categories = { survey }
+	ai_weight = 50
+}

@@ -1,0 +1,257 @@
+####################################
+# Subsidy Decisions
+####################################
+
+################################################################
+# Food
+################################################################
+
+mod_osa_food_subsidies = {
+	icon_frame = 1
+	planet_jobs_food_produces_mult = 0.25
+	planet_buildings_upkeep_mult = 0.1
+	planet_districts_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_osa_food_subsidies.dds"
+}
+
+mod_osa_food_subsidies_gestalt = {
+	icon_frame = 1
+	planet_jobs_food_produces_mult = 0.25
+	planet_buildings_upkeep_mult = 0.1
+	planet_districts_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_osa_food_subsidies.dds"
+}
+
+################################################################
+# Minerals
+################################################################
+
+mod_osa_minerals_subsidies = {
+	icon_frame = 1
+	planet_jobs_minerals_produces_mult = 0.25
+	planet_buildings_upkeep_mult = 0.1
+	planet_districts_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_osa_minerals_subsidies.dds"
+}
+
+mod_osa_minerals_subsidies_gestalt = {
+	icon_frame = 1
+	planet_jobs_minerals_produces_mult = 0.25
+	planet_buildings_upkeep_mult = 0.1
+	planet_districts_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_osa_minerals_subsidies.dds"
+}
+
+################################################################
+# Energy
+################################################################
+
+mod_osa_energy_subsidies = {
+	icon_frame = 1
+	planet_jobs_energy_produces_mult = 0.25
+	planet_jobs_minerals_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_osa_energy_subsidies.dds"
+}
+
+mod_osa_energy_subsidies_gestalt = {
+	icon_frame = 1
+	planet_jobs_energy_produces_mult = 0.25
+	planet_jobs_minerals_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_osa_energy_subsidies.dds"
+}
+
+################################################################
+# Alloys
+################################################################
+
+mod_osa_alloy_subsidies = {
+	icon_frame = 1
+	planet_jobs_alloys_produces_mult = 0.25
+	planet_buildings_upkeep_mult = 0.1
+	planet_districts_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_osa_alloy_subsidies.dds"
+}
+
+mod_osa_alloy_subsidies_gestalt = {
+	icon_frame = 1
+	planet_jobs_alloys_produces_mult = 0.25
+	planet_buildings_upkeep_mult = 0.1
+	planet_districts_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_osa_alloy_subsidies.dds"
+}
+
+################################################################
+# Unity
+################################################################
+
+mod_osa_unity_subsidies = {
+	icon_frame = 1
+	planet_jobs_unity_produces_mult = 0.25
+	planet_buildings_upkeep_mult = 0.1
+	planet_districts_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_osa_unity_subsidies.dds"
+}
+
+mod_osa_unity_subsidies_gestalt = {
+	icon_frame = 1
+	planet_jobs_unity_produces_mult = 0.25
+	planet_buildings_upkeep_mult = 0.1
+	planet_districts_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_osa_unity_subsidies.dds"
+}
+
+################################################################
+# Forge World
+################################################################
+
+mod_osa_designate_forgeworld = {
+	icon_frame = 1
+	planet_jobs_alloys_produces_mult = 0.50
+	planet_jobs_minerals_produces_mult = 0.50
+	planet_jobs_food_produces_mult = -1
+	pop_environment_tolerance = -0.1
+	planet_districts_upkeep_mult = 0.5
+	planet_buildings_upkeep_mult = 0.5
+    icon = "gfx/interface/icons/planet_modifiers/pm_osa_designate_forgeworld.dds"
+}
+
+####################################
+# Ascension Perks
+####################################
+mod_osa_influence_sprawl = {
+	country_traditions_influence_produces_add = 0.0025
+	country_power_projection_produces_mult = 0.001
+	hide_from_country_list = yes
+}
+
+mod_osa_machine_influence_sprawl = {
+	country_power_projection_produces_mult = 0.0025
+	hide_from_country_list = yes
+}
+
+
+####################################
+# Agendas
+####################################
+
+agenda_perseverance_finish = {
+	planet_farmers_society_research_produces_add = 2.5
+	planet_farmers_food_produces_add = 3
+}
+
+agenda_radiance_finish = {
+	planet_technician_physics_research_produces_add = 2.5
+	planet_technician_energy_produces_add = 3
+}
+
+agenda_mettle_finish = {
+	planet_miners_engineering_research_produces_add = 2.5
+	planet_miners_minerals_produces_add = 3
+}
+
+agenda_metallurgy_finish = {
+	planet_metallurgists_upkeep_mult = -0.4
+}
+
+agenda_solidarity_finish = {
+	planet_jobs_unity_produces_mult = 0.5
+}
+
+agenda_benevolence_finish = {
+	ship_friendly_territory_fire_rate_mult = 0.2
+	ship_friendly_territory_tracking_add = 10
+	ship_friendly_territory_accuracy_add = 10
+}
+
+agenda_malevolence_finish = {
+	force_disparity_fire_rate_mult = 0.25
+	damage_vs_superior_empires_mult = 0.25
+}
+
+agenda_defense_finish = {
+	leader_generals_influence_produces_add = 0.20
+	planet_soldiers_unity_produces_add = 4
+	planet_soldiers_physics_research_produces_add = 2
+	planet_soldiers_engineering_research_produces_add = 2
+	general_exp_gain = 0.25
+}
+
+agenda_navalascendancy_finish = {
+	starbase_shipyard_build_speed_mult = 0.25
+	country_ship_upgrade_cost_mult = -0.25
+}
+
+agenda_navalheritage_finish = {
+	leader_admirals_influence_produces_add = 0.20
+	leader_admirals_unity_produces_add = 10
+	leader_admirals_physics_research_produces_add = 10
+	leader_admirals_engineering_research_produces_add = 10
+	admiral_exp_gain = 0.25
+}
+
+agenda_commerce_finish = {
+	country_border_friction_mult = -0.5
+	federation_research_sharing_mult = 0.5
+	diplo_weight_economy_mult = 0.5
+}
+
+agenda_ingenuity_finish = {
+	country_engineering_tech_research_speed = 0.20
+	country_traditions_engineering_research_produces_add = 40
+}
+
+agenda_order_finish = {
+	leader_governors_influence_produces_add = 0.20
+	leader_governors_unity_produces_add = 15
+	leader_governors_society_research_produces_add = 15
+	governor_exp_gain = 0.25
+}
+
+agenda_insight_finish = {
+	country_physics_tech_research_speed = 0.20
+	country_traditions_physics_research_produces_add = 40
+}
+
+agenda_compassion_finish = {
+	country_society_tech_research_speed = 0.20
+	country_traditions_society_research_produces_add = 40
+}
+
+agenda_administratum_finish = {
+	country_edict_fund_mult = 0.25
+	country_edict_fund_add = 150
+}
+
+agenda_academy_finish = {
+	planet_army_build_speed_mult = 0.25
+	army_experience_gain_mult = 0.25
+	ship_experience_gain_mult = 0.25
+	species_leader_exp_gain = 0.25
+}
+
+agenda_nanobiotics_finish = {
+	station_researchers_produces_mult = 0.5
+	station_gatherers_produces_mult = 0.5
+	starbase_constructions_physics_research_produces_mult = 0.5
+	starbase_constructions_society_research_produces_mult = 0.5
+	starbase_constructions_engineering_research_produces_mult = 0.5
+}
+
+agenda_exploration_finish = {
+	leader_scientists_influence_produces_add = 0.15
+	leader_scientists_unity_produces_add = 20
+	assist_research_mult = 0.5
+	ship_anomaly_research_speed_mult = 0.25
+	scientist_exp_gain = 0.25
+}
+
+agenda_splendor_finish = {
+	envoy_improve_relations_mult = 0.5
+	envoy_harm_relations_mult = 0.5
+	country_war_exhaustion_mult = -0.2
+}
+
+agenda_renewal_finish = {
+	habitability_floor_add = 0.25
+	habitability_ceil_add = 0.25
+}

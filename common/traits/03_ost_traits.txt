@@ -1,0 +1,52 @@
+# Machine
+trait_robot_simple_food = {
+	cost = -2
+	opposites = {
+		"trait_robot_stripmining_protocols"
+		"trait_robot_harvesters"
+	}
+
+	allowed_archetypes = { ROBOT MACHINE }
+
+	modifier = {
+		planet_jobs_food_produces_mult = -0.25
+	}
+	slave_cost = {
+		energy = -250
+	}
+}
+
+trait_robot_stripmining_protocols = {
+	cost = -3
+	opposites = {
+		"trait_robot_simple_food"
+		"trait_robot_harvesters"
+	}
+
+	allowed_archetypes = { ROBOT MACHINE }
+
+	modifier = {
+		planet_jobs_food_produces_mult = -0.25
+		planet_jobs_consumer_goods_produces_mult = -0.25
+		planet_jobs_minerals_produces_mult = 0.05
+	}
+	slave_cost = {
+		energy = -250
+	}
+}
+
+trait_robot_corroded_servos = {
+	cost = -2
+	opposites = {
+		"trait_robot_simple_food"
+	}
+
+	allowed_archetypes = { ROBOT MACHINE }
+
+	modifier = {
+		pop_environment_tolerance = -1
+	}
+	slave_cost = {
+		energy = -250
+	}
+}

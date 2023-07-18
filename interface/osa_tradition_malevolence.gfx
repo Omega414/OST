@@ -1,0 +1,48 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tradition_hex_bg_tradition_malevolence"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_malevolence.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tradition_category_bg_tradition_malevolence"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_malevolence.dds"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_tradition_malevolence"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_malevolence.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tradition_category_icon_tradition_malevolence"
+		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_icon_malevolence.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_malevolence_1"
+		textureFile = "gfx/interface/icons/traditions/tradition_malevolence_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_malevolence_2"
+		textureFile = "gfx/interface/icons/traditions/tradition_malevolence_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_malevolence_3"
+		textureFile = "gfx/interface/icons/traditions/tradition_malevolence_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_malevolence_4"
+		textureFile = "gfx/interface/icons/traditions/tradition_malevolence_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_malevolence_5"
+		textureFile = "gfx/interface/icons/traditions/tradition_malevolence_5.dds"
+	}
+}

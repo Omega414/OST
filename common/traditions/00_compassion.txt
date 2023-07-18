@@ -1,0 +1,379 @@
+tr_compassion_adopt = {
+
+	custom_tooltip = tr_compassion_adopt_desc
+	unlocks_agenda = agenda_compassion
+	modifier = {
+		# Aid Friendly Empire in War edict implemented in edicts file.
+		country_society_tech_research_speed = 0.05
+	}
+
+	tradition_swap = {
+		name = tr_compassion_adopt_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_compassion_adopt_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_compassion_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_compassion_adopt_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_compassion_finish = {
+
+	custom_tooltip = tr_compassion_finish_desc
+	
+	modifier = {
+		diplo_weight_mult = 0.15
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_compassion_finish_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_compassion_finish_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_compassion_finish_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_compassion_finish_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_compassion_1 = {
+
+	custom_tooltip = tr_compassion_1_desc
+	
+	modifier = {
+		planet_administrators_society_research_produces_add = 2
+		planet_culture_workers_society_research_produces_add = 2
+		planet_doctors_society_research_produces_add = 2
+		planet_entertainers_society_research_produces_add = 2
+	}
+	
+	tradition_swap = {
+		name = tr_compassion_1_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_compassion_1_machine_desc
+
+		modifier = {
+			planet_pop_assemblers_society_research_produces_add = 2
+			planet_evaluators_society_research_produces_add = 2
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_compassion_1_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_compassion_1_hive_desc
+
+		modifier = {
+			planet_pop_assemblers_society_research_produces_add = 2
+			planet_evaluators_society_research_produces_add = 2
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_compassion_2 = {
+
+	custom_tooltip = tr_compassion_2_desc
+
+	modifier = {
+		category_biology_research_speed_mult = 0.15
+	}
+
+	on_enabled = {
+		every_owned_leader = {
+			limit = {
+				leader_class = governor
+			}
+			add_skill_without_trait_selection = 1
+		}
+	}
+	
+	tradition_swap = {
+		name = tr_compassion_2_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_compassion_2_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_compassion_2_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+		
+		custom_tooltip = tr_compassion_2_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_compassion_3 = {
+	possible = {
+		has_tradition = tr_compassion_1
+	}
+
+	custom_tooltip = tr_compassion_3_desc
+	
+	modifier = {
+		# Compassion Initiatives edict implemented in the edicts file.
+		planet_max_districts_add = 2
+	}
+	
+	tradition_swap = {
+		name = tr_compassion_3_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_compassion_3_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_compassion_3_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_compassion_3_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_compassion_4 = {
+	possible = {
+		has_tradition = tr_compassion_1
+	}
+
+	custom_tooltip = tr_compassion_4_desc
+
+	modifier = {
+		leader_trait_selection_options_add = 1
+		country_leader_cap_add = 2
+	}
+	
+	tradition_swap = {
+		name = tr_compassion_4_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_compassion_4_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_compassion_4_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_compassion_4_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_compassion_5 = {
+	possible = {
+		has_tradition = tr_compassion_2
+	}
+
+	custom_tooltip = tr_compassion_5_desc
+
+	modifier = {
+		pop_growth_from_immigration = 0.25
+		leader_age = 20
+	}
+	
+	tradition_swap = {
+		name = tr_compassion_5_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_compassion_5_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_compassion_5_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_compassion_5_hive_desc
+	
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}

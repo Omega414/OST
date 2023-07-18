@@ -1,0 +1,19 @@
+namespace = imperator
+
+# De-increment variable for counting imperator titan armies
+country_event = {
+	id = imperator.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = { army_type = imperator_titan }
+	}
+
+	immediate = {
+		change_variable = {
+			which = imperator_titan_count
+			value = -1
+		}
+	}
+}

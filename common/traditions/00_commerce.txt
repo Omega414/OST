@@ -1,0 +1,406 @@
+tr_commerce_adopt = {
+
+	custom_tooltip = tr_commerce_adopt_desc
+	unlocks_agenda = agenda_commerce
+	modifier = {
+		trade_value_mult = 0.25
+	}
+
+	tradition_swap = {
+		name = tr_commerce_adopt_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+				is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_commerce_adopt_machine_desc
+		unlocks_agenda = agenda_commerce
+		modifier = {
+			planet_technician_energy_produces_add = 2
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_commerce_adopt_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_commerce_adopt_hive_desc
+		unlocks_agenda = agenda_commerce
+		modifier = {
+			planet_technician_energy_produces_add = 2
+		}
+		
+		weight = {
+			factor = 1
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 5
+			years_passed < 10
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				AND = {
+					has_tradition = tr_diplomacy_adopt
+					NOT = { has_tradition = tr_diplomacy_finish }
+				}
+				AND = {
+					has_tradition = tr_discovery_adopt
+					NOT = { has_tradition = tr_discovery_finish }
+				}
+				AND = {
+					has_tradition = tr_domination_adopt
+					NOT = { has_tradition = tr_domination_finish }
+				}
+				AND = {
+					has_tradition = tr_harmony_adopt
+					NOT = { has_tradition = tr_harmony_finish }
+				}
+				AND = {
+					has_tradition = tr_prosperity_adopt
+					NOT = { has_tradition = tr_prosperity_finish }
+				}
+				AND = {
+					has_tradition = tr_supremacy_adopt
+					NOT = { has_tradition = tr_supremacy_finish }
+				}
+			}
+		}
+	}
+}
+
+tr_commerce_finish = {
+
+	custom_tooltip = tr_commerce_finish_desc
+
+	modifier = {
+		# Improved Trade Policy implemented in policies file. 
+		ascension_perks_add = 1
+	}
+
+	tradition_swap = {
+		name = tr_commerce_finish_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_commerce_finish_machine_desc
+
+		modifier = {
+			country_energy_produces_mult = 0.20
+			ascension_perks_add = 1
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_commerce_finish_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_hive_empire = yes
+		}
+		
+		custom_tooltip = tr_commerce_finish_hive_desc
+
+		modifier = {
+			country_energy_produces_mult = 0.20
+			ascension_perks_add = 1
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+}
+
+tr_commerce_1 = {
+
+	custom_tooltip = tr_commerce_1_desc
+
+	modifier = {
+		# Clerk +2 Trade in pop_jobs file
+	}
+	
+	tradition_swap = {
+		name = tr_commerce_1_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_commerce_1_machine_desc
+
+		modifier = {
+			planet_maintenance_drones_energy_produces_add = 2
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_commerce_1_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_commerce_1_hive_desc
+
+		modifier = {
+			planet_maintenance_drones_energy_produces_add = 2
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_commerce_2 = {
+
+	custom_tooltip = tr_commerce_2_desc
+
+	modifier = {
+		local_trade_protection_add = 5
+		damage_vs_country_type_enclave_mercenary_mult = 0.25
+		damage_vs_country_type_pirate_mult = 0.50
+		country_minerals_produces_mult = 0.05		
+	}
+	
+	tradition_swap = {
+		name = tr_commerce_2_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_commerce_2_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_commerce_2_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_commerce_2_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_commerce_3 = {
+	possible = {
+		#has_tradition = 
+	}
+
+	custom_tooltip = tr_commerce_3_desc
+	
+	modifier = {
+		# Unity implemented in trade building file.
+	}
+	
+	tradition_swap = {
+		name = tr_commerce_3_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			OR = {
+				is_ai = yes
+				is_machine_empire = yes
+			}
+		}
+
+		custom_tooltip = tr_commerce_3_machine_desc
+
+		modifier = {
+			country_unity_produces_mult = 0.05		
+		}
+		
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_commerce_3_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_commerce_3_hive_desc
+
+		modifier = {
+			country_unity_produces_mult = 0.05		
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_commerce_4 = {
+	possible = {
+		AND = {
+			has_tradition = tr_commerce_1
+			has_tradition = tr_commerce_2
+		}
+	}
+
+	custom_tooltip = tr_commerce_4_desc
+
+	modifier = {
+		# Advanced Resource Silos implemented in osa_buildings file.
+		commercial_pact_mult = 0.25
+	}
+	
+	tradition_swap = {
+		name = tr_commerce_4_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+		}
+
+		custom_tooltip = tr_commerce_4_machine_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_commerce_4_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_commerce_4_hive_desc
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_commerce_5 = {
+	possible = {
+		has_tradition = tr_commerce_3
+	}
+
+	custom_tooltip = tr_commerce_5_desc
+
+	modifier = {
+		# Taxation policy implemented in the policies file.
+	}
+	
+	tradition_swap = {
+		name = tr_commerce_5_machine
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {
+			is_machine_empire = yes
+			is_ai = yes
+		}
+
+		custom_tooltip = tr_commerce_5_machine_desc
+
+		modifier = {
+			country_energy_produces_mult = 0.10
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_commerce_5_hive
+		inherit_effects = no
+		inherit_icon = yes
+		inherit_name = no
+		trigger = {			
+			is_hive_empire = yes
+		}
+
+		custom_tooltip = tr_commerce_5_hive_desc
+	
+		modifier = {
+			country_energy_produces_mult = 0.10
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
