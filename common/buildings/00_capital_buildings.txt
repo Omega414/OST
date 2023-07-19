@@ -59,28 +59,8 @@ building_colony_shelter = {
 		script = buildings/on_all_capital_buildings
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_active_tradition = tr_solidarity_3
-			}
-		}
-		modifier = {
-			job_healthcare_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_civic = civic_police_state			
-			}
-		}
-		modifier = {
-			job_osa_commando_add = 1
-		}
+	inline_script = {
+		script = "buildings/capital/ost_capital_colony_jobs"
 	}
 
 	triggered_planet_modifier = {
@@ -150,26 +130,6 @@ building_colony_shelter = {
 			has_modifier = payback_unified_purpose
 		}
 		text = job_unifier_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_active_tradition = tr_solidarity_3
-			}
-		}
-		text = job_healthcare_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_civic = civic_police_state			
-			}
-		}
-		text = job_osa_commando_effect_desc
 	}
 }
 
@@ -242,7 +202,7 @@ building_capital = {
 		OST_JOB_2 = 1
 	}
 	
-		inline_script = {
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
 
@@ -527,7 +487,7 @@ building_major_capital = {
 		OST_JOB_2 = 2
 	}
 	
-		inline_script = {
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
 
@@ -847,7 +807,7 @@ building_system_capital = {
 		OST_JOB_2 = 3
 	}
 	
-		inline_script = {
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
 
@@ -1162,7 +1122,7 @@ building_deployment_post = {
 		OST_JOB_2 = 1
 	}
 	
-		inline_script = {
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
 
@@ -1303,7 +1263,7 @@ building_machine_capital = {
 		OST_JOB_2 = 1
 	}
 	
-		inline_script = {
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
 
@@ -1449,7 +1409,7 @@ building_machine_major_capital = {
 		OST_JOB_2 = 2
 	}
 	
-		inline_script = {
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
 
@@ -1603,7 +1563,7 @@ building_machine_system_capital = {
 		OST_JOB_2 = 3
 	}
 	
-		inline_script = {
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
 
@@ -1794,7 +1754,7 @@ building_hive_capital = {
 		OST_JOB_2 = 2
 	}
 	
-		inline_script = {
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
 
@@ -1919,7 +1879,7 @@ building_hive_major_capital = {
 		OST_JOB_2 = 4
 	}
 	
-		inline_script = {
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
 
@@ -2051,13 +2011,7 @@ building_hab_capital = {
 	}
 
 	inline_script = {
-		script = "buildings/capital/ost_capital_jobs"
-		OST_JOB_1 = 1
-		OST_JOB_2 = 1
-	}
-	
-		inline_script = {
-		script = "buildings/capital/ost_capital_jobs_desc"
+		script = "buildings/capital/ost_capital_colony_jobs"
 	}
 
 	triggered_planet_modifier = {
@@ -2354,7 +2308,7 @@ building_hab_major_capital = {
 		OST_JOB_2 = 2
 	}
 	
-		inline_script = {
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
 
@@ -3402,7 +3356,7 @@ building_imperial_capital = {
 		OST_JOB_2 = 4
 	}
 	
-		inline_script = {
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
 
@@ -3698,7 +3652,7 @@ building_imperial_machine_capital = {
 		OST_JOB_2 = 4
 	}
 	
-		inline_script = {
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
 
@@ -3883,7 +3837,7 @@ building_imperial_hive_capital = {
 		OST_JOB_2 = 4
 	}
 	
-		inline_script = {
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
 
