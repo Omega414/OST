@@ -221,11 +221,10 @@ osom_building_speleology_facility_2 = {
 
 	ai_resource_production = {
 		trigger = {
-			planet_resource_compare = {
-				resource = physics_research
-				value >= 30
-			}
+			always = yes
 		}
+		physics_research = 4
+		society_research = 4
 		engineering_research = 12
 	}
 }
@@ -363,13 +362,10 @@ osom_building_speleology_facility_3 = {
 
 	ai_resource_production = {
 		trigger = {
-			planet_resource_compare = {
-				resource = physics_research
-				value >= 30
-			}
+			always = yes
 		}
-		physics_research = 10
-		society_research = 10
-		engineering_research = 10
+		physics_research = 8
+		society_research = 8
+		engineering_research = 36
 	}
 }

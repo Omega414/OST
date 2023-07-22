@@ -349,6 +349,8 @@ building_machine_assembly_plant = {
 	triggered_desc = {
 		text = job_replicator_effect_desc
 	}
+	
+	is_essential = yes
 }
 
 building_machine_assembly_complex = {
@@ -518,6 +520,8 @@ building_spawning_pool = {
 	triggered_desc = {
 		text = spawning_pool_tooltip
 	}
+
+	is_essential = yes
 }
 
 building_offspring_nest = {

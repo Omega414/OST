@@ -16,7 +16,7 @@ district_osa_housing = {
 	}
 
 	resources = {
-		category = planet_districts
+		category = planet_districts_cities
 		cost = {
 			minerals = @osa_cost
 		}
@@ -147,13 +147,13 @@ district_osa_farming = {
 	}
 	
 	resources = {
-		category = planet_districts
+		category = planet_districts_farming
 		cost = {
 			minerals = @osa_cost
 		}
 		upkeep = {
 			energy = @osa_maintenance
-		}		
+		}
 	}
 		
 	triggered_planet_modifier = {
@@ -215,6 +215,14 @@ district_osa_farming = {
 		}
 		text = job_osa_agri_director_effect_desc
 	}
+
+	ai_resource_production = {
+		food = 4
+		unity = 4
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 district_osa_mining = {
@@ -242,7 +250,7 @@ district_osa_mining = {
 	}
 
 	resources = {
-		category = planet_districts
+		category = planet_districts_mining
 		cost = {
 			minerals = @osa_cost
 		}
@@ -310,6 +318,14 @@ district_osa_mining = {
 		}
 		text = job_osa_mining_director_effect_desc
 	}
+
+	ai_resource_production = {
+		minerals = 4
+		unity = 4
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 district_osa_military = {
@@ -333,13 +349,13 @@ district_osa_military = {
 	}
 
 	resources = {
-		category = planet_districts
+		category = planet_districts_cities
 		cost = {
 			minerals = @osa_cost
 		}
 		upkeep = {
 			energy = @osa_maintenance
-		}		
+		}
 	}
 
 	planet_modifier = {
@@ -416,5 +432,14 @@ district_osa_military = {
 			}
 		}
 		text = job_osa_commando_effect_desc
+	}
+
+	ai_resource_production = {
+		physics_research = 2
+		engineering_research = 2
+		unity = 4
+		trigger = {
+			always = yes
+		}
 	}	
 }

@@ -15,7 +15,7 @@ ruler = {
 		}
 	}
 	unemployment_penalties = {
-		pop_happiness = -0.60
+		pop_happiness = -0.40
 	}
 	unemployment_resources = {
 		category = unemployment_resources
@@ -221,7 +221,7 @@ specialist = {
 		}
 	}
 	unemployment_penalties = {
-		pop_happiness = -0.50
+		pop_happiness = -0.30
 	}
 	unemployment_resources = {
 		category = unemployment_resources
@@ -536,7 +536,7 @@ worker = {
 		}
 	}
 	unemployment_penalties = {
-		pop_happiness = -0.40
+		pop_happiness = -0.20
 	}
 	unemployment_resources = {
 		category = unemployment_resources

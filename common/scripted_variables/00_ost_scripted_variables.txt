@@ -1,0 +1,9 @@
+@ost_b1_upkeep = 2.5
+@ost_b2_upkeep = 5
+@ost_b3_upkeep = 7.5
+@ost_b4_upkeep = 10
+@ost_b5_upkeep = 15
+
+@ost_b1_produces = 5
+@ost_b2_produces = 10
+@ost_b2_produces = 20

@@ -1102,6 +1102,14 @@ district_industrial = {
 		}
 		text = job_maintenance_drone_effect_desc
 	}
+
+	ai_resource_production = {
+		alloys = 4
+		consumer_goods = 4
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 district_srw_commercial = {

@@ -180,6 +180,13 @@ district_generator = {
 	prerequisites = {
 		tech_power_plant_1
 	}
+
+	ai_resource_production = {
+		energy = 4
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 district_mining = {
@@ -356,6 +363,13 @@ district_mining = {
 
 	prerequisites = {
 		tech_mechanized_mining
+	}
+
+	ai_resource_production = {
+		minerals = 4
+		trigger = {
+			always = yes
+		}
 	}
 }
 
@@ -633,6 +647,13 @@ district_farming = {
 			owner = { country_uses_food = no }
 		}
 	}
+
+	ai_resource_production = {
+		food = 4
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 district_generator_uncapped = {
@@ -824,6 +845,13 @@ district_generator_uncapped = {
 			owner = { is_fallen_empire_spiritualist = yes }
 		}
 		text = job_fe_acolyte_generator_effect_desc
+	}
+
+	ai_resource_production = {
+		energy = 4
+		trigger = {
+			always = yes
+		}
 	}
 }
 
@@ -1119,6 +1147,13 @@ district_mining_uncapped = {
 
 	prerequisites = {
 	}
+
+	ai_resource_production = {
+		minerals = 4
+		trigger = {
+			always = yes
+		}
+	}
 }
 
 district_farming_uncapped = {
@@ -1400,6 +1435,13 @@ district_farming_uncapped = {
 		AND = {
 			owner = { is_ai = yes }
 			owner = { country_uses_food = no }
+		}
+	}
+
+	ai_resource_production = {
+		food = 4
+		trigger = {
+			always = yes
 		}
 	}
 }

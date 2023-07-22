@@ -87,4 +87,11 @@ district_osa_alloy = {
 		}
 		text = job_fabricator_effect_desc
 	}
+
+	ai_resource_production = {
+		alloys = 8
+		trigger = {
+			always = yes
+		}
+	}
 }
