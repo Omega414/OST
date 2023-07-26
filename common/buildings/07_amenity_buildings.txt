@@ -850,6 +850,22 @@ building_holo_theatres = {
 		}
 		text = job_duelist_effect_desc
 	}
+
+	ai_resource_production = {
+		unity = 2
+		trigger = {
+			always = yes
+		}
+	}
+
+	ai_resource_production = {
+		alloys = 4
+		energy = 4
+		minerals = 4
+		trigger = {
+			free_amenities < 1
+		}
+	}
 }
 
 building_hyper_entertainment_forum = {
@@ -959,6 +975,22 @@ building_hyper_entertainment_forum = {
 			}
 		}
 		text = job_duelist_effect_desc
+	}
+
+	ai_resource_production = {
+		unity = 4
+		trigger = {
+			always = yes
+		}
+	}
+
+	ai_resource_production = {
+		alloys = 12
+		energy = 12
+		minerals = 12
+		trigger = {
+			free_amenities < 1
+		}
 	}
 }
 
@@ -1112,6 +1144,24 @@ building_clinic = {
 			}
 		}
 	}
+
+	ai_resource_production = {
+		energy = 6
+		unity = 6
+		society_research = 6
+		trigger = {
+			always = yes
+		}
+	}
+
+	ai_resource_production = {
+		alloys = 12
+		energy = 12
+		minerals = 12
+		trigger = {
+			free_amenities < 1
+		}
+	}
 }
 
 building_hospital = {
@@ -1202,6 +1252,24 @@ building_hospital = {
 	triggered_desc = {
 		text = job_healthcare_effect_desc
 	}
+
+	ai_resource_production = {
+		energy = 12
+		unity = 12
+		society_research = 12
+		trigger = {
+			always = yes
+		}
+	}
+
+	ai_resource_production = {
+		alloys = 24
+		energy = 24
+		minerals = 24
+		trigger = {
+			free_amenities < 1
+		}
+	}
 }
 
 building_maintenance_depot = {
@@ -1288,6 +1356,7 @@ building_maintenance_depot = {
 		}
 		text = job_evaluator_effect_desc
 	}
+	is_essential = yes
 }
 
 building_slave_huts = {

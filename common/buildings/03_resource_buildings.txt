@@ -1230,7 +1230,7 @@ building_mineral_purification_plant = {
 			energy = @ost_b1_upkeep
 		}
 		produces = {
-			mineralss = @ost_b1_upkeep
+			minerals = @ost_b1_upkeep
 		}
 	}
 

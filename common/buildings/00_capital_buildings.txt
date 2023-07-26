@@ -6,6 +6,11 @@
 @buildings_t3 = 8
 @buildings_t4 = 16
 
+@branch_office_buildings_t1 = 1
+@branch_office_buildings_t2 = 2
+@branch_office_buildings_t3 = 4
+@branch_office_buildings_t4 = 6
+
 @tier_2_capital_defense_armies = 4
 @tier_3_capital_defense_armies = 8
 @tier_4_capital_defense_armies = 16
@@ -52,7 +57,7 @@ building_colony_shelter = {
 		planet_housing_add = 3
 		planet_amenities_add = 7
 		planet_max_buildings_add = @buildings_t1
-		planet_max_branch_office_buildings_add = 1	
+		planet_max_branch_office_buildings_add = @branch_office_buildings_t1	
 	}
 
 	inline_script = {
@@ -76,8 +81,10 @@ building_colony_shelter = {
 			exists = owner
 			owner = { has_active_tradition = tr_synthetics_finish }
 		}
-		job_roboticist_add = 1
-		job_colonist_add = 1
+		modifier = {
+			job_roboticist_add = 1
+			job_colonist_add = 1
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -188,7 +195,7 @@ building_capital = {
 		planet_housing_add = 5
 		planet_amenities_add = 5
 		planet_max_buildings_add = @buildings_t2
-		planet_max_branch_office_buildings_add = 2
+		planet_max_branch_office_buildings_add = @branch_office_buildings_t2
 		defense_armies_add = @tier_2_capital_defense_armies
 	}
 
@@ -197,9 +204,19 @@ building_capital = {
 	}
 
 	inline_script = {
+		script = "buildings/capital/vanilla_capital_jobs"
+		OST_JOB_1 = 1
+		OST_JOB_2 = 2
+	}
+
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs"
 		OST_JOB_1 = 1
-		OST_JOB_2 = 1
+		OST_JOB_2 = 2
+	}
+
+	inline_script = {
+		script = "buildings/capital/vanilla_capital_jobs_desc"
 	}
 	
 	inline_script = {
@@ -223,78 +240,8 @@ building_capital = {
 			exists = owner
 			owner = { has_active_tradition = tr_synthetics_finish }
 		}
-		job_roboticist_add = 1
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOR = {
-					has_authority = auth_corporate
-					has_civic = civic_exalted_priesthood
-					has_civic = civic_aristocratic_elite
-					has_civic = civic_merchant_guilds
-					has_civic = civic_technocracy
-				}
-			}
-		}
 		modifier = {
-			job_politician_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_authority = auth_corporate }
-		}
-		modifier = {
-			job_executive_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_exalted_priesthood }
-		}
-		modifier = {
-			job_high_priest_add = 1
-			job_politician_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_aristocratic_elite }
-		}
-		modifier = {
-			job_noble_add = 1
-			job_politician_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_technocracy }
-		}
-		modifier = {
-			job_head_researcher_add = 1
-			job_politician_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_merchant_guilds }
-		}
-		modifier = {
-			job_merchant_add = 1
-			job_politician_add = 1
+			job_roboticist_add = 1
 		}
 	}
 
@@ -344,71 +291,10 @@ building_capital = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = {
-				has_civic = civic_exalted_priesthood
-			}
-		}
-		text = job_high_priest_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_civic = civic_aristocratic_elite
-			}
-		}
-		text = job_noble_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_civic = civic_technocracy
-			}
-		}
-		text = job_head_researcher_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_civic = civic_merchant_guilds
-			}
-		}
-		text = job_merchant_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				NOT = { has_authority = auth_corporate }
-				is_regular_empire = yes
-			}
-		}
-		text = job_politician_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
 			owner = { has_active_tradition = tr_synthetics_finish }
 		}
 		
 		text = job_roboticist_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_authority = auth_corporate
-			}
-		}
-		text = job_executive_effect_desc
 	}
 
 	triggered_desc = {
@@ -469,11 +355,11 @@ building_major_capital = {
 	}
 
 	planet_modifier = {
-		job_enforcer_add = 2
+		job_enforcer_add = 1
 		planet_housing_add = 8
 		planet_amenities_add = 8
 		planet_max_buildings_add = @buildings_t3
-		planet_max_branch_office_buildings_add = 3
+		planet_max_branch_office_buildings_add = @branch_office_buildings_t3
 		defense_armies_add = @tier_3_capital_defense_armies
 	}
 
@@ -482,9 +368,19 @@ building_major_capital = {
 	}
 
 	inline_script = {
+		script = "buildings/capital/vanilla_capital_jobs"
+		OST_JOB_1 = 1
+		OST_JOB_2 = 2
+	}
+
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs"
 		OST_JOB_1 = 1
 		OST_JOB_2 = 2
+	}
+
+	inline_script = {
+		script = "buildings/capital/vanilla_capital_jobs_desc"
 	}
 	
 	inline_script = {
@@ -508,78 +404,8 @@ building_major_capital = {
 			exists = owner
 			owner = { has_active_tradition = tr_synthetics_finish }
 		}
-		job_roboticist_add = 1
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOR = {
-					has_authority = auth_corporate
-					has_civic = civic_exalted_priesthood
-					has_civic = civic_aristocratic_elite
-					has_civic = civic_merchant_guilds
-					has_civic = civic_technocracy
-				}
-			}
-		}
 		modifier = {
-			job_politician_add = 3
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_authority = auth_corporate }
-		}
-		modifier = {
-			job_executive_add = 3
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_exalted_priesthood }
-		}
-		modifier = {
-			job_high_priest_add = 1
-			job_politician_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_aristocratic_elite }
-		}
-		modifier = {
-			job_noble_add = 1
-			job_politician_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_technocracy }
-		}
-		modifier = {
-			job_head_researcher_add = 1
-			job_politician_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_merchant_guilds }
-		}
-		modifier = {
-			job_merchant_add = 1
-			job_politician_add = 2
+			job_roboticist_add = 1
 		}
 	}
 
@@ -648,75 +474,9 @@ building_major_capital = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = {
-				has_civic = civic_exalted_priesthood
-			}
-		}
-		text = job_high_priest_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_civic = civic_aristocratic_elite
-			}
-		}
-		text = job_noble_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_civic = civic_technocracy
-			}
-		}
-		text = job_head_researcher_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_civic = civic_merchant_guilds
-			}
-		}
-		text = job_merchant_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				NOR = {
-					has_authority = auth_corporate
-					has_civic = civic_exalted_priesthood
-					has_civic = civic_aristocratic_elite
-					has_civic = civic_merchant_guilds
-					has_civic = civic_technocracy
-				}
-			}
-		}
-		text = job_politician_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
 			owner = { has_active_tradition = tr_synthetics_finish }
 		}
 		text = job_roboticist_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_authority = auth_corporate
-			}
-		}
-		text = job_executive_effect_desc
 	}
 
 	triggered_desc = {
@@ -789,11 +549,11 @@ building_system_capital = {
 	}
 
 	planet_modifier = {
-		job_enforcer_add = 3
+		job_enforcer_add = 1
 		planet_housing_add = 12
 		planet_amenities_add = 12
 		planet_max_buildings_add = @buildings_t4
-		planet_max_branch_office_buildings_add = 4
+		planet_max_branch_office_buildings_add = @branch_office_buildings_t4
 		defense_armies_add = @tier_4_capital_defense_armies
 	}
 
@@ -802,11 +562,21 @@ building_system_capital = {
 	}
 
 	inline_script = {
+		script = "buildings/capital/vanilla_capital_jobs"
+		OST_JOB_1 = 2
+		OST_JOB_2 = 3
+	}
+
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs"
 		OST_JOB_1 = 2
 		OST_JOB_2 = 3
 	}
-	
+
+	inline_script = {
+		script = "buildings/capital/vanilla_capital_jobs_desc"
+	}
+
 	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
 	}
@@ -828,78 +598,8 @@ building_system_capital = {
 			exists = owner
 			owner = { has_active_tradition = tr_synthetics_finish }
 		}
-		job_roboticist_add = 1
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOR = {
-					has_authority = auth_corporate
-					has_civic = civic_exalted_priesthood
-					has_civic = civic_aristocratic_elite
-					has_civic = civic_merchant_guilds
-					has_civic = civic_technocracy
-				}
-			}
-		}
 		modifier = {
-			job_politician_add = 4
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_authority = auth_corporate }
-		}
-		modifier = {
-			job_executive_add = 4
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_exalted_priesthood }
-		}
-		modifier = {
-			job_high_priest_add = 2
-			job_politician_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_aristocratic_elite }
-		}
-		modifier = {
-			job_noble_add = 2
-			job_politician_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_technocracy }
-		}
-		modifier = {
-			job_head_researcher_add = 2
-			job_politician_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_merchant_guilds }
-		}
-		modifier = {
-			job_merchant_add = 2
-			job_politician_add = 2
+			job_roboticist_add = 1
 		}
 	}
 
@@ -979,70 +679,9 @@ building_system_capital = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = {
-				has_civic = civic_exalted_priesthood
-			}
-		}
-		text = job_high_priest_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_civic = civic_aristocratic_elite
-			}
-		}
-		text = job_noble_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_civic = civic_technocracy
-			}
-		}
-		text = job_head_researcher_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_civic = civic_merchant_guilds
-			}
-		}
-		text = job_merchant_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				NOT = { has_authority = auth_corporate }
-				is_regular_empire = yes
-			}
-		}
-		text = job_politician_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
 			owner = { has_active_tradition = tr_synthetics_finish }
 		}
 		text = job_roboticist_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_authority = auth_corporate
-			}
-		}
-		text = job_executive_effect_desc
 	}
 
 	triggered_desc = {
@@ -1682,7 +1321,6 @@ building_machine_system_capital = {
 	}
 }
 
-
 #############
 # Hive buildings
 #############
@@ -2046,7 +1684,9 @@ building_hab_capital = {
 			exists = owner
 			owner = { has_active_tradition = tr_synthetics_finish }
 		}
-		job_roboticist_add = 1
+		modifier = {
+			job_roboticist_add = 1
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -2245,7 +1885,6 @@ building_hab_capital = {
 	}
 }
 
-
 # Habitat Central Complex
 building_hab_major_capital = {
 	base_buildtime = @b2_time
@@ -2294,7 +1933,7 @@ building_hab_major_capital = {
 		planet_housing_add = 5
 		planet_amenities_add = 5
 		planet_max_buildings_add = @buildings_t2
-		planet_max_branch_office_buildings_add = 3
+		planet_max_branch_office_buildings_add = @branch_office_buildings_t3
 		defense_armies_add = @tier_2_capital_defense_armies
 	}
 
@@ -2303,9 +1942,19 @@ building_hab_major_capital = {
 	}
 
 	inline_script = {
+		script = "buildings/capital/vanilla_capital_jobs"
+		OST_JOB_1 = 1
+		OST_JOB_2 = 2
+	}
+
+	inline_script = {
 		script = "buildings/capital/ost_capital_jobs"
 		OST_JOB_1 = 1
 		OST_JOB_2 = 2
+	}
+
+	inline_script = {
+		script = "buildings/capital/vanilla_capital_jobs_desc"
 	}
 	
 	inline_script = {
@@ -2377,29 +2026,8 @@ building_hab_major_capital = {
 			exists = owner
 			owner = { has_active_tradition = tr_synthetics_finish }
 		}
-		job_roboticist_add = 1
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-				NOR = {
-					has_authority = auth_corporate
-					has_civic = civic_exalted_priesthood
-					has_civic = civic_aristocratic_elite
-					has_civic = civic_merchant_guilds
-					has_civic = civic_technocracy
-				}
-			}
-			OR = {
-				NOT = { has_planet_flag = toxic_knights_habitat }
-				NOT = { owner = { has_origin = origin_toxic_knights } }
-			}
-		}
 		modifier = {
-			job_politician_add = 2
+			job_roboticist_add = 1
 		}
 	}
 
@@ -2415,85 +2043,6 @@ building_hab_major_capital = {
 			job_knight_commander_add = 1
 			job_knight_add = 1
 		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			NOT = { has_planet_flag = toxic_knights_habitat }
-			exists = owner
-			owner = { has_authority = auth_corporate }
-		}
-		modifier = {
-			job_executive_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_exalted_priesthood }
-			OR = {
-				NOT = { has_planet_flag = toxic_knights_habitat }
-				NOT = { owner = { has_origin = origin_toxic_knights } }
-			}
-		}
-		modifier = {
-			job_politician_add = 1
-			job_high_priest_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_aristocratic_elite }
-			OR = {
-				NOT = { has_planet_flag = toxic_knights_habitat }
-				NOT = { owner = { has_origin = origin_toxic_knights } }
-			}
-		}
-		modifier = {
-			job_politician_add = 1
-			job_noble_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_technocracy }
-			OR = {
-				NOT = { has_planet_flag = toxic_knights_habitat }
-				NOT = { owner = { has_origin = origin_toxic_knights } }
-			}
-		}
-		modifier = {
-			job_head_researcher_add = 1
-			job_politician_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_merchant_guilds }
-			OR = {
-				NOT = { has_planet_flag = toxic_knights_habitat }
-				NOT = { owner = { has_origin = origin_toxic_knights } }
-			}
-		}
-		modifier = {
-			job_politician_add = 1
-			job_merchant_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		job_enforcer_add = 1
 	}
 
 	triggered_planet_modifier = {
@@ -2754,7 +2303,7 @@ building_resort_capital = {
 		planet_amenities_add = 5
 		job_entertainer_add = 1
 		planet_max_buildings_add = 10
-		planet_max_branch_office_buildings_add = 4
+		planet_max_branch_office_buildings_add = @branch_office_buildings_t4
 	}
 
 	inline_script = {
@@ -2794,7 +2343,9 @@ building_resort_capital = {
 			exists = owner
 			owner = { has_active_tradition = tr_synthetics_finish }
 		}
-		job_roboticist_add = 1
+		modifier = {
+			job_roboticist_add = 1
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -2906,7 +2457,7 @@ building_resort_major_capital = {
 		planet_amenities_add = 10
 		job_entertainer_add = 2
 		planet_max_buildings_add = 20
-		planet_max_branch_office_buildings_add = 7
+		planet_max_branch_office_buildings_add = @branch_office_buildings_t4
 	}
 
 	inline_script = {
@@ -2976,7 +2527,9 @@ building_resort_major_capital = {
 			exists = owner
 			owner = { has_active_tradition = tr_synthetics_finish }
 		}
-		job_roboticist_add = 1
+		modifier = {
+			job_roboticist_add = 1
+		}
 	}
 
 	triggered_planet_modifier = {
@@ -3088,7 +2641,7 @@ building_slave_capital = {
 		job_slave_overseer_add = 2
 		planet_stability_add = 5
 		planet_max_buildings_add = 5
-		planet_max_branch_office_buildings_add = 1
+		planet_max_branch_office_buildings_add = @branch_office_buildings_t1
 	}
 
 	inline_script = {
@@ -3213,7 +2766,7 @@ building_slave_major_capital = {
 		job_slave_overseer_add = 4
 		planet_stability_add = 10
 		planet_max_buildings_add = 11
-		planet_max_branch_office_buildings_add = 2
+		planet_max_branch_office_buildings_add = @branch_office_buildings_t2
 	}
 
 	inline_script = {
@@ -3298,9 +2851,7 @@ building_slave_major_capital = {
 	}
 }
 
-
 # Imperial Capital
-
 building_imperial_capital = {
 	base_buildtime = @b4_time
 	capital = yes
@@ -3338,11 +2889,11 @@ building_imperial_capital = {
 	}
 
 	planet_modifier = {
-		job_enforcer_add = 5
+		job_enforcer_add = 2
 		planet_housing_add = 18
 		planet_amenities_add = 18
 		planet_max_buildings_add = 16
-		planet_max_branch_office_buildings_add = 6
+		planet_max_branch_office_buildings_add = @branch_office_buildings_t4
 		defense_armies_add = @tier_4_capital_defense_armies
 	}
 
@@ -3351,13 +2902,23 @@ building_imperial_capital = {
 	}
 
 	inline_script = {
-		script = "buildings/capital/ost_capital_jobs"
-		OST_JOB_1 = 3
+		script = "buildings/capital/vanilla_capital_jobs"
+		OST_JOB_1 = 4
 		OST_JOB_2 = 4
 	}
-	
+
+	inline_script = {
+		script = "buildings/capital/ost_capital_jobs"
+		OST_JOB_1 = 4
+		OST_JOB_2 = 4
+	}
+
 	inline_script = {
 		script = "buildings/capital/ost_capital_jobs_desc"
+	}
+
+	inline_script = {
+		script = "buildings/capital/vanilla_capital_jobs_desc"
 	}
 
 	triggered_planet_modifier = {
@@ -3377,78 +2938,8 @@ building_imperial_capital = {
 			exists = owner
 			owner = { has_active_tradition = tr_synthetics_finish }
 		}
-		job_roboticist_add = 1
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				NOR = {
-					has_authority = auth_corporate
-					has_civic = civic_exalted_priesthood
-					has_civic = civic_aristocratic_elite
-					has_civic = civic_merchant_guilds
-					has_civic = civic_technocracy
-				}
-			}
-		}
 		modifier = {
-			job_politician_add = 6
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_authority = auth_corporate }
-		}
-		modifier = {
-			job_executive_add = 6
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_exalted_priesthood }
-		}
-		modifier = {
-			job_high_priest_add = 3
-			job_politician_add = 3
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_aristocratic_elite }
-		}
-		modifier = {
-			job_noble_add = 3
-			job_politician_add = 3
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_technocracy }
-		}
-		modifier = {
-			job_head_researcher_add = 3
-			job_politician_add = 3
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { has_civic = civic_merchant_guilds }
-		}
-		modifier = {
-			job_merchant_add = 3
-			job_politician_add = 3
+			job_roboticist_add = 1
 		}
 	}
 
@@ -3520,70 +3011,9 @@ building_imperial_capital = {
 	triggered_desc = {
 		trigger = {
 			exists = owner
-			owner = {
-				has_civic = civic_exalted_priesthood
-			}
-		}
-		text = job_high_priest_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_civic = civic_aristocratic_elite
-			}
-		}
-		text = job_noble_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_civic = civic_technocracy
-			}
-		}
-		text = job_head_researcher_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_civic = civic_merchant_guilds
-			}
-		}
-		text = job_merchant_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				NOT = { has_authority = auth_corporate }
-				is_regular_empire = yes
-			}
-		}
-		text = job_politician_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
 			owner = { has_active_tradition = tr_synthetics_finish }
 		}
 		text = job_roboticist_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = {
-				has_authority = auth_corporate
-			}
-		}
-		text = job_executive_effect_desc
 	}
 
 	triggered_desc = {
@@ -3638,7 +3068,7 @@ building_imperial_machine_capital = {
 		job_patrol_drone_add = 5
 		job_maintenance_drone_add = 6
 		planet_max_buildings_add = 16
-		planet_max_branch_office_buildings_add = 6
+		planet_max_branch_office_buildings_add = @branch_office_buildings_t4
 		defense_armies_add = @tier_4_capital_defense_armies
 	}
 
@@ -3814,7 +3244,7 @@ building_imperial_hive_capital = {
 		job_maintenance_drone_add = 7
 		job_patrol_drone_add = 4
 		planet_max_buildings_add = 16
-		planet_max_branch_office_buildings_add = 6
+		planet_max_branch_office_buildings_add = @branch_office_buildings_t4
 		defense_armies_add = @tier_4_capital_defense_armies
 	}
 

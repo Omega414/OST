@@ -27,7 +27,7 @@ prosperity = {
 		category = pop_factions
 		produces = {
 			unity = 0.5
-			influence = 0.003
+			influence = 0.001
 		}
 		produces = {
 			trigger = {

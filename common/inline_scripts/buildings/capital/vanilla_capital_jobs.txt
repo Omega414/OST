@@ -1,0 +1,94 @@
+# Default jobs
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				NOR = {
+					has_authority = auth_corporate
+					has_civic = civic_police_state
+					has_civic = civic_conservation_commissions
+					has_civic = civic_eminent_engineers
+				}
+			}
+		}
+		modifier = {
+			job_politician_add = $OST_JOB_1$
+			job_enforcer_add = $OST_JOB_1$
+		}
+	}
+
+# Politician jobs
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				NOR = {
+					has_authority = auth_corporate
+					has_civic = civic_exalted_priesthood
+					has_civic = civic_aristocratic_elite
+					has_civic = civic_merchant_guilds
+					has_civic = civic_technocracy
+				}
+			}
+		}
+		modifier = {
+			job_politician_add = $OST_JOB_1$
+		}
+	}
+
+# Corporate jobs
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_authority = auth_corporate }
+		}
+		modifier = {
+			job_executive_add = $OST_JOB_2$
+			job_enforcer_add = $OST_JOB_1$
+		}
+	}
+
+# Exhalted Priesthood Civic
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_civic = civic_exalted_priesthood }
+		}
+		modifier = {
+			job_high_priest_add = $OST_JOB_1$
+		}
+	}
+
+# Aristocratic Elite Civic
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_civic = civic_aristocratic_elite }
+		}
+		modifier = {
+			job_noble_add = $OST_JOB_1$
+		}
+	}
+
+# Technocracy Civic
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_civic = civic_technocracy }
+		}
+		modifier = {
+			job_head_researcher_add = $OST_JOB_1$
+		}
+	}
+
+# Merchant Guilds Civic
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_civic = civic_merchant_guilds }
+		}
+		modifier = {
+			job_merchant_add = $OST_JOB_1$
+		}
+	}

@@ -1609,17 +1609,7 @@ building_archaeo_refinery = {
 
 	ai_resource_production = {
 		exotic_gases = 2
-		trigger = {
-			always = yes
-		}
-	}
-	ai_resource_production = {
 		volatile_motes = 2
-		trigger = {
-			always = yes
-		}
-	}
-	ai_resource_production = {
 		rare_crystals = 2
 		trigger = {
 			always = yes

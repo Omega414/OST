@@ -3702,6 +3702,9 @@ building_sensorium_1 = {
 			unity = 1
 			multiplier = owner.trigger:num_ascension_perks
 		}
+		cost = {
+			minerals = @b1_minerals
+		}
 		upkeep = {
 			energy = @ost_b1_upkeep
 			minerals = @ost_b1_upkeep
@@ -3818,6 +3821,9 @@ building_sensorium_2 = {
 			unity = 2
 			multiplier = owner.trigger:num_ascension_perks
 		}
+		cost = {
+			minerals = @b2_minerals
+		}
 		upkeep = {
 			energy = @ost_b2_upkeep
 			minerals = @ost_b2_upkeep
@@ -3927,6 +3933,9 @@ building_sensorium_3 = {
 			trigger = { exists = owner }
 			unity = 3
 			multiplier = owner.trigger:num_ascension_perks
+		}
+		cost = {
+			minerals = @b3_minerals
 		}
 		upkeep = {
 			energy = @ost_b3_upkeep
@@ -4465,9 +4474,6 @@ building_alpha_hub = {
 		produces = {
 			unity = @ost_b3_produces
 		}
-		produces = {
-			unity = 20
-		}
 	}
 
 	planet_modifier = {
@@ -4523,7 +4529,13 @@ building_organic_sanctuary = {
 
 		OR = {
 			owner = { is_ai = no }
-			has_upgraded_capital = yes
+			AND = {
+				has_upgraded_capital = yes
+				OR = {
+					NOT = { has_building = building_organic_sanctuary }
+					has_unemployed_pop_of_category = bio_trophy
+				}
+			}
 		}
 	}
 
@@ -4620,7 +4632,6 @@ building_organic_sanctuary = {
 		}
 	}
 
-	is_essential = yes
 }
 
 building_organic_paradise = {

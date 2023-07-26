@@ -89,6 +89,48 @@
 		text = job_osa_commando_effect_desc
 	}
 
+# Conservation Commissions Civic
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_civic = civic_conservation_commissions			
+			}
+		}
+		text = job_osa_head_ecologist_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_civic = civic_conservation_commissions			
+			}
+		}
+		text = job_ranger_effect_desc
+	}
+
+# Eminent Engineers Civic
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_civic = civic_eminent_engineers			
+			}
+		}
+		text = job_osa_chief_engineer_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				has_civic = civic_eminent_engineers			
+			}
+		}
+		text = job_artificer_effect_desc
+	}
+
 # Hive
 	triggered_desc = {
 		trigger = {

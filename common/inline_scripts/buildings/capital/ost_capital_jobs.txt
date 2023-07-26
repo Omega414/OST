@@ -23,11 +23,38 @@
 		modifier = {
 			job_osa_commander_add = $OST_JOB_1$
 			job_osa_commando_add = $OST_JOB_1$
-			job_politician_add = -$OST_JOB_1$
-			job_enforcer_add = -$OST_JOB_1$
 		}
 	}
 
+# Conservation Commissions Civic
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_civic = civic_conservation_commissions			
+			}
+		}
+		modifier = {
+			job_osa_head_ecologist_add = $OST_JOB_1$
+			job_ranger_add = $OST_JOB_1$
+		}
+	}
+
+# Eminent Engineers Civic
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_civic = civic_eminent_engineers			
+			}
+		}
+		modifier = {
+			job_osa_chief_engineer_add = $OST_JOB_1$
+			job_artificer_add = $OST_JOB_1$
+		}
+	}
+
+# Mining Guilds Civic
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
