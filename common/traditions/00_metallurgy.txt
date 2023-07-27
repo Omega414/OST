@@ -221,7 +221,7 @@ tr_metallurgy_3 = {
 	
 	tradition_swap = {
 		name = tr_metallurgy_3_machine
-		inherit_effects = yes
+		inherit_effects = no
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {
@@ -237,7 +237,7 @@ tr_metallurgy_3 = {
 
 	tradition_swap = {
 		name = tr_metallurgy_3_hive
-		inherit_effects = yes
+		inherit_effects = no
 		inherit_icon = yes
 		inherit_name = no
 		trigger = {			

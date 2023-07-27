@@ -14,7 +14,7 @@
 ################################
 
 councilor_bastion_of_oppression = {
-	leader_class = { governor admiral general }
+	leader_class = { admiral general governor }
 	is_leader_possible = {
 		OR = {
 			leader_class = admiral
@@ -24,6 +24,7 @@ councilor_bastion_of_oppression = {
 	}
 	civic = civic_bastion_of_oppression
 	modifier = {
+		pop_category_rulers_unity_produces_add = 0.1
 		pop_ethic_authoritarian_attraction_mult = 0.075
 	}
 }
@@ -53,11 +54,12 @@ councilor_agriculture_councils = {
 }
 
 councilor_speleology_societies = {
-	leader_class = { governor scientist }
+	leader_class = { governor scientist general }
 	is_leader_possible = {
 		OR = {
 			leader_class = governor
 			leader_class = scientist
+			leader_class = general
 		}
 	}
 	civic = civic_speleology_societies
@@ -69,12 +71,7 @@ councilor_speleology_societies = {
 councilor_sovereign_court = {
 	leader_class = { governor admiral scientist general }
 	is_leader_possible = {
-		OR = {
-			leader_class = admiral
-			leader_class = general
-			leader_class = governor
-			leader_class = scientist
-		}
+		always = yes
 	}
 	civic = civic_sovereign_court
 	modifier = {
@@ -83,17 +80,13 @@ councilor_sovereign_court = {
 }
 
 councilor_deceitful_delegates = {
-	leader_class = { governor admiral general }
+	leader_class = { governor admiral scientist general }
 	is_leader_possible = {
-		OR = {
-			leader_class = admiral
-			leader_class = general
-			leader_class = governor
-		}
+		always = yes
 	}
 	civic = civic_deceitful_delegates
 	modifier = {
-		diplo_weight_envoys_mult = 0.01
+		diplo_weight_envoys_mult = 0.02
 	}
 }
 
@@ -111,9 +104,13 @@ councilor_researchers_of_renown = {
 }
 
 councilor_illustrious_statesmen = {
-	leader_class = { governor }
+	leader_class = { admiral general governor }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_illustrious_statesmen
 	modifier = {
@@ -122,9 +119,13 @@ councilor_illustrious_statesmen = {
 }
 
 councilor_frontier_fellowship = {
-	leader_class = { governor }
+	leader_class = { general governor scientist }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = general
+			leader_class = governor
+			leader_class = scientist
+		}
 	}
 	civic = civic_frontier_fellowship
 	modifier = {
@@ -190,7 +191,7 @@ councilor_corporate_functional_architecture = {
 	}
 	civic = civic_corporate_functional_architecture
 	modifier = {
-		planet_building_build_speed_mult = 0.02
+		planet_building_build_speed_mult = 0.05
 	}
 }
 
@@ -216,7 +217,7 @@ councilor_corporate_frontier_fellowship = {
 	}
 	civic = civic_corporate_frontier_fellowship
 	modifier = {
-		planet_colony_development_speed_mult = 0.01
+		planet_colony_development_speed_mult = 0.025
 	}
 }
 

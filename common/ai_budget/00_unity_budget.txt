@@ -84,7 +84,7 @@ unity_expenditure_leaders = {
 	}
 
 	weight = {
-		weight = 0.6
+		weight = 1.5
 	}
 }
 
@@ -116,11 +116,7 @@ unity_upkeep_leaders = {
 	}
 
 	weight = {
-		weight = 0.5
-	}
-
-	desired_max = {
-		base = 150
+		weight = 1.5
 	}
 }
 

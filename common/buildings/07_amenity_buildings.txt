@@ -866,6 +866,8 @@ building_holo_theatres = {
 			free_amenities < 1
 		}
 	}
+
+	ai_estimate_without_unemployment = yes
 }
 
 building_hyper_entertainment_forum = {
@@ -992,6 +994,8 @@ building_hyper_entertainment_forum = {
 			free_amenities < 1
 		}
 	}
+
+	ai_estimate_without_unemployment = yes
 }
 
 building_clinic = {
@@ -1162,6 +1166,8 @@ building_clinic = {
 			free_amenities < 1
 		}
 	}
+
+	ai_estimate_without_unemployment = yes
 }
 
 building_hospital = {
@@ -1270,6 +1276,8 @@ building_hospital = {
 			free_amenities < 1
 		}
 	}
+
+	ai_estimate_without_unemployment = yes
 }
 
 building_maintenance_depot = {
@@ -1288,11 +1296,6 @@ building_maintenance_depot = {
 		exists = owner
 		OR = {
 			owner = { is_gestalt = no }
-			AND = {
-				owner = { is_ai = yes }
-				free_amenities > 30
-				free_building_slots = 0
-			}
 		}
 	}
 

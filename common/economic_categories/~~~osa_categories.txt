@@ -57,6 +57,7 @@ planet_omni_drones = {
 	}
 	generate_add_modifiers = {
 		produces
+		upkeep
 	}
 	modifier_category = pop
 }

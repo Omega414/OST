@@ -166,13 +166,17 @@ councilor_agrarian_idyll = {
 	civic = civic_agrarian_idyll
 	modifier = {
 		planet_farmers_produces_mult = 0.05
+		planet_farmers_society_research_produces_add = 0.2
 	}
 }
 
 councilor_anglers = {
-	leader_class = { governor }
+	leader_class = { general governor }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_anglers
 	custom_tooltip = "councilor_anglers_custom_modifier_desc"
@@ -181,12 +185,7 @@ councilor_anglers = {
 councilor_aristocratic_elite = {
 	leader_class = { admiral general scientist governor }
 	is_leader_possible = {
-		OR = {
-			leader_class = admiral
-			leader_class = general
-			leader_class = scientist
-			leader_class = governor
-		}
+		always = yes
 	}
 	civic = civic_aristocratic_elite
 	modifier = {
@@ -195,20 +194,23 @@ councilor_aristocratic_elite = {
 }
 
 councilor_ascensionists = {
-	leader_class = { governor }
+	leader_class = { admiral general scientist governor }
 	is_leader_possible = {
-		leader_class = governor
+		always = yes
 	}
 	civic = civic_ascensionists
 	modifier = {
-		country_unity_produces_mult = 0.02
+		country_unity_produces_mult = 0.025
 	}
 }
 
 councilor_barbaric_despoilers = {
-	leader_class = { general }
+	leader_class = { admiral general }
 	is_leader_possible = {
-		leader_class = general
+		OR = {
+			leader_class = admiral
+			leader_class = general
+		}
 	}
 	civic = civic_barbaric_despoilers
 	custom_tooltip = "councilor_barbaric_despoilers_custom_modifier_desc"
@@ -224,41 +226,54 @@ councilor_beacon_of_liberty = {
 	}
 	civic = civic_beacon_of_liberty
 	modifier = {
+		pop_category_workers_unity_produces_add = 0.1
 		pop_ethic_egalitarian_attraction_mult = 0.075
 	}
 }
 
 councilor_byzantine_bureaucracy = {
-	leader_class = { governor }
+	leader_class = { general governor }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_byzantine_bureaucracy
 	modifier = {
 		planet_administrators_upkeep_mult = -0.02
+		planet_administrators_unity_produces_add = 0.25
 	}
 }
 
 councilor_catalytic_processing = {
-	leader_class = { scientist }
+	leader_class = { governor scientist }
 	is_leader_possible = {
-		leader_class = scientist
+		OR = {
+			leader_class = governor
+			leader_class = scientist
+		}
 	}
 	civic = civic_catalytic_processing
 	modifier = {
-		planet_farmers_food_produces_mult = 0.05
+		planet_metallurgists_upkeep_mult = -0.01
+		planet_metallurgists_physics_research_produces_add = 0.1
 	}
 }
 
 councilor_citizen_service = {
-	leader_class = { general }
+	leader_class = { admiral general }
 	is_leader_possible = {
-		leader_class = general 
+		OR = {
+			leader_class = admiral
+			leader_class = general
+		}
 	}
 	civic = civic_citizen_service
 	modifier = {
 		army_starting_experience_add = 25
 		armies_upkeep_mult = -0.015
+		planet_soldiers_unity_produces_add = 0.1
 	}
 }
 
@@ -269,29 +284,36 @@ councilor_corporate_dominion = {
 	}
 	civic = civic_corporate_dominion
 	modifier = {
-		trade_value_mult = 0.02
+		trade_value_mult = 0.025
 	}
 }
 
 councilor_corvee_system = {
-	leader_class = { general }
+	leader_class = { general governor }
 	is_leader_possible = {
-		leader_class = general
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_corvee_system
 	modifier = {
-		planet_jobs_worker_produces_mult = 0.02
+		planet_jobs_worker_produces_mult = 0.05
 	}
 }
 
 councilor_crafters = {
-	leader_class = { governor }
+	leader_class = { general governor }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_crafters
 	modifier = {
-		ship_armor_mult = 0.01
+		ship_armor_mult = 0.025
+		country_engineering_tech_research_speed = 0.01
 	}
 }
 
@@ -311,33 +333,45 @@ councilor_crusader_spirit = {
 }
 
 councilor_cutthroat_politics = {
-	leader_class = { governor }
+	leader_class = { admiral general governor }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_cutthroat_politics
 	modifier = {
-		pop_factions_unity_produces_mult = 0.05
+		pop_factions_produces_mult = 0.1
 	}
 }
 
 councilor_death_cult = {
-	leader_class = { governor }
+	leader_class = { general governor }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_death_cult
 	custom_tooltip = "councilor_death_cult_custom_modifier_desc"
 }
 
 councilor_diplomatic_corps = {
-	leader_class = { governor }
+	leader_class = { admiral general governor }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_diplomatic_corps
 	modifier = {
 		country_trust_cap_add = 10
+		diplo_weight_envoys_mult = 0.01
 	}
 }
 
@@ -349,7 +383,7 @@ councilor_distinguished_admiralty = {
 	civic = civic_distinguished_admiralty
 	modifier = {
 		ship_starting_experience_add = 30
-		admiral_exp_gain = 0.03
+		admiral_exp_gain = 0.05
 	}
 }
 
@@ -367,23 +401,30 @@ councilor_eager_explorers = {
 }
 
 councilor_efficient_bureaucracy = {
-	leader_class = { governor }
+	leader_class = { general governor }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_efficient_bureaucracy
 	modifier = {
-		planet_administrators_produces_mult = 0.02
+		planet_administrators_produces_mult = 0.025
 	}
 }
 
 councilor_environmentalist = {
-	leader_class = { scientist }
+	leader_class = { governor scientist }
 	is_leader_possible = {
-		leader_class = scientist
+		OR = {
+			leader_class = governor
+			leader_class = scientist
+		}
 	}
 	civic = civic_environmentalist
 	modifier = {
+		planet_districts_upkeep_mult = -0.015
 		pop_amenities_usage_mult = -0.015
 	}
 }
@@ -395,15 +436,16 @@ councilor_exalted_priesthood = {
 	}
 	civic = civic_exalted_priesthood
 	modifier = {
-		planet_priests_upkeep_mult = -0.02
+		planet_priests_produces_mult = 0.025
 	}
 }
 
 councilor_fanatic_purifiers = {
-	leader_class = { admiral governor }
+	leader_class = { admiral general governor }
 	is_leader_possible = {
 		OR = {
 			leader_class = admiral
+			leader_class = general
 			leader_class = governor
 		}
 	}
@@ -414,9 +456,12 @@ councilor_fanatic_purifiers = {
 }
 
 councilor_feudal_realm = {
-	leader_class = { general }
+	leader_class = { general governor }
 	is_leader_possible = {
-		leader_class = general
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_feudal_realm
 	custom_tooltip = "councilor_feudal_realm_custom_modifier_desc"
@@ -429,19 +474,22 @@ councilor_free_haven = {
 	}
 	civic = civic_free_haven
 	modifier = {
-		empire_size_districts_mult = -0.035
+		empire_size_districts_mult = -0.015
 		planet_districts_upkeep_mult = -0.03
 	}
 }
 
 councilor_functional_architecture = {
-	leader_class = { governor }
+	leader_class = { general governor }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_functional_architecture
 	modifier = {
-		planet_building_build_speed_mult = 0.02
+		planet_building_build_speed_mult = 0.05
 	}
 }
 
@@ -452,6 +500,7 @@ councilor_idealistic_foundation = {
 	}
 	civic = civic_idealistic_foundation
 	modifier = {
+		planet_decision_enact_speed_mult = 0.025
 		pop_amenities_usage_mult = -0.015
 	}
 }
@@ -466,9 +515,13 @@ councilor_idyllic_bloom = {
 }
 
 councilor_imperial_cult = {
-	leader_class = { governor }
+	leader_class = { admiral general governor }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = admiral
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_imperial_cult
 	modifier = {
@@ -486,15 +539,18 @@ councilor_inwards_perfection = {
 	}
 	civic = civic_inwards_perfection
 	modifier = {
-		shipclass_military_station_damage_mult = 0.03
-		shipclass_military_station_hull_mult = 0.03
+		shipclass_military_station_damage_mult = 0.05
+		shipclass_military_station_hull_mult = 0.05
 	}
 }
 
 councilor_memorialist = {
-	leader_class = { governor }
+	leader_class = { governor scientist }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = governor
+			leader_class = scientist
+		}
 	}
 	civic = civic_memorialist
 	modifier = {
@@ -513,6 +569,7 @@ councilor_memory_vaults = {
 		leaders_cost_mult = -0.02
 	}
 }
+
 councilor_merchant_guilds = {
 	leader_class = { governor }
 	is_leader_possible = {
@@ -557,14 +614,17 @@ councilor_nationalistic_zeal = {
 	}
 	civic = civic_nationalistic_zeal
 	modifier = {
-		country_naval_cap_mult = 0.015
+		country_naval_cap_mult = 0.025
 	}
 }
 
 councilor_parliamentary_system = {
-	leader_class = { governor }
+	leader_class = { general governor }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_parliamentary_system
 	modifier = {
@@ -584,7 +644,7 @@ councilor_philosopher_king = {
 	}
 	civic = civic_philosopher_king
 	modifier = {
-		councilor_exp_gain = 0.03
+		councilor_exp_gain = 0.05
 	}
 }
 
@@ -601,17 +661,22 @@ councilor_pleasure_seekers = {
 	civic = civic_pleasure_seekers
 	modifier = {
 		pop_cat_ruler_happiness = 0.04
+		pop_growth_speed = 0.01
 	}
 }
 
 councilor_police_state = {
-	leader_class = { general }
+	leader_class = { general governor }
 	is_leader_possible = {
-		leader_class = general
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_police_state
 	modifier = {
 		pop_government_ethic_attraction = 0.05
+		planet_soldiers_unity_produces_mult = 0.025
 	}
 }
 
@@ -651,7 +716,8 @@ councilor_relentless_industrialists = {
 	}
 	civic = civic_relentless_industrialists
 	modifier = {
-		planet_miners_minerals_produces_mult = 0.02
+		planet_metallurgists_produces_mult = 0.01
+		planet_artisans_produces_mult = 0.01
 	}
 }
 
@@ -665,7 +731,8 @@ councilor_scavengers = {
 	}
 	civic = civic_scavengers
 	modifier = {
-		salvage_chance_add = 0.01
+		salvage_chance_add = 0.05
+		country_starbase_capacity_add = 1
 	}
 }
 
@@ -681,7 +748,7 @@ councilor_shadow_council = {
 	}
 	civic = civic_shadow_council
 	modifier = {
-		pop_category_rulers_upkeep_mult = -0.04
+		pop_category_rulers_upkeep_mult = -0.02
 	}
 }
 
@@ -720,7 +787,8 @@ councilor_technocracy = {
 	}
 	civic = civic_technocracy
 	modifier = {
-		planet_researchers_upkeep_mult = -0.02
+		all_technology_research_speed = 0.01
+		planet_researchers_upkeep_mult = -0.01
 	}
 }
 
@@ -764,7 +832,7 @@ councilor_heroic_tales = {
 	civic = civic_heroic_tales
 	modifier = {
 		pop_government_ethic_attraction = 0.02
-		species_leader_exp_gain = 0.02
+		species_leader_exp_gain = 0.025
 	}
 }
 
@@ -779,7 +847,7 @@ councilor_dystopian_society = {
 	civic = civic_dystopian_society
 	modifier = {
 		pop_cat_ruler_happiness = 0.01
-		planet_enforcers_unity_produces_add = 0.2
+		planet_enforcers_unity_produces_add = 0.5
 	}
 }
 
@@ -836,7 +904,7 @@ councilor_private_healthcare_corporate = {
 	}
 	civic = civic_private_healthcare_corporate
 	modifier = {
-		pop_growth_speed = 0.01
+		pop_growth_speed = 0.015
 		pop_environment_tolerance = 0.01
 	}
 }
@@ -853,44 +921,55 @@ councilor_brand_loyalty = {
 }
 
 councilor_corporate_anglers = {
-	leader_class = { governor }
+	leader_class = { general governor }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_corporate_anglers
 	custom_tooltip = "councilor_corporate_anglers_custom_modifier_desc"
 }
 
 councilor_corporate_ascensionists = {
-	leader_class = { governor }
+	leader_class = { admiral general scientist governor }
 	is_leader_possible = {
-		leader_class = governor
+		always = yes
 	}
 	civic = civic_corporate_ascensionists
 	modifier = {
-		country_unity_produces_mult = 0.02
+		country_unity_produces_mult = 0.025
 	}
 }
 
 councilor_corporate_catalytic_processing = {
-	leader_class = { scientist }
+	leader_class = { governor scientist }
 	is_leader_possible = {
-		leader_class = scientist 
+		OR = {
+			leader_class = governor
+			leader_class = scientist
+		}
 	}
 	civic = civic_corporate_catalytic_processing
 	modifier = {
-		planet_metallurgists_upkeep_mult = -0.02
+		planet_metallurgists_upkeep_mult = -0.01
+		planet_artisans_physics_research_produces_add = 0.1
 	}
 }
 
 councilor_corporate_crafters = {
-	leader_class = { governor }
+	leader_class = { general governor }
 	is_leader_possible = {
-		leader_class = governor
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_corporate_crafters
 	modifier = {
-		ship_armor_mult = 0.01
+		ship_armor_mult = 0.025
+		country_engineering_tech_research_speed = 0.01
 	}
 }
 
@@ -918,7 +997,8 @@ councilor_corporate_scavengers = {
 	}
 	civic = civic_corporate_scavengers
 	modifier = {
-		salvage_chance_add = 0.01
+		salvage_chance_add = 0.05
+		country_starbase_capacity_add = 1
 	}
 }
 
@@ -932,7 +1012,8 @@ councilor_corporate_relentless_industrialists = {
 	}
 	civic = civic_corporate_relentless_industrialists
 	modifier = {
-		planet_miners_minerals_produces_mult = 0.02
+		planet_metallurgists_produces_mult = 0.01
+		planet_artisans_produces_mult = 0.01
 	}
 }
 
@@ -949,10 +1030,13 @@ councilor_corporate_toxic_baths = {
 }
 
 councilor_criminal_heritage = {
-	leader_class = { general }
+	leader_class = { general governor }
 
 	is_leader_possible = {
-		leader_class = general 
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 
 	civic = civic_criminal_heritage
@@ -969,7 +1053,7 @@ councilor_franchising = {
 	}
 	civic = civic_franchising
 	modifier = {
-		empire_size_branch_office_mult = -0.02
+		empire_size_branch_office_mult = -0.01
 	}
 }
 
@@ -983,13 +1067,13 @@ councilor_death_cult_corporate = {
 }
 
 councilor_free_traders = {
-	leader_class = { governor }
+	leader_class = { admiral general scientist governor }
 	is_leader_possible = {
-		leader_class = governor
+		always = yes
 	}
 	civic = civic_free_traders
 	modifier = {
-		commercial_pact_mult = 0.02
+		commercial_pact_mult = 0.025
 	}
 }
 
@@ -1003,9 +1087,12 @@ councilor_gospel_of_the_masses = {
 }
 
 councilor_indentured_assets = {
-	leader_class = { general }
+	leader_class = { general governor }
 	is_leader_possible = {
-		leader_class = general
+		OR = {
+			leader_class = general
+			leader_class = governor
+		}
 	}
 	civic = civic_indentured_assets
 	custom_tooltip = "councilor_indentured_assets_custom_modifier_desc"
@@ -1019,17 +1106,22 @@ councilor_media_conglomerate = {
 	civic = civic_media_conglomerate
 	modifier = {
 		pop_government_ethic_attraction = 0.05
+		planet_entertainers_society_research_produces_add = 0.2
 	}
 }
 
 councilor_naval_contractors = {
-	leader_class = { admiral }
+	leader_class = { admiral general }
 	is_leader_possible = {
-		leader_class = admiral 
+		OR = {
+			leader_class = admiral 
+			leader_class = general
+		}
 	}
 	civic = civic_naval_contractors
 	modifier = {
 		starbase_shipyard_build_cost_mult = -0.01
+		planet_soldiers_unity_produces_add = 0.1
 	}
 }
 
@@ -1045,9 +1137,12 @@ councilor_permanent_employment = {
 }
 
 councilor_private_military_companies = {
-	leader_class = { general }
+	leader_class = { admiral general }
 	is_leader_possible = {
-		leader_class = general 
+		OR = {
+			leader_class = admiral
+			leader_class = general
+		}
 	}
 	civic = civic_private_military_companies
 	custom_tooltip = "councilor_private_military_companies_custom_modifier_desc"
@@ -1082,9 +1177,9 @@ councilor_privatized_exploration = {
 }
 
 councilor_public_relations_specialists = {
-	leader_class = { general }
+	leader_class = { admiral general scientist governor }
 	is_leader_possible = {
-		leader_class = general 
+		always = yes
 	}
 	civic = civic_public_relations_specialists
 	modifier = {
@@ -1093,9 +1188,9 @@ councilor_public_relations_specialists = {
 }
 
 councilor_ruthless_competition = {
-	leader_class = { scientist }
+	leader_class = { admiral general scientist governor }
 	is_leader_possible = {
-		leader_class = scientist 
+		always = yes
 	}
 	civic = civic_ruthless_competition
 	modifier = {
@@ -1105,9 +1200,10 @@ councilor_ruthless_competition = {
 }
 
 councilor_trading_posts = {
-	leader_class = { admiral }
+	leader_class = { admiral scientist }
 	is_leader_possible = {
 		leader_class = admiral 
+		leader_class = scientist
 	}
 	civic = civic_trading_posts
 	custom_tooltip = "councilor_trading_posts_custom_modifier_desc"
@@ -1127,7 +1223,7 @@ councilor_gestalt_governor = {
 	}	
 	modifier = {
 		planet_jobs_produces_mult = 0.02
-		leader_governors_unity_produces_add = 5
+		leader_governors_unity_produces_add = 2.5
 	}
 	icon = "GFX_icon_councilor_ruler"
 	required = yes
@@ -1144,7 +1240,7 @@ councilor_gestalt_scientist = {
 	modifier = {
 		all_technology_research_speed = 0.02
 		assist_research_mult = 0.02
-		leader_scientists_unity_produces_add = 5
+		leader_scientists_unity_produces_add = 2.5
 	}
 	icon = "GFX_icon_councilor_research"
 	required = yes
@@ -1163,7 +1259,7 @@ councilor_gestalt_admiral = {
 		starbase_module_build_speed_mult = 0.02
 		starbase_building_build_speed_mult = 0.02
 		starbase_upgrade_speed_mult = 0.02
-		leader_admirals_unity_produces_add = 5
+		leader_admirals_unity_produces_add = 2.5
 	}
 	icon = "GFX_icon_councilor_defense"
 	required = yes
@@ -1180,7 +1276,7 @@ councilor_gestalt_general = {
 	modifier = {
 		planet_crime_no_happiness_add = -3
 		planet_army_build_speed_mult = 0.1
-		leader_generals_unity_produces_add = 5
+		leader_generals_unity_produces_add = 2.5
 	}
 	icon = "GFX_icon_councilor_ruler"
 	required = yes

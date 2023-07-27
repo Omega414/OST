@@ -7,3 +7,5 @@
 @ost_b1_produces = 5
 @ost_b2_produces = 10
 @ost_b3_produces = 20
+
+@ost_faction_influence = 0.001

@@ -314,6 +314,21 @@ district_city = {
 		}
 		text = job_clerk_effect_desc
 	}
+
+	ai_resource_production = {
+		alloys = 20
+		physics_research = 20
+		society_research = 20
+		engineering_research = 20
+		trigger = {
+			AND = {
+				free_building_slots <= 1
+				free_housing <= 0
+			}
+		}
+	}
+
+	ai_estimate_without_unemployment = yes
 }
 
 district_hive = {
@@ -446,6 +461,21 @@ district_hive = {
 			planet_housing_add = 1
 		}
 	}
+
+	ai_resource_production = {
+		alloys = 20
+		physics_research = 20
+		society_research = 20
+		engineering_research = 20
+		trigger = {
+			AND = {
+				free_building_slots <= 1
+				free_housing <= 0
+			}
+		}
+	}
+
+	ai_estimate_without_unemployment = yes
 }
 
 district_nexus = {
@@ -600,6 +630,21 @@ district_nexus = {
 			planet_housing_add = 1
 		}
 	}
+
+	ai_resource_production = {
+		alloys = 20
+		physics_research = 20
+		society_research = 20
+		engineering_research = 20
+		trigger = {
+			AND = {
+				free_building_slots <= 1
+				free_housing <= 0
+			}
+		}
+	}
+
+	ai_estimate_without_unemployment = yes
 }
 
 district_industrial = {
