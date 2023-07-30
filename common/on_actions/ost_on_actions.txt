@@ -7,8 +7,8 @@ on_game_start = {
 # this = country
 on_monthly_pulse_country = {
 	events = {
-		osa_sprawl.1
-		osa_sprawl.2
+		ost_sprawl.1
+		ost_sprawl.2
 	}
 }
 
@@ -19,7 +19,7 @@ on_monthly_pulse_country = {
 # FromFromFrom = planet
 on_army_killed_in_combat = {
 	events = {
-		imperator.1
+		ost_imperator.1
 	}
 }
 
@@ -28,7 +28,7 @@ on_army_killed_in_combat = {
 # From = army
 on_army_killed_no_combat = {
 	events = {
-		imperator.1
+		ost_imperator.1
 	}
 }
 
@@ -36,16 +36,16 @@ on_army_killed_no_combat = {
 # scope: country, from: leader
 on_leader_hired = {
 	events = {
-		osa_civic.1
-		osa_civic.3
-		osa_civic.5
-		osa_civic.7
-		osa_civic.9
-		tr_academy.1
-		tr_academy.2
-		tr_academy.3
-		tr_academy.4
-		tr_academy.5
+		ost_civic.1
+		ost_civic.3
+		ost_civic.5
+		ost_civic.7
+		ost_civic.9
+		ost_academy.1
+		ost_academy.2
+		ost_academy.3
+		ost_academy.4
+		ost_academy.5
 	}
 	random_events = {
 	}
@@ -55,20 +55,20 @@ on_leader_hired = {
 # THIS = country
 on_post_government_changed = {
 	events = {
-		osa_civic.2
-		osa_civic.4
-		osa_civic.6
-		osa_civic.8
-		osa_civic.10
+		ost_civic.2
+		ost_civic.4
+		ost_civic.6
+		ost_civic.8
+		ost_civic.10
 	}
 }
 
 on_game_start_country = {
 	events = {
-		osa_civic.2
-		osa_civic.4
-		osa_civic.6
-		osa_civic.8
-		osa_civic.10
+		ost_civic.2
+		ost_civic.4
+		ost_civic.6
+		ost_civic.8
+		ost_civic.10
 	}
 }

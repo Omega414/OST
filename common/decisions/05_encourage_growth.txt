@@ -32,7 +32,7 @@ decision_planet_food_boost = {
 	effect = {
 		add_modifier = { 
 			modifier = "planet_food_boost"
-			days = 3600
+			days = 7200
 			clear_on_owner_change = yes
 		}
 	}
@@ -93,7 +93,7 @@ decision_planet_mineral_boost = {
 	effect = {
 		add_modifier = {
 			modifier = "planet_food_boost"
-			days = 3600
+			days = 7200
 			clear_on_owner_change = yes
 		}
 	}

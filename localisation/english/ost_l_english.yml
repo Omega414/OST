@@ -17,8 +17,8 @@ ap_galactic_reconnaissance:0 "Galactic Reconnaissance"
 ap_galactic_reconnaissance_desc:0 "Nothing in the galaxy escapes our gaze."
 ap_galactic_ascendency:0 "Galactic Ascendency"
 ap_galactic_ascendency_desc:0 "The reach of our dominion knows no bounds."
-mod_osa_influence_sprawl:0 "Galactic Ascendency"
-mod_osa_influence_sprawl_desc:0 "The reach of our dominion knows no bounds."
+mod_ost_influence_sprawl:0 "Galactic Ascendency"
+mod_ost_influence_sprawl_desc:0 "The reach of our dominion knows no bounds."
 ap_concerted_effort:0 "Concerted Effort"
 ap_concerted_effort_desc:0 "The collective working as one to accomplish a common goal."
 ap_concerted_effort_tooltip:0 "£physics£ £society£ £engineering£ §YResearch Points§! from all £pop£ §YPops§! increased by §G+0.5§!\n£unity£ §YUnity§! from all £pop£ §YPops§! increased by §G+1§!"
@@ -35,8 +35,8 @@ trait_add_the_flesh_is_weak:0 "§RRequires §Y$ap_the_flesh_is_weak$§! Ascensio
 mod_damage_vs_country_type_enclave_mercenary_mult:0 "Damage vs Mercenary Enclaves"
 
 # Machine Passives
-mod_osa_machine_influence_sprawl:0 "Machine Power Projection"
-mod_osa_machine_influence_sprawl_desc:0 "Machines have really scary self-aware fleets. The more fleets they have the more influence they generate."
+mod_ost_machine_influence_sprawl:0 "Machine Power Projection"
+mod_ost_machine_influence_sprawl_desc:0 "Machines have really scary self-aware fleets. The more fleets they have the more influence they generate."
 
 ####################################
 # Decisions
@@ -46,121 +46,204 @@ mod_osa_machine_influence_sprawl_desc:0 "Machines have really scary self-aware f
 # Millitary
 ################################################################
 
-osa_decision_military_moonbase:0 "Designate Military Moonbase"
-osa_decision_military_moonbase_desc:0 "This planetary decision boosts the colony's §Ymilitary defenses§!."
+decision_ost_military_moonbase:0 "Designate Military Moonbase"
+decision_ost_military_moonbase_desc:0 "This planetary decision boosts the colony's §Ymilitary defenses§!."
 
-osa_decision_military_moonbase_decom:0 "Revoke Military Designation"
-osa_decision_military_moonbase_decom_desc:0 "This planetary decision removes the military moonbase designation."
+decision_ost_military_moonbase_decom:0 "Revoke Military Designation"
+decision_ost_military_moonbase_decom_desc:0 "This planetary decision removes the military moonbase designation."
 
-osa_decision_titan_garrison:0 "Deploy Titan Garrison"
-osa_decision_titan_garrison_desc:0 "Deploys a permanent titan garrison to defend the planet."
-osa_decision_titan_garrison_effects:0 "Deploys up to two §Y$defense_imperator_titan$§! armies on the planet. Can be used to replenish combat losses."
+decision_ost_titan_garrison:0 "Deploy Titan Garrison"
+decision_ost_titan_garrison_desc:0 "Deploys a permanent titan garrison to defend the planet."
+decision_ost_titan_garrison_effects:0 "Deploys up to two §Y$defense_imperator_titan$§! armies on the planet. Can be used to replenish combat losses."
 
 ################################################################
 # Food
 ################################################################
 
-mod_osa_food_subsidies:0 "Local Agriculture Subsidies"
-mod_osa_food_subsidies_desc:0 "Our planet receives a temporary £food£ §Gfood§! production bonus."
+pm_ost_food_subsidies:0 "Local Agriculture Subsidies"
+pm_ost_food_subsidies_desc:0 "Our planet receives a temporary £food£ §Gfood§! production bonus."
 
-osa_decision_food_subsidies:0 "Local Agriculture Subsidies"
-osa_decision_food_subsidies_desc:0 "This planetary decision boosts the colony's §Yagricultural facilities§!."
+decision_ost_food_subsidies:0 "Local Agriculture Subsidies"
+decision_ost_food_subsidies_desc:0 "This planetary decision boosts the colony's §Yagricultural facilities§!."
 
-mod_osa_food_subsidies_gestalt:0 "Biomatter Proliferation Protocols"
-mod_osa_food_subsidies_gestalt_desc:0 "$mod_osa_food_subsidies_desc$"
+pm_ost_food_subsidies_gestalt:0 "Biomatter Proliferation Protocols"
+pm_ost_food_subsidies_gestalt_desc:0 "$pm_ost_food_subsidies_desc$"
 
-osa_decision_food_subsidies_gestalt:0 "Directive: Biomatter Proliferation Protocols"
-osa_decision_food_subsidies_gestalt_desc:0 "$osa_decision_food_subsidies_desc$"
+decision_ost_food_subsidies_gestalt:0 "Directive: Biomatter Proliferation Protocols"
+decision_ost_food_subsidies_gestalt_desc:0 "$decision_ost_food_subsidies_desc$"
 
 ################################################################
 # Minerals
 ################################################################
 
-mod_osa_minerals_subsidies:0 "Local Mining Subsidies"
-mod_osa_minerals_subsidies_desc:0 "Our planet receives a temporary £minerals£ §Gminerals§! production bonus."
+pm_ost_minerals_subsidies:0 "Local Mining Subsidies"
+pm_ost_minerals_subsidies_desc:0 "Our planet receives a temporary £minerals£ §Gminerals§! production bonus."
 
-osa_decision_minerals_subsidies:0 "Local Mining Subsidies"
-osa_decision_minerals_subsidies_desc:0 "This planetary decision boosts the colony's §Ymining facilities§!."
+decision_ost_minerals_subsidies:0 "Local Mining Subsidies"
+decision_ost_minerals_subsidies_desc:0 "This planetary decision boosts the colony's §Ymining facilities§!."
 
-mod_osa_minerals_subsidies_gestalt:0 "Geological Resource Consolidation"
-mod_osa_minerals_subsidies_gestalt_desc:0 "$mod_osa_minerals_subsidies_desc$"
+pm_ost_minerals_subsidies_gestalt:0 "Geological Resource Consolidation"
+pm_ost_minerals_subsidies_gestalt_desc:0 "$pm_ost_minerals_subsidies_desc$"
 
-osa_decision_minerals_subsidies_gestalt:0 "Directive: Geological Resource Consolidation"
-osa_decision_minerals_subsidies_gestalt_desc:0 "$osa_decision_minerals_subsidies_desc$"
+decision_ost_minerals_subsidies_gestalt:0 "Directive: Geological Resource Consolidation"
+decision_ost_minerals_subsidies_gestalt_desc:0 "$decision_ost_minerals_subsidies_desc$"
 
 ################################################################
 # Energy
 ################################################################
 
-mod_osa_energy_subsidies:0 "Local Energy Subsidies"
-mod_osa_energy_subsidies_desc:0 "Our planet receives a temporary £energy£ §Genergy§! production bonus."
+pm_ost_energy_subsidies:0 "Local Energy Subsidies"
+pm_ost_energy_subsidies_desc:0 "Our planet receives a temporary £energy£ §Genergy§! production bonus."
 
-osa_decision_energy_subsidies:0 "Local Energy Subsidies"
-osa_decision_energy_subsidies_desc:0 "This planetary decision boosts the colony's §energy facilities§!."
+decision_ost_energy_subsidies:0 "Local Energy Subsidies"
+decision_ost_energy_subsidies_desc:0 "This planetary decision boosts the colony's §Yenergy facilities§!."
 
-mod_osa_energy_subsidies_gestalt:0 "Enhanced Energy Assimilation"
-mod_osa_energy_subsidies_gestalt_desc:0 "$mod_osa_energy_subsidies_desc$"
+pm_ost_energy_subsidies_gestalt:0 "Enhanced Energy Assimilation"
+pm_ost_energy_subsidies_gestalt_desc:0 "$pm_ost_energy_subsidies_desc$"
 
-osa_decision_energy_subsidies_gestalt:0 "Directive: Enhanced Energy Assimilation"
-osa_decision_energy_subsidies_gestalt_desc:0 "$osa_decision_energy_subsidies_desc$"
+decision_ost_energy_subsidies_gestalt:0 "Directive: Enhanced Energy Assimilation"
+decision_ost_energy_subsidies_gestalt_desc:0 "$decision_ost_energy_subsidies_desc$"
 
 ################################################################
 # Alloys
 ################################################################
 
-mod_osa_alloy_subsidies:0 "Local Metallurgy Subsidies"
-mod_osa_alloy_subsidies_desc:0 "Our planet receives a temporary £alloys£ §Galloy§! production bonus."
+pm_ost_alloy_subsidies:0 "Local Metallurgy Subsidies"
+pm_ost_alloy_subsidies_desc:0 "Our planet receives a temporary £alloys£ §Galloy§! production bonus."
 
-osa_decision_alloy_subsidies:0 "Local Metallurgy Subsidies"
-osa_decision_alloy_subsidies_desc:0 "This planetary decision boosts the colony's §Ymetallurgy facilities§!."
+decision_ost_alloy_subsidies:0 "Local Metallurgy Subsidies"
+decision_ost_alloy_subsidies_desc:0 "This planetary decision boosts the colony's §Ymetallurgy facilities§!."
 
-mod_osa_alloy_subsidies_gestalt:0 "Enhanced Refinement Applications"
-mod_osa_alloy_subsidies_gestalt_desc:0 "$mod_osa_alloy_subsidies_desc$"
+pm_ost_alloy_subsidies_gestalt:0 "Enhanced Refinement Applications"
+pm_ost_alloy_subsidies_gestalt_desc:0 "$pm_ost_alloy_subsidies_desc$"
 
-osa_decision_alloy_subsidies_gestalt:0 "Directive: Enhanced Refinement Applications"
-osa_decision_alloy_subsidies_gestalt_desc:0 "$osa_decision_alloy_subsidies_desc$"
-
-################################################################
-# Forge World
-################################################################
-
-mod_osa_designate_forgeworld:0 "Forge World"
-mod_osa_designate_forgeworld_desc:0 "This planet has been optimized for alloy production above all else."
-
-osa_decision_designate_forgeworld:0 "Designate Forge World"
-osa_decision_designate_forgeworld_desc:0 "Devote this planet entirely to alloy production."
-
-osa_decision_designate_forgeworld_remove:0 "Revoke Forge World Designation"
-osa_decision_designate_forgeworld_remove_desc:0 "This planetary decision removes the forge world designation."
-
-################################################################
-# Syndicate Alloy Production
-################################################################
-osa_decision_syndicate_alloy:0 "Syndicate Alloy Production"
-osa_decision_syndicate_alloy_desc:1 "Crime syndicates throughout the galaxy offer a large sum of alloys to anyone willing to pay. Send a detachment to meet with these contacts and work out a deal."
-osa_decision_syndicate_alloy_effects_short:1 "Trade resources to a crime syndicate for 1000 alloys"
+decision_ost_alloy_subsidies_gestalt:0 "Directive: Enhanced Refinement Applications"
+decision_ost_alloy_subsidies_gestalt_desc:0 "$decision_ost_alloy_subsidies_desc$"
 
 ################################################################
 # Unity
 ################################################################
 
-mod_osa_unity_subsidies:0 "Local Uniformity Subsidies"
-mod_osa_unity_subsidies_desc:0 "Our planet receives a temporary £unity£ §Gunity§! production bonus."
+pm_ost_unity_subsidies:0 "Local Uniformity Subsidies"
+pm_ost_unity_subsidies_desc:0 "Our planet receives a temporary £unity£ §Gunity§! production bonus."
 
-osa_decision_unity_subsidies:0 "Local Uniformity Subsidies"
-osa_decision_unity_subsidies_desc:0 "This planetary decision boosts the colony's  £unity §YUnity§!."
+decision_ost_unity_subsidies:0 "Local Uniformity Subsidies"
+decision_ost_unity_subsidies_desc:0 "This planetary decision boosts the colony's £unity£ §YUnity§!."
 
-mod_osa_unity_subsidies_gestalt:0 "Unanimity Protocols"
-mod_osa_unity_subsidies_gestalt_desc:0 "$mod_osa_unity_subsidies_desc$"
+pm_ost_unity_subsidies_gestalt:0 "Unanimity Protocols"
+pm_ost_unity_subsidies_gestalt_desc:0 "$pm_ost_unity_subsidies_desc$"
 
-osa_decision_unity_subsidies_gestalt:0 "Directive: Unanimity Protocols"
-osa_decision_unity_subsidies_gestalt_desc:0 "$osa_decision_unity_subsidies_desc$"
+decision_ost_unity_subsidies_gestalt:0 "Directive: Unanimity Protocols"
+decision_ost_unity_subsidies_gestalt_desc:0 "$decision_ost_unity_subsidies_desc$"
+
+################################################################
+# Research
+################################################################
+
+pm_ost_research_subsidies:0 "Local Research Subsidies"
+pm_ost_research_subsidies_desc:0 "Our planet receives a temporary £physics£ £society£ £engineering£ §YResearch§! production bonus."
+
+decision_ost_research_subsidies:0 "Local Research Subsidies"
+decision_ost_research_subsidies_desc:0 "This planetary decision boosts the colony's £physics£ £society£ £engineering£ §YResearch§!."
+
+pm_ost_research_subsidies_gestalt:0 "Research Protocols"
+pm_ost_research_subsidies_gestalt_desc:0 "$pm_ost_research_subsidies_desc$"
+
+decision_ost_research_subsidies_gestalt:0 "Directive: Research Protocols"
+decision_ost_research_subsidies_gestalt_desc:0 "$decision_ost_research_subsidies_desc$"
+
+
+################################################################
+# Forge World
+################################################################
+
+pm_ost_designate_forgeworld:0 "Forge World"
+pm_ost_designate_forgeworld_desc:0 "This planet has been optimized for alloy production above all else."
+
+decision_ost_designate_forgeworld:0 "Designate Forge World"
+decision_ost_designate_forgeworld_desc:0 "Devote this planet entirely to alloy production."
+
+decision_ost_designate_forgeworld_remove:0 "Revoke Forge World Designation"
+decision_ost_designate_forgeworld_remove_desc:0 "This planetary decision removes the forge world designation."
+
+################################################################
+# Syndicate Alloy Production
+################################################################
+decision_ost_syndicate_alloy:0 "Syndicate Alloy Production"
+decision_ost_syndicate_alloy_desc:1 "Crime syndicates throughout the galaxy offer a large sum of alloys to anyone willing to pay. Send a detachment to meet with these contacts and work out a deal."
+decision_ost_syndicate_alloy_effects_short:1 "Trade resources to a crime syndicate for 1000 alloys"
 
 ################################################################
 # Subsidy Revokation
 ################################################################
-osa_decision_revoke_subsidies:0 "Revoke All Planetary Subsidies"
-osa_decision_revoke_subsidies_desc:0 "Revoke all currently active planetary subsidies."
+decision_ost_revoke_subsidies:0 "Revoke All Planetary Subsidies"
+decision_ost_revoke_subsidies_desc:0 "Revoke all currently active planetary subsidies."
+
+################################################################
+# Planet Management
+################################################################
+decision_ost_planet_management:0 "Planet Management"
+decision_ost_planet_management_desc:0 "Assign and modify planet subsidies and designations."
+decision_ost_planet_management_tooltip:0 "Opens the planet management window. This is used to assign local subsidies and designations."
+
+decision_ost_planet_management_gestalt:0 "Planet Management"
+decision_ost_planet_management_gestalt_desc:0 "Assign and modify planet directives and designations."
+
+# Planet Management Menu
+ost_colony.10.title:0 "Planet Management"
+ost_colony_subsidies:0 "Subsidies"
+ost_colony_designations:0 "Designations"
+ost_colony_back:0 "Back"
+ost_colony_close:0 "Close"
+ost_colony.11.details:0 "§ROnly one subsidy may be active at a time. Any existing subsidies will be removed.§!"
+ost_colony.11.food:0 "£food£ $pm_ost_food_subsidies$"
+ost_colony.11.minerals:0 "£minerals£ $pm_ost_minerals_subsidies$"
+ost_colony.11.energy:0 "£energy£ $pm_ost_energy_subsidies$"
+ost_colony.11.alloys:0 "£alloys£ $pm_ost_alloy_subsidies$"
+ost_colony.11.unity:0 "£unity£ $pm_ost_unity_subsidies$"
+ost_colony.11.research:0 "£physics_research£ £society_research£ £engineering_research£ $pm_ost_research_subsidies$"
+ost_colony.11.revoke:0 "Revoke all Subsidies"
+ost_colony.11.revoke.desc:0 "§YRemoves all subsidy planet modifiers§!"
+ost_colony.12.forgeworld:0 "£job_foundry£ $decision_ost_designate_forgeworld$"
+ost_colony.12.forgeworld.revoke:0 "£trigger_no£ $decision_ost_designate_forgeworld_remove$"
+ost_colony.12.militarymoon:0 "£job_osa_commando£ $decision_ost_military_moonbase$"
+ost_colony.12.militarymoon.details:0 "Allows construction of §Yspecial military districts§!"
+ost_colony.12.militarymoon.revoke:0 "£trigger_no£ $decision_ost_military_moonbase_decom$"
+ost_colony.12.militarymoon.details.revoke:0 "Revokes the ability to build §Yspecial military districts§!"
+ost_colony.12.martiallaw:0 "£job_enforcer£ $decision_martial_law$"
+ost_colony.12.martiallaw.revoke:0 "£trigger_no£ $decision_end_martial_law$"
+ost_colony.12.popcontrols:0 "£trigger_no££job_healthcare£ $decision_enact_population_control$"
+ost_colony.12.popcontrols.revoke:0 "£trigger_no£ $decision_end_population_control$"
+ost_colony.12.robotassembly:0 "£trigger_no££job_roboticist£ $decision_enact_robot_assembly_control$"
+ost_colony.12.robotassembly.revoke:0 "£trigger_no£ $decision_end_robot_assembly_control$"
+ost_colony.12.discouragegrowth:0 "£trigger_no££job_healthcare£ $decision_discourage_growth$"
+ost_colony.12.discouragegrowth.revoke:0 "£trigger_no£ $decision_end_discourage_growth$"
+
+# Planet Management Menu (Gestalt)
+ost_colony.20.title:0 "Planet Management"
+ost_colony_subsidies_gestalt:0 "Directives"
+ost_colony_designations_gestalt:0 "Designations"
+ost_colony.21.details:0 "§ROnly one directive may be active at a time. Any existing directives will be removed.§!"
+ost_colony.21.food:0 "£food£ $pm_ost_food_subsidies_gestalt$"
+ost_colony.21.minerals:0 "£minerals£ $pm_ost_minerals_subsidies_gestalt$"
+ost_colony.21.energy:0 "£energy£ $pm_ost_energy_subsidies_gestalt$"
+ost_colony.21.alloys:0 "£alloys£ $pm_ost_alloy_subsidies_gestalt$"
+ost_colony.21.unity:0 "£unity£ $pm_ost_unity_subsidies_gestalt$"
+ost_colony.21.research:0 "£physics_research£ £society_research£ £engineering_research£ $pm_ost_research_subsidies_gestalt$"
+ost_colony.21.revoke:0 "Revoke all Directives"
+ost_colony.21.revoke.desc:0 "§YRemoves all directive planet modifiers§!"
+ost_colony.22.forgeworld:0 "£job_foundry£ $decision_ost_designate_forgeworld$"
+ost_colony.22.forgeworld.revoke:0 "£trigger_no£ $decision_ost_designate_forgeworld_remove$"
+ost_colony.22.militarymoon:0 "£job_osa_commando£ $decision_ost_military_moonbase$"
+ost_colony.22.militarymoon.details:0 "Allows construction of §Yspecial military districts§!"
+ost_colony.22.militarymoon.revoke:0 "£trigger_no£ $decision_ost_military_moonbase_decom$"
+ost_colony.22.militarymoon.details.revoke:0 "Revokes the ability to build §Yspecial military districts§!"
+ost_colony.22.martiallawmachine:0 "£job_patrol_drone£ $decision_martial_law_machine$"
+ost_colony.22.martiallawmachine.revoke:0 "£trigger_no£ $decision_end_martial_law_machine$"
+ost_colony.22.martiallawhive:0 "£job_patrol_drone£ $decision_martial_law_hive$"
+ost_colony.22.martiallawhive.revoke:0 "£trigger_no£ $decision_end_martial_law_hive$"
+ost_colony.22.popcontrols:0 "£trigger_no££job_replicator£ £job_spawning_drone£ $decision_enact_population_control_gestalt$"
+ost_colony.22.popcontrols.revoke:0 "£trigger_no£ $decision_end_population_control_gestalt$"
 
 ################################################################
 # Encourage Planetary Growth

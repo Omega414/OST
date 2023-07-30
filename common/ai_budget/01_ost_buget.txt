@@ -1,0 +1,139 @@
+## Categories used in this file must have use_for_ai_budget = yes defined in economic_categories ##
+## It is possible to have multiple entries with the same category and resource ##
+
+#################
+## Expenditure ##
+#################
+
+food_expenditure_buildings = {
+	resource = food
+	type = expenditure
+	category = planets
+
+	potential = {
+		country_uses_food = yes
+	}
+
+	weight = {
+		weight = 0.1
+	}
+}
+
+influence_expenditure_edicts = {
+	resource = influence
+	type = expenditure
+	category = edicts
+
+	potential = {
+		always = yes
+	}
+
+	weight = {
+		weight = 0.1
+	}
+
+	desired_min = {
+		base = 100
+	}
+
+	desired_max = {
+		base = 400
+	}
+}
+
+influence_expenditure_megastructures = {
+	resource = influence
+	type = expenditure
+	category = megastructures
+
+	potential = {
+		has_resource = {
+			type = influence
+			amount > 500
+		}
+		can_build_megastructures = yes
+	}
+
+	weight = {
+		weight = 0.1
+	}
+
+	# only used by construction sites, base cost is 300
+	desired_min = {
+		base = 75
+		modifier = {
+			add = 225
+			has_technology = tech_ring_world
+			NOT = {
+				any_owned_planet = { is_planet_class = pc_ringworld_habitable }
+			}
+		}
+	}
+	desired_max = {
+		base = 75
+		modifier = {
+			add = 225
+			has_technology = tech_ring_world
+		}
+	}
+}
+
+############
+## Upkeep ##
+############
+
+influence_upkeep_planets = {
+	resource = influence
+	type = upkeep
+	category = planets
+
+	potential = {
+		always = yes
+	}
+	
+	weight = {
+		weight = 0.1
+	}
+}
+
+food_upkeep_buildings = {
+    resource = food
+    type = upkeep
+    category = planets
+
+    potential = {
+		country_uses_food = yes
+    }
+    
+    weight = {
+        weight = 0.1
+    }
+}
+
+minerals_upkeep_starbases = {
+    resource = minerals
+    type = upkeep
+    category = starbases
+
+    potential = {
+        always = yes
+    }
+    
+    weight = {
+        weight = 0.1
+    }
+}
+
+food_upkeep_starbases = {
+    resource = food
+    type = upkeep
+    category = starbases
+
+    potential = {
+		country_uses_food = yes
+    }
+    
+    weight = {
+        weight = 0.1
+    }
+}

@@ -1,0 +1,1555 @@
+namespace = ost_colony
+
+planet_event = {
+	id = ost_colony.1
+	location = ROOT
+
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		habitable_planet = yes
+	}
+
+	immediate = {
+		# Planetary Weapon Batteries
+		remove_building = eac_building_planetary_proton_cannon
+		remove_building = eac_building_planetary_neutron_cannon
+		remove_building = eac_building_planetary_tachyon_cannon
+		remove_building = eac_building_coilgun_batteries
+		remove_building = eac_building_railgun_batteries
+		remove_building = eac_building_gauss_batteries
+		# Planetary Shield Generators
+		remove_building = building_planetary_shield_generator
+		remove_building = building_mem_planetary_shield_generator
+		remove_building = building_mem_planetary_shield_generator_heavy
+		remove_building = building_mem_planetary_shield_generator_orila
+		# Planetary Defense Fleets
+		remove_building = building_eac_pdf_base
+		planet_event = { id = mem_planetary_shields.2 }
+	}
+}
+
+# Planet Management
+planet_event = {
+    id = ost_colony.10
+    is_triggered_only = yes
+    title = ost_colony.10.title
+    picture = "GFX_ost_planet_management"
+
+    immediate = {
+    }
+
+# Subsidies
+	allow = {
+		exists = owner
+		owner = {
+			OR = {
+				has_tradition = tr_perseverance_finish
+				has_tradition = tr_mettle_finish
+				has_tradition = tr_radiance_finish
+				has_tradition = tr_metallurgy_finish
+				has_tradition = tr_solidarity_finish
+				has_tradition = tr_nanobiotics_finish
+			}
+		}
+	}
+    option = {
+        name = "ost_colony_subsidies"
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.11
+			}
+		}
+    }
+
+# Designations
+    option = {
+        name = "ost_colony_designations"
+
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.12
+			}
+		}
+    }
+
+# Close
+    option = {
+        name = "ost_colony_close"
+    }
+}
+
+# Subsidies
+planet_event = {
+    id = ost_colony.11
+    is_triggered_only = yes
+    title = ost_colony.10.title
+    picture = "GFX_ost_planet_management"
+
+    immediate = {
+    }
+
+# Food
+    option = {
+        name = "ost_colony.11.food"
+		allow = {
+			NOT = {
+				has_modifier = pm_ost_food_subsidies
+			}
+			exists = owner
+			owner = {
+				has_tradition = tr_perseverance_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2000
+				}
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.11.details
+		owner = {
+			add_resource = {
+				influence = -50
+				energy = -2000
+			}
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		add_modifier = {
+			modifier = "pm_ost_food_subsidies"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.11
+			}
+		}
+    }
+
+# Minerals
+    option = {
+        name = "ost_colony.11.minerals"
+		allow = {
+			NOT = {
+				has_modifier = pm_ost_minerals_subsidies
+			}
+			exists = owner
+			owner = {
+				has_tradition = tr_mettle_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2000
+				}
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.11.details
+		owner = {
+			add_resource = {
+				influence = -50
+				energy = -2000
+			}
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		add_modifier = {
+			modifier = "pm_ost_minerals_subsidies"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.11
+			}
+		}
+    }
+
+# Energy
+    option = {
+        name = "ost_colony.11.energy"
+		allow = {
+			NOT = {
+				has_modifier = pm_ost_energy_subsidies
+			}
+			exists = owner
+			owner = {
+				has_tradition = tr_radiance_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 2500
+				}
+
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.11.details
+		owner = {
+			add_resource = {
+				influence = -50
+				minerals = -2500
+			}
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		add_modifier = {
+			modifier = "pm_ost_energy_subsidies"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.11
+			}
+		}
+    }
+
+# Alloys
+    option = {
+        name = "ost_colony.11.alloys"
+		allow = {
+			NOT = {
+				has_modifier = pm_ost_alloy_subsidies
+			}
+			exists = owner
+			owner = {
+				has_tradition = tr_metallurgy_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2000
+				}
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 2500
+				}
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.11.details
+		owner = {
+			add_resource = {
+				influence = -50
+				energy = -2500
+				minerals = -2500
+			}
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		add_modifier = {
+			modifier = "pm_ost_alloy_subsidies"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.11
+			}
+		}
+    }
+
+# Unity
+    option = {
+        name = "ost_colony.11.unity"
+		allow = {
+			NOT = {
+				has_modifier = pm_ost_unity_subsidies
+			}
+			exists = owner
+			owner = {
+				has_tradition = tr_solidarity_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2500
+				}
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.11.details
+		owner = {
+			add_resource = {
+				influence = -50
+				energy = -2500
+			}
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		add_modifier = {
+			modifier = "pm_ost_unity_subsidies"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.11
+			}
+		}
+    }
+
+# Research
+    option = {
+        name = "ost_colony.11.research"
+		allow = {
+			NOT = {
+				has_modifier = pm_ost_research_subsidies
+			}
+			exists = owner
+			owner = {
+				has_tradition = tr_nanobiotics_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2500
+				}
+
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.11.details
+		owner = {
+			add_resource = {
+				influence = -50
+				energy = -2500
+			}
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		add_modifier = {
+			modifier = "pm_ost_research_subsidies"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.11
+			}
+		}
+    }
+
+# Revoke All
+    option = {
+        name = "ost_colony.11.revoke"
+		allow = {
+			planet_has_subsidies = yes
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		custom_tooltip = ost_colony.11.revoke.desc
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.11
+			}
+		}
+    }
+
+# Back
+    option = {
+        name = "ost_colony_back"
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.10
+			}
+		}
+    }
+
+# Close
+    option = {
+        name = "ost_colony_close"
+    }
+}
+
+# Designations
+planet_event = {
+    id = ost_colony.12
+    is_triggered_only = yes
+    title = ost_colony.10.title
+    picture = "GFX_ost_planet_management"
+
+    immediate = {
+    }
+
+# Forge World
+    option = {
+        name = "ost_colony.12.forgeworld"
+		trigger = {
+			NOT = {
+				has_modifier = pm_ost_designate_forgeworld
+			}
+		}
+		allow = {
+			exists = owner
+			owner = {
+				has_tradition = tr_metallurgy_5
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 2500
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -50
+				minerals = -2500
+			}
+		}
+		add_modifier = {
+			modifier = "pm_ost_designate_forgeworld"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.12
+			}
+		}
+    }
+
+    option = {
+        name = "ost_colony.12.forgeworld.revoke"
+		trigger = {
+			has_modifier = pm_ost_designate_forgeworld
+		}
+		allow = {
+			exists = owner
+			owner = {
+				has_tradition = tr_metallurgy_5
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -50
+			}
+		}
+		remove_modifier = "pm_ost_designate_forgeworld"
+
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.12
+			}
+		}
+    }
+
+# Military Moonbase
+    option = {
+        name = "ost_colony.12.militarymoon"
+		trigger = {
+			is_moon = yes
+			uses_district_set = standard
+			NOT = {
+				has_planet_flag = osa_military
+			}
+		}
+		allow = {
+			exists = owner
+			owner = {
+				has_active_tradition = tr_defense_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 5000
+				}
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 5000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -50
+				energy = -5000
+				minerals = -5000
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.12.militarymoon.details
+		hidden_effect = {
+			set_planet_flag = osa_military
+			validate_planet_buildings_and_districts = yes
+			planet_event = {
+				id = ost_colony.12
+			}
+		}
+    }
+
+    option = {
+        name = "ost_colony.12.militarymoon.revoke"
+		trigger = {
+			has_planet_flag = osa_military
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 150
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -150
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.12.militarymoon.details.revoke
+		hidden_effect = {
+			remove_planet_flag = osa_military
+			validate_planet_buildings_and_districts = yes
+			planet_event = {
+				id = ost_colony.12
+			}
+		}
+    }
+
+# Martial Law
+    option = {
+        name = "ost_colony.12.martiallaw"
+		trigger = {
+			NOT = {
+				has_modifier = martial_law
+			}
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		add_modifier = {
+			modifier = "martial_law"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.12
+			}
+		}
+    }
+
+    option = {
+        name = "ost_colony.12.martiallaw.revoke"
+		trigger = {
+			has_modifier = martial_law
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		remove_modifier = "martial_law"
+
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.12
+			}
+		}
+    }
+
+# Population Controls
+    option = {
+        name = "ost_colony.12.popcontrols"
+		trigger = {
+			exists = owner
+			owner = {
+				NOT = { has_policy_flag = population_controls_not_allowed }
+			}
+			NOT = {
+				has_modifier = planet_population_control
+			}
+		}
+		allow = {
+			exists = owner
+			owner = {
+
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		add_modifier = {
+			modifier = "planet_population_control"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			remove_modifier = planet_food_boost
+			planet_event = {
+				id = ost_colony.12
+			}
+		}
+    }
+
+    option = {
+        name = "ost_colony.12.popcontrols.revoke"
+		trigger = {
+			has_modifier = planet_population_control
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		remove_modifier = "planet_population_control"
+
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.12
+			}
+		}
+    }
+
+# Machine Assembly
+    option = {
+        name = "ost_colony.12.robotassembly"
+		trigger = {
+			exists = owner
+			owner = {
+				NOT = { has_policy_flag = robots_outlawed }
+				OR = {
+					AND = {
+						has_policy_flag = ai_full_rights
+						has_policy_flag = population_controls_allowed
+					}
+					NOT = {
+						has_policy_flag = ai_full_rights
+					}
+				}
+			}
+			NOT = {
+				has_modifier = planet_robot_assembly_control
+			}
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		add_modifier = {
+			modifier = "planet_robot_assembly_control"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.12
+			}
+		}
+    }
+
+    option = {
+        name = "ost_colony.12.robotassembly.revoke"
+		trigger = {
+			has_modifier = planet_robot_assembly_control
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		remove_modifier = "planet_robot_assembly_control"
+
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.12
+			}
+		}
+    }
+
+# Discourage Growth
+    option = {
+        name = "ost_colony.12.discouragegrowth"
+		trigger = {
+			exists = owner
+			owner = {
+				has_policy_flag = population_controls_not_allowed
+			}
+			NOT = {
+				has_modifier = planet_growth_discouraged
+			}
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		add_modifier = {
+			modifier = "planet_growth_discouraged"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			remove_modifier = planet_food_boost
+			planet_event = {
+				id = ost_colony.12
+			}
+		}
+    }
+
+    option = {
+        name = "ost_colony.12.discouragegrowth.revoke"
+		trigger = {
+			has_modifier = planet_growth_discouraged
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		remove_modifier = "planet_growth_discouraged"
+
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.12
+			}
+		}
+    }
+
+# Back
+    option = {
+        name = "ost_colony_back"
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.10
+			}
+		}
+    }
+
+# Close
+    option = {
+        name = "ost_colony_close"
+    }
+}
+
+
+# Gestalt Planet Management
+planet_event = {
+    id = ost_colony.20
+    is_triggered_only = yes
+    title = ost_colony.20.title
+    picture = "GFX_ost_planet_management"
+
+    immediate = {
+    }
+
+# Subsidies
+	allow = {
+		exists = owner
+		owner = {
+			OR = {
+				has_tradition = tr_perseverance_finish
+				has_tradition = tr_mettle_finish
+				has_tradition = tr_radiance_finish
+				has_tradition = tr_metallurgy_finish
+				has_tradition = tr_solidarity_finish
+				has_tradition = tr_nanobiotics_finish
+			}
+		}
+	}
+    option = {
+        name = "ost_colony_subsidies_gestalt"
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.21
+			}
+		}
+    }
+
+# Designations
+    option = {
+        name = "ost_colony_designations_gestalt"
+
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.22
+			}
+		}
+    }
+
+# Close
+    option = {
+        name = "ost_colony_close"
+    }
+}
+
+# Directives
+planet_event = {
+    id = ost_colony.21
+    is_triggered_only = yes
+    title = ost_colony.20.title
+    picture = "GFX_ost_planet_management"
+
+    immediate = {
+    }
+
+# Food
+    option = {
+        name = "ost_colony.21.food"
+		allow = {
+			NOT = {
+				has_modifier = pm_ost_food_subsidies_gestalt
+			}
+			exists = owner
+			owner = {
+				has_tradition = tr_perseverance_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2000
+				}
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.21.details
+		owner = {
+			add_resource = {
+				influence = -50
+				energy = -2000
+			}
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		add_modifier = {
+			modifier = "pm_ost_food_subsidies_gestalt"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.21
+			}
+		}
+    }
+
+# Minerals
+    option = {
+        name = "ost_colony.21.minerals"
+		allow = {
+			NOT = {
+				has_modifier = pm_ost_minerals_subsidies_gestalt
+			}
+			exists = owner
+			owner = {
+				has_tradition = tr_mettle_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2000
+				}
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.21.details
+		owner = {
+			add_resource = {
+				influence = -50
+				energy = -2000
+			}
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		add_modifier = {
+			modifier = "pm_ost_minerals_subsidies_gestalt"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.21
+			}
+		}
+    }
+
+# Energy
+    option = {
+        name = "ost_colony.21.energy"
+		allow = {
+			NOT = {
+				has_modifier = pm_ost_energy_subsidies_gestalt
+			}
+			exists = owner
+			owner = {
+				has_tradition = tr_radiance_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 2500
+				}
+
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.21.details
+		owner = {
+			add_resource = {
+				influence = -50
+				minerals = -2500
+			}
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		add_modifier = {
+			modifier = "pm_ost_energy_subsidies_gestalt"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.21
+			}
+		}
+    }
+
+# Alloys
+    option = {
+        name = "ost_colony.21.alloys"
+		allow = {
+			NOT = {
+				has_modifier = pm_ost_alloy_subsidies_gestalt
+			}
+			exists = owner
+			owner = {
+				has_tradition = tr_metallurgy_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2000
+				}
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 2500
+				}
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.21.details
+		owner = {
+			add_resource = {
+				influence = -50
+				energy = -2500
+				minerals = -2500
+			}
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		add_modifier = {
+			modifier = "pm_ost_alloy_subsidies_gestalt"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.21
+			}
+		}
+    }
+
+# Unity
+    option = {
+        name = "ost_colony.21.unity"
+		allow = {
+			NOT = {
+				has_modifier = pm_ost_unity_subsidies_gestalt
+			}
+			exists = owner
+			owner = {
+				has_tradition = tr_solidarity_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2500
+				}
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.21.details
+		owner = {
+			add_resource = {
+				influence = -50
+				energy = -2500
+			}
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		add_modifier = {
+			modifier = "pm_ost_unity_subsidies_gestalt"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.21
+			}
+		}
+    }
+
+# Research
+    option = {
+        name = "ost_colony.21.research"
+		allow = {
+			NOT = {
+				has_modifier = pm_ost_research_subsidies_gestalt
+			}
+			exists = owner
+			owner = {
+				has_tradition = tr_nanobiotics_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 2500
+				}
+
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.21.details
+		owner = {
+			add_resource = {
+				influence = -50
+				energy = -2500
+			}
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		add_modifier = {
+			modifier = "pm_ost_research_subsidies_gestalt"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.21
+			}
+		}
+    }
+
+# Revoke All
+    option = {
+        name = "ost_colony.21.revoke"
+		allow = {
+			planet_has_subsidies = yes
+		}
+		hidden_effect = {
+			ost_remove_subsidies = yes
+		}
+		custom_tooltip = ost_colony.21.revoke.desc
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.21
+			}
+		}
+    }
+
+# Back
+    option = {
+        name = "ost_colony_back"
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.20
+			}
+		}
+    }
+
+# Close
+    option = {
+        name = "ost_colony_close"
+    }
+}
+
+# Designations
+planet_event = {
+    id = ost_colony.22
+    is_triggered_only = yes
+    title = ost_colony.20.title
+    picture = "GFX_ost_planet_management"
+
+    immediate = {
+    }
+
+# Forge World
+    option = {
+        name = "ost_colony.22.forgeworld"
+		trigger = {
+			NOT = {
+				has_modifier = pm_ost_designate_forgeworld
+			}
+		}
+		allow = {
+			exists = owner
+			owner = {
+				has_tradition = tr_metallurgy_5
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 2500
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -50
+				minerals = -2500
+			}
+		}
+		add_modifier = {
+			modifier = "pm_ost_designate_forgeworld"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.22
+			}
+		}
+    }
+
+    option = {
+        name = "ost_colony.22.forgeworld.revoke"
+		trigger = {
+			has_modifier = pm_ost_designate_forgeworld
+		}
+		allow = {
+			exists = owner
+			owner = {
+				has_tradition = tr_metallurgy_5
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -50
+			}
+		}
+		remove_modifier = "pm_ost_designate_forgeworld"
+
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.22
+			}
+		}
+    }
+
+# Military Moonbase
+    option = {
+        name = "ost_colony.22.militarymoon"
+		trigger = {
+			is_moon = yes
+			uses_district_set = standard
+			NOT = {
+				has_planet_flag = osa_military
+			}
+		}
+		allow = {
+			exists = owner
+			owner = {
+				has_active_tradition = tr_defense_finish
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 50
+				}
+				resource_stockpile_compare = {
+					resource = energy
+					value >= 5000
+				}
+				resource_stockpile_compare = {
+					resource = minerals
+					value >= 5000
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -50
+				energy = -5000
+				minerals = -5000
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.22.militarymoon.details
+		hidden_effect = {
+			set_planet_flag = osa_military
+			validate_planet_buildings_and_districts = yes
+			planet_event = {
+				id = ost_colony.22
+			}
+		}
+    }
+
+    option = {
+        name = "ost_colony.22.militarymoon.revoke"
+		trigger = {
+			has_planet_flag = osa_military
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 150
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -150
+			}
+		}
+		show_only_custom_tooltip = no
+		custom_tooltip = ost_colony.22.militarymoon.details.revoke
+		hidden_effect = {
+			remove_planet_flag = osa_military
+			validate_planet_buildings_and_districts = yes
+			planet_event = {
+				id = ost_colony.22
+			}
+		}
+    }
+
+# Martial Law - Machine
+    option = {
+        name = "ost_colony.22.martiallawmachine"
+		trigger = {
+			NOT = {
+				has_modifier = compliance_protocols
+			}
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		add_modifier = {
+			modifier = "compliance_protocols"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.22
+			}
+		}
+    }
+
+    option = {
+        name = "ost_colony.22.martiallawmachine.revoke"
+		trigger = {
+			has_modifier = compliance_protocols
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		remove_modifier = "compliance_protocols"
+
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.22
+			}
+		}
+    }
+
+# Martial Law - Hive
+    option = {
+        name = "ost_colony.22.martiallawhive"
+		trigger = {
+			NOT = {
+				has_modifier = hunter_killer_drones
+			}
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		add_modifier = {
+			modifier = "hunter_killer_drones"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.22
+			}
+		}
+    }
+
+    option = {
+        name = "ost_colony.22.martiallawhive.revoke"
+		trigger = {
+			has_modifier = hunter_killer_drones
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		remove_modifier = "hunter_killer_drones"
+
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.22
+			}
+		}
+    }
+
+# Population Controls
+    option = {
+        name = "ost_colony.22.popcontrols"
+		trigger = {
+			exists = owner
+			owner = {
+				NOT = { has_policy_flag = population_controls_not_allowed }
+			}
+			NOT = {
+				has_modifier = planet_population_control_gestalt
+			}
+		}
+		allow = {
+			exists = owner
+			owner = {
+
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		add_modifier = {
+			modifier = "planet_population_control_gestalt"
+			days = -1
+			clear_on_owner_change = yes
+		}
+		hidden_effect = {
+			remove_modifier = planet_food_boost
+			planet_event = {
+				id = ost_colony.22
+			}
+		}
+    }
+
+    option = {
+        name = "ost_colony.22.popcontrols.revoke"
+		trigger = {
+			has_modifier = planet_population_control_gestalt
+		}
+		allow = {
+			exists = owner
+			owner = {
+				resource_stockpile_compare = {
+					resource = influence
+					value >= 100
+				}
+			}
+		}
+		owner = {
+			add_resource = {
+				influence = -100
+			}
+		}
+		remove_modifier = "planet_population_control_gestalt"
+
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.22
+			}
+		}
+    }
+
+# Back
+    option = {
+        name = "ost_colony_back"
+		hidden_effect = {
+			planet_event = {
+				id = ost_colony.20
+			}
+		}
+    }
+
+# Close
+    option = {
+        name = "ost_colony_close"
+    }
+}

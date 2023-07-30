@@ -5,10 +5,10 @@
 # Defense Armies
 defense_imperator_titan = {
 	defensive = yes
-	damage = 5.0
-	health = 10.0
+	damage = 3.0
+	health = 9.0
 	has_morale = no
-	morale_damage = 3
+	morale_damage = 1
 	collateral_damage = 10.0
 	war_exhaustion = 0.0 # No WE from defense armies
 	icon = GFX_army_type_machine_assault
@@ -31,10 +31,10 @@ defense_imperator_titan = {
 }
 
 imperator_titan = {
-	damage = 5.0
-	health = 10.0
+	damage = 3.0
+	health = 9.0
 	has_morale = no
-	morale_damage = 3
+	morale_damage = 1
 	collateral_damage = 10.0
 	war_exhaustion = 10.0
 	time = 1825

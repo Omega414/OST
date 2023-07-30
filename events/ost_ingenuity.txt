@@ -1,0 +1,61 @@
+namespace = ost_imperator
+
+# De-increment variable for counting imperator titan armies
+country_event = {
+	id = ost_imperator.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = { army_type = imperator_titan }
+	}
+
+	immediate = {
+		change_variable = {
+			which = imperator_titan_count
+			value = -1
+		}
+	}
+}
+
+planet_event = {
+	id = ost_imperator.2
+	location = ROOT
+
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				count_planet_army = {
+					count = 1
+					limit = {
+						army_type = defense_imperator_titan
+					}
+				}
+			}
+			create_army = {
+				name = "NAME_Defense_Imperator_Titan"
+				owner = root.owner
+				type = "defense_imperator_titan"
+				land_army = yes
+			}
+		}
+		else = {
+			while = {
+				count = 2
+				create_army = {
+					name = "NAME_Defense_Imperator_Titan"
+					owner = root.owner
+					type = "defense_imperator_titan"
+					land_army = yes
+				}
+			}
+		}
+	}
+}

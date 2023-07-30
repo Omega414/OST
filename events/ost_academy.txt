@@ -1,8 +1,8 @@
-namespace = tr_academy
+namespace = ost_academy
 
 # Academy 1, bonus level to recruited leader.
 leader_event = {
-	id = tr_academy.1
+	id = ost_academy.1
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -31,7 +31,7 @@ leader_event = {
 
 # Insight 1, bonus level to recruited scientist.
 leader_event = {
-	id = tr_academy.2
+	id = ost_academy.2
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -63,7 +63,7 @@ leader_event = {
 
 # Compassion 2, bonus level to recruited ruler or governor.
 leader_event = {
-	id = tr_academy.3
+	id = ost_academy.3
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -95,7 +95,7 @@ leader_event = {
 
 # Naval Ascendancy 2, bonus level to recruited admiral.
 leader_event = {
-	id = tr_academy.4
+	id = ost_academy.4
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -127,7 +127,7 @@ leader_event = {
 
 # Defense 5, bonus level to recruited general.
 leader_event = {
-	id = tr_academy.5
+	id = ost_academy.5
 	hide_window = yes
 
 	is_triggered_only = yes

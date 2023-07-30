@@ -6,105 +6,131 @@
 # Food
 ################################################################
 
-mod_osa_food_subsidies = {
+pm_ost_food_subsidies = {
 	icon_frame = 1
 	planet_jobs_food_produces_mult = 0.25
 	planet_buildings_upkeep_mult = 0.1
 	planet_districts_upkeep_mult = 0.1
-    icon = "gfx/interface/icons/planet_modifiers/pm_osa_food_subsidies.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_ost_food_subsidies.dds"
 }
 
-mod_osa_food_subsidies_gestalt = {
+pm_ost_food_subsidies_gestalt = {
 	icon_frame = 1
 	planet_jobs_food_produces_mult = 0.25
 	planet_buildings_upkeep_mult = 0.1
 	planet_districts_upkeep_mult = 0.1
-    icon = "gfx/interface/icons/planet_modifiers/pm_osa_food_subsidies.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_ost_food_subsidies.dds"
 }
 
 ################################################################
 # Minerals
 ################################################################
 
-mod_osa_minerals_subsidies = {
+pm_ost_minerals_subsidies = {
 	icon_frame = 1
 	planet_jobs_minerals_produces_mult = 0.25
 	planet_buildings_upkeep_mult = 0.1
 	planet_districts_upkeep_mult = 0.1
-    icon = "gfx/interface/icons/planet_modifiers/pm_osa_minerals_subsidies.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_ost_minerals_subsidies.dds"
 }
 
-mod_osa_minerals_subsidies_gestalt = {
+pm_ost_minerals_subsidies_gestalt = {
 	icon_frame = 1
 	planet_jobs_minerals_produces_mult = 0.25
 	planet_buildings_upkeep_mult = 0.1
 	planet_districts_upkeep_mult = 0.1
-    icon = "gfx/interface/icons/planet_modifiers/pm_osa_minerals_subsidies.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_ost_minerals_subsidies.dds"
 }
 
 ################################################################
 # Energy
 ################################################################
 
-mod_osa_energy_subsidies = {
+pm_ost_energy_subsidies = {
 	icon_frame = 1
 	planet_jobs_energy_produces_mult = 0.25
 	planet_jobs_minerals_upkeep_mult = 0.1
-    icon = "gfx/interface/icons/planet_modifiers/pm_osa_energy_subsidies.dds"
+	planet_structures_minerals_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_ost_energy_subsidies.dds"
 }
 
-mod_osa_energy_subsidies_gestalt = {
+pm_ost_energy_subsidies_gestalt = {
 	icon_frame = 1
 	planet_jobs_energy_produces_mult = 0.25
 	planet_jobs_minerals_upkeep_mult = 0.1
-    icon = "gfx/interface/icons/planet_modifiers/pm_osa_energy_subsidies.dds"
+	planet_structures_minerals_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_ost_energy_subsidies.dds"
 }
 
 ################################################################
 # Alloys
 ################################################################
 
-mod_osa_alloy_subsidies = {
+pm_ost_alloy_subsidies = {
 	icon_frame = 1
 	planet_jobs_alloys_produces_mult = 0.25
 	planet_buildings_upkeep_mult = 0.1
 	planet_districts_upkeep_mult = 0.1
-    icon = "gfx/interface/icons/planet_modifiers/pm_osa_alloy_subsidies.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_ost_alloy_subsidies.dds"
 }
 
-mod_osa_alloy_subsidies_gestalt = {
+pm_ost_alloy_subsidies_gestalt = {
 	icon_frame = 1
 	planet_jobs_alloys_produces_mult = 0.25
 	planet_buildings_upkeep_mult = 0.1
 	planet_districts_upkeep_mult = 0.1
-    icon = "gfx/interface/icons/planet_modifiers/pm_osa_alloy_subsidies.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_ost_alloy_subsidies.dds"
 }
 
 ################################################################
 # Unity
 ################################################################
 
-mod_osa_unity_subsidies = {
+pm_ost_unity_subsidies = {
 	icon_frame = 1
 	planet_jobs_unity_produces_mult = 0.25
 	planet_buildings_upkeep_mult = 0.1
 	planet_districts_upkeep_mult = 0.1
-    icon = "gfx/interface/icons/planet_modifiers/pm_osa_unity_subsidies.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_ost_unity_subsidies.dds"
 }
 
-mod_osa_unity_subsidies_gestalt = {
+pm_ost_unity_subsidies_gestalt = {
 	icon_frame = 1
 	planet_jobs_unity_produces_mult = 0.25
 	planet_buildings_upkeep_mult = 0.1
 	planet_districts_upkeep_mult = 0.1
-    icon = "gfx/interface/icons/planet_modifiers/pm_osa_unity_subsidies.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_ost_unity_subsidies.dds"
+}
+
+################################################################
+# Unity
+################################################################
+
+pm_ost_research_subsidies = {
+	icon_frame = 1
+	planet_jobs_physics_research_produces_mult = 0.25
+	planet_jobs_society_research_produces_mult = 0.25
+	planet_jobs_engineering_research_produces_mult = 0.25
+	planet_buildings_upkeep_mult = 0.1
+	planet_districts_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_ost_research_subsidies.dds"
+}
+
+pm_ost_research_subsidies_gestalt = {
+	icon_frame = 1
+	planet_jobs_physics_research_produces_mult = 0.25
+	planet_jobs_society_research_produces_mult = 0.25
+	planet_jobs_engineering_research_produces_mult = 0.25
+	planet_buildings_upkeep_mult = 0.1
+	planet_districts_upkeep_mult = 0.1
+    icon = "gfx/interface/icons/planet_modifiers/pm_ost_research_subsidies.dds"
 }
 
 ################################################################
 # Forge World
 ################################################################
 
-mod_osa_designate_forgeworld = {
+pm_ost_designate_forgeworld = {
 	icon_frame = 1
 	planet_jobs_alloys_produces_mult = 0.50
 	planet_jobs_minerals_produces_mult = 0.50
@@ -112,19 +138,19 @@ mod_osa_designate_forgeworld = {
 	pop_environment_tolerance = -0.1
 	planet_districts_upkeep_mult = 0.5
 	planet_buildings_upkeep_mult = 0.5
-    icon = "gfx/interface/icons/planet_modifiers/pm_osa_designate_forgeworld.dds"
+    icon = "gfx/interface/icons/planet_modifiers/pm_ost_designate_forgeworld.dds"
 }
 
 ####################################
 # Ascension Perks
 ####################################
-mod_osa_influence_sprawl = {
+mod_ost_influence_sprawl = {
 	country_traditions_influence_produces_add = 0.0025
 	country_power_projection_produces_mult = 0.001
 	hide_from_country_list = yes
 }
 
-mod_osa_machine_influence_sprawl = {
+mod_ost_machine_influence_sprawl = {
 	country_power_projection_produces_mult = 0.0025
 	hide_from_country_list = yes
 }

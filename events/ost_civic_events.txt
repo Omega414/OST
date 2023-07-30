@@ -1,8 +1,8 @@
-namespace = osa_civic
+namespace = ost_civic
 
 # Researchers of Renown
 leader_event = {
-	id = osa_civic.1
+	id = ost_civic.1
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -34,7 +34,7 @@ leader_event = {
 
 
 country_event = {
-	id = osa_civic.2
+	id = ost_civic.2
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -61,7 +61,7 @@ country_event = {
 
 # Illustrious Statesmen
 leader_event = {
-	id = osa_civic.3
+	id = ost_civic.3
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -95,7 +95,7 @@ leader_event = {
 }
 
 country_event = {
-	id = osa_civic.4
+	id = ost_civic.4
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -123,7 +123,7 @@ country_event = {
 
 # Distinguished Admiralty
 leader_event = {
-	id = osa_civic.5
+	id = ost_civic.5
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -163,7 +163,7 @@ leader_event = {
 }
 
 country_event = {
-	id = osa_civic.6
+	id = ost_civic.6
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -196,7 +196,7 @@ country_event = {
 
 # Astro Universities
 leader_event = {
-	id = osa_civic.7
+	id = ost_civic.7
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -224,7 +224,7 @@ leader_event = {
 }
 
 country_event = {
-	id = osa_civic.8
+	id = ost_civic.8
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -254,7 +254,7 @@ country_event = {
 
 # Gestalt Empires
 leader_event = {
-	id = osa_civic.9
+	id = ost_civic.9
 	hide_window = yes
 
 	is_triggered_only = yes
@@ -285,7 +285,7 @@ leader_event = {
 }
 
 country_event = {
-	id = osa_civic.10
+	id = ost_civic.10
 	hide_window = yes
 
 	is_triggered_only = yes

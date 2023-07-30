@@ -16,7 +16,18 @@ leader_trait_navigator = {
 	}
 	leader_class = { admiral }
 	opposites = { leader_trait_aggressive }
-	selectable_weight = @class_trait_weight
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = {
+			script = paragon/ethic_weight_mult
+			IS = pacifist
+			NOT = militarist
+		}
+		inline_script = {
+			script = paragon/subclass_weight_mult
+			SUBCLASS = admiral_tactician
+		}
+	}
 }
 
 leader_trait_navigator_2 = {
@@ -69,7 +80,13 @@ leader_trait_science_navigator = {
 		is_ruler = no
 	}
 	leader_class = { scientist }
-	selectable_weight = @class_trait_weight
+	selectable_weight = {
+		weight = @class_trait_weight
+		inline_script = {
+			script = paragon/subclass_weight_mult
+			SUBCLASS = scientist_explorer
+		}
+	}
 	ai_categories = { survey }
 	ai_weight = 50
 }
@@ -100,7 +117,7 @@ leader_trait_science_navigator_3 = {
 		ICON = "GFX_leader_trait_navigator"
 		RARITY = common
 		COUNCIL = no
-		TIER = 2
+		TIER = 3
 	}
 	modifier = {
 		fleet_mia_time_mult = -0.6

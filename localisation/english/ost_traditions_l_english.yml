@@ -87,10 +87,10 @@ tr_perseverance_5_hive_desc:0 "$tr_perseverance_5_desc$"
 tr_perseverance_5_hive_delayed:0 "Thanks to rapid growth on our worlds; we have burried ourselves deep and made these worlds home."
 
 tr_perseverance_finish:0 "Perseverance Traditions Finished"
-tr_perseverance_finish_desc:0 "£food£ §YEmpire Food Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_food_subsidies$\nAscension Perks Unlocked: §G+1§!"
+tr_perseverance_finish_desc:0 "£food£ §YEmpire Food Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $ost_decision_food_subsidies$\nAscension Perks Unlocked: §G+1§!"
 
 tr_perseverance_finish_machine:0 "$tr_perseverance_finish$"
-tr_perseverance_finish_machine_desc:0 "£food£ §YEmpire Food Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_food_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
+tr_perseverance_finish_machine_desc:0 "£food£ §YEmpire Food Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $ost_decision_food_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
 
 tr_perseverance_finish_hive:0 "$tr_perseverance_finish$"
 tr_perseverance_finish_hive_desc:0 "$tr_perseverance_finish_machine_desc$"
@@ -178,10 +178,10 @@ tr_radiance_5_hive_desc:0 "$tr_radiance_5_desc$"
 tr_radiance_5_hive_delayed:0 "The eye of the hive...stargazing...watching."
 
 tr_radiance_finish:0 "Radiance Traditions Finished"
-tr_radiance_finish_desc:0 "£energy£ §YEmpire Energy Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_energy_subsidies$\nAscension Perks Unlocked: §G+1§!"
+tr_radiance_finish_desc:0 "£energy£ §YEmpire Energy Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $ost_decision_energy_subsidies$\nAscension Perks Unlocked: §G+1§!"
 
 tr_radiance_finish_machine:0 "$tr_radiance_finish$"
-tr_radiance_finish_machine_desc:0 "£energy£ §YEmpire Energy Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_energy_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
+tr_radiance_finish_machine_desc:0 "£energy£ §YEmpire Energy Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $ost_decision_energy_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
 
 tr_radiance_finish_hive:0 "$tr_radiance_finish$"
 tr_radiance_finish_hive_desc:0 "$tr_radiance_finish_machine_desc$"
@@ -269,10 +269,10 @@ tr_mettle_5_hive_desc:0 "$tr_mettle_5_desc$"
 tr_mettle_5_hive_delayed:0 "Drones with reinforced metallic carapace to better protect our warriors."
 
 tr_mettle_finish:0 "Mettle Traditions Finished"
-tr_mettle_finish_desc:0 "£minerals£ §YEmpire Mineral Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_minerals_subsidies$\nAscension Perks Unlocked: §G+1§!"
+tr_mettle_finish_desc:0 "£minerals£ §YEmpire Mineral Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $ost_decision_minerals_subsidies$\nAscension Perks Unlocked: §G+1§!"
 
 tr_mettle_finish_machine:0 "$tr_mettle_finish$"
-tr_mettle_finish_machine_desc:0 "£minerals£ §YEmpire Mineral Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_minerals_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
+tr_mettle_finish_machine_desc:0 "£minerals£ §YEmpire Mineral Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $ost_decision_minerals_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
 
 tr_mettle_finish_hive:0 "$tr_mettle_finish$"
 tr_mettle_finish_hive_desc:0 "$tr_mettle_finish_machine_desc$"
@@ -348,7 +348,7 @@ tr_metallurgy_4_hive_desc:0 "Improves £building£ §YFoundry§! buildings:\n£u
 tr_metallurgy_4_hive_delayed:0 "This drone will smelt shiny new ring for Sauron."
 
 tr_metallurgy_5:0 "Forge Worlds"
-tr_metallurgy_5_desc:0 "§HUnlocks Planetary Decision:§! $osa_decision_designate_forgeworld$"
+tr_metallurgy_5_desc:0 "§HUnlocks Planetary Decision:§! $ost_decision_designate_forgeworld$"
 tr_metallurgy_5_delayed:0 "This world exists for one singular unified purpose...grind big rocks into little ones and smelt the little ones into alloys."
 
 tr_metallurgy_5_machine:0 "Forge Worlds"
@@ -360,10 +360,10 @@ tr_metallurgy_5_hive_desc:0 "$tr_metallurgy_5_desc$"
 tr_metallurgy_5_hive_delayed:0 "A world full of alloys. Yes. Yes."
 
 tr_metallurgy_finish:0 "Metallurgy Traditions Finished"
-tr_metallurgy_finish_desc:0 "£alloys£ §YEmpire Alloy Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_alloy_subsidies$\nAscension Perks Unlocked: §G+1§!"
+tr_metallurgy_finish_desc:0 "£alloys£ §YEmpire Alloy Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $ost_decision_alloy_subsidies$\nAscension Perks Unlocked: §G+1§!"
 
 tr_metallurgy_finish_machine:0 "$tr_metallurgy_finish$"
-tr_metallurgy_finish_machine_desc:0 "£alloys£ §YEmpire Alloy Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_alloy_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
+tr_metallurgy_finish_machine_desc:0 "£alloys£ §YEmpire Alloy Production§! increased by §G+5%§!\n§HUnlocks Planetary Decision:§! $ost_decision_alloy_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
 
 tr_metallurgy_finish_hive:0 "$tr_metallurgy_finish$"
 tr_metallurgy_finish_hive_desc:0 "$tr_metallurgy_finish_machine$"
@@ -451,10 +451,10 @@ tr_solidarity_5_hive_desc:0 "$tr_solidarity_5_machine_desc$"
 tr_solidarity_5_hive_delayed:0 "Deviancy eradication drones have been activated to improve hive efficiency."
 
 tr_solidarity_finish:0 "Solidarity Traditions Finished"
-tr_solidarity_finish_desc:0 "§YEmpire Monthly Unity§! increased by §G+7.5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_unity_subsidies$\nAscension Perks Unlocked: §G+1§!"
+tr_solidarity_finish_desc:0 "§YEmpire Monthly Unity§! increased by §G+7.5%§!\n§HUnlocks Planetary Decision:§! $ost_decision_unity_subsidies$\nAscension Perks Unlocked: §G+1§!"
 
 tr_solidarity_finish_machine:0 "$tr_solidarity_finish$"
-tr_solidarity_finish_machine_desc:0 "§YEmpire Monthly Unity§! increased by §G+7.5%§!\n§HUnlocks Planetary Decision:§! $osa_decision_unity_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
+tr_solidarity_finish_machine_desc:0 "§YEmpire Monthly Unity§! increased by §G+7.5%§!\n§HUnlocks Planetary Decision:§! $ost_decision_unity_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
 
 tr_solidarity_finish_hive:0 "$tr_solidarity_finish$"
 tr_solidarity_finish_hive_desc:0 "$tr_solidarity_finish_machine$"
@@ -724,7 +724,7 @@ tr_defense_5_hive_desc:0 "$tr_defense_5_desc$"
 tr_defense_5_hive_delayed:0 "The primary hive cluster is better protected by smaller fotress hives."
 
 tr_defense_finish:0 "Defense Traditions Finished"
-tr_defense_finish_desc:0 "§YStarbase Module Capacity§! increased by §G+2§!\n§YStarbase Building Capacity§! increased by §G+2§!\n§HUnlock Planetary Decision:§! $osa_decision_military_moonbase$\nAscension Perks Unlocked: §G+1§!"
+tr_defense_finish_desc:0 "§YStarbase Module Capacity§! increased by §G+2§!\n§YStarbase Building Capacity§! increased by §G+2§!\n§HUnlock Planetary Decision:§! $ost_decision_military_moonbase$\nAscension Perks Unlocked: §G+1§!"
 
 tr_defense_finish_machine:0 "$tr_defense_finish$"
 tr_defense_finish_machine_desc:0 "$tr_defense_finish_desc$"
@@ -1088,7 +1088,7 @@ tr_ingenuity_5_hive_desc:0 "$tr_ingenuity_5_desc$"
 tr_ingenuity_5_hive_delayed:0 "Establishing proper protocols enable construction and refit of our drone ships at remote outposts."
 
 tr_ingenuity_finish:0 "Ingenuity Traditions Finished"
-tr_ingenuity_finish_desc:0 "§HUnlocks Policy:§! $policy_research_policy_engineering$\n§HUnlocks Army:§! Titan Battlegroup\n§HUnlocks Planetary Decision:§! $osa_decision_titan_garrison$\n§YMercenary Enclave Capacity§! increased by §G+1§!\nAscension Perks Unlocked: §G+1§!"
+tr_ingenuity_finish_desc:0 "§HUnlocks Policy:§! $policy_research_policy_engineering$\n§HUnlocks Army:§! Titan Battlegroup\n§HUnlocks Planetary Decision:§! $ost_decision_titan_garrison$\n§YMercenary Enclave Capacity§! increased by §G+1§!\nAscension Perks Unlocked: §G+1§!"
 
 tr_ingenuity_finish_machine:0 "$tr_ingenuity_finish$"
 tr_ingenuity_finish_machine_desc:0 "$tr_ingenuity_finish_desc$"
@@ -1634,10 +1634,10 @@ tr_nanobiotics_5_hive_desc:0 "$tr_nanobiotics_5_desc$"
 tr_nanobiotics_5_hive_delayed:0 "By integrating nano technology in our warship designs we are able to significantly enhance their repair capabilities."
 
 tr_nanobiotics_finish:0 "Nanobiotics Traditions Finished"
-tr_nanobiotics_finish_desc:0 "All §YStarbases§! produce §G+7.5§! £engineering£ §YEngineering Research§!\nAscension Perks Unlocked: §G+1§!"
+tr_nanobiotics_finish_desc:0 "All §YStarbases§! produce §G+7.5§! £engineering£ §YEngineering Research§!\n§HUnlocks Planetary Decision:§! $decision_ost_research_subsidies$\nAscension Perks Unlocked: §G+1§!"
 
 tr_nanobiotics_finish_machine:0 "$tr_nanobiotics_finish$"
-tr_nanobiotics_finish_machine_desc:0 "$tr_nanobiotics_finish_desc$"
+tr_nanobiotics_finish_machine_desc:0 "$tr_nanobiotics_finish_desc$All §YStarbases§! produce §G+7.5§! £engineering£ §YEngineering Research§!\n§HUnlocks Planetary Decision:§! $decision_ost_research_subsidies_gestalt$\nAscension Perks Unlocked: §G+1§!"
 
 tr_nanobiotics_finish_hive:0 "$tr_nanobiotics_finish$"
 tr_nanobiotics_finish_hive_desc:0 "$tr_nanobiotics_finish_desc$"
@@ -1772,7 +1772,7 @@ tr_splendor_2_desc:0 "§Y$mod_category_psionics_research_speed_mult$§! increase
 tr_splendor_2_delayed:0 "Convincing our enemies to fear us allows us to gain a considerable upper hand in negotiations."
 
 tr_splendor_2_machine:0 "Psychological Warfare"
-tr_splendor_2_machine_desc:0 "§Y$mod_category_psionics_research_speed_mult$§! increased by §G+15%§!\n§YHostile Claim Influence Cost§! increased by §G+200%§!\n§HUnlock Planetary Decision:§! $osa_decision_syndicate_alloy$ and allows us to trade with crime syndicates for £alloys£ §Yalloys§!."
+tr_splendor_2_machine_desc:0 "§Y$mod_category_psionics_research_speed_mult$§! increased by §G+15%§!\n§YHostile Claim Influence Cost§! increased by §G+200%§!\n§HUnlock Planetary Decision:§! $ost_decision_syndicate_alloy$ and allows us to trade with crime syndicates for £alloys£ §Yalloys§!."
 tr_splendor_2_machine_delayed:0 "Convincing our enemies to fear us allows us to gain a considerable upper hand in negotiations."
 
 tr_splendor_2_hive:0 "Psychological Warfare"

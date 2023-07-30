@@ -1,7 +1,7 @@
-namespace = osa_sprawl
+namespace = ost_sprawl
 
 country_event = {
-	id = osa_sprawl.1
+	id = ost_sprawl.1
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -10,9 +10,9 @@ country_event = {
 	}
 
 	immediate = {
-		remove_modifier = "mod_osa_influence_sprawl"
+		remove_modifier = "mod_ost_influence_sprawl"
 		add_modifier = {
-			modifier = "mod_osa_influence_sprawl"
+			modifier = "mod_ost_influence_sprawl"
 			days = -1
 			multiplier = owner.trigger:empire_size
 		}
@@ -20,7 +20,7 @@ country_event = {
 }
 
 country_event = {
-	id = osa_sprawl.2
+	id = ost_sprawl.2
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -29,9 +29,9 @@ country_event = {
 	}
 
 	immediate = {
-		remove_modifier = "mod_osa_machine_influence_sprawl"
+		remove_modifier = "mod_ost_machine_influence_sprawl"
 		add_modifier = {
-			modifier = "mod_osa_machine_influence_sprawl"
+			modifier = "mod_ost_machine_influence_sprawl"
 			days = -1
 			multiplier = owner.trigger:empire_size
 		}

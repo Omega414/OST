@@ -1,3 +1,9 @@
+@decision_ost_cost_0 = 1000
+@decision_ost_cost_1 = 2000
+@decision_ost_cost_2 = 2500
+@decision_ost_influence_1 = 50
+@decision_ost_influence_2 = 100
+
 ####################################
 # Regular Empires
 ####################################
@@ -5,58 +11,38 @@
 ################################################################
 # Food
 ################################################################
-osa_decision_food_subsidies = {
+decision_ost_food_subsidies = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_osa_food_subsidies
 	resources = {
 		category = decisions
 		cost = {
-			energy = 2000
-			influence = 50
+			energy = @decision_ost_cost_1
+			influence = @decision_ost_influence_1
 		}
 	}
 
 	potential = {
+		exists = owner
 		owner = {
+			is_ai = yes
 			is_gestalt = no
 			has_tradition = tr_perseverance_finish
 		}
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	effect = {
 		add_modifier = {
-			modifier = "mod_osa_food_subsidies"
+			modifier = "pm_ost_food_subsidies"
 			days = -1
 			clear_on_owner_change = yes
 		}
 	}
 	
 	allow = {
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	ai_weight = {
@@ -67,58 +53,38 @@ osa_decision_food_subsidies = {
 ################################################################
 # Minerals
 ################################################################
-osa_decision_minerals_subsidies = {
+decision_ost_minerals_subsidies = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_osa_minerals_subsidies
 	resources = {
 		category = decisions
 		cost = {
-			energy = 2000
-			influence = 50
+			energy = @decision_ost_cost_1
+			influence = @decision_ost_influence_1
 		}
 	}
 
 	potential = {
+		exists = owner
 		owner = {
+			is_ai = yes
 			is_gestalt = no
 			has_tradition = tr_mettle_finish
 		}
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	effect = {
 		add_modifier = {
-			modifier = "mod_osa_minerals_subsidies"
+			modifier = "pm_ost_minerals_subsidies"
 			days = -1
 			clear_on_owner_change = yes
 		}
 	}
 	
 	allow = {
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	ai_weight = {
@@ -129,58 +95,38 @@ osa_decision_minerals_subsidies = {
 ################################################################
 # Energy
 ################################################################
-osa_decision_energy_subsidies = {
+decision_ost_energy_subsidies = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_osa_energy_subsidies
 	resources = {
 		category = decisions
 		cost = {
-			minerals = 2500
-			influence = 50
+			minerals = @decision_ost_cost_2
+			influence = @decision_ost_influence_1
 		}
 	}
 
 	potential = {
+		exists = owner
 		owner = {
+			is_ai = yes
 			is_gestalt = no
 			has_tradition = tr_radiance_finish
 		}
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	effect = {
 		add_modifier = {
-			modifier = "mod_osa_energy_subsidies"
+			modifier = "pm_ost_energy_subsidies"
 			days = -1
 			clear_on_owner_change = yes
 		}
 	}
 	
 	allow = {
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	ai_weight = {
@@ -191,59 +137,39 @@ osa_decision_energy_subsidies = {
 ################################################################
 # Alloys
 ################################################################
-osa_decision_alloy_subsidies = {
+decision_ost_alloy_subsidies = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_osa_alloy_subsidies
 	resources = {
 		category = decisions
 		cost = {
-			energy = 2500
-			minerals = 2500
-			influence = 50
+			energy = @decision_ost_cost_2
+			minerals = @decision_ost_cost_2
+			influence = @decision_ost_influence_1
 		}
 	}
 
 	potential = {
+		exists = owner
 		owner = {
+			is_ai = yes
 			is_gestalt = no
 			has_tradition = tr_metallurgy_finish
 		}
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	effect = {
 		add_modifier = {
-			modifier = "mod_osa_alloy_subsidies"
+			modifier = "pm_ost_alloy_subsidies"
 			days = -1
 			clear_on_owner_change = yes
 		}
 	}
 	
 	allow = {
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	ai_weight = {
@@ -254,58 +180,38 @@ osa_decision_alloy_subsidies = {
 ################################################################
 # Unity
 ################################################################
-osa_decision_unity_subsidies = {
+decision_ost_unity_subsidies = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_osa_unity_subsidies
 	resources = {
 		category = decisions
 		cost = {
-			energy = 4000
-			influence = 50
+			energy = @decision_ost_cost_2
+			influence = @decision_ost_influence_1
 		}
 	}
 
 	potential = {
+		exists = owner
 		owner = {
+			is_ai = yes
 			is_gestalt = no
 			has_tradition = tr_solidarity_finish
 		}
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	effect = {
 		add_modifier = {
-			modifier = "mod_osa_unity_subsidies"
+			modifier = "pm_ost_unity_subsidies"
 			days = -1
 			clear_on_owner_change = yes
 		}
 	}
 	
 	allow = {
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	ai_weight = {
@@ -313,6 +219,47 @@ osa_decision_unity_subsidies = {
 	}	
 }
 
+################################################################
+# Research
+################################################################
+decision_ost_research_subsidies = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_osa_research_subsidies
+	resources = {
+		category = decisions
+		cost = {
+			energy = @decision_ost_cost_2
+			influence = @decision_ost_influence_1
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_ai = yes
+			is_gestalt = no
+			has_tradition = tr_nanobiotics_finish
+		}
+		planet_has_subsidies = no
+	}
+	
+	effect = {
+		add_modifier = {
+			modifier = "pm_ost_research_subsidies"
+			days = -1
+			clear_on_owner_change = yes
+		}
+	}
+	
+	allow = {
+		planet_has_subsidies = no
+	}
+	
+	ai_weight = {
+		weight = 1
+	}	
+}
 
 ####################################
 # Gestalt Empires
@@ -321,58 +268,38 @@ osa_decision_unity_subsidies = {
 ################################################################
 # Food
 ################################################################
-osa_decision_food_subsidies_gestalt = {
+decision_ost_food_subsidies_gestalt = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_osa_food_subsidies
 	resources = {
 		category = decisions
 		cost = {
-			energy = 2000
-			influence = 50
+			energy = @decision_ost_cost_1
+			influence = @decision_ost_influence_1
 		}
 	}
 
 	potential = {
+		exists = owner
 		owner = {
+			is_ai = yes
 			is_gestalt = yes
 			has_tradition = tr_perseverance_finish
 		}
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	effect = {
 		add_modifier = {
-			modifier = "mod_osa_food_subsidies_gestalt"
+			modifier = "pm_ost_food_subsidies_gestalt"
 			days = -1
 			clear_on_owner_change = yes
 		}
 	}
 	
 	allow = {
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	ai_weight = {
@@ -383,58 +310,38 @@ osa_decision_food_subsidies_gestalt = {
 ################################################################
 # Minerals
 ################################################################
-osa_decision_minerals_subsidies_gestalt = {
+decision_ost_minerals_subsidies_gestalt = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_osa_minerals_subsidies
 	resources = {
 		category = decisions
 		cost = {
-			energy = 2000
-			influence = 50
+			energy = @decision_ost_cost_1
+			influence = @decision_ost_influence_1
 		}
 	}
 
 	potential = {
+		exists = owner
 		owner = {
+			is_ai = yes
 			is_gestalt = yes
 			has_tradition = tr_mettle_finish
 		}
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	effect = {
 		add_modifier = {
-			modifier = "mod_osa_minerals_subsidies_gestalt"
+			modifier = "pm_ost_minerals_subsidies_gestalt"
 			days = -1
 			clear_on_owner_change = yes
 		}
 	}
 	
 	allow = {
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	ai_weight = {
@@ -445,58 +352,38 @@ osa_decision_minerals_subsidies_gestalt = {
 ################################################################
 # Energy
 ################################################################
-osa_decision_energy_subsidies_gestalt = {
+decision_ost_energy_subsidies_gestalt = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_osa_energy_subsidies
 	resources = {
 		category = decisions
 		cost = {
-			minerals = 2500
-			influence = 50
+			minerals = @decision_ost_cost_2
+			influence = @decision_ost_influence_1
 		}
 	}
 
 	potential = {
+		exists = owner
 		owner = {
+			is_ai = yes
 			is_gestalt = yes
 			has_tradition = tr_radiance_finish
 		}
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	effect = {
 		add_modifier = {
-			modifier = "mod_osa_energy_subsidies_gestalt"
+			modifier = "pm_ost_energy_subsidies_gestalt"
 			days = -1
 			clear_on_owner_change = yes
 		}
 	}
 	
 	allow = {
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	ai_weight = {
@@ -507,59 +394,39 @@ osa_decision_energy_subsidies_gestalt = {
 ################################################################
 # Alloys
 ################################################################
-osa_decision_alloy_subsidies_gestalt = {
+decision_ost_alloy_subsidies_gestalt = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_osa_alloy_subsidies
 	resources = {
 		category = decisions
 		cost = {
-			energy = 2500
-			minerals = 2500
-			influence = 50
+			energy = @decision_ost_cost_2
+			minerals = @decision_ost_cost_2
+			influence = @decision_ost_influence_1
 		}
 	}
 
 	potential = {
+		exists = owner
 		owner = {
+			is_ai = yes
 			is_gestalt = yes
 			has_tradition = tr_metallurgy_finish
 		}
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	effect = {
 		add_modifier = {
-			modifier = "mod_osa_alloy_subsidies_gestalt"
+			modifier = "pm_ost_alloy_subsidies_gestalt"
 			days = -1
 			clear_on_owner_change = yes
 		}
 	}
 	
 	allow = {
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	ai_weight = {
@@ -570,58 +437,80 @@ osa_decision_alloy_subsidies_gestalt = {
 ################################################################
 # Unity
 ################################################################
-osa_decision_unity_subsidies_gestalt = {
+decision_ost_unity_subsidies_gestalt = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_osa_unity_subsidies
 	resources = {
 		category = decisions
 		cost = {
-			energy = 4000
-			influence = 50
+			energy = @decision_ost_cost_2
+			influence = @decision_ost_influence_1
 		}
 	}
 
 	potential = {
+		exists = owner
 		owner = {
+			is_ai = yes
 			is_gestalt = yes
 			has_tradition = tr_solidarity_finish
 		}
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
-		}
+		planet_has_subsidies = no
 	}
 	
 	effect = {
 		add_modifier = {
-			modifier = "mod_osa_unity_subsidies_gestalt"
+			modifier = "pm_ost_unity_subsidies_gestalt"
 			days = -1
 			clear_on_owner_change = yes
 		}
 	}
 	
 	allow = {
-		NOT =  {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
+		planet_has_subsidies = no
+	}
+	
+	ai_weight = {
+		weight = 1
+	}	
+}
+
+################################################################
+# Research
+################################################################
+decision_ost_research_subsidies_gestalt = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_osa_research_subsidies
+	resources = {
+		category = decisions
+		cost = {
+			energy = @decision_ost_cost_2
+			influence = @decision_ost_influence_1
 		}
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			is_ai = yes
+			is_gestalt = yes
+			has_tradition = tr_nanobiotics_finish
+		}
+		planet_has_subsidies = no
+	}
+	
+	effect = {
+		add_modifier = {
+			modifier = "pm_ost_research_subsidies_gestalt"
+			days = -1
+			clear_on_owner_change = yes
+		}
+	}
+	
+	allow = {
+		planet_has_subsidies = no
 	}
 	
 	ai_weight = {
@@ -632,11 +521,9 @@ osa_decision_unity_subsidies_gestalt = {
 ################################################################
 # Subsidy removal
 ################################################################
-osa_decision_revoke_subsidies = {
+decision_ost_revoke_subsidies = {
 	owned_planets_only = yes
 	icon = decision_victorious_army
-
-	enactment_time = 60
 
 	resources = {
 		category = decisions
@@ -646,32 +533,16 @@ osa_decision_revoke_subsidies = {
 	}
 
 	potential = {
-		OR = {
-			has_modifier = mod_osa_food_subsidies
-			has_modifier = mod_osa_minerals_subsidies
-			has_modifier = mod_osa_energy_subsidies
-			has_modifier = mod_osa_alloy_subsidies
-			has_modifier = mod_osa_unity_subsidies
-			has_modifier = mod_osa_food_subsidies_gestalt
-			has_modifier = mod_osa_minerals_subsidies_gestalt
-			has_modifier = mod_osa_energy_subsidies_gestalt
-			has_modifier = mod_osa_alloy_subsidies_gestalt
-			has_modifier = mod_osa_unity_subsidies_gestalt
+		exists = owner
+		owner = {
+			is_ai = yes
 		}
+		planet_has_subsidies = yes
 	}
 
 	effect = {
 		hidden_effect = {
-			remove_modifier = mod_osa_food_subsidies
-			remove_modifier = mod_osa_minerals_subsidies
-			remove_modifier = mod_osa_energy_subsidies
-			remove_modifier = mod_osa_alloy_subsidies
-			remove_modifier = mod_osa_unity_subsidies
-			remove_modifier = mod_osa_food_subsidies_gestalt
-			remove_modifier = mod_osa_minerals_subsidies_gestalt
-			remove_modifier = mod_osa_energy_subsidies_gestalt
-			remove_modifier = mod_osa_alloy_subsidies_gestalt
-			remove_modifier = mod_osa_unity_subsidies_gestalt
+			ost_remove_subsidies = yes
 			validate_planet_buildings_and_districts = yes
 		}
 	}
@@ -684,33 +555,33 @@ osa_decision_revoke_subsidies = {
 ################################################################
 # Forge Worlds
 ################################################################
-osa_decision_designate_forgeworld = {
+decision_ost_designate_forgeworld = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_osa_designate_forgeworld
 
-	enactment_time = 180
-
 	resources = {
 		category = decisions
 		cost = {
-			minerals = 1000
-			influence = 100
+			minerals = @decision_ost_cost_2
+			influence = @decision_ost_influence_2
 		}
 	}
 
 	potential = {
+		exists = owner
 		owner = {
+			is_ai = yes
 			has_tradition = tr_metallurgy_5
 		}
 		NOT =  {
-			has_modifier = mod_osa_designate_forgeworld
+			has_modifier = pm_ost_designate_forgeworld
 		}
 	}
 	
 	effect = {
 		add_modifier = {
-			modifier = "mod_osa_designate_forgeworld"
+			modifier = "pm_ost_designate_forgeworld"
 			days = -1
 			clear_on_owner_change = yes
 		}
@@ -718,7 +589,7 @@ osa_decision_designate_forgeworld = {
 	
 	allow = {
 		NOT =  {
-			has_modifier = mod_osa_designate_forgeworld
+			has_modifier = pm_ost_designate_forgeworld
 		}
 	}
 	
@@ -727,7 +598,7 @@ osa_decision_designate_forgeworld = {
 	}	
 }
 
-osa_decision_designate_forgeworld_remove = {
+decision_ost_designate_forgeworld_remove = {
 	owned_planets_only = yes
 	icon = decision_osa_designate_forgeworld_remove
 
@@ -736,17 +607,22 @@ osa_decision_designate_forgeworld_remove = {
 	resources = {
 		category = decisions
 		cost = {
-			minerals = 1000
-			influence = 100
+			minerals = @decision_ost_cost_1
+			influence = @decision_ost_influence_2
 		}
 	}
 
 	potential = {
-		has_modifier = mod_osa_designate_forgeworld
+		has_modifier = pm_ost_designate_forgeworld
+		exists = owner
+		owner = {
+			is_ai = yes
+			has_tradition = tr_metallurgy_5
+		}
 	}
 
 	effect = {
-		remove_modifier = mod_osa_designate_forgeworld
+		remove_modifier = pm_ost_designate_forgeworld
 		hidden_effect = { validate_planet_buildings_and_districts = yes }
 	}
 
@@ -758,7 +634,7 @@ osa_decision_designate_forgeworld_remove = {
 ################################################################
 # Syndicate Alloy Production
 ################################################################
-osa_decision_syndicate_alloy = {
+decision_ost_syndicate_alloy = {
 	owned_planets_only = yes
 	sound = event_administrative_work
 	icon = decision_syndicate
@@ -779,7 +655,7 @@ osa_decision_syndicate_alloy = {
 			}
 			energy = 2250
 			minerals = 2250
-			influence = 50
+			influence = @decision_ost_influence_1
 		}
 		cost = {
 			trigger = {
@@ -831,25 +707,26 @@ osa_decision_syndicate_alloy = {
 ################################################################
 # Military Moonbase
 ################################################################
-osa_decision_military_moonbase = {
+decision_osa_military_moonbase = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = osa_decision_military_moonbase
+	icon = decision_osa_military_moonbase
 
 	enactment_time = 360
 
 	resources = {
 		category = decisions
 		cost = {
-			energy = 1000
-			minerals = 1000
-			influence = 50
+			energy = @decision_ost_cost_0
+			minerals = @decision_ost_cost_0
+			influence = @decision_ost_influence_1
 		}
 	}
 	
 	potential = {
 		exists = owner
 		owner = {
+			is_ai = yes
 			has_active_tradition = tr_defense_finish
 		}
 		is_moon = yes
@@ -861,6 +738,7 @@ osa_decision_military_moonbase = {
 
 	effect = {
 		set_planet_flag = osa_military
+		validate_planet_buildings_and_districts = yes
 	}
 	
 	ai_weight = {
@@ -868,17 +746,17 @@ osa_decision_military_moonbase = {
 	}	
 }
 
-osa_decision_military_moonbase_decom = {
+decision_osa_military_moonbase_decom = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = osa_decision_military_moonbase_decom
+	icon = decision_osa_military_moonbase_decom
 
 	enactment_time = 360
 
 	resources = {
 		category = decisions
 		cost = {
-			influence = 25
+			influence = 50
 		}
 	}
 
@@ -890,6 +768,7 @@ osa_decision_military_moonbase_decom = {
 
 	effect = {
 		remove_planet_flag = osa_military
+		validate_planet_buildings_and_districts = yes
 	}
 
 	ai_weight = {
@@ -900,10 +779,10 @@ osa_decision_military_moonbase_decom = {
 ################################################################
 # Defense Titan Battlegroup
 ################################################################
-osa_decision_titan_garrison = {
+decision_ost_titan_garrison = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = osa_decision_titan_garrison
+	icon = decision_ost_titan_garrison
 
 	enactment_time = 1800
 
@@ -915,9 +794,9 @@ osa_decision_titan_garrison = {
 					is_ai = no
 				}
 			}
-			energy = 1000
-			alloys = 1000
-			influence = 50
+			energy = @decision_ost_cost_0
+			alloys = @decision_ost_cost_0
+			influence = @decision_ost_influence_1
 		}
 		cost = {
 			trigger = {
@@ -925,8 +804,8 @@ osa_decision_titan_garrison = {
 					is_ai = yes
 				}
 			}
-			energy = 2500
-			influence = 50
+			energy = @decision_ost_cost_2
+			influence = @decision_ost_influence_1
 		}
 	}
 	
@@ -946,13 +825,91 @@ osa_decision_titan_garrison = {
 	}
 
 	effect = {
-		custom_tooltip = osa_decision_titan_garrison_effects
+		custom_tooltip = decision_ost_titan_garrison_effects
 		hidden_effect = {
-			planet_event = { id = osa_colony.2 }
+			planet_event = { id = ost_imperator.2 }
 		}
 	}
 	
 	ai_weight = {
 		weight = 100
 	}	
+}
+
+################################################################
+# Decision Menu
+################################################################
+
+decision_ost_planet_management = {
+	owned_planets_only = yes
+	icon = decision_ost_planet_management
+	resources = {
+		category = decisions
+		cost = {
+			influence = 0
+		}
+
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			is_ai = no
+			is_gestalt = no
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_ost_planet_management_tooltip
+        hidden_effect = {
+            planet_event = {
+				id = ost_colony.10
+			}
+        }
+	}
+	
+	ai_weight = {
+		weight = 0	
+	}
+}
+
+decision_ost_planet_management_gestalt = {
+	owned_planets_only = yes
+	icon = decision_ost_planet_management
+	resources = {
+		category = decisions
+		cost = {
+			influence = 0
+		}
+
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			is_ai = no
+			is_gestalt = yes
+			OR = {
+				has_tradition = tr_perseverance_finish
+				has_tradition = tr_mettle_finish
+				has_tradition = tr_radiance_finish
+				has_tradition = tr_metallurgy_finish
+				has_tradition = tr_solidarity_finish
+				has_tradition = tr_nanobiotics_finish
+			}
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_ost_planet_management_tooltip
+        hidden_effect = {
+            planet_event = {
+				id = ost_colony.20
+			}
+        }
+	}
+	
+	ai_weight = {
+		weight = 0	
+	}
 }
