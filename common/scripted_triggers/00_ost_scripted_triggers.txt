@@ -10,6 +10,11 @@ planet_has_subsidies = {
 		has_modifier = pm_ost_alloy_subsidies
 		has_modifier = pm_ost_unity_subsidies
 		has_modifier = pm_ost_research_subsidies
+	}
+}
+
+planet_has_subsidies_gestalt = {
+	OR = {
 		has_modifier = pm_ost_food_subsidies_gestalt
 		has_modifier = pm_ost_minerals_subsidies_gestalt
 		has_modifier = pm_ost_energy_subsidies_gestalt

@@ -11,5 +11,4 @@ ost_remove_subsidies = {
 	remove_modifier = pm_ost_alloy_subsidies_gestalt
 	remove_modifier = pm_ost_unity_subsidies_gestalt
 	remove_modifier = pm_ost_research_subsidies_gestalt
-	validate_planet_buildings_and_districts = yes
 }

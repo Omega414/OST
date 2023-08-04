@@ -217,9 +217,14 @@ planet_housing_high = {
 # Leader Skill Modifiers
 ##########################################################################
 
-skill_ruler = {
-	country_edict_fund_add = 10
-	country_unity_produces_mult = 0.03
+champs_of_empire_mil_effect = {
+	hide_from_country_list = yes
+	country_naval_cap_add = 1
+}
+
+champs_of_empire_gov_effect = {
+	hide_from_country_list = yes
+	empire_size_add = -1
 }
 
 ##########################################################################

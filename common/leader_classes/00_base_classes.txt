@@ -120,7 +120,7 @@ scientist = {
 	ai_weight = {
 		base = 50
 	}
-	minimum_ai_target = 3
+	minimum_ai_target = 7
 	leader_background_job_weight = {
 		head_researcher = 100
 		noble = 100

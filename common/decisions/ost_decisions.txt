@@ -14,7 +14,7 @@
 decision_ost_food_subsidies = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_food_subsidies
+	icon = decision_ost_food_subsidies
 	resources = {
 		category = decisions
 		cost = {
@@ -56,7 +56,7 @@ decision_ost_food_subsidies = {
 decision_ost_minerals_subsidies = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_minerals_subsidies
+	icon = decision_ost_minerals_subsidies
 	resources = {
 		category = decisions
 		cost = {
@@ -98,7 +98,7 @@ decision_ost_minerals_subsidies = {
 decision_ost_energy_subsidies = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_energy_subsidies
+	icon = decision_ost_energy_subsidies
 	resources = {
 		category = decisions
 		cost = {
@@ -140,7 +140,7 @@ decision_ost_energy_subsidies = {
 decision_ost_alloy_subsidies = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_alloy_subsidies
+	icon = decision_ost_alloy_subsidies
 	resources = {
 		category = decisions
 		cost = {
@@ -183,7 +183,7 @@ decision_ost_alloy_subsidies = {
 decision_ost_unity_subsidies = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_unity_subsidies
+	icon = decision_ost_unity_subsidies
 	resources = {
 		category = decisions
 		cost = {
@@ -225,7 +225,7 @@ decision_ost_unity_subsidies = {
 decision_ost_research_subsidies = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_research_subsidies
+	icon = decision_ost_research_subsidies
 	resources = {
 		category = decisions
 		cost = {
@@ -271,7 +271,7 @@ decision_ost_research_subsidies = {
 decision_ost_food_subsidies_gestalt = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_food_subsidies
+	icon = decision_ost_food_subsidies
 	resources = {
 		category = decisions
 		cost = {
@@ -313,7 +313,7 @@ decision_ost_food_subsidies_gestalt = {
 decision_ost_minerals_subsidies_gestalt = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_minerals_subsidies
+	icon = decision_ost_minerals_subsidies
 	resources = {
 		category = decisions
 		cost = {
@@ -355,7 +355,7 @@ decision_ost_minerals_subsidies_gestalt = {
 decision_ost_energy_subsidies_gestalt = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_energy_subsidies
+	icon = decision_ost_energy_subsidies
 	resources = {
 		category = decisions
 		cost = {
@@ -397,7 +397,7 @@ decision_ost_energy_subsidies_gestalt = {
 decision_ost_alloy_subsidies_gestalt = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_alloy_subsidies
+	icon = decision_ost_alloy_subsidies
 	resources = {
 		category = decisions
 		cost = {
@@ -440,7 +440,7 @@ decision_ost_alloy_subsidies_gestalt = {
 decision_ost_unity_subsidies_gestalt = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_unity_subsidies
+	icon = decision_ost_unity_subsidies
 	resources = {
 		category = decisions
 		cost = {
@@ -482,7 +482,7 @@ decision_ost_unity_subsidies_gestalt = {
 decision_ost_research_subsidies_gestalt = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_research_subsidies
+	icon = decision_ost_research_subsidies
 	resources = {
 		category = decisions
 		cost = {
@@ -558,7 +558,7 @@ decision_ost_revoke_subsidies = {
 decision_ost_designate_forgeworld = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_designate_forgeworld
+	icon = decision_ost_designate_forgeworld
 
 	resources = {
 		category = decisions
@@ -600,7 +600,7 @@ decision_ost_designate_forgeworld = {
 
 decision_ost_designate_forgeworld_remove = {
 	owned_planets_only = yes
-	icon = decision_osa_designate_forgeworld_remove
+	icon = decision_ost_designate_forgeworld_remove
 
 	enactment_time = 180
 
@@ -707,10 +707,10 @@ decision_ost_syndicate_alloy = {
 ################################################################
 # Military Moonbase
 ################################################################
-decision_osa_military_moonbase = {
+decision_ost_military_moonbase = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_military_moonbase
+	icon = decision_ost_military_moonbase
 
 	enactment_time = 360
 
@@ -746,10 +746,10 @@ decision_osa_military_moonbase = {
 	}	
 }
 
-decision_osa_military_moonbase_decom = {
+decision_ost_military_moonbase_decom = {
 	owned_planets_only = yes
 	sound = event_administrative_work
-	icon = decision_osa_military_moonbase_decom
+	icon = decision_ost_military_moonbase_decom
 
 	enactment_time = 360
 
@@ -762,6 +762,9 @@ decision_osa_military_moonbase_decom = {
 
 	potential = {
 		exists = owner
+		owner = {
+			is_ai = yes
+		}
 		has_planet_flag = osa_military
 		uses_district_set = standard
 	}
@@ -852,6 +855,7 @@ decision_ost_planet_management = {
 	}
 	
 	potential = {
+		always = no
 		exists = owner
 		owner = {
 			is_ai = no
@@ -885,18 +889,11 @@ decision_ost_planet_management_gestalt = {
 	}
 	
 	potential = {
+		always = no
 		exists = owner
 		owner = {
 			is_ai = no
 			is_gestalt = yes
-			OR = {
-				has_tradition = tr_perseverance_finish
-				has_tradition = tr_mettle_finish
-				has_tradition = tr_radiance_finish
-				has_tradition = tr_metallurgy_finish
-				has_tradition = tr_solidarity_finish
-				has_tradition = tr_nanobiotics_finish
-			}
 		}
 	}
 	
@@ -905,6 +902,138 @@ decision_ost_planet_management_gestalt = {
         hidden_effect = {
             planet_event = {
 				id = ost_colony.20
+			}
+        }
+	}
+	
+	ai_weight = {
+		weight = 0	
+	}
+}
+
+decision_ost_planet_management_subsidies = {
+	owned_planets_only = yes
+	icon = decision_ost_planet_management
+	resources = {
+		category = decisions
+		cost = {
+			influence = 0
+		}
+
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			is_ai = no
+			is_gestalt = no
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_ost_planet_management_subsidies_tooltip
+        hidden_effect = {
+            planet_event = {
+				id = ost_colony.11
+			}
+        }
+	}
+	
+	ai_weight = {
+		weight = 0	
+	}
+}
+
+decision_ost_planet_management_subsidies_gestalt = {
+	owned_planets_only = yes
+	icon = decision_ost_planet_management
+	resources = {
+		category = decisions
+		cost = {
+			influence = 0
+		}
+
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			is_ai = no
+			is_gestalt = yes
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_ost_planet_management_subsidies_gestalt_tooltip
+        hidden_effect = {
+            planet_event = {
+				id = ost_colony.21
+			}
+        }
+	}
+	
+	ai_weight = {
+		weight = 0	
+	}
+}
+
+decision_ost_planet_management_designations = {
+	owned_planets_only = yes
+	icon = decision_ost_planet_management
+	resources = {
+		category = decisions
+		cost = {
+			influence = 0
+		}
+
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			is_ai = no
+			is_gestalt = no
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_ost_planet_management_designations_tooltip
+        hidden_effect = {
+            planet_event = {
+				id = ost_colony.12
+			}
+        }
+	}
+	
+	ai_weight = {
+		weight = 0	
+	}
+}
+
+decision_ost_planet_management_designations_gestalt = {
+	owned_planets_only = yes
+	icon = decision_ost_planet_management
+	resources = {
+		category = decisions
+		cost = {
+			influence = 0
+		}
+
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			is_ai = no
+			is_gestalt = yes
+		}
+	}
+	
+	effect = {
+		custom_tooltip = decision_ost_planet_management_designations_tooltip
+        hidden_effect = {
+            planet_event = {
+				id = ost_colony.22
 			}
         }
 	}
