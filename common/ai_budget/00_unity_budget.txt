@@ -84,7 +84,7 @@ unity_expenditure_leaders = {
 	}
 
 	weight = {
-		weight = 1.5
+		weight = 0.1
 	}
 }
 
@@ -112,11 +112,11 @@ unity_upkeep_leaders = {
 	category = leaders
 
 	potential = {
-		always = yes
+		always = no
 	}
 
 	weight = {
-		weight = 1.5
+		weight = 0.1
 	}
 }
 
